@@ -3,7 +3,7 @@ Credit Note & Dispute Reconciliation Engine
 Manages dispute approval workflows, credit note issuance, and
 arithmetic balance reconciliation against approved audit exceptions.
 """
-from datetime import date, datetime
+from datetime import date, datetime, timezone
 from typing import Dict, List, Optional, Tuple
 from freight_audit.models.entities import (
     AuditException,
@@ -45,7 +45,7 @@ class DisputeReconciliationEngine:
         initial_status = exception.status
         amount = approved_amount if approved_amount is not None else exception.discrepancy_amount
         exception.status = decision
-        exception.resolved_at = datetime.utcnow()
+        exception.resolved_at = datetime.now(timezone.utc)
         exception.resolution_notes = f"[{decided_by}] {decision_reason} (Settled Amount: ${amount:.2f})"
 
         event = AuditResolutionEvent(
@@ -56,7 +56,7 @@ class DisputeReconciliationEngine:
             decided_by=decided_by,
             decision_reason=decision_reason,
             approved_amount=amount,
-            timestamp=datetime.utcnow(),
+            timestamp=datetime.now(timezone.utc),
         )
         return exception, event
 
@@ -96,7 +96,7 @@ class DisputeReconciliationEngine:
             status=CreditNoteStatus.APPLIED,
             issue_date=today,
             reconciliation_status=recon_status,
-            created_at=datetime.utcnow(),
+            created_at=datetime.now(timezone.utc),
         )
         return cn
 
