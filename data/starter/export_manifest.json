@@ -1,0 +1,80 @@
+{
+  "tables": {
+    "carriers": {
+      "row_count": 25,
+      "csv_sha256": "83e45b975f235d213c1e5c96d8a5f82eeda5ba371db4a2c4160ff9da7097c86c",
+      "json_sha256": "5d2555f4ee0cd104d944780c3702665c695618f769282d7441aaf3ad72c80f74"
+    },
+    "lanes": {
+      "row_count": 100,
+      "csv_sha256": "c34f812e8d9ab5429376f7e9da6f2f1fb71473921a09635858ee5562b462ce38",
+      "json_sha256": "2cd1b0a158594b969c988dee5bcc252003b1f475f9d3dcc36ccceb1850e998f1"
+    },
+    "rate_cards": {
+      "row_count": 750,
+      "csv_sha256": "174c0c19fb0f570959415d36395a007516959885dbe8f1400ce2bdb2543999bd",
+      "json_sha256": "3d84ea3ca414bdd33d816d2c3288c8efd49e1425f5f10fa704920c042fd618dd"
+    },
+    "shipments": {
+      "row_count": 500,
+      "csv_sha256": "9cc09a0bcadd37ff6c1db3671db2592ef1c7199b9ede842c213ce10964037291",
+      "json_sha256": "9d080c538c4462cdc7990726fdd4811f739bc396c506fbdba1d7d035ab9c877e"
+    },
+    "shipment_legs": {
+      "row_count": 500,
+      "csv_sha256": "30d9d91082546de7e76be8407c88a39dacd9f9f6f1cbb5221c5b00fbd24a9d6b",
+      "json_sha256": "565c9e370a3403124c52837115d29c68317faf787c01a11a08ec4f4155c67534"
+    },
+    "weight_measurements": {
+      "row_count": 1195,
+      "csv_sha256": "56b92f2b74a049ebbda725941778d30165fa52b01536fefa3ebd405b295bfaa0",
+      "json_sha256": "e78d88384c315cd525090fc9325aa283097949e0cadccd4dc379b9c610d684cf"
+    },
+    "accessorials": {
+      "row_count": 185,
+      "csv_sha256": "7b61cb3cf4d3d476fb42f689f39e51e670435485386e56f65a78b9e0d9615999",
+      "json_sha256": "681fa080595f843ed7e3dfc452b1565fa041fd20fc1ce1430ffbd664d13b2c42"
+    },
+    "freight_invoices": {
+      "row_count": 400,
+      "csv_sha256": "64f85361c3208bb53bc34b737dfa7bf47687a14543bbe717bb74bcc318c79b30",
+      "json_sha256": "fed7b8dfd5dcf887c1f8f9d51270270012b6b48cbbb56aaabc1869dfcf6a3197"
+    },
+    "invoice_lines": {
+      "row_count": 967,
+      "csv_sha256": "ee9815dc69d82aec92bc0d427e2e1d1fbb5292e01cbf3e5a3763effc55b506a5",
+      "json_sha256": "c2142ac548144a7ded917443205753d94ddcd2ef7e9e23180fdb71451f287c07"
+    },
+    "audit_exceptions": {
+      "row_count": 112,
+      "csv_sha256": "9170388c9d3e9d08a731e744e0fca9efc74ae9bbc59816d4c4be16d09f39978a",
+      "json_sha256": "193f1648844731566f1a33fd34be2705977293f20d32e26ded1f5ebd5ea4ff52"
+    },
+    "credit_notes": {
+      "row_count": 16,
+      "csv_sha256": "e78ea6ef0ecf2dccfcf8cb95473e8a01f176bc39e02b814f6e4abad30938bec8",
+      "json_sha256": "0d56ec4b119c85c6ddf8cd191034daf1eab0a5d850ff37b261cfce812cffb949"
+    },
+    "invoice_status_events": {
+      "row_count": 304,
+      "csv_sha256": "6e4062c6e36d7ab7ef7f5647680f496b151a3bc2cd8d68d2e30947c8336ed436",
+      "json_sha256": "326b7550a453998de8f8c4145416fbef0f0166bc4ea939cb05921c7f6af19225"
+    },
+    "audit_resolution_events": {
+      "row_count": 16,
+      "csv_sha256": "76fda91209ded5d62751610672bab5374a51d710a2dd0cec9b80c0c7817b5380",
+      "json_sha256": "d40ccd2f672aa842fead892c7930d64e0d4e9e2603cb07aa8087b80a5acfbcb8"
+    }
+  },
+  "total_rows": 5070,
+  "seed": "Clean baseline invoice perfectly matching contracted rating and delivery records.",
+  "ground_truth": {
+    "record_count": 400,
+    "csv_sha256": "c477421596e3761793913481ae17ae9da9b4c962256190e3aedb91badf8bb952",
+    "json_sha256": "9b423c3decbb37c29da0c47664632f491cb25f2e8233e5f40e4662e979fb2e41"
+  },
+  "sqlite_db": {
+    "path": "C:\\Users\\prane\\.gemini\\antigravity\\scratch\\freight-invoice-audit\\data\\starter\\freight_audit.db",
+    "sha256": "9a008acf35829b9bdbf109dc5171cc43fcea98e4f3cbd099fc6f8a46cc4a1e7b"
+  }
+}

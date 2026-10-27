@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "freight-invoice-audit"
+version = "1.0.0"
+description = "End-to-End Freight Invoice Audit, Contract Rating & Dispute Reconciliation System"
+authors = [{ name = "Logistics Operations Team" }]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pydantic>=2.0.0",
+    "pandas>=2.0.0",
+    "sqlalchemy>=2.0.0",
+    "fastapi>=0.100.0",
+    "uvicorn>=0.20.0",
+    "streamlit>=1.30.0",
+    "pytest>=7.0.0",
+    "dulwich>=0.21.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]

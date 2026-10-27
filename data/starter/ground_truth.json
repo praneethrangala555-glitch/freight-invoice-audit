@@ -1,0 +1,3602 @@
+[
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000001",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000002",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000003",
+    "anomaly_category": "UNKNOWN_SHIPMENT",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 327.75,
+    "line_number": null,
+    "explanation": "Referenced shipment SHP-2026-999003 does not exist in master records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000004",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000005",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000006",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000007",
+    "anomaly_category": "RATE_CARD_EXPIRED",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 75.0,
+    "line_number": 1,
+    "explanation": "Carrier billed under an expired contract rate card with unauthorized rate increase."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000008",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000009",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000010",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000011",
+    "anomaly_category": "WEIGHT_TIER_MISAPPLIED",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 65.4,
+    "line_number": 1,
+    "explanation": "Carrier failed to apply contracted volume tier discount based on actual billable weight."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000012",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000013",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000014",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000015",
+    "anomaly_category": "SURCHARGE_DUPLICATED",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 108.39,
+    "line_number": 3,
+    "explanation": "Duplicate fuel surcharge line billed on the same invoice."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000016",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000017",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000018",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "CreditNote",
+    "target_id": "CN-2026-000001",
+    "anomaly_category": "CREDIT_NOTE_EXCEEDS_EXCEPTION",
+    "expected_decision": "OVERCREDITED",
+    "expected_variance": 80.0,
+    "line_number": null,
+    "explanation": "Credit note CN-2026-000001 issued for $160.00 exceeds approved exception of $80.00."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000020",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000021",
+    "anomaly_category": "DUPLICATE_INVOICE",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 527.07,
+    "line_number": null,
+    "explanation": "Duplicate invoice submitted for already billed shipment SHP-2026-000021."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000022",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000023",
+    "anomaly_category": "INVALID_ACCESSORIAL",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 85.0,
+    "line_number": 3,
+    "explanation": "Unauthorized accessorial fee billed without supporting BOL documentation."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000024",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000025",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000026",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000027",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000028",
+    "anomaly_category": "UNKNOWN_SHIPMENT",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 327.75,
+    "line_number": null,
+    "explanation": "Referenced shipment SHP-2026-999028 does not exist in master records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000029",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000030",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000031",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000032",
+    "anomaly_category": "RATE_CARD_EXPIRED",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 75.0,
+    "line_number": 1,
+    "explanation": "Carrier billed under an expired contract rate card with unauthorized rate increase."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000033",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000034",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000035",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000036",
+    "anomaly_category": "WEIGHT_TIER_MISAPPLIED",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 65.4,
+    "line_number": 1,
+    "explanation": "Carrier failed to apply contracted volume tier discount based on actual billable weight."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000037",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000038",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000039",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000040",
+    "anomaly_category": "SURCHARGE_DUPLICATED",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 185.59,
+    "line_number": 3,
+    "explanation": "Duplicate fuel surcharge line billed on the same invoice."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000041",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000042",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000043",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "CreditNote",
+    "target_id": "CN-2026-000002",
+    "anomaly_category": "CREDIT_NOTE_EXCEEDS_EXCEPTION",
+    "expected_decision": "OVERCREDITED",
+    "expected_variance": 80.0,
+    "line_number": null,
+    "explanation": "Credit note CN-2026-000002 issued for $160.00 exceeds approved exception of $80.00."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000045",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000046",
+    "anomaly_category": "DUPLICATE_INVOICE",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 810.56,
+    "line_number": null,
+    "explanation": "Duplicate invoice submitted for already billed shipment SHP-2026-000046."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000047",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000048",
+    "anomaly_category": "INVALID_ACCESSORIAL",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 85.0,
+    "line_number": 3,
+    "explanation": "Unauthorized accessorial fee billed without supporting BOL documentation."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000049",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000050",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000051",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000052",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000053",
+    "anomaly_category": "UNKNOWN_SHIPMENT",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 327.75,
+    "line_number": null,
+    "explanation": "Referenced shipment SHP-2026-999053 does not exist in master records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000054",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000055",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000056",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000057",
+    "anomaly_category": "RATE_CARD_EXPIRED",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 75.0,
+    "line_number": 1,
+    "explanation": "Carrier billed under an expired contract rate card with unauthorized rate increase."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000058",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000059",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000060",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000061",
+    "anomaly_category": "WEIGHT_TIER_MISAPPLIED",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 65.4,
+    "line_number": 1,
+    "explanation": "Carrier failed to apply contracted volume tier discount based on actual billable weight."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000062",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000063",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000064",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000065",
+    "anomaly_category": "SURCHARGE_DUPLICATED",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 266.49,
+    "line_number": 3,
+    "explanation": "Duplicate fuel surcharge line billed on the same invoice."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000066",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000067",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000068",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "CreditNote",
+    "target_id": "CN-2026-000003",
+    "anomaly_category": "CREDIT_NOTE_EXCEEDS_EXCEPTION",
+    "expected_decision": "OVERCREDITED",
+    "expected_variance": 80.0,
+    "line_number": null,
+    "explanation": "Credit note CN-2026-000003 issued for $160.00 exceeds approved exception of $80.00."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000070",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000071",
+    "anomaly_category": "DUPLICATE_INVOICE",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 1257.72,
+    "line_number": null,
+    "explanation": "Duplicate invoice submitted for already billed shipment SHP-2026-000071."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000072",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000073",
+    "anomaly_category": "INVALID_ACCESSORIAL",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 85.0,
+    "line_number": 3,
+    "explanation": "Unauthorized accessorial fee billed without supporting BOL documentation."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000074",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000075",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000076",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000077",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000078",
+    "anomaly_category": "UNKNOWN_SHIPMENT",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 327.75,
+    "line_number": null,
+    "explanation": "Referenced shipment SHP-2026-999078 does not exist in master records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000079",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000080",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000081",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000082",
+    "anomaly_category": "RATE_CARD_EXPIRED",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 75.0,
+    "line_number": 1,
+    "explanation": "Carrier billed under an expired contract rate card with unauthorized rate increase."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000083",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000084",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000085",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000086",
+    "anomaly_category": "WEIGHT_TIER_MISAPPLIED",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 65.4,
+    "line_number": 1,
+    "explanation": "Carrier failed to apply contracted volume tier discount based on actual billable weight."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000087",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000088",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000089",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000090",
+    "anomaly_category": "SURCHARGE_DUPLICATED",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 59.31,
+    "line_number": 3,
+    "explanation": "Duplicate fuel surcharge line billed on the same invoice."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000091",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000092",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000093",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "CreditNote",
+    "target_id": "CN-2026-000004",
+    "anomaly_category": "CREDIT_NOTE_EXCEEDS_EXCEPTION",
+    "expected_decision": "OVERCREDITED",
+    "expected_variance": 80.0,
+    "line_number": null,
+    "explanation": "Credit note CN-2026-000004 issued for $160.00 exceeds approved exception of $80.00."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000095",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000096",
+    "anomaly_category": "DUPLICATE_INVOICE",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 1215.87,
+    "line_number": null,
+    "explanation": "Duplicate invoice submitted for already billed shipment SHP-2026-000096."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000097",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000098",
+    "anomaly_category": "INVALID_ACCESSORIAL",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 85.0,
+    "line_number": 3,
+    "explanation": "Unauthorized accessorial fee billed without supporting BOL documentation."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000099",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000100",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000101",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000102",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000103",
+    "anomaly_category": "UNKNOWN_SHIPMENT",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 327.75,
+    "line_number": null,
+    "explanation": "Referenced shipment SHP-2026-999103 does not exist in master records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000104",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000105",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000106",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000107",
+    "anomaly_category": "RATE_CARD_EXPIRED",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 75.0,
+    "line_number": 1,
+    "explanation": "Carrier billed under an expired contract rate card with unauthorized rate increase."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000108",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000109",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000110",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000111",
+    "anomaly_category": "WEIGHT_TIER_MISAPPLIED",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 65.4,
+    "line_number": 1,
+    "explanation": "Carrier failed to apply contracted volume tier discount based on actual billable weight."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000112",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000113",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000114",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000115",
+    "anomaly_category": "SURCHARGE_DUPLICATED",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 57.25,
+    "line_number": 3,
+    "explanation": "Duplicate fuel surcharge line billed on the same invoice."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000116",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000117",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000118",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "CreditNote",
+    "target_id": "CN-2026-000005",
+    "anomaly_category": "CREDIT_NOTE_EXCEEDS_EXCEPTION",
+    "expected_decision": "OVERCREDITED",
+    "expected_variance": 80.0,
+    "line_number": null,
+    "explanation": "Credit note CN-2026-000005 issued for $160.00 exceeds approved exception of $80.00."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000120",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000121",
+    "anomaly_category": "DUPLICATE_INVOICE",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 566.42,
+    "line_number": null,
+    "explanation": "Duplicate invoice submitted for already billed shipment SHP-2026-000121."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000122",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000123",
+    "anomaly_category": "INVALID_ACCESSORIAL",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 85.0,
+    "line_number": 3,
+    "explanation": "Unauthorized accessorial fee billed without supporting BOL documentation."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000124",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000125",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000126",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000127",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000128",
+    "anomaly_category": "UNKNOWN_SHIPMENT",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 327.75,
+    "line_number": null,
+    "explanation": "Referenced shipment SHP-2026-999128 does not exist in master records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000129",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000130",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000131",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000132",
+    "anomaly_category": "RATE_CARD_EXPIRED",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 75.0,
+    "line_number": 1,
+    "explanation": "Carrier billed under an expired contract rate card with unauthorized rate increase."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000133",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000134",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000135",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000136",
+    "anomaly_category": "WEIGHT_TIER_MISAPPLIED",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 65.4,
+    "line_number": 1,
+    "explanation": "Carrier failed to apply contracted volume tier discount based on actual billable weight."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000137",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000138",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000139",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000140",
+    "anomaly_category": "SURCHARGE_DUPLICATED",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 242.41,
+    "line_number": 3,
+    "explanation": "Duplicate fuel surcharge line billed on the same invoice."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000141",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000142",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000143",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "CreditNote",
+    "target_id": "CN-2026-000006",
+    "anomaly_category": "CREDIT_NOTE_EXCEEDS_EXCEPTION",
+    "expected_decision": "OVERCREDITED",
+    "expected_variance": 80.0,
+    "line_number": null,
+    "explanation": "Credit note CN-2026-000006 issued for $160.00 exceeds approved exception of $80.00."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000145",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000146",
+    "anomaly_category": "DUPLICATE_INVOICE",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 784.9,
+    "line_number": null,
+    "explanation": "Duplicate invoice submitted for already billed shipment SHP-2026-000146."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000147",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000148",
+    "anomaly_category": "INVALID_ACCESSORIAL",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 85.0,
+    "line_number": 3,
+    "explanation": "Unauthorized accessorial fee billed without supporting BOL documentation."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000149",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000150",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000151",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000152",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000153",
+    "anomaly_category": "UNKNOWN_SHIPMENT",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 327.75,
+    "line_number": null,
+    "explanation": "Referenced shipment SHP-2026-999153 does not exist in master records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000154",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000155",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000156",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000157",
+    "anomaly_category": "RATE_CARD_EXPIRED",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 75.0,
+    "line_number": 1,
+    "explanation": "Carrier billed under an expired contract rate card with unauthorized rate increase."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000158",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000159",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000160",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000161",
+    "anomaly_category": "WEIGHT_TIER_MISAPPLIED",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 65.4,
+    "line_number": 1,
+    "explanation": "Carrier failed to apply contracted volume tier discount based on actual billable weight."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000162",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000163",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000164",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000165",
+    "anomaly_category": "SURCHARGE_DUPLICATED",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 102.56,
+    "line_number": 3,
+    "explanation": "Duplicate fuel surcharge line billed on the same invoice."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000166",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000167",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000168",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "CreditNote",
+    "target_id": "CN-2026-000007",
+    "anomaly_category": "CREDIT_NOTE_EXCEEDS_EXCEPTION",
+    "expected_decision": "OVERCREDITED",
+    "expected_variance": 80.0,
+    "line_number": null,
+    "explanation": "Credit note CN-2026-000007 issued for $160.00 exceeds approved exception of $80.00."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000170",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000171",
+    "anomaly_category": "DUPLICATE_INVOICE",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 449.96,
+    "line_number": null,
+    "explanation": "Duplicate invoice submitted for already billed shipment SHP-2026-000171."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000172",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000173",
+    "anomaly_category": "INVALID_ACCESSORIAL",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 85.0,
+    "line_number": 3,
+    "explanation": "Unauthorized accessorial fee billed without supporting BOL documentation."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000174",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000175",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000176",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000177",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000178",
+    "anomaly_category": "UNKNOWN_SHIPMENT",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 327.75,
+    "line_number": null,
+    "explanation": "Referenced shipment SHP-2026-999178 does not exist in master records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000179",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000180",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000181",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000182",
+    "anomaly_category": "RATE_CARD_EXPIRED",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 75.0,
+    "line_number": 1,
+    "explanation": "Carrier billed under an expired contract rate card with unauthorized rate increase."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000183",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000184",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000185",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000186",
+    "anomaly_category": "WEIGHT_TIER_MISAPPLIED",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 65.4,
+    "line_number": 1,
+    "explanation": "Carrier failed to apply contracted volume tier discount based on actual billable weight."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000187",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000188",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000189",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000190",
+    "anomaly_category": "SURCHARGE_DUPLICATED",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 125.36,
+    "line_number": 3,
+    "explanation": "Duplicate fuel surcharge line billed on the same invoice."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000191",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000192",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000193",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "CreditNote",
+    "target_id": "CN-2026-000008",
+    "anomaly_category": "CREDIT_NOTE_EXCEEDS_EXCEPTION",
+    "expected_decision": "OVERCREDITED",
+    "expected_variance": 80.0,
+    "line_number": null,
+    "explanation": "Credit note CN-2026-000008 issued for $160.00 exceeds approved exception of $80.00."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000195",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000196",
+    "anomaly_category": "DUPLICATE_INVOICE",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 1430.15,
+    "line_number": null,
+    "explanation": "Duplicate invoice submitted for already billed shipment SHP-2026-000196."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000197",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000198",
+    "anomaly_category": "INVALID_ACCESSORIAL",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 85.0,
+    "line_number": 3,
+    "explanation": "Unauthorized accessorial fee billed without supporting BOL documentation."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000199",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000200",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000201",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000202",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000203",
+    "anomaly_category": "UNKNOWN_SHIPMENT",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 327.75,
+    "line_number": null,
+    "explanation": "Referenced shipment SHP-2026-999203 does not exist in master records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000204",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000205",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000206",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000207",
+    "anomaly_category": "RATE_CARD_EXPIRED",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 75.0,
+    "line_number": 1,
+    "explanation": "Carrier billed under an expired contract rate card with unauthorized rate increase."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000208",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000209",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000210",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000211",
+    "anomaly_category": "WEIGHT_TIER_MISAPPLIED",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 65.4,
+    "line_number": 1,
+    "explanation": "Carrier failed to apply contracted volume tier discount based on actual billable weight."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000212",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000213",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000214",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000215",
+    "anomaly_category": "SURCHARGE_DUPLICATED",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 57.46,
+    "line_number": 3,
+    "explanation": "Duplicate fuel surcharge line billed on the same invoice."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000216",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000217",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000218",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "CreditNote",
+    "target_id": "CN-2026-000009",
+    "anomaly_category": "CREDIT_NOTE_EXCEEDS_EXCEPTION",
+    "expected_decision": "OVERCREDITED",
+    "expected_variance": 80.0,
+    "line_number": null,
+    "explanation": "Credit note CN-2026-000009 issued for $160.00 exceeds approved exception of $80.00."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000220",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000221",
+    "anomaly_category": "DUPLICATE_INVOICE",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 748.92,
+    "line_number": null,
+    "explanation": "Duplicate invoice submitted for already billed shipment SHP-2026-000221."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000222",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000223",
+    "anomaly_category": "INVALID_ACCESSORIAL",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 85.0,
+    "line_number": 3,
+    "explanation": "Unauthorized accessorial fee billed without supporting BOL documentation."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000224",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000225",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000226",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000227",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000228",
+    "anomaly_category": "UNKNOWN_SHIPMENT",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 327.75,
+    "line_number": null,
+    "explanation": "Referenced shipment SHP-2026-999228 does not exist in master records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000229",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000230",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000231",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000232",
+    "anomaly_category": "RATE_CARD_EXPIRED",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 75.0,
+    "line_number": 1,
+    "explanation": "Carrier billed under an expired contract rate card with unauthorized rate increase."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000233",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000234",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000235",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000236",
+    "anomaly_category": "WEIGHT_TIER_MISAPPLIED",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 65.4,
+    "line_number": 1,
+    "explanation": "Carrier failed to apply contracted volume tier discount based on actual billable weight."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000237",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000238",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000239",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000240",
+    "anomaly_category": "SURCHARGE_DUPLICATED",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 58.0,
+    "line_number": 3,
+    "explanation": "Duplicate fuel surcharge line billed on the same invoice."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000241",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000242",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000243",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "CreditNote",
+    "target_id": "CN-2026-000010",
+    "anomaly_category": "CREDIT_NOTE_EXCEEDS_EXCEPTION",
+    "expected_decision": "OVERCREDITED",
+    "expected_variance": 80.0,
+    "line_number": null,
+    "explanation": "Credit note CN-2026-000010 issued for $160.00 exceeds approved exception of $80.00."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000245",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000246",
+    "anomaly_category": "DUPLICATE_INVOICE",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 861.8,
+    "line_number": null,
+    "explanation": "Duplicate invoice submitted for already billed shipment SHP-2026-000246."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000247",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000248",
+    "anomaly_category": "INVALID_ACCESSORIAL",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 85.0,
+    "line_number": 3,
+    "explanation": "Unauthorized accessorial fee billed without supporting BOL documentation."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000249",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000250",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000251",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000252",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000253",
+    "anomaly_category": "UNKNOWN_SHIPMENT",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 327.75,
+    "line_number": null,
+    "explanation": "Referenced shipment SHP-2026-999253 does not exist in master records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000254",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000255",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000256",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000257",
+    "anomaly_category": "RATE_CARD_EXPIRED",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 75.0,
+    "line_number": 1,
+    "explanation": "Carrier billed under an expired contract rate card with unauthorized rate increase."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000258",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000259",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000260",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000261",
+    "anomaly_category": "WEIGHT_TIER_MISAPPLIED",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 65.4,
+    "line_number": 1,
+    "explanation": "Carrier failed to apply contracted volume tier discount based on actual billable weight."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000262",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000263",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000264",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000265",
+    "anomaly_category": "SURCHARGE_DUPLICATED",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 100.22,
+    "line_number": 3,
+    "explanation": "Duplicate fuel surcharge line billed on the same invoice."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000266",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000267",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000268",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "CreditNote",
+    "target_id": "CN-2026-000011",
+    "anomaly_category": "CREDIT_NOTE_EXCEEDS_EXCEPTION",
+    "expected_decision": "OVERCREDITED",
+    "expected_variance": 80.0,
+    "line_number": null,
+    "explanation": "Credit note CN-2026-000011 issued for $160.00 exceeds approved exception of $80.00."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000270",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000271",
+    "anomaly_category": "DUPLICATE_INVOICE",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 537.38,
+    "line_number": null,
+    "explanation": "Duplicate invoice submitted for already billed shipment SHP-2026-000271."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000272",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000273",
+    "anomaly_category": "INVALID_ACCESSORIAL",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 85.0,
+    "line_number": 3,
+    "explanation": "Unauthorized accessorial fee billed without supporting BOL documentation."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000274",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000275",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000276",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000277",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000278",
+    "anomaly_category": "UNKNOWN_SHIPMENT",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 327.75,
+    "line_number": null,
+    "explanation": "Referenced shipment SHP-2026-999278 does not exist in master records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000279",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000280",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000281",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000282",
+    "anomaly_category": "RATE_CARD_EXPIRED",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 75.0,
+    "line_number": 1,
+    "explanation": "Carrier billed under an expired contract rate card with unauthorized rate increase."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000283",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000284",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000285",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000286",
+    "anomaly_category": "WEIGHT_TIER_MISAPPLIED",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 65.4,
+    "line_number": 1,
+    "explanation": "Carrier failed to apply contracted volume tier discount based on actual billable weight."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000287",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000288",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000289",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000290",
+    "anomaly_category": "SURCHARGE_DUPLICATED",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 68.11,
+    "line_number": 3,
+    "explanation": "Duplicate fuel surcharge line billed on the same invoice."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000291",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000292",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000293",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "CreditNote",
+    "target_id": "CN-2026-000012",
+    "anomaly_category": "CREDIT_NOTE_EXCEEDS_EXCEPTION",
+    "expected_decision": "OVERCREDITED",
+    "expected_variance": 80.0,
+    "line_number": null,
+    "explanation": "Credit note CN-2026-000012 issued for $160.00 exceeds approved exception of $80.00."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000295",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000296",
+    "anomaly_category": "DUPLICATE_INVOICE",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 1111.23,
+    "line_number": null,
+    "explanation": "Duplicate invoice submitted for already billed shipment SHP-2026-000296."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000297",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000298",
+    "anomaly_category": "INVALID_ACCESSORIAL",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 85.0,
+    "line_number": 3,
+    "explanation": "Unauthorized accessorial fee billed without supporting BOL documentation."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000299",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000300",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000301",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000302",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000303",
+    "anomaly_category": "UNKNOWN_SHIPMENT",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 327.75,
+    "line_number": null,
+    "explanation": "Referenced shipment SHP-2026-999303 does not exist in master records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000304",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000305",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000306",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000307",
+    "anomaly_category": "RATE_CARD_EXPIRED",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 75.0,
+    "line_number": 1,
+    "explanation": "Carrier billed under an expired contract rate card with unauthorized rate increase."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000308",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000309",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000310",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000311",
+    "anomaly_category": "WEIGHT_TIER_MISAPPLIED",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 65.4,
+    "line_number": 1,
+    "explanation": "Carrier failed to apply contracted volume tier discount based on actual billable weight."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000312",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000313",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000314",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000315",
+    "anomaly_category": "SURCHARGE_DUPLICATED",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 181.51,
+    "line_number": 3,
+    "explanation": "Duplicate fuel surcharge line billed on the same invoice."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000316",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000317",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000318",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "CreditNote",
+    "target_id": "CN-2026-000013",
+    "anomaly_category": "CREDIT_NOTE_EXCEEDS_EXCEPTION",
+    "expected_decision": "OVERCREDITED",
+    "expected_variance": 80.0,
+    "line_number": null,
+    "explanation": "Credit note CN-2026-000013 issued for $160.00 exceeds approved exception of $80.00."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000320",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000321",
+    "anomaly_category": "DUPLICATE_INVOICE",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 1198.12,
+    "line_number": null,
+    "explanation": "Duplicate invoice submitted for already billed shipment SHP-2026-000321."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000322",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000323",
+    "anomaly_category": "INVALID_ACCESSORIAL",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 85.0,
+    "line_number": 3,
+    "explanation": "Unauthorized accessorial fee billed without supporting BOL documentation."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000324",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000325",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000326",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000327",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000328",
+    "anomaly_category": "UNKNOWN_SHIPMENT",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 327.75,
+    "line_number": null,
+    "explanation": "Referenced shipment SHP-2026-999328 does not exist in master records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000329",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000330",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000331",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000332",
+    "anomaly_category": "RATE_CARD_EXPIRED",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 75.0,
+    "line_number": 1,
+    "explanation": "Carrier billed under an expired contract rate card with unauthorized rate increase."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000333",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000334",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000335",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000336",
+    "anomaly_category": "WEIGHT_TIER_MISAPPLIED",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 65.4,
+    "line_number": 1,
+    "explanation": "Carrier failed to apply contracted volume tier discount based on actual billable weight."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000337",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000338",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000339",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000340",
+    "anomaly_category": "SURCHARGE_DUPLICATED",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 85.55,
+    "line_number": 3,
+    "explanation": "Duplicate fuel surcharge line billed on the same invoice."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000341",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000342",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000343",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "CreditNote",
+    "target_id": "CN-2026-000014",
+    "anomaly_category": "CREDIT_NOTE_EXCEEDS_EXCEPTION",
+    "expected_decision": "OVERCREDITED",
+    "expected_variance": 80.0,
+    "line_number": null,
+    "explanation": "Credit note CN-2026-000014 issued for $160.00 exceeds approved exception of $80.00."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000345",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000346",
+    "anomaly_category": "DUPLICATE_INVOICE",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 1098.51,
+    "line_number": null,
+    "explanation": "Duplicate invoice submitted for already billed shipment SHP-2026-000346."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000347",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000348",
+    "anomaly_category": "INVALID_ACCESSORIAL",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 85.0,
+    "line_number": 3,
+    "explanation": "Unauthorized accessorial fee billed without supporting BOL documentation."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000349",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000350",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000351",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000352",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000353",
+    "anomaly_category": "UNKNOWN_SHIPMENT",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 327.75,
+    "line_number": null,
+    "explanation": "Referenced shipment SHP-2026-999353 does not exist in master records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000354",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000355",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000356",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000357",
+    "anomaly_category": "RATE_CARD_EXPIRED",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 75.0,
+    "line_number": 1,
+    "explanation": "Carrier billed under an expired contract rate card with unauthorized rate increase."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000358",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000359",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000360",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000361",
+    "anomaly_category": "WEIGHT_TIER_MISAPPLIED",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 65.4,
+    "line_number": 1,
+    "explanation": "Carrier failed to apply contracted volume tier discount based on actual billable weight."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000362",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000363",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000364",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000365",
+    "anomaly_category": "SURCHARGE_DUPLICATED",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 59.93,
+    "line_number": 3,
+    "explanation": "Duplicate fuel surcharge line billed on the same invoice."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000366",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000367",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000368",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "CreditNote",
+    "target_id": "CN-2026-000015",
+    "anomaly_category": "CREDIT_NOTE_EXCEEDS_EXCEPTION",
+    "expected_decision": "OVERCREDITED",
+    "expected_variance": 80.0,
+    "line_number": null,
+    "explanation": "Credit note CN-2026-000015 issued for $160.00 exceeds approved exception of $80.00."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000370",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000371",
+    "anomaly_category": "DUPLICATE_INVOICE",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 697.44,
+    "line_number": null,
+    "explanation": "Duplicate invoice submitted for already billed shipment SHP-2026-000371."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000372",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000373",
+    "anomaly_category": "INVALID_ACCESSORIAL",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 85.0,
+    "line_number": 3,
+    "explanation": "Unauthorized accessorial fee billed without supporting BOL documentation."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000374",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000375",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000376",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000377",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000378",
+    "anomaly_category": "UNKNOWN_SHIPMENT",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 327.75,
+    "line_number": null,
+    "explanation": "Referenced shipment SHP-2026-999378 does not exist in master records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000379",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000380",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000381",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000382",
+    "anomaly_category": "RATE_CARD_EXPIRED",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 75.0,
+    "line_number": 1,
+    "explanation": "Carrier billed under an expired contract rate card with unauthorized rate increase."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000383",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000384",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000385",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000386",
+    "anomaly_category": "WEIGHT_TIER_MISAPPLIED",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 65.4,
+    "line_number": 1,
+    "explanation": "Carrier failed to apply contracted volume tier discount based on actual billable weight."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000387",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000388",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000389",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000390",
+    "anomaly_category": "SURCHARGE_DUPLICATED",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 149.42,
+    "line_number": 3,
+    "explanation": "Duplicate fuel surcharge line billed on the same invoice."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000391",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000392",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000393",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "CreditNote",
+    "target_id": "CN-2026-000016",
+    "anomaly_category": "CREDIT_NOTE_EXCEEDS_EXCEPTION",
+    "expected_decision": "OVERCREDITED",
+    "expected_variance": 80.0,
+    "line_number": null,
+    "explanation": "Credit note CN-2026-000016 issued for $160.00 exceeds approved exception of $80.00."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000395",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000396",
+    "anomaly_category": "DUPLICATE_INVOICE",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 1492.91,
+    "line_number": null,
+    "explanation": "Duplicate invoice submitted for already billed shipment SHP-2026-000396."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000397",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000398",
+    "anomaly_category": "INVALID_ACCESSORIAL",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 85.0,
+    "line_number": 3,
+    "explanation": "Unauthorized accessorial fee billed without supporting BOL documentation."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000399",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000400",
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "AUDITED_APPROVED",
+    "expected_variance": 0.0,
+    "line_number": null,
+    "explanation": "Clean baseline invoice perfectly matching contracted rating and delivery records."
+  }
+]

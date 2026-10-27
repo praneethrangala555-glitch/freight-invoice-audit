@@ -1,0 +1,1852 @@
+[
+  {
+    "accessorial_id": "ACC-2026-000001",
+    "shipment_id": "SHP-2026-000001",
+    "code": "APPOINTMENT",
+    "description": "Standard Appointment Service",
+    "standard_fee": 35.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000001",
+    "created_at": "2026-04-28T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000002",
+    "shipment_id": "SHP-2026-000002",
+    "code": "HAZMAT",
+    "description": "Standard Hazmat Service",
+    "standard_fee": 150.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000002",
+    "created_at": "2026-07-21T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000003",
+    "shipment_id": "SHP-2026-000003",
+    "code": "INSIDE_DELIVERY",
+    "description": "Standard Inside Delivery Service",
+    "standard_fee": 95.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000003",
+    "created_at": "2026-04-20T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000004",
+    "shipment_id": "SHP-2026-000005",
+    "code": "HAZMAT",
+    "description": "Standard Hazmat Service",
+    "standard_fee": 150.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000005",
+    "created_at": "2026-02-01T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000005",
+    "shipment_id": "SHP-2026-000010",
+    "code": "RESIDENTIAL",
+    "description": "Standard Residential Service",
+    "standard_fee": 65.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000010",
+    "created_at": "2026-07-21T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000006",
+    "shipment_id": "SHP-2026-000011",
+    "code": "APPOINTMENT",
+    "description": "Standard Appointment Service",
+    "standard_fee": 35.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000011",
+    "created_at": "2026-06-27T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000007",
+    "shipment_id": "SHP-2026-000014",
+    "code": "INSIDE_DELIVERY",
+    "description": "Standard Inside Delivery Service",
+    "standard_fee": 95.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000014",
+    "created_at": "2026-04-12T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000008",
+    "shipment_id": "SHP-2026-000015",
+    "code": "LIFTGATE",
+    "description": "Standard Liftgate Service",
+    "standard_fee": 75.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000015",
+    "created_at": "2026-06-23T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000009",
+    "shipment_id": "SHP-2026-000026",
+    "code": "APPOINTMENT",
+    "description": "Standard Appointment Service",
+    "standard_fee": 35.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000026",
+    "created_at": "2026-02-27T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000010",
+    "shipment_id": "SHP-2026-000028",
+    "code": "LIFTGATE",
+    "description": "Standard Liftgate Service",
+    "standard_fee": 75.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000028",
+    "created_at": "2026-04-12T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000011",
+    "shipment_id": "SHP-2026-000032",
+    "code": "APPOINTMENT",
+    "description": "Standard Appointment Service",
+    "standard_fee": 35.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000032",
+    "created_at": "2026-05-07T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000012",
+    "shipment_id": "SHP-2026-000033",
+    "code": "APPOINTMENT",
+    "description": "Standard Appointment Service",
+    "standard_fee": 35.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000033",
+    "created_at": "2026-04-11T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000013",
+    "shipment_id": "SHP-2026-000037",
+    "code": "APPOINTMENT",
+    "description": "Standard Appointment Service",
+    "standard_fee": 35.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000037",
+    "created_at": "2026-03-19T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000014",
+    "shipment_id": "SHP-2026-000038",
+    "code": "INSIDE_DELIVERY",
+    "description": "Standard Inside Delivery Service",
+    "standard_fee": 95.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000038",
+    "created_at": "2026-03-09T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000015",
+    "shipment_id": "SHP-2026-000041",
+    "code": "LIFTGATE",
+    "description": "Standard Liftgate Service",
+    "standard_fee": 75.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000041",
+    "created_at": "2026-03-27T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000016",
+    "shipment_id": "SHP-2026-000042",
+    "code": "APPOINTMENT",
+    "description": "Standard Appointment Service",
+    "standard_fee": 35.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000042",
+    "created_at": "2026-02-27T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000017",
+    "shipment_id": "SHP-2026-000047",
+    "code": "LIFTGATE",
+    "description": "Standard Liftgate Service",
+    "standard_fee": 75.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000047",
+    "created_at": "2026-05-22T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000018",
+    "shipment_id": "SHP-2026-000048",
+    "code": "APPOINTMENT",
+    "description": "Standard Appointment Service",
+    "standard_fee": 35.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000048",
+    "created_at": "2026-06-23T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000019",
+    "shipment_id": "SHP-2026-000052",
+    "code": "APPOINTMENT",
+    "description": "Standard Appointment Service",
+    "standard_fee": 35.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000052",
+    "created_at": "2026-06-20T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000020",
+    "shipment_id": "SHP-2026-000053",
+    "code": "HAZMAT",
+    "description": "Standard Hazmat Service",
+    "standard_fee": 150.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000053",
+    "created_at": "2026-07-25T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000021",
+    "shipment_id": "SHP-2026-000056",
+    "code": "APPOINTMENT",
+    "description": "Standard Appointment Service",
+    "standard_fee": 35.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000056",
+    "created_at": "2026-03-27T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000022",
+    "shipment_id": "SHP-2026-000060",
+    "code": "HAZMAT",
+    "description": "Standard Hazmat Service",
+    "standard_fee": 150.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000060",
+    "created_at": "2026-02-17T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000023",
+    "shipment_id": "SHP-2026-000061",
+    "code": "RESIDENTIAL",
+    "description": "Standard Residential Service",
+    "standard_fee": 65.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000061",
+    "created_at": "2026-07-23T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000024",
+    "shipment_id": "SHP-2026-000065",
+    "code": "INSIDE_DELIVERY",
+    "description": "Standard Inside Delivery Service",
+    "standard_fee": 95.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000065",
+    "created_at": "2026-06-08T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000025",
+    "shipment_id": "SHP-2026-000071",
+    "code": "RESIDENTIAL",
+    "description": "Standard Residential Service",
+    "standard_fee": 65.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000071",
+    "created_at": "2026-05-21T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000026",
+    "shipment_id": "SHP-2026-000072",
+    "code": "LIFTGATE",
+    "description": "Standard Liftgate Service",
+    "standard_fee": 75.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000072",
+    "created_at": "2026-03-08T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000027",
+    "shipment_id": "SHP-2026-000073",
+    "code": "RESIDENTIAL",
+    "description": "Standard Residential Service",
+    "standard_fee": 65.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000073",
+    "created_at": "2026-05-16T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000028",
+    "shipment_id": "SHP-2026-000077",
+    "code": "INSIDE_DELIVERY",
+    "description": "Standard Inside Delivery Service",
+    "standard_fee": 95.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000077",
+    "created_at": "2026-05-15T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000029",
+    "shipment_id": "SHP-2026-000078",
+    "code": "HAZMAT",
+    "description": "Standard Hazmat Service",
+    "standard_fee": 150.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000078",
+    "created_at": "2026-04-05T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000030",
+    "shipment_id": "SHP-2026-000082",
+    "code": "APPOINTMENT",
+    "description": "Standard Appointment Service",
+    "standard_fee": 35.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000082",
+    "created_at": "2026-06-18T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000031",
+    "shipment_id": "SHP-2026-000084",
+    "code": "HAZMAT",
+    "description": "Standard Hazmat Service",
+    "standard_fee": 150.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000084",
+    "created_at": "2026-04-25T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000032",
+    "shipment_id": "SHP-2026-000088",
+    "code": "INSIDE_DELIVERY",
+    "description": "Standard Inside Delivery Service",
+    "standard_fee": 95.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000088",
+    "created_at": "2026-02-24T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000033",
+    "shipment_id": "SHP-2026-000089",
+    "code": "HAZMAT",
+    "description": "Standard Hazmat Service",
+    "standard_fee": 150.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000089",
+    "created_at": "2026-06-06T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000034",
+    "shipment_id": "SHP-2026-000094",
+    "code": "LIFTGATE",
+    "description": "Standard Liftgate Service",
+    "standard_fee": 75.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000094",
+    "created_at": "2026-05-08T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000035",
+    "shipment_id": "SHP-2026-000095",
+    "code": "HAZMAT",
+    "description": "Standard Hazmat Service",
+    "standard_fee": 150.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000095",
+    "created_at": "2026-07-21T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000036",
+    "shipment_id": "SHP-2026-000096",
+    "code": "APPOINTMENT",
+    "description": "Standard Appointment Service",
+    "standard_fee": 35.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000096",
+    "created_at": "2026-05-04T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000037",
+    "shipment_id": "SHP-2026-000097",
+    "code": "HAZMAT",
+    "description": "Standard Hazmat Service",
+    "standard_fee": 150.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000097",
+    "created_at": "2026-04-12T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000038",
+    "shipment_id": "SHP-2026-000099",
+    "code": "HAZMAT",
+    "description": "Standard Hazmat Service",
+    "standard_fee": 150.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000099",
+    "created_at": "2026-05-20T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000039",
+    "shipment_id": "SHP-2026-000100",
+    "code": "HAZMAT",
+    "description": "Standard Hazmat Service",
+    "standard_fee": 150.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000100",
+    "created_at": "2026-07-22T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000040",
+    "shipment_id": "SHP-2026-000101",
+    "code": "HAZMAT",
+    "description": "Standard Hazmat Service",
+    "standard_fee": 150.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000101",
+    "created_at": "2026-06-17T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000041",
+    "shipment_id": "SHP-2026-000102",
+    "code": "HAZMAT",
+    "description": "Standard Hazmat Service",
+    "standard_fee": 150.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000102",
+    "created_at": "2026-02-02T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000042",
+    "shipment_id": "SHP-2026-000104",
+    "code": "APPOINTMENT",
+    "description": "Standard Appointment Service",
+    "standard_fee": 35.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000104",
+    "created_at": "2026-05-26T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000043",
+    "shipment_id": "SHP-2026-000105",
+    "code": "LIFTGATE",
+    "description": "Standard Liftgate Service",
+    "standard_fee": 75.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000105",
+    "created_at": "2026-06-03T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000044",
+    "shipment_id": "SHP-2026-000107",
+    "code": "LIFTGATE",
+    "description": "Standard Liftgate Service",
+    "standard_fee": 75.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000107",
+    "created_at": "2026-06-19T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000045",
+    "shipment_id": "SHP-2026-000108",
+    "code": "APPOINTMENT",
+    "description": "Standard Appointment Service",
+    "standard_fee": 35.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000108",
+    "created_at": "2026-04-20T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000046",
+    "shipment_id": "SHP-2026-000109",
+    "code": "APPOINTMENT",
+    "description": "Standard Appointment Service",
+    "standard_fee": 35.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000109",
+    "created_at": "2026-03-26T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000047",
+    "shipment_id": "SHP-2026-000110",
+    "code": "INSIDE_DELIVERY",
+    "description": "Standard Inside Delivery Service",
+    "standard_fee": 95.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000110",
+    "created_at": "2026-07-10T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000048",
+    "shipment_id": "SHP-2026-000114",
+    "code": "APPOINTMENT",
+    "description": "Standard Appointment Service",
+    "standard_fee": 35.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000114",
+    "created_at": "2026-04-12T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000049",
+    "shipment_id": "SHP-2026-000116",
+    "code": "INSIDE_DELIVERY",
+    "description": "Standard Inside Delivery Service",
+    "standard_fee": 95.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000116",
+    "created_at": "2026-06-30T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000050",
+    "shipment_id": "SHP-2026-000130",
+    "code": "RESIDENTIAL",
+    "description": "Standard Residential Service",
+    "standard_fee": 65.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000130",
+    "created_at": "2026-02-21T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000051",
+    "shipment_id": "SHP-2026-000131",
+    "code": "INSIDE_DELIVERY",
+    "description": "Standard Inside Delivery Service",
+    "standard_fee": 95.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000131",
+    "created_at": "2026-04-11T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000052",
+    "shipment_id": "SHP-2026-000137",
+    "code": "RESIDENTIAL",
+    "description": "Standard Residential Service",
+    "standard_fee": 65.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000137",
+    "created_at": "2026-04-30T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000053",
+    "shipment_id": "SHP-2026-000139",
+    "code": "HAZMAT",
+    "description": "Standard Hazmat Service",
+    "standard_fee": 150.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000139",
+    "created_at": "2026-05-18T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000054",
+    "shipment_id": "SHP-2026-000143",
+    "code": "APPOINTMENT",
+    "description": "Standard Appointment Service",
+    "standard_fee": 35.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000143",
+    "created_at": "2026-02-18T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000055",
+    "shipment_id": "SHP-2026-000153",
+    "code": "RESIDENTIAL",
+    "description": "Standard Residential Service",
+    "standard_fee": 65.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000153",
+    "created_at": "2026-07-24T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000056",
+    "shipment_id": "SHP-2026-000154",
+    "code": "HAZMAT",
+    "description": "Standard Hazmat Service",
+    "standard_fee": 150.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000154",
+    "created_at": "2026-03-03T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000057",
+    "shipment_id": "SHP-2026-000155",
+    "code": "APPOINTMENT",
+    "description": "Standard Appointment Service",
+    "standard_fee": 35.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000155",
+    "created_at": "2026-06-19T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000058",
+    "shipment_id": "SHP-2026-000156",
+    "code": "INSIDE_DELIVERY",
+    "description": "Standard Inside Delivery Service",
+    "standard_fee": 95.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000156",
+    "created_at": "2026-05-26T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000059",
+    "shipment_id": "SHP-2026-000157",
+    "code": "LIFTGATE",
+    "description": "Standard Liftgate Service",
+    "standard_fee": 75.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000157",
+    "created_at": "2026-04-16T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000060",
+    "shipment_id": "SHP-2026-000164",
+    "code": "RESIDENTIAL",
+    "description": "Standard Residential Service",
+    "standard_fee": 65.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000164",
+    "created_at": "2026-06-24T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000061",
+    "shipment_id": "SHP-2026-000165",
+    "code": "APPOINTMENT",
+    "description": "Standard Appointment Service",
+    "standard_fee": 35.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000165",
+    "created_at": "2026-07-02T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000062",
+    "shipment_id": "SHP-2026-000166",
+    "code": "APPOINTMENT",
+    "description": "Standard Appointment Service",
+    "standard_fee": 35.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000166",
+    "created_at": "2026-07-24T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000063",
+    "shipment_id": "SHP-2026-000168",
+    "code": "LIFTGATE",
+    "description": "Standard Liftgate Service",
+    "standard_fee": 75.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000168",
+    "created_at": "2026-07-26T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000064",
+    "shipment_id": "SHP-2026-000169",
+    "code": "APPOINTMENT",
+    "description": "Standard Appointment Service",
+    "standard_fee": 35.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000169",
+    "created_at": "2026-06-15T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000065",
+    "shipment_id": "SHP-2026-000170",
+    "code": "RESIDENTIAL",
+    "description": "Standard Residential Service",
+    "standard_fee": 65.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000170",
+    "created_at": "2026-07-26T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000066",
+    "shipment_id": "SHP-2026-000171",
+    "code": "HAZMAT",
+    "description": "Standard Hazmat Service",
+    "standard_fee": 150.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000171",
+    "created_at": "2026-02-22T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000067",
+    "shipment_id": "SHP-2026-000176",
+    "code": "HAZMAT",
+    "description": "Standard Hazmat Service",
+    "standard_fee": 150.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000176",
+    "created_at": "2026-06-26T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000068",
+    "shipment_id": "SHP-2026-000180",
+    "code": "HAZMAT",
+    "description": "Standard Hazmat Service",
+    "standard_fee": 150.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000180",
+    "created_at": "2026-07-30T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000069",
+    "shipment_id": "SHP-2026-000181",
+    "code": "APPOINTMENT",
+    "description": "Standard Appointment Service",
+    "standard_fee": 35.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000181",
+    "created_at": "2026-04-06T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000070",
+    "shipment_id": "SHP-2026-000184",
+    "code": "HAZMAT",
+    "description": "Standard Hazmat Service",
+    "standard_fee": 150.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000184",
+    "created_at": "2026-06-07T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000071",
+    "shipment_id": "SHP-2026-000187",
+    "code": "HAZMAT",
+    "description": "Standard Hazmat Service",
+    "standard_fee": 150.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000187",
+    "created_at": "2026-03-25T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000072",
+    "shipment_id": "SHP-2026-000189",
+    "code": "APPOINTMENT",
+    "description": "Standard Appointment Service",
+    "standard_fee": 35.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000189",
+    "created_at": "2026-07-31T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000073",
+    "shipment_id": "SHP-2026-000196",
+    "code": "RESIDENTIAL",
+    "description": "Standard Residential Service",
+    "standard_fee": 65.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000196",
+    "created_at": "2026-02-18T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000074",
+    "shipment_id": "SHP-2026-000199",
+    "code": "RESIDENTIAL",
+    "description": "Standard Residential Service",
+    "standard_fee": 65.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000199",
+    "created_at": "2026-02-24T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000075",
+    "shipment_id": "SHP-2026-000201",
+    "code": "APPOINTMENT",
+    "description": "Standard Appointment Service",
+    "standard_fee": 35.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000201",
+    "created_at": "2026-06-06T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000076",
+    "shipment_id": "SHP-2026-000202",
+    "code": "HAZMAT",
+    "description": "Standard Hazmat Service",
+    "standard_fee": 150.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000202",
+    "created_at": "2026-04-22T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000077",
+    "shipment_id": "SHP-2026-000205",
+    "code": "APPOINTMENT",
+    "description": "Standard Appointment Service",
+    "standard_fee": 35.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000205",
+    "created_at": "2026-02-24T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000078",
+    "shipment_id": "SHP-2026-000209",
+    "code": "HAZMAT",
+    "description": "Standard Hazmat Service",
+    "standard_fee": 150.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000209",
+    "created_at": "2026-03-01T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000079",
+    "shipment_id": "SHP-2026-000213",
+    "code": "RESIDENTIAL",
+    "description": "Standard Residential Service",
+    "standard_fee": 65.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000213",
+    "created_at": "2026-02-16T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000080",
+    "shipment_id": "SHP-2026-000215",
+    "code": "RESIDENTIAL",
+    "description": "Standard Residential Service",
+    "standard_fee": 65.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000215",
+    "created_at": "2026-06-13T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000081",
+    "shipment_id": "SHP-2026-000216",
+    "code": "INSIDE_DELIVERY",
+    "description": "Standard Inside Delivery Service",
+    "standard_fee": 95.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000216",
+    "created_at": "2026-06-24T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000082",
+    "shipment_id": "SHP-2026-000217",
+    "code": "RESIDENTIAL",
+    "description": "Standard Residential Service",
+    "standard_fee": 65.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000217",
+    "created_at": "2026-03-02T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000083",
+    "shipment_id": "SHP-2026-000220",
+    "code": "INSIDE_DELIVERY",
+    "description": "Standard Inside Delivery Service",
+    "standard_fee": 95.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000220",
+    "created_at": "2026-05-20T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000084",
+    "shipment_id": "SHP-2026-000222",
+    "code": "INSIDE_DELIVERY",
+    "description": "Standard Inside Delivery Service",
+    "standard_fee": 95.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000222",
+    "created_at": "2026-04-19T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000085",
+    "shipment_id": "SHP-2026-000223",
+    "code": "APPOINTMENT",
+    "description": "Standard Appointment Service",
+    "standard_fee": 35.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000223",
+    "created_at": "2026-05-01T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000086",
+    "shipment_id": "SHP-2026-000227",
+    "code": "LIFTGATE",
+    "description": "Standard Liftgate Service",
+    "standard_fee": 75.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000227",
+    "created_at": "2026-06-10T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000087",
+    "shipment_id": "SHP-2026-000231",
+    "code": "APPOINTMENT",
+    "description": "Standard Appointment Service",
+    "standard_fee": 35.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000231",
+    "created_at": "2026-03-22T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000088",
+    "shipment_id": "SHP-2026-000238",
+    "code": "APPOINTMENT",
+    "description": "Standard Appointment Service",
+    "standard_fee": 35.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000238",
+    "created_at": "2026-05-02T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000089",
+    "shipment_id": "SHP-2026-000239",
+    "code": "LIFTGATE",
+    "description": "Standard Liftgate Service",
+    "standard_fee": 75.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000239",
+    "created_at": "2026-06-27T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000090",
+    "shipment_id": "SHP-2026-000241",
+    "code": "LIFTGATE",
+    "description": "Standard Liftgate Service",
+    "standard_fee": 75.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000241",
+    "created_at": "2026-05-10T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000091",
+    "shipment_id": "SHP-2026-000243",
+    "code": "HAZMAT",
+    "description": "Standard Hazmat Service",
+    "standard_fee": 150.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000243",
+    "created_at": "2026-05-24T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000092",
+    "shipment_id": "SHP-2026-000245",
+    "code": "RESIDENTIAL",
+    "description": "Standard Residential Service",
+    "standard_fee": 65.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000245",
+    "created_at": "2026-06-09T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000093",
+    "shipment_id": "SHP-2026-000246",
+    "code": "LIFTGATE",
+    "description": "Standard Liftgate Service",
+    "standard_fee": 75.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000246",
+    "created_at": "2026-07-25T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000094",
+    "shipment_id": "SHP-2026-000248",
+    "code": "APPOINTMENT",
+    "description": "Standard Appointment Service",
+    "standard_fee": 35.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000248",
+    "created_at": "2026-05-13T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000095",
+    "shipment_id": "SHP-2026-000250",
+    "code": "RESIDENTIAL",
+    "description": "Standard Residential Service",
+    "standard_fee": 65.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000250",
+    "created_at": "2026-02-10T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000096",
+    "shipment_id": "SHP-2026-000258",
+    "code": "APPOINTMENT",
+    "description": "Standard Appointment Service",
+    "standard_fee": 35.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000258",
+    "created_at": "2026-04-26T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000097",
+    "shipment_id": "SHP-2026-000260",
+    "code": "LIFTGATE",
+    "description": "Standard Liftgate Service",
+    "standard_fee": 75.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000260",
+    "created_at": "2026-07-31T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000098",
+    "shipment_id": "SHP-2026-000262",
+    "code": "HAZMAT",
+    "description": "Standard Hazmat Service",
+    "standard_fee": 150.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000262",
+    "created_at": "2026-06-03T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000099",
+    "shipment_id": "SHP-2026-000267",
+    "code": "HAZMAT",
+    "description": "Standard Hazmat Service",
+    "standard_fee": 150.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000267",
+    "created_at": "2026-02-22T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000100",
+    "shipment_id": "SHP-2026-000270",
+    "code": "LIFTGATE",
+    "description": "Standard Liftgate Service",
+    "standard_fee": 75.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000270",
+    "created_at": "2026-03-21T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000101",
+    "shipment_id": "SHP-2026-000279",
+    "code": "APPOINTMENT",
+    "description": "Standard Appointment Service",
+    "standard_fee": 35.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000279",
+    "created_at": "2026-07-05T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000102",
+    "shipment_id": "SHP-2026-000283",
+    "code": "INSIDE_DELIVERY",
+    "description": "Standard Inside Delivery Service",
+    "standard_fee": 95.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000283",
+    "created_at": "2026-03-06T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000103",
+    "shipment_id": "SHP-2026-000284",
+    "code": "RESIDENTIAL",
+    "description": "Standard Residential Service",
+    "standard_fee": 65.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000284",
+    "created_at": "2026-02-01T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000104",
+    "shipment_id": "SHP-2026-000285",
+    "code": "APPOINTMENT",
+    "description": "Standard Appointment Service",
+    "standard_fee": 35.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000285",
+    "created_at": "2026-06-17T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000105",
+    "shipment_id": "SHP-2026-000287",
+    "code": "RESIDENTIAL",
+    "description": "Standard Residential Service",
+    "standard_fee": 65.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000287",
+    "created_at": "2026-02-26T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000106",
+    "shipment_id": "SHP-2026-000290",
+    "code": "INSIDE_DELIVERY",
+    "description": "Standard Inside Delivery Service",
+    "standard_fee": 95.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000290",
+    "created_at": "2026-05-28T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000107",
+    "shipment_id": "SHP-2026-000296",
+    "code": "INSIDE_DELIVERY",
+    "description": "Standard Inside Delivery Service",
+    "standard_fee": 95.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000296",
+    "created_at": "2026-07-22T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000108",
+    "shipment_id": "SHP-2026-000299",
+    "code": "HAZMAT",
+    "description": "Standard Hazmat Service",
+    "standard_fee": 150.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000299",
+    "created_at": "2026-02-04T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000109",
+    "shipment_id": "SHP-2026-000300",
+    "code": "HAZMAT",
+    "description": "Standard Hazmat Service",
+    "standard_fee": 150.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000300",
+    "created_at": "2026-04-20T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000110",
+    "shipment_id": "SHP-2026-000305",
+    "code": "INSIDE_DELIVERY",
+    "description": "Standard Inside Delivery Service",
+    "standard_fee": 95.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000305",
+    "created_at": "2026-03-17T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000111",
+    "shipment_id": "SHP-2026-000309",
+    "code": "APPOINTMENT",
+    "description": "Standard Appointment Service",
+    "standard_fee": 35.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000309",
+    "created_at": "2026-02-16T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000112",
+    "shipment_id": "SHP-2026-000312",
+    "code": "HAZMAT",
+    "description": "Standard Hazmat Service",
+    "standard_fee": 150.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000312",
+    "created_at": "2026-07-03T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000113",
+    "shipment_id": "SHP-2026-000314",
+    "code": "HAZMAT",
+    "description": "Standard Hazmat Service",
+    "standard_fee": 150.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000314",
+    "created_at": "2026-02-06T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000114",
+    "shipment_id": "SHP-2026-000319",
+    "code": "HAZMAT",
+    "description": "Standard Hazmat Service",
+    "standard_fee": 150.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000319",
+    "created_at": "2026-07-25T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000115",
+    "shipment_id": "SHP-2026-000320",
+    "code": "APPOINTMENT",
+    "description": "Standard Appointment Service",
+    "standard_fee": 35.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000320",
+    "created_at": "2026-06-06T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000116",
+    "shipment_id": "SHP-2026-000328",
+    "code": "LIFTGATE",
+    "description": "Standard Liftgate Service",
+    "standard_fee": 75.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000328",
+    "created_at": "2026-02-02T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000117",
+    "shipment_id": "SHP-2026-000333",
+    "code": "APPOINTMENT",
+    "description": "Standard Appointment Service",
+    "standard_fee": 35.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000333",
+    "created_at": "2026-05-03T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000118",
+    "shipment_id": "SHP-2026-000337",
+    "code": "APPOINTMENT",
+    "description": "Standard Appointment Service",
+    "standard_fee": 35.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000337",
+    "created_at": "2026-07-26T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000119",
+    "shipment_id": "SHP-2026-000338",
+    "code": "APPOINTMENT",
+    "description": "Standard Appointment Service",
+    "standard_fee": 35.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000338",
+    "created_at": "2026-05-28T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000120",
+    "shipment_id": "SHP-2026-000339",
+    "code": "HAZMAT",
+    "description": "Standard Hazmat Service",
+    "standard_fee": 150.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000339",
+    "created_at": "2026-07-21T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000121",
+    "shipment_id": "SHP-2026-000340",
+    "code": "HAZMAT",
+    "description": "Standard Hazmat Service",
+    "standard_fee": 150.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000340",
+    "created_at": "2026-07-16T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000122",
+    "shipment_id": "SHP-2026-000342",
+    "code": "RESIDENTIAL",
+    "description": "Standard Residential Service",
+    "standard_fee": 65.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000342",
+    "created_at": "2026-04-05T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000123",
+    "shipment_id": "SHP-2026-000346",
+    "code": "APPOINTMENT",
+    "description": "Standard Appointment Service",
+    "standard_fee": 35.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000346",
+    "created_at": "2026-03-09T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000124",
+    "shipment_id": "SHP-2026-000347",
+    "code": "RESIDENTIAL",
+    "description": "Standard Residential Service",
+    "standard_fee": 65.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000347",
+    "created_at": "2026-06-06T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000125",
+    "shipment_id": "SHP-2026-000350",
+    "code": "APPOINTMENT",
+    "description": "Standard Appointment Service",
+    "standard_fee": 35.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000350",
+    "created_at": "2026-05-09T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000126",
+    "shipment_id": "SHP-2026-000352",
+    "code": "APPOINTMENT",
+    "description": "Standard Appointment Service",
+    "standard_fee": 35.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000352",
+    "created_at": "2026-03-06T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000127",
+    "shipment_id": "SHP-2026-000353",
+    "code": "APPOINTMENT",
+    "description": "Standard Appointment Service",
+    "standard_fee": 35.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000353",
+    "created_at": "2026-07-21T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000128",
+    "shipment_id": "SHP-2026-000358",
+    "code": "HAZMAT",
+    "description": "Standard Hazmat Service",
+    "standard_fee": 150.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000358",
+    "created_at": "2026-04-08T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000129",
+    "shipment_id": "SHP-2026-000360",
+    "code": "HAZMAT",
+    "description": "Standard Hazmat Service",
+    "standard_fee": 150.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000360",
+    "created_at": "2026-03-24T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000130",
+    "shipment_id": "SHP-2026-000364",
+    "code": "HAZMAT",
+    "description": "Standard Hazmat Service",
+    "standard_fee": 150.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000364",
+    "created_at": "2026-06-04T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000131",
+    "shipment_id": "SHP-2026-000365",
+    "code": "LIFTGATE",
+    "description": "Standard Liftgate Service",
+    "standard_fee": 75.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000365",
+    "created_at": "2026-02-08T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000132",
+    "shipment_id": "SHP-2026-000371",
+    "code": "HAZMAT",
+    "description": "Standard Hazmat Service",
+    "standard_fee": 150.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000371",
+    "created_at": "2026-07-31T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000133",
+    "shipment_id": "SHP-2026-000374",
+    "code": "INSIDE_DELIVERY",
+    "description": "Standard Inside Delivery Service",
+    "standard_fee": 95.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000374",
+    "created_at": "2026-05-12T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000134",
+    "shipment_id": "SHP-2026-000375",
+    "code": "LIFTGATE",
+    "description": "Standard Liftgate Service",
+    "standard_fee": 75.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000375",
+    "created_at": "2026-02-12T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000135",
+    "shipment_id": "SHP-2026-000378",
+    "code": "RESIDENTIAL",
+    "description": "Standard Residential Service",
+    "standard_fee": 65.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000378",
+    "created_at": "2026-04-11T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000136",
+    "shipment_id": "SHP-2026-000382",
+    "code": "APPOINTMENT",
+    "description": "Standard Appointment Service",
+    "standard_fee": 35.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000382",
+    "created_at": "2026-02-12T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000137",
+    "shipment_id": "SHP-2026-000384",
+    "code": "APPOINTMENT",
+    "description": "Standard Appointment Service",
+    "standard_fee": 35.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000384",
+    "created_at": "2026-03-02T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000138",
+    "shipment_id": "SHP-2026-000385",
+    "code": "RESIDENTIAL",
+    "description": "Standard Residential Service",
+    "standard_fee": 65.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000385",
+    "created_at": "2026-04-17T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000139",
+    "shipment_id": "SHP-2026-000387",
+    "code": "APPOINTMENT",
+    "description": "Standard Appointment Service",
+    "standard_fee": 35.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000387",
+    "created_at": "2026-02-20T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000140",
+    "shipment_id": "SHP-2026-000394",
+    "code": "LIFTGATE",
+    "description": "Standard Liftgate Service",
+    "standard_fee": 75.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000394",
+    "created_at": "2026-02-15T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000141",
+    "shipment_id": "SHP-2026-000397",
+    "code": "INSIDE_DELIVERY",
+    "description": "Standard Inside Delivery Service",
+    "standard_fee": 95.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000397",
+    "created_at": "2026-07-12T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000142",
+    "shipment_id": "SHP-2026-000399",
+    "code": "INSIDE_DELIVERY",
+    "description": "Standard Inside Delivery Service",
+    "standard_fee": 95.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000399",
+    "created_at": "2026-05-29T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000143",
+    "shipment_id": "SHP-2026-000400",
+    "code": "RESIDENTIAL",
+    "description": "Standard Residential Service",
+    "standard_fee": 65.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000400",
+    "created_at": "2026-05-17T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000144",
+    "shipment_id": "SHP-2026-000402",
+    "code": "LIFTGATE",
+    "description": "Standard Liftgate Service",
+    "standard_fee": 75.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000402",
+    "created_at": "2026-03-28T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000145",
+    "shipment_id": "SHP-2026-000403",
+    "code": "RESIDENTIAL",
+    "description": "Standard Residential Service",
+    "standard_fee": 65.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000403",
+    "created_at": "2026-05-01T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000146",
+    "shipment_id": "SHP-2026-000410",
+    "code": "RESIDENTIAL",
+    "description": "Standard Residential Service",
+    "standard_fee": 65.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000410",
+    "created_at": "2026-06-20T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000147",
+    "shipment_id": "SHP-2026-000411",
+    "code": "HAZMAT",
+    "description": "Standard Hazmat Service",
+    "standard_fee": 150.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000411",
+    "created_at": "2026-06-21T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000148",
+    "shipment_id": "SHP-2026-000413",
+    "code": "HAZMAT",
+    "description": "Standard Hazmat Service",
+    "standard_fee": 150.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000413",
+    "created_at": "2026-07-03T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000149",
+    "shipment_id": "SHP-2026-000415",
+    "code": "INSIDE_DELIVERY",
+    "description": "Standard Inside Delivery Service",
+    "standard_fee": 95.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000415",
+    "created_at": "2026-03-20T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000150",
+    "shipment_id": "SHP-2026-000416",
+    "code": "LIFTGATE",
+    "description": "Standard Liftgate Service",
+    "standard_fee": 75.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000416",
+    "created_at": "2026-07-25T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000151",
+    "shipment_id": "SHP-2026-000418",
+    "code": "INSIDE_DELIVERY",
+    "description": "Standard Inside Delivery Service",
+    "standard_fee": 95.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000418",
+    "created_at": "2026-07-30T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000152",
+    "shipment_id": "SHP-2026-000423",
+    "code": "INSIDE_DELIVERY",
+    "description": "Standard Inside Delivery Service",
+    "standard_fee": 95.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000423",
+    "created_at": "2026-03-09T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000153",
+    "shipment_id": "SHP-2026-000425",
+    "code": "LIFTGATE",
+    "description": "Standard Liftgate Service",
+    "standard_fee": 75.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000425",
+    "created_at": "2026-06-22T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000154",
+    "shipment_id": "SHP-2026-000427",
+    "code": "APPOINTMENT",
+    "description": "Standard Appointment Service",
+    "standard_fee": 35.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000427",
+    "created_at": "2026-07-22T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000155",
+    "shipment_id": "SHP-2026-000428",
+    "code": "LIFTGATE",
+    "description": "Standard Liftgate Service",
+    "standard_fee": 75.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000428",
+    "created_at": "2026-06-07T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000156",
+    "shipment_id": "SHP-2026-000429",
+    "code": "APPOINTMENT",
+    "description": "Standard Appointment Service",
+    "standard_fee": 35.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000429",
+    "created_at": "2026-04-26T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000157",
+    "shipment_id": "SHP-2026-000430",
+    "code": "HAZMAT",
+    "description": "Standard Hazmat Service",
+    "standard_fee": 150.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000430",
+    "created_at": "2026-07-06T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000158",
+    "shipment_id": "SHP-2026-000431",
+    "code": "LIFTGATE",
+    "description": "Standard Liftgate Service",
+    "standard_fee": 75.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000431",
+    "created_at": "2026-02-11T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000159",
+    "shipment_id": "SHP-2026-000432",
+    "code": "HAZMAT",
+    "description": "Standard Hazmat Service",
+    "standard_fee": 150.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000432",
+    "created_at": "2026-05-22T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000160",
+    "shipment_id": "SHP-2026-000436",
+    "code": "RESIDENTIAL",
+    "description": "Standard Residential Service",
+    "standard_fee": 65.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000436",
+    "created_at": "2026-02-08T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000161",
+    "shipment_id": "SHP-2026-000437",
+    "code": "APPOINTMENT",
+    "description": "Standard Appointment Service",
+    "standard_fee": 35.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000437",
+    "created_at": "2026-07-13T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000162",
+    "shipment_id": "SHP-2026-000446",
+    "code": "HAZMAT",
+    "description": "Standard Hazmat Service",
+    "standard_fee": 150.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000446",
+    "created_at": "2026-02-28T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000163",
+    "shipment_id": "SHP-2026-000447",
+    "code": "APPOINTMENT",
+    "description": "Standard Appointment Service",
+    "standard_fee": 35.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000447",
+    "created_at": "2026-07-31T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000164",
+    "shipment_id": "SHP-2026-000448",
+    "code": "HAZMAT",
+    "description": "Standard Hazmat Service",
+    "standard_fee": 150.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000448",
+    "created_at": "2026-04-01T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000165",
+    "shipment_id": "SHP-2026-000449",
+    "code": "HAZMAT",
+    "description": "Standard Hazmat Service",
+    "standard_fee": 150.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000449",
+    "created_at": "2026-03-30T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000166",
+    "shipment_id": "SHP-2026-000450",
+    "code": "RESIDENTIAL",
+    "description": "Standard Residential Service",
+    "standard_fee": 65.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000450",
+    "created_at": "2026-03-15T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000167",
+    "shipment_id": "SHP-2026-000451",
+    "code": "RESIDENTIAL",
+    "description": "Standard Residential Service",
+    "standard_fee": 65.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000451",
+    "created_at": "2026-03-29T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000168",
+    "shipment_id": "SHP-2026-000455",
+    "code": "HAZMAT",
+    "description": "Standard Hazmat Service",
+    "standard_fee": 150.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000455",
+    "created_at": "2026-06-30T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000169",
+    "shipment_id": "SHP-2026-000458",
+    "code": "HAZMAT",
+    "description": "Standard Hazmat Service",
+    "standard_fee": 150.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000458",
+    "created_at": "2026-04-08T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000170",
+    "shipment_id": "SHP-2026-000459",
+    "code": "APPOINTMENT",
+    "description": "Standard Appointment Service",
+    "standard_fee": 35.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000459",
+    "created_at": "2026-05-04T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000171",
+    "shipment_id": "SHP-2026-000463",
+    "code": "INSIDE_DELIVERY",
+    "description": "Standard Inside Delivery Service",
+    "standard_fee": 95.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000463",
+    "created_at": "2026-05-10T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000172",
+    "shipment_id": "SHP-2026-000470",
+    "code": "LIFTGATE",
+    "description": "Standard Liftgate Service",
+    "standard_fee": 75.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000470",
+    "created_at": "2026-04-21T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000173",
+    "shipment_id": "SHP-2026-000473",
+    "code": "APPOINTMENT",
+    "description": "Standard Appointment Service",
+    "standard_fee": 35.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000473",
+    "created_at": "2026-07-10T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000174",
+    "shipment_id": "SHP-2026-000474",
+    "code": "RESIDENTIAL",
+    "description": "Standard Residential Service",
+    "standard_fee": 65.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000474",
+    "created_at": "2026-04-21T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000175",
+    "shipment_id": "SHP-2026-000475",
+    "code": "INSIDE_DELIVERY",
+    "description": "Standard Inside Delivery Service",
+    "standard_fee": 95.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000475",
+    "created_at": "2026-03-21T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000176",
+    "shipment_id": "SHP-2026-000476",
+    "code": "HAZMAT",
+    "description": "Standard Hazmat Service",
+    "standard_fee": 150.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000476",
+    "created_at": "2026-03-24T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000177",
+    "shipment_id": "SHP-2026-000478",
+    "code": "RESIDENTIAL",
+    "description": "Standard Residential Service",
+    "standard_fee": 65.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000478",
+    "created_at": "2026-06-13T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000178",
+    "shipment_id": "SHP-2026-000480",
+    "code": "INSIDE_DELIVERY",
+    "description": "Standard Inside Delivery Service",
+    "standard_fee": 95.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000480",
+    "created_at": "2026-03-28T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000179",
+    "shipment_id": "SHP-2026-000484",
+    "code": "HAZMAT",
+    "description": "Standard Hazmat Service",
+    "standard_fee": 150.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000484",
+    "created_at": "2026-05-29T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000180",
+    "shipment_id": "SHP-2026-000485",
+    "code": "LIFTGATE",
+    "description": "Standard Liftgate Service",
+    "standard_fee": 75.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000485",
+    "created_at": "2026-06-17T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000181",
+    "shipment_id": "SHP-2026-000487",
+    "code": "RESIDENTIAL",
+    "description": "Standard Residential Service",
+    "standard_fee": 65.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000487",
+    "created_at": "2026-04-08T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000182",
+    "shipment_id": "SHP-2026-000490",
+    "code": "HAZMAT",
+    "description": "Standard Hazmat Service",
+    "standard_fee": 150.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000490",
+    "created_at": "2026-05-05T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000183",
+    "shipment_id": "SHP-2026-000491",
+    "code": "RESIDENTIAL",
+    "description": "Standard Residential Service",
+    "standard_fee": 65.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000491",
+    "created_at": "2026-07-04T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000184",
+    "shipment_id": "SHP-2026-000492",
+    "code": "APPOINTMENT",
+    "description": "Standard Appointment Service",
+    "standard_fee": 35.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000492",
+    "created_at": "2026-06-16T00:00:00"
+  },
+  {
+    "accessorial_id": "ACC-2026-000185",
+    "shipment_id": "SHP-2026-000496",
+    "code": "LIFTGATE",
+    "description": "Standard Liftgate Service",
+    "standard_fee": 75.0,
+    "authorized": true,
+    "proof_document_id": "DOC-POD-SHP-2026-000496",
+    "created_at": "2026-03-14T00:00:00"
+  }
+]

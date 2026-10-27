@@ -1,0 +1,162 @@
+[
+  {
+    "event_id": "REV-2026-000001",
+    "exception_id": "FEX-2026-000005",
+    "from_status": "OPEN",
+    "to_status": "APPROVED_DISPUTE",
+    "decided_by": "Operations Manager",
+    "decision_reason": "Carrier acknowledged rate card discrepancy.",
+    "approved_amount": 80.0,
+    "timestamp": "2026-04-07T00:00:00"
+  },
+  {
+    "event_id": "REV-2026-000002",
+    "exception_id": "FEX-2026-000012",
+    "from_status": "OPEN",
+    "to_status": "APPROVED_DISPUTE",
+    "decided_by": "Operations Manager",
+    "decision_reason": "Carrier acknowledged rate card discrepancy.",
+    "approved_amount": 80.0,
+    "timestamp": "2026-07-10T00:00:00"
+  },
+  {
+    "event_id": "REV-2026-000003",
+    "exception_id": "FEX-2026-000019",
+    "from_status": "OPEN",
+    "to_status": "APPROVED_DISPUTE",
+    "decided_by": "Operations Manager",
+    "decision_reason": "Carrier acknowledged rate card discrepancy.",
+    "approved_amount": 80.0,
+    "timestamp": "2026-05-10T00:00:00"
+  },
+  {
+    "event_id": "REV-2026-000004",
+    "exception_id": "FEX-2026-000026",
+    "from_status": "OPEN",
+    "to_status": "APPROVED_DISPUTE",
+    "decided_by": "Operations Manager",
+    "decision_reason": "Carrier acknowledged rate card discrepancy.",
+    "approved_amount": 80.0,
+    "timestamp": "2026-05-20T00:00:00"
+  },
+  {
+    "event_id": "REV-2026-000005",
+    "exception_id": "FEX-2026-000033",
+    "from_status": "OPEN",
+    "to_status": "APPROVED_DISPUTE",
+    "decided_by": "Operations Manager",
+    "decision_reason": "Carrier acknowledged rate card discrepancy.",
+    "approved_amount": 80.0,
+    "timestamp": "2026-04-10T00:00:00"
+  },
+  {
+    "event_id": "REV-2026-000006",
+    "exception_id": "FEX-2026-000040",
+    "from_status": "OPEN",
+    "to_status": "APPROVED_DISPUTE",
+    "decided_by": "Operations Manager",
+    "decision_reason": "Carrier acknowledged rate card discrepancy.",
+    "approved_amount": 80.0,
+    "timestamp": "2026-03-26T00:00:00"
+  },
+  {
+    "event_id": "REV-2026-000007",
+    "exception_id": "FEX-2026-000047",
+    "from_status": "OPEN",
+    "to_status": "APPROVED_DISPUTE",
+    "decided_by": "Operations Manager",
+    "decision_reason": "Carrier acknowledged rate card discrepancy.",
+    "approved_amount": 80.0,
+    "timestamp": "2026-06-28T00:00:00"
+  },
+  {
+    "event_id": "REV-2026-000008",
+    "exception_id": "FEX-2026-000054",
+    "from_status": "OPEN",
+    "to_status": "APPROVED_DISPUTE",
+    "decided_by": "Operations Manager",
+    "decision_reason": "Carrier acknowledged rate card discrepancy.",
+    "approved_amount": 80.0,
+    "timestamp": "2026-03-05T00:00:00"
+  },
+  {
+    "event_id": "REV-2026-000009",
+    "exception_id": "FEX-2026-000061",
+    "from_status": "OPEN",
+    "to_status": "APPROVED_DISPUTE",
+    "decided_by": "Operations Manager",
+    "decision_reason": "Carrier acknowledged rate card discrepancy.",
+    "approved_amount": 80.0,
+    "timestamp": "2026-07-15T00:00:00"
+  },
+  {
+    "event_id": "REV-2026-000010",
+    "exception_id": "FEX-2026-000068",
+    "from_status": "OPEN",
+    "to_status": "APPROVED_DISPUTE",
+    "decided_by": "Operations Manager",
+    "decision_reason": "Carrier acknowledged rate card discrepancy.",
+    "approved_amount": 80.0,
+    "timestamp": "2026-04-01T00:00:00"
+  },
+  {
+    "event_id": "REV-2026-000011",
+    "exception_id": "FEX-2026-000075",
+    "from_status": "OPEN",
+    "to_status": "APPROVED_DISPUTE",
+    "decided_by": "Operations Manager",
+    "decision_reason": "Carrier acknowledged rate card discrepancy.",
+    "approved_amount": 80.0,
+    "timestamp": "2026-03-21T00:00:00"
+  },
+  {
+    "event_id": "REV-2026-000012",
+    "exception_id": "FEX-2026-000082",
+    "from_status": "OPEN",
+    "to_status": "APPROVED_DISPUTE",
+    "decided_by": "Operations Manager",
+    "decision_reason": "Carrier acknowledged rate card discrepancy.",
+    "approved_amount": 80.0,
+    "timestamp": "2026-05-31T00:00:00"
+  },
+  {
+    "event_id": "REV-2026-000013",
+    "exception_id": "FEX-2026-000089",
+    "from_status": "OPEN",
+    "to_status": "APPROVED_DISPUTE",
+    "decided_by": "Operations Manager",
+    "decision_reason": "Carrier acknowledged rate card discrepancy.",
+    "approved_amount": 80.0,
+    "timestamp": "2026-08-01T00:00:00"
+  },
+  {
+    "event_id": "REV-2026-000014",
+    "exception_id": "FEX-2026-000096",
+    "from_status": "OPEN",
+    "to_status": "APPROVED_DISPUTE",
+    "decided_by": "Operations Manager",
+    "decision_reason": "Carrier acknowledged rate card discrepancy.",
+    "approved_amount": 80.0,
+    "timestamp": "2026-06-27T00:00:00"
+  },
+  {
+    "event_id": "REV-2026-000015",
+    "exception_id": "FEX-2026-000103",
+    "from_status": "OPEN",
+    "to_status": "APPROVED_DISPUTE",
+    "decided_by": "Operations Manager",
+    "decision_reason": "Carrier acknowledged rate card discrepancy.",
+    "approved_amount": 80.0,
+    "timestamp": "2026-07-17T00:00:00"
+  },
+  {
+    "event_id": "REV-2026-000016",
+    "exception_id": "FEX-2026-000110",
+    "from_status": "OPEN",
+    "to_status": "APPROVED_DISPUTE",
+    "decided_by": "Operations Manager",
+    "decision_reason": "Carrier acknowledged rate card discrepancy.",
+    "approved_amount": 80.0,
+    "timestamp": "2026-03-01T00:00:00"
+  }
+]

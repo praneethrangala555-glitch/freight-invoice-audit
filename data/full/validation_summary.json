@@ -1,0 +1,60 @@
+{
+  "scale": "full",
+  "seed": 20261022,
+  "generation_time_sec": 2.02,
+  "validation_passed": true,
+  "checks_passed": 28,
+  "checks_total": 28,
+  "performance_metrics": {
+    "precision": 0.8571,
+    "recall": 1.0,
+    "f1_score": 0.9231,
+    "accuracy": 0.96,
+    "total_spend_billed": 12624361.43,
+    "total_spend_expected": 11654476.14,
+    "total_overcharge_detected": 969885.29,
+    "credit_notes_issued": 96000.0
+  },
+  "anomalies_breakdown": {
+    "VALID_BASELINE": {
+      "count": 10800,
+      "total_variance_usd": 0.0,
+      "detected": 0
+    },
+    "UNKNOWN_SHIPMENT": {
+      "count": 600,
+      "total_variance_usd": 196650.0,
+      "detected": 600
+    },
+    "RATE_CARD_EXPIRED": {
+      "count": 600,
+      "total_variance_usd": 45000.0,
+      "detected": 600
+    },
+    "WEIGHT_TIER_MISAPPLIED": {
+      "count": 600,
+      "total_variance_usd": 39240.000000000444,
+      "detected": 600
+    },
+    "SURCHARGE_DUPLICATED": {
+      "count": 600,
+      "total_variance_usd": 78351.95000000007,
+      "detected": 600
+    },
+    "UNKNOWN": {
+      "count": 600,
+      "total_variance_usd": 48000.0,
+      "detected": 600
+    },
+    "DUPLICATE_INVOICE": {
+      "count": 600,
+      "total_variance_usd": 511643.33999999997,
+      "detected": 600
+    },
+    "INVALID_ACCESSORIAL": {
+      "count": 600,
+      "total_variance_usd": 51000.0,
+      "detected": 600
+    }
+  }
+}

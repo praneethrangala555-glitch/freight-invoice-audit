@@ -1,0 +1,124 @@
+"""
+Freight Invoice Audit Engine - Domain Enums
+"""
+from enum import Enum
+
+class CarrierMode(str, Enum):
+    LTL = "LTL"                    # Less-Than-Truckload
+    FTL = "FTL"                    # Full-Truckload
+    PARCEL = "PARCEL"              # Small Package / Express
+    INTERMODAL = "INTERMODAL"      # Rail / Intermodal
+
+class CarrierStatus(str, Enum):
+    ACTIVE = "ACTIVE"
+    SUSPENDED = "SUSPENDED"
+    TERMINATED = "TERMINATED"
+
+class ServiceLevel(str, Enum):
+    STANDARD = "STANDARD"
+    EXPEDITED = "EXPEDITED"
+    GUARANTEED = "GUARANTEED"
+    ECONOMY = "ECONOMY"
+
+class RateCardStatus(str, Enum):
+    ACTIVE = "ACTIVE"
+    EXPIRED = "EXPIRED"
+    SUPERSEDED = "SUPERSEDED"
+
+class WeightTier(str, Enum):
+    TIER_1 = "TIER_1"  # < 500 lbs
+    TIER_2 = "TIER_2"  # 500 - 1,999 lbs
+    TIER_3 = "TIER_3"  # 2,000 - 4,999 lbs
+    TIER_4 = "TIER_4"  # 5,000 - 9,999 lbs
+    TIER_5 = "TIER_5"  # >= 10,000 lbs
+
+class ShipmentStatus(str, Enum):
+    ORDERED = "ORDERED"
+    PICKED_UP = "PICKED_UP"
+    IN_TRANSIT = "IN_TRANSIT"
+    DELIVERED = "DELIVERED"
+    CANCELLED = "CANCELLED"
+
+class LegStatus(str, Enum):
+    PENDING = "PENDING"
+    IN_TRANSIT = "IN_TRANSIT"
+    COMPLETED = "COMPLETED"
+
+class MeasurementType(str, Enum):
+    ORIGIN_SCALE = "ORIGIN_SCALE"
+    CARRIER_REWEIGH = "CARRIER_REWEIGH"
+    AUDIT_INSPECTION = "AUDIT_INSPECTION"
+
+class AccessorialCode(str, Enum):
+    LIFTGATE = "LIFTGATE"
+    RESIDENTIAL = "RESIDENTIAL"
+    INSIDE_DELIVERY = "INSIDE_DELIVERY"
+    DETENTION = "DETENTION"
+    RECONSIGNMENT = "RECONSIGNMENT"
+    HAZMAT = "HAZMAT"
+    NOTIFICATION = "NOTIFICATION"
+    APPOINTMENT = "APPOINTMENT"
+
+class InvoiceStatus(str, Enum):
+    PENDING_AUDIT = "PENDING_AUDIT"
+    AUDITED_APPROVED = "AUDITED_APPROVED"
+    AUDITED_EXCEPTION = "AUDITED_EXCEPTION"
+    DISPUTED = "DISPUTED"
+    PAID = "PAID"
+    REJECTED = "REJECTED"
+
+class AuditStatus(str, Enum):
+    CLEARED = "CLEARED"
+    DISCREPANCY_DETECTED = "DISCREPANCY_DETECTED"
+    DUPLICATE_INVOICE = "DUPLICATE_INVOICE"
+    UNMATCHED_SHIPMENT = "UNMATCHED_SHIPMENT"
+
+class ChargeType(str, Enum):
+    BASE_FREIGHT = "BASE_FREIGHT"
+    FUEL_SURCHARGE = "FUEL_SURCHARGE"
+    ACCESSORIAL = "ACCESSORIAL"
+    DISCOUNT = "DISCOUNT"
+    MISC_FEE = "MISC_FEE"
+
+class LineAuditDecision(str, Enum):
+    MATCHED = "MATCHED"
+    OVERCHARGE = "OVERCHARGE"
+    UNDERCHARGE = "UNDERCHARGE"
+    INVALID_LINE = "INVALID_LINE"
+    DUPLICATE_LINE = "DUPLICATE_LINE"
+
+class ExceptionType(str, Enum):
+    UNKNOWN_SHIPMENT = "UNKNOWN_SHIPMENT"
+    RATE_CARD_EXPIRED = "RATE_CARD_EXPIRED"
+    WEIGHT_TIER_MISAPPLIED = "WEIGHT_TIER_MISAPPLIED"
+    SURCHARGE_DUPLICATED = "SURCHARGE_DUPLICATED"
+    INVALID_ACCESSORIAL = "INVALID_ACCESSORIAL"
+    DUPLICATE_INVOICE = "DUPLICATE_INVOICE"
+    BASE_RATE_MISMATCH = "BASE_RATE_MISMATCH"
+    FUEL_SURCHARGE_MISMATCH = "FUEL_SURCHARGE_MISMATCH"
+    DELIVERY_DATE_MISMATCH = "DELIVERY_DATE_MISMATCH"
+    CREDIT_NOTE_EXCEEDS_EXCEPTION = "CREDIT_NOTE_EXCEEDS_EXCEPTION"
+
+class ExceptionSeverity(str, Enum):
+    LOW = "LOW"
+    MEDIUM = "MEDIUM"
+    HIGH = "HIGH"
+    CRITICAL = "CRITICAL"
+
+class ExceptionStatus(str, Enum):
+    OPEN = "OPEN"
+    UNDER_REVIEW = "UNDER_REVIEW"
+    APPROVED_DISPUTE = "APPROVED_DISPUTE"
+    REJECTED_DISPUTE = "REJECTED_DISPUTE"
+    RESOLVED = "RESOLVED"
+
+class CreditNoteStatus(str, Enum):
+    PENDING_CARRIER = "PENDING_CARRIER"
+    APPLIED = "APPLIED"
+    DISPUTED = "DISPUTED"
+    REJECTED = "REJECTED"
+
+class ReconciliationStatus(str, Enum):
+    RECONCILED = "RECONCILED"
+    OVERCREDITED = "OVERCREDITED"
+    UNDERCREDITED = "UNDERCREDITED"

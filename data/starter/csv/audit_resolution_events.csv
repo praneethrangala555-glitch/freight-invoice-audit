@@ -1,0 +1,17 @@
+event_id,exception_id,from_status,to_status,decided_by,decision_reason,approved_amount,timestamp
+REV-2026-000001,FEX-2026-000005,OPEN,APPROVED_DISPUTE,Operations Manager,Carrier acknowledged rate card discrepancy.,80.0,2026-04-07T00:00:00
+REV-2026-000002,FEX-2026-000012,OPEN,APPROVED_DISPUTE,Operations Manager,Carrier acknowledged rate card discrepancy.,80.0,2026-07-10T00:00:00
+REV-2026-000003,FEX-2026-000019,OPEN,APPROVED_DISPUTE,Operations Manager,Carrier acknowledged rate card discrepancy.,80.0,2026-05-10T00:00:00
+REV-2026-000004,FEX-2026-000026,OPEN,APPROVED_DISPUTE,Operations Manager,Carrier acknowledged rate card discrepancy.,80.0,2026-05-20T00:00:00
+REV-2026-000005,FEX-2026-000033,OPEN,APPROVED_DISPUTE,Operations Manager,Carrier acknowledged rate card discrepancy.,80.0,2026-04-10T00:00:00
+REV-2026-000006,FEX-2026-000040,OPEN,APPROVED_DISPUTE,Operations Manager,Carrier acknowledged rate card discrepancy.,80.0,2026-03-26T00:00:00
+REV-2026-000007,FEX-2026-000047,OPEN,APPROVED_DISPUTE,Operations Manager,Carrier acknowledged rate card discrepancy.,80.0,2026-06-28T00:00:00
+REV-2026-000008,FEX-2026-000054,OPEN,APPROVED_DISPUTE,Operations Manager,Carrier acknowledged rate card discrepancy.,80.0,2026-03-05T00:00:00
+REV-2026-000009,FEX-2026-000061,OPEN,APPROVED_DISPUTE,Operations Manager,Carrier acknowledged rate card discrepancy.,80.0,2026-07-15T00:00:00
+REV-2026-000010,FEX-2026-000068,OPEN,APPROVED_DISPUTE,Operations Manager,Carrier acknowledged rate card discrepancy.,80.0,2026-04-01T00:00:00
+REV-2026-000011,FEX-2026-000075,OPEN,APPROVED_DISPUTE,Operations Manager,Carrier acknowledged rate card discrepancy.,80.0,2026-03-21T00:00:00
+REV-2026-000012,FEX-2026-000082,OPEN,APPROVED_DISPUTE,Operations Manager,Carrier acknowledged rate card discrepancy.,80.0,2026-05-31T00:00:00
+REV-2026-000013,FEX-2026-000089,OPEN,APPROVED_DISPUTE,Operations Manager,Carrier acknowledged rate card discrepancy.,80.0,2026-08-01T00:00:00
+REV-2026-000014,FEX-2026-000096,OPEN,APPROVED_DISPUTE,Operations Manager,Carrier acknowledged rate card discrepancy.,80.0,2026-06-27T00:00:00
+REV-2026-000015,FEX-2026-000103,OPEN,APPROVED_DISPUTE,Operations Manager,Carrier acknowledged rate card discrepancy.,80.0,2026-07-17T00:00:00
+REV-2026-000016,FEX-2026-000110,OPEN,APPROVED_DISPUTE,Operations Manager,Carrier acknowledged rate card discrepancy.,80.0,2026-03-01T00:00:00
