@@ -502,7 +502,12 @@ class FreightDataGenerator:
         # 6. Duplicate invoice billing
         # 7. Invalid/unauthorized accessorial
 
-        for i in range(1, count + 1):
+        anomaly_slots = {3, 7, 11, 15, 19, 21, 23}
+        invoice_order = sorted(
+            range(1, count + 1),
+            key=lambda index: (index % 25 in anomaly_slots, index),
+        )
+        for i in invoice_order:
             invoice_id = f"FINV-2026-{i:06d}"
             # Determine anomaly injection slot deterministically
             anomaly_mod = i % 25
@@ -1516,6 +1521,8 @@ class FreightDataGenerator:
         for invoice in invoices:
             ground_truth = ground_truth_by_invoice.get(invoice.invoice_id)
             shipment = shipment_by_id.get(invoice.shipment_id or "")
+            if shipment:
+                invoice.billed_delivery_date = shipment.delivery_date
             if ground_truth and ground_truth.anomaly_category == AnomalyCategory.RATE_CARD_EXPIRED.value and shipment:
                 invoice.rate_card_id = expired_rate_card_by_key[
                     (shipment.carrier_id, shipment.lane_id, shipment.service_level)

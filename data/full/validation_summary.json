@@ -1,10 +1,10 @@
 {
   "scale": "full",
   "seed": 20261022,
-  "generation_time_sec": 12.92,
+  "generation_time_sec": 12.91,
   "validation_passed": true,
-  "checks_passed": 59,
-  "checks_total": 59,
+  "checks_passed": 60,
+  "checks_total": 60,
   "performance_metrics": {
     "precision": 1.0,
     "recall": 1.0,

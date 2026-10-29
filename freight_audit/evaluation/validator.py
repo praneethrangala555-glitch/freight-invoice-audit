@@ -12,6 +12,7 @@ from freight_audit.models.enums import (
     ExceptionType,
     ExceptionStatus,
     InvoiceStatus,
+    LegStatus,
     RateCardStatus,
     ShipmentStatus,
 )
@@ -380,6 +381,21 @@ class RelationalValidator:
             and shipment_by_id[item.shipment_id].delivery_date
             and item.invoice_date < shipment_by_id[item.shipment_id].delivery_date
         ]
+        completed_leg_dates: Dict[str, Set[date]] = defaultdict(set)
+        for leg in self.bundle.shipment_legs:
+            if leg.leg_status == LegStatus.COMPLETED and leg.delivery_time is not None:
+                completed_leg_dates[leg.shipment_id].add(leg.delivery_time.date())
+        bad_delivery_claims = [
+            item.invoice_id
+            for item in self.bundle.freight_invoices
+            if item.billed_delivery_date is not None
+            and (
+                item.shipment_id not in shipment_by_id
+                or shipment_by_id[item.shipment_id].status != ShipmentStatus.DELIVERED
+                or shipment_by_id[item.shipment_id].delivery_date != item.billed_delivery_date
+                or item.billed_delivery_date not in completed_leg_dates[item.shipment_id]
+            )
+        ]
         bad_credits = [
             item.credit_note_id for item in self.bundle.credit_notes
             if item.exception_id in {e.exception_id for e in self.bundle.audit_exceptions}
@@ -393,6 +409,7 @@ class RelationalValidator:
             ("ShipmentLeg chronology", bad_legs),
             ("RateCard effective dates/status", bad_rates),
             ("Invoice/delivery/due-date chronology", bad_invoices),
+            ("Invoice delivery claims match shipment legs", bad_delivery_claims),
             ("CreditNote issuance chronology", bad_credits),
         ]:
             result.record_check(name, not errors, f"Invalid rows: {errors[:5]}")

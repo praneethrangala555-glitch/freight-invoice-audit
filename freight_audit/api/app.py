@@ -5,6 +5,9 @@ dispute resolution workflows, credit note reconciliation, and performance metric
 """
 from contextlib import asynccontextmanager
 from datetime import date, datetime, timezone
+import os
+from pathlib import Path
+import sqlite3
 
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
@@ -12,28 +15,49 @@ from pydantic import BaseModel, Field
 from freight_audit.engine.auditor import FreightAuditor
 from freight_audit.engine.credit_note import DisputeReconciliationEngine
 from freight_audit.engine.rating import RatingEngine
+from freight_audit.database.state_store import RuntimeStateStore
 from freight_audit.evaluation.metrics import AuditMetricsEvaluator
 from freight_audit.generator.seed_generator import DatasetBundle, FreightDataGenerator
-from freight_audit.models.entities import FreightInvoice, InvoiceLine
+from freight_audit.models.entities import FreightInvoice, InvoiceLine, ShipmentLeg
 from freight_audit.models.enums import ExceptionSeverity, ExceptionStatus
 
-# Global in-memory cache populated from generator or database
+# Generated baseline is rebuilt on startup; workflow mutations are journaled to SQLite.
 bundle: DatasetBundle | None = None
 rating_engine: RatingEngine | None = None
 auditor: FreightAuditor | None = None
 recon_engine = DisputeReconciliationEngine()
+state_store: RuntimeStateStore | None = None
 
 
-def init_system(scale: str = "starter", seed: int = 20261022) -> None:
-    global bundle, rating_engine, auditor, recon_engine
+def init_system(
+    scale: str = "starter",
+    seed: int = 20261022,
+    state_path: Path | None = None,
+) -> None:
+    global bundle, rating_engine, auditor, recon_engine, state_store
     gen = FreightDataGenerator(seed=seed)
     if scale == "full":
         bundle = gen.generate(num_carriers=100, num_shipments=20000, num_invoices=15000, num_lanes=500)
     else:
         bundle = gen.generate(num_carriers=25, num_shipments=500, num_invoices=400, num_lanes=100)
 
+    if state_path is None:
+        configured_path = os.getenv("FREIGHT_AUDIT_STATE_DB")
+        state_path = (
+            Path(configured_path)
+            if configured_path
+            else Path(__file__).resolve().parents[2]
+            / ".state"
+            / f"api-{scale}-{seed}.sqlite3"
+        )
+    state_store = RuntimeStateStore(state_path)
+    state_store.restore(bundle)
+
     rating_engine = RatingEngine(bundle.rate_cards)
     shipment_map = {s.shipment_id: s for s in bundle.shipments}
+    legs_by_shipment: dict[str, list[ShipmentLeg]] = {}
+    for leg in bundle.shipment_legs:
+        legs_by_shipment.setdefault(leg.shipment_id, []).append(leg)
     acc_map: dict[str, list] = {}
     for acc in bundle.accessorials:
         acc_map.setdefault(acc.shipment_id, []).append(acc)
@@ -42,6 +66,7 @@ def init_system(scale: str = "starter", seed: int = 20261022) -> None:
     auditor = FreightAuditor(
         rating_engine=rating_engine,
         shipments=shipment_map,
+        shipment_legs=legs_by_shipment,
         shipment_accessorials=acc_map,
         rate_cards_by_id=rc_map,
         existing_invoices=bundle.freight_invoices,
@@ -60,7 +85,7 @@ def init_system(scale: str = "starter", seed: int = 20261022) -> None:
 
 
 @asynccontextmanager
-async def lifespan(app: FastAPI):
+async def lifespan(_: FastAPI):
     """Modern FastAPI lifespan handler replacing deprecated @app.on_event."""
     init_system("starter", 20261022)
     yield
@@ -92,6 +117,7 @@ class InvoiceAuditRequest(BaseModel):
     shipment_id: str | None = None
     shipment_reference: str | None = None
     rate_card_id: str | None = None
+    billed_delivery_date: date | None = None
     invoice_number: str
     invoice_date: date
     due_date: date
@@ -111,6 +137,8 @@ def audit_incoming_invoice(req: InvoiceAuditRequest):
         raise HTTPException(status_code=409, detail=f"Invoice {req.invoice_id} already exists.")
     if not any(item.carrier_id == req.carrier_id for item in bundle.carriers):
         raise HTTPException(status_code=422, detail=f"Unknown carrier {req.carrier_id}.")
+    if state_store is None:
+        raise HTTPException(status_code=500, detail="Runtime state store is not initialized.")
 
     lines = [InvoiceLine(**l) for l in req.lines]
     billed_total = sum(l.billed_amount for l in lines)
@@ -120,13 +148,27 @@ def audit_incoming_invoice(req: InvoiceAuditRequest):
         shipment_id=req.shipment_id,
         shipment_reference=req.shipment_reference,
         rate_card_id=req.rate_card_id,
+        billed_delivery_date=req.billed_delivery_date,
         invoice_number=req.invoice_number,
         invoice_date=req.invoice_date,
         due_date=req.due_date,
         billed_total_amount=billed_total,
     )
 
+    exception_counter = auditor.exception_counter
+    billed_shipments = auditor.billed_shipments.copy()
+    billed_invoices = auditor.billed_invoices.copy()
     audited_inv, audited_lines, exceptions, events = auditor.audit_invoice(inv, lines)
+    try:
+        state_store.persist([audited_inv, *audited_lines, *exceptions, *events])
+    except sqlite3.Error as exc:
+        auditor.exception_counter = exception_counter
+        auditor.billed_shipments = billed_shipments
+        auditor.billed_invoices = billed_invoices
+        raise HTTPException(
+            status_code=503,
+            detail=f"Could not persist audited invoice: {exc}",
+        ) from exc
     bundle.freight_invoices.append(audited_inv)
     bundle.invoice_lines.extend(audited_lines)
     bundle.audit_exceptions.extend(exceptions)
@@ -179,9 +221,10 @@ def resolve_exception(exception_id: str, req: DisputeResolutionRequest):
     if not target_ex:
         raise HTTPException(status_code=404, detail=f"Exception {exception_id} not found.")
 
+    updated_target = target_ex.model_copy(deep=True)
     try:
         updated_ex, event = recon_engine.resolve_exception_dispute(
-            exception=target_ex,
+            exception=updated_target,
             decision=req.decision,
             decided_by=req.decided_by,
             decision_reason=req.decision_reason,
@@ -189,6 +232,12 @@ def resolve_exception(exception_id: str, req: DisputeResolutionRequest):
         )
     except ValueError as exc:
         raise HTTPException(status_code=409, detail=str(exc)) from exc
+    if state_store is None:
+        raise HTTPException(status_code=500, detail="Runtime state store is not initialized.")
+    state_store.persist([updated_ex, event])
+    bundle.audit_exceptions[
+        bundle.audit_exceptions.index(target_ex)
+    ] = updated_ex
     bundle.audit_resolution_events.append(event)
 
     return {
@@ -259,9 +308,11 @@ def issue_credit_note(exception_id: str, req: CreditNoteRequest):
         force_overcredit_ratio=req.force_overcredit_ratio,
         approved_amount=approved_amount,
     )
-    bundle.credit_notes.append(cn)
-
     success, msg, excess_ex = recon_engine.reconcile_credit_note(cn, target_ex)
+    if state_store is None:
+        raise HTTPException(status_code=500, detail="Runtime state store is not initialized.")
+    state_store.persist([cn, *([excess_ex] if excess_ex else [])])
+    bundle.credit_notes.append(cn)
     if excess_ex:
         bundle.audit_exceptions.append(excess_ex)
         auditor.exception_counter = max(auditor.exception_counter, recon_engine.exception_counter)

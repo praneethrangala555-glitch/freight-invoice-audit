@@ -4,13 +4,13 @@ Executes multi-stage validation rules against invoices, shipment records,
 rate cards, and delivery documentation. Generates line-level explanations
 and explicit AuditException records.
 """
-from datetime import datetime
-from typing import Dict, List, Optional, Set, Tuple
+from typing import Dict, List, Optional, Tuple
 from freight_audit.engine.rating import RatingEngine, determine_weight_tier
 from freight_audit.models.entities import (
     FreightInvoice,
     InvoiceLine,
     Shipment,
+    ShipmentLeg,
     RateCard,
     Accessorial,
     AuditException,
@@ -34,9 +34,12 @@ class FreightAuditor:
         shipment_accessorials: Optional[Dict[str, List[Accessorial]]] = None,
         rate_cards_by_id: Optional[Dict[str, RateCard]] = None,
         existing_invoices: Optional[List[FreightInvoice]] = None,
+        shipment_legs: Optional[Dict[str, List[ShipmentLeg]]] = None,
     ):
         self.rating_engine = rating_engine
         self.shipments = shipments or {}
+        self.has_delivery_leg_data = shipment_legs is not None
+        self.shipment_legs = shipment_legs or {}
         self.shipment_accessorials = shipment_accessorials or {}
         self.rate_cards_by_id = rate_cards_by_id or {}
         # Duplicate detection index: (carrier_id, shipment_id) -> invoice_id
@@ -199,6 +202,55 @@ class FreightAuditor:
         # Register keys for future duplicate detection
         self.billed_shipments[shipment_key] = invoice.invoice_id
         self.billed_invoices[invoice_num_key] = invoice.invoice_id
+
+        if invoice.billed_delivery_date is not None or self.has_delivery_leg_data:
+            delivery_legs = self.shipment_legs.get(shipment.shipment_id)
+            completed_delivery_dates = [
+                leg.delivery_time.date()
+                for leg in delivery_legs or []
+                if leg.leg_status.value == "COMPLETED" and leg.delivery_time is not None
+            ]
+            delivery_record_is_valid = (
+                shipment.status.value == "DELIVERED"
+                and shipment.delivery_date is not None
+                and (
+                    not self.has_delivery_leg_data
+                    or shipment.delivery_date in completed_delivery_dates
+                )
+            )
+            if (
+                not delivery_record_is_valid
+                or (
+                    invoice.billed_delivery_date is not None
+                    and invoice.billed_delivery_date != shipment.delivery_date
+                )
+            ):
+                expected_delivery = (
+                    shipment.delivery_date.isoformat()
+                    if shipment.delivery_date
+                    else "Completed delivery record required"
+                )
+                ex = AuditException(
+                    exception_id=self.next_exception_id(),
+                    invoice_id=invoice.invoice_id,
+                    line_id=None,
+                    exception_type=ExceptionType.DELIVERY_DATE_MISMATCH,
+                    severity=ExceptionSeverity.MEDIUM,
+                    expected_value=expected_delivery,
+                    billed_value=(
+                        invoice.billed_delivery_date.isoformat()
+                        if invoice.billed_delivery_date
+                        else "No completed delivery-leg evidence"
+                    ),
+                    discrepancy_amount=0.0,
+                    status=ExceptionStatus.OPEN,
+                    assigned_to="Logistics Analyst",
+                    resolution_notes=(
+                        "Invoice delivery date does not match the delivered shipment "
+                        "and its completed shipment-leg records."
+                    ),
+                )
+                exceptions.append(ex)
 
         # -------------------------------------------------------------
         # Stage 3: Rate Card Effective Contract Check

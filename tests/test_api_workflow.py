@@ -1,4 +1,5 @@
 from datetime import date
+import sqlite3
 
 import pytest
 from fastapi import HTTPException
@@ -7,8 +8,9 @@ from freight_audit.api import app as api
 from freight_audit.models.enums import AuditStatus, ExceptionType
 
 
-def test_api_audit_persists_records_and_reconciles_approved_credit():
-    api.init_system()
+def test_api_audit_persists_records_and_reconciles_approved_credit(tmp_path):
+    state_path = tmp_path / "api-state.sqlite3"
+    api.init_system(state_path=state_path)
     bundle = api.bundle
     assert bundle is not None
 
@@ -96,9 +98,31 @@ def test_api_audit_persists_records_and_reconciles_approved_credit():
         )
     assert duplicate_credit_error.value.status_code == 409
 
+    api.init_system(state_path=state_path)
+    restored_bundle = api.bundle
+    assert restored_bundle is not None
+    restored_invoice = next(
+        item for item in restored_bundle.freight_invoices
+        if item.invoice_id == invoice_id
+    )
+    restored_exception = next(
+        item for item in restored_bundle.audit_exceptions
+        if item.exception_id == expected_exception_id
+    )
+    assert restored_invoice.shipment_reference == unknown_shipment_id
+    assert restored_exception.status.value == "APPROVED_DISPUTE"
+    assert any(
+        item.credit_note_id == expected_credit_id
+        for item in restored_bundle.credit_notes
+    )
+    assert any(
+        item.exception_id == expected_exception_id
+        for item in restored_bundle.audit_resolution_events
+    )
 
-def test_api_duplicate_detection_indexes_loaded_invoices():
-    api.init_system()
+
+def test_api_duplicate_detection_indexes_loaded_invoices(tmp_path):
+    api.init_system(state_path=tmp_path / "api-state.sqlite3")
     bundle = api.bundle
     assert bundle is not None
     original_invoice = next(
@@ -130,3 +154,43 @@ def test_api_duplicate_detection_indexes_loaded_invoices():
     )
 
     assert result["exceptions"][0]["exception_type"] == ExceptionType.DUPLICATE_INVOICE
+
+
+def test_api_rolls_back_audit_indexes_when_journal_write_fails(tmp_path, monkeypatch):
+    api.init_system(state_path=tmp_path / "api-state.sqlite3")
+    bundle = api.bundle
+    assert bundle is not None
+    invoice_id = "FINV-2026-990003"
+    request = api.InvoiceAuditRequest(
+        invoice_id=invoice_id,
+        carrier_id=bundle.carriers[0].carrier_id,
+        shipment_id="SHP-2026-999999",
+        invoice_number="API-PERSISTENCE-FAILURE",
+        invoice_date=date(2026, 3, 20),
+        due_date=date(2026, 4, 20),
+        lines=[
+            {
+                "line_id": f"FLINE-{invoice_id}-01",
+                "invoice_id": invoice_id,
+                "line_number": 1,
+                "charge_type": "BASE_FREIGHT",
+                "description": "Base freight",
+                "billed_amount": 25.0,
+            }
+        ],
+    )
+    exception_counter = api.auditor.exception_counter
+
+    def fail_persist(_records):
+        raise sqlite3.OperationalError("disk unavailable")
+
+    monkeypatch.setattr(api.state_store, "persist", fail_persist)
+    with pytest.raises(HTTPException) as error:
+        api.audit_incoming_invoice(request)
+
+    assert error.value.status_code == 503
+    assert api.auditor.exception_counter == exception_counter
+    assert all(item.invoice_id != invoice_id for item in bundle.freight_invoices)
+    assert api.auditor.billed_invoices.get(
+        (request.carrier_id, request.invoice_number)
+    ) is None

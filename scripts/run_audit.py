@@ -4,7 +4,6 @@ Audits a directory of exported freight invoices against master rate cards and sh
 outputs line-level exception reports, and prints evaluation metrics.
 """
 import argparse
-import csv
 from pathlib import Path
 import sys
 
@@ -15,6 +14,7 @@ from freight_audit.generator.seed_generator import FreightDataGenerator
 from freight_audit.engine.rating import RatingEngine
 from freight_audit.engine.auditor import FreightAuditor
 from freight_audit.evaluation.metrics import AuditMetricsEvaluator
+from freight_audit.models.entities import ShipmentLeg
 
 def main():
     parser = argparse.ArgumentParser(description="Run Freight Invoice Audit Engine")
@@ -35,6 +35,9 @@ def main():
 
     rating_engine = RatingEngine(bundle.rate_cards)
     shipment_map = {s.shipment_id: s for s in bundle.shipments}
+    legs_by_shipment: dict[str, list[ShipmentLeg]] = {}
+    for leg in bundle.shipment_legs:
+        legs_by_shipment.setdefault(leg.shipment_id, []).append(leg)
     acc_map = {}
     for acc in bundle.accessorials:
         acc_map.setdefault(acc.shipment_id, []).append(acc)
@@ -43,6 +46,7 @@ def main():
     auditor = FreightAuditor(
         rating_engine=rating_engine,
         shipments=shipment_map,
+        shipment_legs=legs_by_shipment,
         shipment_accessorials=acc_map,
         rate_cards_by_id=rc_map,
     )
@@ -53,7 +57,7 @@ def main():
 
     for inv in bundle.freight_invoices:
         lines = [l for l in bundle.invoice_lines if l.invoice_id == inv.invoice_id]
-        audited_inv, audited_lines, exceptions, events = auditor.audit_invoice(inv, lines)
+        audited_inv, _, exceptions, _ = auditor.audit_invoice(inv, lines)
         total_exceptions += len(exceptions)
         total_overcharge += max(0.0, audited_inv.audit_variance)
 

@@ -3,9 +3,10 @@ Freight Invoice Audit Engine - Interactive Operations Dashboard
 Provides real-time interactive workbenches for Logistics Analysts, Operations Managers,
 Planners, and Carriers to review audit decisions, dispute variances, and reconcile credits.
 """
-from datetime import date
-from pathlib import Path
+import sqlite3
 import sys
+from pathlib import Path
+
 import pandas as pd
 import streamlit as st
 
@@ -13,10 +14,11 @@ import streamlit as st
 ROOT_DIR = Path(__file__).resolve().parent.parent.parent
 sys.path.insert(0, str(ROOT_DIR))
 
-from freight_audit.generator.seed_generator import FreightDataGenerator, DatasetBundle
-from freight_audit.evaluation.metrics import AuditMetricsEvaluator
+from freight_audit.database.state_store import RuntimeStateStore
 from freight_audit.engine.credit_note import DisputeReconciliationEngine
-from freight_audit.models.enums import ExceptionStatus, ExceptionSeverity
+from freight_audit.evaluation.metrics import AuditMetricsEvaluator
+from freight_audit.generator.seed_generator import DatasetBundle, FreightDataGenerator
+from freight_audit.models.enums import ExceptionStatus
 
 st.set_page_config(
     page_title="Freight Invoice Audit & Recovery Platform",
@@ -43,9 +45,12 @@ st.markdown(
 def load_data(scale: str, seed: int) -> DatasetBundle:
     gen = FreightDataGenerator(seed=seed)
     if scale == "full":
-        return gen.generate(num_carriers=100, num_shipments=20000, num_invoices=15000, num_lanes=500)
+        bundle = gen.generate(num_carriers=100, num_shipments=20000, num_invoices=15000, num_lanes=500)
     else:
-        return gen.generate(num_carriers=25, num_shipments=500, num_invoices=400, num_lanes=100)
+        bundle = gen.generate(num_carriers=25, num_shipments=500, num_invoices=400, num_lanes=100)
+    state_path = ROOT_DIR / ".state" / f"dashboard-{scale}-{seed}.sqlite3"
+    RuntimeStateStore(state_path).restore(bundle)
+    return bundle
 
 # Sidebar Configuration
 st.sidebar.title("🚚 System Controls")
@@ -58,6 +63,9 @@ actor_role = st.sidebar.selectbox(
 )
 
 bundle = load_data(scale, seed)
+state_store = RuntimeStateStore(
+    ROOT_DIR / ".state" / f"dashboard-{scale}-{seed}.sqlite3"
+)
 metrics = AuditMetricsEvaluator.evaluate(bundle)
 
 st.markdown('<div class="main-header">Freight Invoice Audit & Discrepancy Reconciliation</div>', unsafe_allow_html=True)
@@ -179,23 +187,102 @@ with tabs[1]:
         st.write("")
         st.write("")
         if st.button("Apply Resolution Decision"):
+            if target_ex is None:
+                st.error("Select an exception before recording a decision.")
+                st.stop()
             recon = DisputeReconciliationEngine(
                 credit_notes=bundle.credit_notes,
                 resolution_events=bundle.audit_resolution_events,
                 exceptions=bundle.audit_exceptions,
             )
+            updated_ex = target_ex.model_copy(deep=True)
             try:
                 updated_ex, event = recon.resolve_exception_dispute(
-                    exception=target_ex,
+                    exception=updated_ex,
                     decision=ExceptionStatus(action_type),
                     decided_by=actor_role,
                     decision_reason=reason,
                 )
-            except ValueError as exc:
+                state_store.persist([updated_ex, event])
+            except (ValueError, sqlite3.Error) as exc:
                 st.error(str(exc))
             else:
+                bundle.audit_exceptions[
+                    bundle.audit_exceptions.index(target_ex)
+                ] = updated_ex
                 bundle.audit_resolution_events.append(event)
                 st.success(f"Exception `{target_ex.exception_id}` transitioned to `{action_type}`!")
+
+    st.markdown("#### Issue an approved credit")
+    credit_candidates = [
+        exception
+        for exception in bundle.audit_exceptions
+        if exception.status == ExceptionStatus.APPROVED_DISPUTE
+        and not any(
+            credit.exception_id == exception.exception_id
+            for credit in bundle.credit_notes
+        )
+    ]
+    if credit_candidates:
+        credit_exception = st.selectbox(
+            "Approved exception",
+            credit_candidates,
+            format_func=lambda exception: (
+                f"{exception.exception_id} — ${exception.discrepancy_amount:.2f}"
+            ),
+            key="credit_exception",
+        )
+        if st.button("Issue and reconcile credit note"):
+            invoice = next(
+                item
+                for item in bundle.freight_invoices
+                if item.invoice_id == credit_exception.invoice_id
+            )
+            recon = DisputeReconciliationEngine(
+                credit_notes=bundle.credit_notes,
+                resolution_events=bundle.audit_resolution_events,
+                exceptions=bundle.audit_exceptions,
+            )
+            approval = next(
+                (
+                    event
+                    for event in reversed(bundle.audit_resolution_events)
+                    if event.exception_id == credit_exception.exception_id
+                    and event.to_status == ExceptionStatus.APPROVED_DISPUTE
+                ),
+                None,
+            )
+            approved_amount = (
+                approval.approved_amount
+                if approval
+                else credit_exception.discrepancy_amount
+            )
+            try:
+                credit_note = recon.generate_credit_note_for_exception(
+                    exception=credit_exception,
+                    carrier_id=invoice.carrier_id,
+                    approved_amount=approved_amount,
+                )
+                reconciled, message, excess_exception = recon.reconcile_credit_note(
+                    credit_note,
+                    credit_exception,
+                )
+                state_store.persist(
+                    [credit_note]
+                    + ([excess_exception] if excess_exception is not None else [])
+                )
+            except (ValueError, sqlite3.Error) as exc:
+                st.error(str(exc))
+            else:
+                bundle.credit_notes.append(credit_note)
+                if excess_exception is not None:
+                    bundle.audit_exceptions.append(excess_exception)
+                if reconciled:
+                    st.success(message)
+                else:
+                    st.warning(message)
+    else:
+        st.info("No approved exceptions are awaiting a credit note.")
 
 # -------------------------------------------------------------
 # TAB 3: Anomaly Distribution & Accuracy

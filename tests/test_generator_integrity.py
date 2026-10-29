@@ -1,6 +1,9 @@
 """
 Unit Tests for Data Generator Integrity & Validation
 """
+import pytest
+from pydantic import ValidationError
+
 from freight_audit.generator.seed_generator import FreightDataGenerator
 from freight_audit.evaluation.validator import RelationalValidator
 from freight_audit.evaluation.metrics import AuditMetricsEvaluator
@@ -106,3 +109,49 @@ def test_required_anomalies_are_truthful_and_reconciled():
     assert metrics.precision == metrics.recall == metrics.accuracy == 1.0
     assert metrics.credit_notes_reconciled_count > 0
     assert metrics.credit_notes_overcredited_count > 0
+
+
+def test_generator_creates_baseline_invoices_before_injected_anomalies():
+    bundle = FreightDataGenerator(seed=20261022).generate(
+        num_carriers=15,
+        num_shipments=300,
+        num_invoices=250,
+        num_lanes=50,
+    )
+    invoice_labels = [
+        record.anomaly_category
+        for record in bundle.ground_truth.records
+        if record.target_entity == "FreightInvoice"
+    ]
+    first_anomaly = next(
+        index
+        for index, category in enumerate(invoice_labels)
+        if category != AnomalyCategory.VALID_BASELINE.value
+    )
+
+    assert all(
+        category == AnomalyCategory.VALID_BASELINE.value
+        for category in invoice_labels[:first_anomaly]
+    )
+    assert all(
+        category != AnomalyCategory.VALID_BASELINE.value
+        for category in invoice_labels[first_anomaly:]
+    )
+    shipment_by_id = {item.shipment_id: item for item in bundle.shipments}
+    assert all(
+        invoice.billed_delivery_date
+        == (shipment_by_id[invoice.shipment_id].delivery_date if invoice.shipment_id else None)
+        for invoice in bundle.freight_invoices
+    )
+
+
+def test_entity_primary_keys_cannot_be_reassigned():
+    carrier = FreightDataGenerator(seed=20261022).generate(
+        num_carriers=1,
+        num_shipments=1,
+        num_invoices=1,
+        num_lanes=5,
+    ).carriers[0]
+
+    with pytest.raises(ValidationError):
+        carrier.carrier_id = "CAR-999999"

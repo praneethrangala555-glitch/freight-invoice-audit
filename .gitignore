@@ -35,6 +35,7 @@ htmlcov/
 *.log
 *.sqlite3
 *.db
+.state/
 
 # OS
 .DS_Store

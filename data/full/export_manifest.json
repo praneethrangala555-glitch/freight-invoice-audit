@@ -37,33 +37,33 @@
     },
     "freight_invoices": {
       "row_count": 15000,
-      "csv_sha256": "dd2ab1844feb49619cf80945ebe839c81ed9e78e0c2836da2fa9687620e483df",
-      "json_sha256": "3242abda94c5636e456d4d38a7e216d4c41535caa0a21f4689990dbc354a8e04"
+      "csv_sha256": "8cb1101cfecbd0c3dfcb0f88a87d15d78978f4dfb5fea0df957025082420f1ca",
+      "json_sha256": "3bc6006d9bbf1d6299db5ee2d986455243d7706bf65b641c340728024475ea0d"
     },
     "invoice_lines": {
       "row_count": 36319,
-      "csv_sha256": "4c73c620dca7703607956cc21e25705d662d3ec57b1b17beb2bd1a503a1b1944",
-      "json_sha256": "01b72d0c6377a35bd01b12edc4e78926a1e96f88ba8243a50b71544fcd78e2e9"
+      "csv_sha256": "9d5976a2a2bb9037eee1d278c77ff8fa6fbb90417237f76a8d3f8fe4c55a4bd3",
+      "json_sha256": "b2cad687534ba8273e14f7accf9ca4b11665c559700c8983671f861bd8989c59"
     },
     "audit_exceptions": {
       "row_count": 4500,
-      "csv_sha256": "9904db01033d9fe741bd0be1b8049adbb92dd1a8923b47ef3f1eac032b5bdda3",
-      "json_sha256": "7f88f739835d57447be8a9022282b9624a45e23cc023c6936ab507daceffcd8c"
+      "csv_sha256": "e998edae83d28ee9342addf9deb9412f039d675b92827c20eaa884dbafd4d708",
+      "json_sha256": "95aad5c01e6a30cc196835cab911c752373e171aa59f9a95aef077c95b6ac237"
     },
     "credit_notes": {
       "row_count": 600,
-      "csv_sha256": "6141d40ad760b0fc26c1441c6182adbf01a4eeb24f8af8e44b90021054081102",
-      "json_sha256": "1062d24f301fd62a92ca1fbeb80f49c81844e57de7cd3518bbbc10765e336671"
+      "csv_sha256": "c830c9559434e9a79e47af27af4ef9aa6adcf7bc0741de578e2054a99c614576",
+      "json_sha256": "e124694177e495270f107145c9f36974dfd17960d9df76aa1f679baa71b542b6"
     },
     "invoice_status_events": {
       "row_count": 15000,
-      "csv_sha256": "8223f4e24a21891fc24cab5f53e06321afe2fe7f193dc95c414fcaaf5d1c566c",
-      "json_sha256": "171b6564dcdfd01b27bb98c24649e0b0cf7955f515987f2c29b5b9cb35c557b1"
+      "csv_sha256": "f5ebb34a8c62e3d4e80f83c5d3c2efe99e4c867638198d4242ba48b7d144126e",
+      "json_sha256": "2fa957a813b9728e9645805cb22e66e4d2e84927338563443dc8e43f9a1ce0a7"
     },
     "audit_resolution_events": {
       "row_count": 600,
-      "csv_sha256": "1d5fccba3816a359105b035623f9d158a8bbbb1a95f8316c885a0ed34afb2f24",
-      "json_sha256": "4b4c831f1105fb8d8a16dc5af09975c6629e03482ac0fe1de175381410838fda"
+      "csv_sha256": "8f3d7ae7d4fd57a92dbf9b3f6b617d6972be8a253c8af6552ace9895deba8bdb",
+      "json_sha256": "52161a7a7a9b71ed1bbd6a25bd60bb82c003f6232ca721787bc868561981a6f8"
     }
   },
   "total_rows": 175752,
@@ -76,17 +76,17 @@
   },
   "ground_truth": {
     "record_count": 15600,
-    "csv_sha256": "3cfe3498228e5b53d9083d16011a3700141c87c4b961efacfce71b0a76319bfc",
-    "json_sha256": "a3d6ecdfce91b4678f72330c4791a6f842d4ec0f2d7ed8957688e8d32bc31fe1"
+    "csv_sha256": "556d53e40547c051f802be78285a578c2dded1597bfea48750a937f5ffecbe15",
+    "json_sha256": "0f6574bad370ffc62eb69f3dc5b7c2955da56ed99bad39599774cdf39cb260f4"
   },
   "sqlite_db": {
     "filename": "freight_audit.db",
-    "sha256": "5a20a641fe997727ee90dc464ab02b03054704acf2495973e2cb5d02d4d3670c"
+    "sha256": "69e1af19187909094194cd4fb04c15cecc6cad101b1bb9cd224544e1292a7eb9"
   },
   "mysql_sql": {
     "filename": "freight_audit_mysql.sql",
     "total_statements": 175752,
-    "sha256": "1eef44a604ad02a3b234c1a5ad4b18deef772a8aa1a7da031965e1764ac80c59"
+    "sha256": "1312f7ce880aa65eee5fd5b8b0e1434f9479ae52a9d221309746136e9606ac1a"
   },
   "mysql_db": {
     "status": "skipped_no_connection",

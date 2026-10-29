@@ -241,6 +241,95 @@ def test_expired_rate_card_claim_is_flagged(test_setup):
     assert any(item.exception_type == ExceptionType.RATE_CARD_EXPIRED for item in exceptions)
 
 
+def test_invoice_delivery_date_must_match_delivery_record(test_setup):
+    carrier, _, shipment, auditor = test_setup
+    invoice = FreightInvoice(
+        invoice_id="FINV-2026-000021",
+        carrier_id=carrier.carrier_id,
+        shipment_id=shipment.shipment_id,
+        invoice_number="INV-DELIVERY-MISMATCH",
+        invoice_date=date(2026, 3, 20),
+        due_date=date(2026, 4, 20),
+        billed_delivery_date=date(2026, 3, 19),
+        billed_total_amount=690.0,
+    )
+    lines = [
+        InvoiceLine(
+            line_id="FLINE-FINV-2026-000021-01",
+            invoice_id=invoice.invoice_id,
+            line_number=1,
+            charge_type=ChargeType.BASE_FREIGHT,
+            description="Base Freight",
+            billed_amount=600.0,
+        ),
+        InvoiceLine(
+            line_id="FLINE-FINV-2026-000021-02",
+            invoice_id=invoice.invoice_id,
+            line_number=2,
+            charge_type=ChargeType.FUEL_SURCHARGE,
+            description="Fuel Surcharge",
+            billed_amount=90.0,
+        ),
+    ]
+
+    audited, _, exceptions, _ = auditor.audit_invoice(invoice, lines)
+
+    assert audited.status == InvoiceStatus.AUDITED_EXCEPTION
+    delivery_exception = next(
+        item
+        for item in exceptions
+        if item.exception_type == ExceptionType.DELIVERY_DATE_MISMATCH
+    )
+    assert delivery_exception.expected_value == shipment.delivery_date.isoformat()
+    assert delivery_exception.billed_value == "2026-03-19"
+
+
+def test_invoice_without_delivery_claim_still_requires_leg_evidence(test_setup):
+    carrier, rate_card, shipment, _ = test_setup
+    auditor = FreightAuditor(
+        rating_engine=RatingEngine([rate_card]),
+        shipments={shipment.shipment_id: shipment},
+        shipment_accessorials={},
+        rate_cards_by_id={rate_card.rate_card_id: rate_card},
+        shipment_legs={},
+    )
+    invoice = FreightInvoice(
+        invoice_id="FINV-2026-000022",
+        carrier_id=carrier.carrier_id,
+        shipment_id=shipment.shipment_id,
+        invoice_number="INV-MISSING-DELIVERY-LEG",
+        invoice_date=date(2026, 3, 20),
+        due_date=date(2026, 4, 20),
+        billed_total_amount=690.0,
+    )
+    lines = [
+        InvoiceLine(
+            line_id="FLINE-FINV-2026-000022-01",
+            invoice_id=invoice.invoice_id,
+            line_number=1,
+            charge_type=ChargeType.BASE_FREIGHT,
+            description="Base Freight",
+            billed_amount=600.0,
+        ),
+        InvoiceLine(
+            line_id="FLINE-FINV-2026-000022-02",
+            invoice_id=invoice.invoice_id,
+            line_number=2,
+            charge_type=ChargeType.FUEL_SURCHARGE,
+            description="Fuel Surcharge",
+            billed_amount=90.0,
+        ),
+    ]
+
+    _, _, exceptions, _ = auditor.audit_invoice(invoice, lines)
+
+    assert any(
+        item.exception_type == ExceptionType.DELIVERY_DATE_MISMATCH
+        and "completed delivery-leg evidence" in item.billed_value
+        for item in exceptions
+    )
+
+
 def test_credit_note_uses_approved_dispute_amount():
     recon = DisputeReconciliationEngine()
     exception = AuditException(

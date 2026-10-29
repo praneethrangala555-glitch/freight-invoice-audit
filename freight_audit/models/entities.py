@@ -32,7 +32,7 @@ from freight_audit.models.enums import (
 
 # 1. Carrier
 class Carrier(BaseModel):
-    carrier_id: str = Field(..., pattern=r"^CAR-\d{6}$")
+    carrier_id: str = Field(..., pattern=r"^CAR-\d{6}$", frozen=True)
     name: str
     scac: str = Field(..., pattern=r"^[A-Z]{2,4}$")
     mode: CarrierMode
@@ -59,7 +59,7 @@ class Carrier(BaseModel):
 
 # 2. Lane
 class Lane(BaseModel):
-    lane_id: str = Field(..., pattern=r"^LANE-\d{6}$")
+    lane_id: str = Field(..., pattern=r"^LANE-\d{6}$", frozen=True)
     origin_city: str
     origin_state: str = Field(..., min_length=2, max_length=2)
     origin_zip_prefix: str = Field(..., pattern=r"^\d{3}$")
@@ -92,7 +92,7 @@ class Lane(BaseModel):
 
 # 3. RateCard
 class RateCard(BaseModel):
-    rate_card_id: str = Field(..., pattern=r"^RATE-CAR-\d{6}-2026-\d{2,4}$")
+    rate_card_id: str = Field(..., pattern=r"^RATE-CAR-\d{6}-2026-\d{2,4}$", frozen=True)
     carrier_id: str = Field(..., pattern=r"^CAR-\d{6}$")
     lane_id: str = Field(..., pattern=r"^LANE-\d{6}$")
     service_level: ServiceLevel
@@ -124,7 +124,7 @@ class RateCard(BaseModel):
 
 # 4. Shipment
 class Shipment(BaseModel):
-    shipment_id: str = Field(..., pattern=r"^SHP-2026-\d{6}$")
+    shipment_id: str = Field(..., pattern=r"^SHP-2026-\d{6}$", frozen=True)
     carrier_id: str = Field(..., pattern=r"^CAR-\d{6}$")
     lane_id: str = Field(..., pattern=r"^LANE-\d{6}$")
     rate_card_id: Optional[str] = None
@@ -165,7 +165,7 @@ class Shipment(BaseModel):
 
 # 5. ShipmentLeg
 class ShipmentLeg(BaseModel):
-    leg_id: str = Field(..., pattern=r"^LEG-SHP-2026-\d{6}-\d{2}$")
+    leg_id: str = Field(..., pattern=r"^LEG-SHP-2026-\d{6}-\d{2}$", frozen=True)
     shipment_id: str = Field(..., pattern=r"^SHP-2026-\d{6}$")
     leg_sequence: int = Field(..., ge=1)
     origin_location: str
@@ -183,7 +183,7 @@ class ShipmentLeg(BaseModel):
 
 # 6. WeightMeasurement
 class WeightMeasurement(BaseModel):
-    measurement_id: str = Field(..., pattern=r"^WM-2026-\d{6}$")
+    measurement_id: str = Field(..., pattern=r"^WM-2026-\d{6}$", frozen=True)
     shipment_id: str = Field(..., pattern=r"^SHP-2026-\d{6}$")
     piece_number: int = Field(..., ge=1)
     length_in: float = Field(..., ge=1.0, le=120.0)
@@ -197,7 +197,7 @@ class WeightMeasurement(BaseModel):
 
 # 7. Accessorial
 class Accessorial(BaseModel):
-    accessorial_id: str = Field(..., pattern=r"^ACC-2026-\d{6}$")
+    accessorial_id: str = Field(..., pattern=r"^ACC-2026-\d{6}$", frozen=True)
     shipment_id: str = Field(..., pattern=r"^SHP-2026-\d{6}$")
     code: AccessorialCode
     description: str
@@ -208,7 +208,7 @@ class Accessorial(BaseModel):
 
 # 8. FreightInvoice
 class FreightInvoice(BaseModel):
-    invoice_id: str = Field(..., pattern=r"^FINV-2026-\d{6}$")
+    invoice_id: str = Field(..., pattern=r"^FINV-2026-\d{6}$", frozen=True)
     carrier_id: str = Field(..., pattern=r"^CAR-\d{6}$")
     shipment_id: Optional[str] = None  # May be invalid/null in negative scenarios
     shipment_reference: Optional[str] = None
@@ -216,6 +216,7 @@ class FreightInvoice(BaseModel):
     invoice_number: str
     invoice_date: date
     due_date: date
+    billed_delivery_date: Optional[date] = None
     currency: str = "USD"
     billed_base_charge: float = Field(default=0.0, ge=0.0)
     billed_fuel_surcharge: float = Field(default=0.0, ge=0.0)
@@ -236,7 +237,7 @@ class FreightInvoice(BaseModel):
 
 # 9. InvoiceLine
 class InvoiceLine(BaseModel):
-    line_id: str = Field(..., pattern=r"^FLINE-FINV-2026-\d{6}-\d{2}$")
+    line_id: str = Field(..., pattern=r"^FLINE-FINV-2026-\d{6}-\d{2}$", frozen=True)
     invoice_id: str = Field(..., pattern=r"^FINV-2026-\d{6}$")
     accessorial_id: Optional[str] = None
     line_number: int = Field(..., ge=1)
@@ -251,7 +252,7 @@ class InvoiceLine(BaseModel):
 
 # 10. AuditException
 class AuditException(BaseModel):
-    exception_id: str = Field(..., pattern=r"^FEX-2026-\d{6}$")
+    exception_id: str = Field(..., pattern=r"^FEX-2026-\d{6}$", frozen=True)
     invoice_id: str = Field(..., pattern=r"^FINV-2026-\d{6}$")
     line_id: Optional[str] = None
     exception_type: ExceptionType
@@ -267,7 +268,7 @@ class AuditException(BaseModel):
 
 # 11. CreditNote
 class CreditNote(BaseModel):
-    credit_note_id: str = Field(..., pattern=r"^CN-2026-\d{6}$")
+    credit_note_id: str = Field(..., pattern=r"^CN-2026-\d{6}$", frozen=True)
     carrier_id: str = Field(..., pattern=r"^CAR-\d{6}$")
     invoice_id: str = Field(..., pattern=r"^FINV-2026-\d{6}$")
     exception_id: str = Field(..., pattern=r"^FEX-2026-\d{6}$")
@@ -281,7 +282,7 @@ class CreditNote(BaseModel):
 
 # State Transition & Audit Event Records (Traceability & Immutable History)
 class InvoiceStatusEvent(BaseModel):
-    event_id: str
+    event_id: str = Field(..., frozen=True)
     invoice_id: str
     from_status: InvoiceStatus
     to_status: InvoiceStatus
@@ -290,7 +291,7 @@ class InvoiceStatusEvent(BaseModel):
     timestamp: datetime = Field(default_factory=utc_now)
 
 class AuditResolutionEvent(BaseModel):
-    event_id: str
+    event_id: str = Field(..., frozen=True)
     exception_id: str
     from_status: ExceptionStatus
     to_status: ExceptionStatus
