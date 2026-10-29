@@ -13,7 +13,7 @@ Master record representing a contracted freight transportation service provider.
 | `name` | String | Required | 2–100 printable ASCII chars | N/A | Non-unique | Must not be empty; trimmed whitespace. |
 | `scac` | String | Required | 2–4 uppercase letters `^[A-Z]{2,4}$` | N/A | Unique | Standard Carrier Alpha Code (NMFTA assigned). |
 | `mode` | Enum | Required | `LTL`, `FTL`, `PARCEL`, `INTERMODAL` | N/A | Non-unique | Valid operational mode. |
-| `contact_email` | String | Required | Valid RFC 5322 email string | N/A | Non-unique | Must contain `@` and valid TLD domain. |
+| `contact_email` | String | Required | Valid email at reserved `.example` domain | N/A | Non-unique | Synthetic contacts use a reserved domain and must match a basic mailbox/domain format. |
 | `payment_terms_days` | Integer | Required | `15`, `30`, `45`, `60`, `90` | Days | Non-unique | Range: 15 <= value <= 90. |
 | `status` | Enum | Required | `ACTIVE`, `SUSPENDED`, `TERMINATED` | N/A | Non-unique | Only `ACTIVE` carriers are eligible for rating new shipments. |
 | `created_at` | DateTime | Required | ISO 8601 UTC timestamp | UTC | Non-unique | Must not be in future; defaults to creation instant. |
@@ -42,7 +42,7 @@ Contracted pricing schedule between a Shipper and a Carrier for a designated lan
 
 | Field Name | Type | Req / Opt | Allowed Values | Units | Uniqueness | Validation Rule |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| `rate_card_id` | String | Required | Matches `^RATE-CAR-\d{6}-2026-\d{2}$` | N/A | **PK (Unique)** | Encodes Carrier ID and version/sequence. |
+| `rate_card_id` | String | Required | Matches `^RATE-CAR-\d{6}-2026-\d{2,4}$` | N/A | **PK (Unique)** | Encodes Carrier ID and version/sequence. |
 | `carrier_id` | String | Required | Existing `Carrier.carrier_id` | N/A | FK | Must reference a valid `ACTIVE` carrier. |
 | `lane_id` | String | Required | Existing `Lane.lane_id` | N/A | FK | Must reference a valid active lane. |
 | `service_level` | Enum | Required | `STANDARD`, `EXPEDITED`, `GUARANTEED`, `ECONOMY` | N/A | Non-unique | Contracted delivery service tier. |
@@ -68,6 +68,7 @@ Commercial transaction recording movement of goods from shipper origin to consig
 | `shipment_id` | String | Required | Matches `^SHP-2026-\d{6}$` | N/A | **PK (Unique)** | 6-digit zero-padded sequence. |
 | `carrier_id` | String | Required | Existing `Carrier.carrier_id` | N/A | FK | Assigned line-haul carrier. |
 | `lane_id` | String | Required | Existing `Lane.lane_id` | N/A | FK | Physical shipping corridor. |
+| `rate_card_id` | String | Required in generated data | Existing `RateCard.rate_card_id` | N/A | FK | Exact contract used to calculate shipment expectations. |
 | `service_level` | Enum | Required | `STANDARD`, `EXPEDITED`, `GUARANTEED`, `ECONOMY` | N/A | Non-unique | Service level booked. |
 | `status` | Enum | Required | `ORDERED`, `PICKED_UP`, `IN_TRANSIT`, `DELIVERED`, `CANCELLED` | N/A | Non-unique | Lifecycle state transition must follow order. |
 | `ship_date` | Date | Required | `YYYY-MM-DD` | Date | Non-unique | Date cargo was tendered to carrier. |
@@ -144,7 +145,9 @@ Commercial billing statement presented by a Carrier to a Shipper for freight ser
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | `invoice_id` | String | Required | Matches `^FINV-2026-\d{6}$` | N/A | **PK (Unique)** | 6-digit zero-padded sequence. |
 | `carrier_id` | String | Required | Existing `Carrier.carrier_id` | N/A | FK | Billed carrier entity. |
-| `shipment_id` | String | Optional | Existing `Shipment.shipment_id` OR invalid ID in negative test cases | N/A | FK (nullable) | Referenced shipment. Foreign key violation flagged during audit. |
+| `shipment_id` | String | Optional | Existing `Shipment.shipment_id` | N/A | FK (nullable) | Resolved shipment FK. Null for intentionally unresolved references. |
+| `shipment_reference` | String | Optional | External shipment reference | N/A | Non-unique | Raw untrusted reference retained for unknown-shipment cases; must be labelled in ground truth. |
+| `rate_card_id` | String | Optional | Existing `RateCard.rate_card_id` | N/A | FK (nullable) | Contract claimed by the carrier; used to identify expired or invalid schedule use. |
 | `invoice_number` | String | Required | `INV-[A-Z0-9]{6,12}` | N/A | Non-unique | Carrier's internal invoice number. Duplicate check on `(carrier_id, invoice_number)`. |
 | `invoice_date` | Date | Required | `YYYY-MM-DD` | Date | Non-unique | Date invoice was published. |
 | `due_date` | Date | Required | `YYYY-MM-DD` | Date | Non-unique | Derived: `invoice_date + carrier.payment_terms_days`. |
@@ -167,6 +170,7 @@ Itemized line-level charge component contributing to the total freight invoice a
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | `line_id` | String | Required | Matches `^FLINE-FINV-2026-\d{6}-\d{2}$` | N/A | **PK (Unique)** | Encodes `invoice_id` and 2-digit line index. |
 | `invoice_id` | String | Required | Existing `FreightInvoice.invoice_id` | N/A | FK | Parent freight invoice. |
+| `accessorial_id` | String | Optional | Existing `Accessorial.accessorial_id` | N/A | FK (nullable) | Exact authorized service related to this line; null for an unrecognized/unauthorized billed item. |
 | `line_number` | Integer | Required | >= 1 | Sequence | Non-unique | Monotonically increasing line item position. |
 | `charge_type` | Enum | Required | `BASE_FREIGHT`, `FUEL_SURCHARGE`, `ACCESSORIAL`, `DISCOUNT`, `MISC_FEE` | N/A | Non-unique | Category of transportation billing element. |
 | `description` | String | Required | 3–100 characters | N/A | Non-unique | Line description (e.g. "Base LTL Freight Tier 2", "Diesel Fuel Surcharge"). |
@@ -187,7 +191,7 @@ Explicit dispute or compliance violation record generated when billed characteri
 | `exception_id` | String | Required | Matches `^FEX-2026-\d{6}$` | N/A | **PK (Unique)** | 6-digit zero-padded sequence. |
 | `invoice_id` | String | Required | Existing `FreightInvoice.invoice_id` | N/A | FK | Invoiced subject to audit exception. |
 | `line_id` | String | Optional | Existing `InvoiceLine.line_id` | N/A | FK (nullable) | Specific line item causing discrepancy (null if invoice-level error). |
-| `exception_type` | Enum | Required | `UNKNOWN_SHIPMENT`, `RATE_CARD_EXPIRED`, `WEIGHT_TIER_MISAPPLIED`, `SURCHARGE_DUPLICATED`, `INVALID_ACCESSORIAL`, `DUPLICATE_INVOICE`, `BASE_RATE_MISMATCH`, `FUEL_SURCHARGE_MISMATCH`, `DELIVERY_DATE_MISMATCH`, `CREDIT_NOTE_EXCEEDS_EXCEPTION` | N/A | Non-unique | Strict taxonomy of freight billing audit exceptions. |
+| `exception_type` | Enum | Required | `UNKNOWN_SHIPMENT`, `CARRIER_MISMATCH`, `RATE_CARD_EXPIRED`, `WEIGHT_TIER_MISAPPLIED`, `SURCHARGE_DUPLICATED`, `INVALID_ACCESSORIAL`, `DUPLICATE_INVOICE`, `BASE_RATE_MISMATCH`, `FUEL_SURCHARGE_MISMATCH`, `DELIVERY_DATE_MISMATCH`, `CREDIT_NOTE_EXCEEDS_EXCEPTION` | N/A | Non-unique | Strict taxonomy of freight billing audit exceptions. |
 | `severity` | Enum | Required | `LOW`, `MEDIUM`, `HIGH`, `CRITICAL` | N/A | Non-unique | Risk rating based on variance magnitude or systemic compliance impact. |
 | `expected_value` | String | Required | Non-empty string | N/A | Non-unique | Contractual benchmark value (e.g. "$45.00", "Tier 3", "2026-10-15"). |
 | `billed_value` | String | Required | Non-empty string | N/A | Non-unique | Invoiced erroneous value (e.g. "$90.00", "Tier 1", "2025-11-01"). |
@@ -211,7 +215,7 @@ Financial credit document issued by a carrier to offset and resolve approved aud
 | `exception_id` | String | Required | Existing `AuditException.exception_id` | N/A | FK | Disputed exception record being settled. |
 | `credit_note_number`| String| Required | `CN-[A-Z0-9]{6,12}` | N/A | Unique | Carrier reference code. |
 | `credit_amount` | Decimal | Required | > 0.00 | USD | Non-unique | Disbursed credit amount. |
-| `original_exception_amount`| Decimal| Required | > 0.00 | USD | Non-unique | Exact value of `AuditException.discrepancy_amount`. |
+| `original_exception_amount`| Decimal| Required | > 0.00 | USD | Non-unique | Exact amount approved in the latest `AuditResolutionEvent`; falls back to the exception variance only when no approval event exists. |
 | `status` | Enum | Required | `PENDING_CARRIER`, `APPLIED`, `DISPUTED`, `REJECTED` | N/A | Non-unique | Settlement state. |
 | `issue_date` | Date | Required | `YYYY-MM-DD` | Date | Non-unique | Must be `>= AuditException.created_at`. |
 | `reconciliation_status`| Enum| Required | `RECONCILED`, `OVERCREDITED`, `UNDERCREDITED` | N/A | Non-unique | Deterministic check: `RECONCILED` if `abs(credit_amount - original_exception_amount) < 0.01`; `OVERCREDITED` if `credit_amount > original_exception_amount`; else `UNDERCREDITED`. |
@@ -232,8 +236,16 @@ Financial credit document issued by a carrier to offset and resolve approved aud
 | `Shipment` | `Accessorial` | `Accessorial.shipment_id` | 1 : N | Optional (0..N) | Supplementary services performed for the shipment. |
 | `Carrier` | `FreightInvoice` | `FreightInvoice.carrier_id` | 1 : N | Mandatory on child | Carrier bills shipper via invoices. |
 | `Shipment` | `FreightInvoice` | `FreightInvoice.shipment_id` | 1 : N | Optional (0..N) | Normal is 1:1; duplicate billing is 1:N; unknown shipment is 0:1. |
+| `Shipment` | `FreightInvoice` | `FreightInvoice.shipment_reference` | 1 : N | Optional (0..N) | Raw billing reference; unresolved IDs are kept here while the FK stays null. |
 | `FreightInvoice` | `InvoiceLine` | `InvoiceLine.invoice_id` | 1 : N | Mandatory on child | Itemized charges summing to invoice total. |
+| `Accessorial` | `InvoiceLine` | `InvoiceLine.accessorial_id` | 1 : N | Optional (0..N) | A line points to the exact authorized service; unauthorized lines intentionally have no match. |
 | `FreightInvoice` | `AuditException` | `AuditException.invoice_id` | 1 : N | Optional (0..N) | Invoices with billing discrepancies spawn audit exceptions. |
 | `InvoiceLine` | `AuditException` | `AuditException.line_id` | 1 : 1 | Optional (0..1) | Line-level discrepancy attribution. |
 | `AuditException` | `CreditNote` | `CreditNote.exception_id` | 1 : 1 | Optional (0..1) | Approved disputes trigger compensating credit notes. |
 | `Carrier` | `CreditNote` | `CreditNote.carrier_id` | 1 : N | Mandatory on child | Carrier issues credit note to settle debt. |
+
+`RateCard` is the associative/bridge entity between `Carrier` and `Lane`, with service level,
+weight tiers, effective dates, and contract status as attributes. This represents the
+many-to-many carrier-to-lane offering without an untracked join. `shipment_id` is the
+referentially valid FK; an intentionally unknown invoice reference is retained in
+`shipment_reference` and linked to its ground-truth label rather than violating the FK.

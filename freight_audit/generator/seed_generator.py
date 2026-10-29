@@ -6,6 +6,7 @@ labeled anomaly edge cases with strict fixed-seed reproducibility.
 """
 from dataclasses import dataclass
 from datetime import date, datetime, timedelta
+import math
 import random
 from typing import Dict, List, Optional, Tuple
 
@@ -94,6 +95,8 @@ class DatasetBundle:
     invoice_status_events: List[InvoiceStatusEvent]
     audit_resolution_events: List[AuditResolutionEvent]
     ground_truth: GroundTruthTracker
+    seed: int = 20261022
+    generation_config: Optional[Dict[str, int]] = None
 
 class FreightDataGenerator:
     def __init__(self, seed: int = 20261022):
@@ -150,6 +153,13 @@ class FreightDataGenerator:
             invoice_status_events=inv_events,
             audit_resolution_events=res_events,
             ground_truth=self.gt,
+            seed=self.seed,
+            generation_config={
+                "num_carriers": num_carriers,
+                "num_shipments": num_shipments,
+                "num_invoices": num_invoices,
+                "num_lanes": num_lanes,
+            },
         )
 
     def _generate_carriers(self, count: int) -> List[Carrier]:
@@ -175,7 +185,7 @@ class FreightDataGenerator:
                     name=name,
                     scac=scac,
                     mode=mode,
-                    contact_email=f"billing@{scac.lower()}freight.com",
+                    contact_email=f"billing@{scac.lower()}.freight.example",
                     payment_terms_days=payment_terms,
                     status=CarrierStatus.ACTIVE,
                     created_at=datetime(2025, 1, 1, 8, 0, 0) + timedelta(days=i % 100),
@@ -197,7 +207,7 @@ class FreightDataGenerator:
             orig, dest = hub_pairs[(i - 1) % len(hub_pairs)]
             # Realistic distance proxy
             dist = round(self.rng.uniform(180.0, 2400.0), 1)
-            transit_days = max(1, int(dist // 450) + 1)
+            transit_days = max(1, math.ceil(dist / 500.0))
 
             lanes.append(
                 Lane(
@@ -260,6 +270,26 @@ class FreightDataGenerator:
                             status=RateCardStatus.ACTIVE,
                         )
                     )
+                    rate_cards.append(
+                        RateCard(
+                            rate_card_id=f"RATE-{carrier.carrier_id}-2026-{rc_index:02d}",
+                            carrier_id=carrier.carrier_id,
+                            lane_id=lane.lane_id,
+                            service_level=srv,
+                            effective_start_date=date(2026, 1, 1),
+                            effective_end_date=date(2026, 6, 30),
+                            base_min_charge=round((65.0 + (lane.distance_miles * 0.05)) * 1.15, 2),
+                            rate_tier_1_cwt=round(t1 * 1.15, 2),
+                            rate_tier_2_cwt=round(t2 * 1.15, 2),
+                            rate_tier_3_cwt=round(t3 * 1.15, 2),
+                            rate_tier_4_cwt=round(t4 * 1.15, 2),
+                            rate_tier_5_cwt=round(t5 * 1.15, 2),
+                            dim_factor=139,
+                            fuel_surcharge_pct=fsc,
+                            status=RateCardStatus.EXPIRED,
+                        )
+                    )
+                    rc_index += 1
         return rate_cards
 
     def _generate_shipments_and_events(
@@ -278,6 +308,7 @@ class FreightDataGenerator:
         # Available contracted combinations
         valid_contracts = [
             (rc.carrier_id, rc.lane_id, rc.service_level, rc) for rc in rate_cards
+            if rc.status == RateCardStatus.ACTIVE
         ]
 
         meas_counter = 0
@@ -290,7 +321,11 @@ class FreightDataGenerator:
             contract = valid_contracts[(i - 1) % len(valid_contracts)]
             carrier_id, lane_id, service_level, rate_card = contract
 
-            ship_dt = start_date + timedelta(days=self.rng.randint(0, 180))
+            ship_dt = (
+                date(2026, 7, 1) + timedelta(days=self.rng.randint(0, 30))
+                if i % 25 == 7
+                else start_date + timedelta(days=self.rng.randint(0, 180))
+            )
             deliv_days = self.rng.randint(1, 6)
             deliv_dt = ship_dt + timedelta(days=deliv_days)
 
@@ -304,7 +339,11 @@ class FreightDataGenerator:
                 length = round(self.rng.uniform(36.0, 48.0), 1)
                 width = round(self.rng.uniform(36.0, 48.0), 1)
                 height = round(self.rng.uniform(30.0, 72.0), 1)
-                scale_w = round(self.rng.uniform(150.0, 1200.0), 1)
+                scale_w = (
+                    round(3000.0 / pieces, 1)
+                    if i % 25 == 11
+                    else round(self.rng.uniform(150.0, 1200.0), 1)
+                )
                 dim_w = calculate_dim_weight(length, width, height, rate_card.dim_factor)
 
                 actual_wt += scale_w
@@ -373,6 +412,7 @@ class FreightDataGenerator:
                 shipment_id=shipment_id,
                 carrier_id=carrier_id,
                 lane_id=lane_id,
+                rate_card_id=rate_card.rate_card_id,
                 service_level=service_level,
                 status=ShipmentStatus.DELIVERED,
                 ship_date=ship_dt,
@@ -437,6 +477,12 @@ class FreightDataGenerator:
 
         # Carrier lookup
         carrier_by_id = {c.carrier_id: c for c in carriers}
+        rate_card_by_id = {rc.rate_card_id: rc for rc in rate_cards}
+        expired_rate_card_by_key = {
+            (rc.carrier_id, rc.lane_id, rc.service_level): rc
+            for rc in rate_cards
+            if rc.status == RateCardStatus.EXPIRED
+        }
 
         # Counters
         line_counter = 0
@@ -444,7 +490,8 @@ class FreightDataGenerator:
         cn_counter = 0
         rev_counter = 0
 
-        # Anomaly allocation targets (~85% clean baseline, ~15% labeled negative edge cases)
+        # Seven of every 25 invoices exercise labelled exception paths; half of
+        # credit-note cases reconcile correctly and half deliberately over-credit.
         # Required Edge Cases:
         # 1. Invoice references unknown shipment
         # 2. Rate card expired
@@ -457,15 +504,24 @@ class FreightDataGenerator:
 
         for i in range(1, count + 1):
             invoice_id = f"FINV-2026-{i:06d}"
-            shipment = shipments[(i - 1) % len(shipments)]
-            carrier = carrier_by_id[shipment.carrier_id]
-            inv_date = shipment.ship_date + timedelta(days=self.rng.randint(3, 14))
-            due_date = inv_date + timedelta(days=carrier.payment_terms_days)
-
             # Determine anomaly injection slot deterministically
-            # Every 10th invoice gets a specific negative edge case
             anomaly_mod = i % 25
             is_anomaly = anomaly_mod in [3, 7, 11, 15, 19, 21, 23]
+            shipment = shipments[(i - 1) % len(shipments)]
+            if is_anomaly and anomaly_mod == 21 and i > 1:
+                shipment = shipments[(i - 2) % len(shipments)]
+            elif is_anomaly and anomaly_mod == 11:
+                tier_3_shipments = [
+                    candidate for candidate in shipments
+                    if determine_weight_tier(candidate.billable_weight_lbs)[0].value == "TIER_3"
+                ]
+                if tier_3_shipments:
+                    shipment = tier_3_shipments[(i // 25) % len(tier_3_shipments)]
+
+            carrier = carrier_by_id[shipment.carrier_id]
+            invoice_anchor = shipment.delivery_date or shipment.ship_date
+            inv_date = invoice_anchor + timedelta(days=self.rng.randint(1, 14))
+            due_date = inv_date + timedelta(days=carrier.payment_terms_days)
 
             # ---------------------------------------------------------
             # Case 1: Unknown Shipment ID
@@ -475,7 +531,8 @@ class FreightDataGenerator:
                 inv = FreightInvoice(
                     invoice_id=invoice_id,
                     carrier_id=carrier.carrier_id,
-                    shipment_id=phantom_id,
+                    shipment_id=None,
+                    shipment_reference=phantom_id,
                     invoice_number=f"INV-{carrier.carrier_id[-4:]}-{i:06d}",
                     invoice_date=inv_date,
                     due_date=due_date,
@@ -567,8 +624,20 @@ class FreightDataGenerator:
             # Case 2: Expired Rate Card
             # ---------------------------------------------------------
             elif is_anomaly and anomaly_mod == 7:
-                expired_variance = 75.00
-                billed_base = round(shipment.expected_base_charge + expired_variance, 2)
+                expired_rate_card = expired_rate_card_by_key[
+                    (shipment.carrier_id, shipment.lane_id, shipment.service_level)
+                ]
+                shipment_accs = acc_by_shipment.get(shipment.shipment_id, [])
+                expired_rating = rating_engine.calculate_expected_charges(
+                    rate_card=expired_rate_card,
+                    actual_weight_lbs=shipment.total_actual_weight_lbs,
+                    dim_weight_lbs=shipment.total_dim_weight_lbs,
+                    authorized_accessorials=shipment_accs,
+                )
+                expired_variance = round(
+                    expired_rating.total_expected_charge - shipment.expected_total_charge, 2
+                )
+                billed_base = expired_rating.base_charge
                 inv_lines: List[InvoiceLine] = []
 
                 l1 = InvoiceLine(
@@ -577,8 +646,8 @@ class FreightDataGenerator:
                     line_number=1,
                     charge_type=ChargeType.BASE_FREIGHT,
                     description="Base Freight Charge (Expired Schedule)",
-                    billed_rate=round(billed_base / max(1.0, (shipment.billable_weight_lbs / 100.0)), 2),
-                    billed_units=round(shipment.billable_weight_lbs / 100.0, 2),
+                    billed_rate=expired_rating.applied_cwt_rate,
+                    billed_units=expired_rating.cwt_units,
                     billed_amount=billed_base,
                     expected_amount=shipment.expected_base_charge,
                     variance_amount=expired_variance,
@@ -594,19 +663,25 @@ class FreightDataGenerator:
                     description="Fuel Surcharge",
                     billed_rate=0.18,
                     billed_units=1.0,
-                    billed_amount=shipment.expected_fuel_surcharge,
+                    billed_amount=expired_rating.fuel_surcharge_amount,
                     expected_amount=shipment.expected_fuel_surcharge,
-                    variance_amount=0.0,
-                    audit_decision=LineAuditDecision.MATCHED,
+                    variance_amount=round(
+                        expired_rating.fuel_surcharge_amount - shipment.expected_fuel_surcharge, 2
+                    ),
+                    audit_decision=(
+                        LineAuditDecision.OVERCHARGE
+                        if expired_rating.fuel_surcharge_amount > shipment.expected_fuel_surcharge
+                        else LineAuditDecision.MATCHED
+                    ),
                 )
                 inv_lines.append(l2)
 
-                shipment_accs = acc_by_shipment.get(shipment.shipment_id, [])
                 for acc_idx, acc in enumerate(shipment_accs, start=3):
                     inv_lines.append(
                         InvoiceLine(
                             line_id=f"FLINE-{invoice_id}-{acc_idx:02d}",
                             invoice_id=invoice_id,
+                            accessorial_id=acc.accessorial_id,
                             line_number=acc_idx,
                             charge_type=ChargeType.ACCESSORIAL,
                             description=acc.description,
@@ -631,7 +706,7 @@ class FreightDataGenerator:
                     due_date=due_date,
                     currency="USD",
                     billed_base_charge=billed_base,
-                    billed_fuel_surcharge=shipment.expected_fuel_surcharge,
+                    billed_fuel_surcharge=expired_rating.fuel_surcharge_amount,
                     billed_accessorials_charge=billed_accs,
                     billed_total_amount=billed_total,
                     status=InvoiceStatus.AUDITED_EXCEPTION,
@@ -651,7 +726,7 @@ class FreightDataGenerator:
                     exception_type=ExceptionType.RATE_CARD_EXPIRED,
                     severity=ExceptionSeverity.HIGH,
                     expected_value="Active 2026 contract schedule",
-                    billed_value="Rate card expired 2025-12-31",
+                    billed_value=f"Expired rate card {expired_rate_card.rate_card_id}",
                     discrepancy_amount=expired_variance,
                     status=ExceptionStatus.OPEN,
                     assigned_to="Logistics Analyst",
@@ -667,7 +742,10 @@ class FreightDataGenerator:
                     expected_decision="AUDITED_EXCEPTION",
                     expected_variance=expired_variance,
                     line_number=1,
-                    explanation="Carrier billed under an expired contract rate card with unauthorized rate increase.",
+                    explanation=(
+                        f"Carrier billed under expired rate card {expired_rate_card.rate_card_id}; "
+                        f"the charge was calculated from its expired tariff."
+                    ),
                 )
                 continue
 
@@ -675,9 +753,13 @@ class FreightDataGenerator:
             # Case 3: Weight Tier Misapplied
             # ---------------------------------------------------------
             elif is_anomaly and anomaly_mod == 11:
-                # Carrier charged at Tier 1 rate instead of contracted Tier 3 volume discount rate
-                tier_variance = 65.40
-                billed_base = round(shipment.expected_base_charge + tier_variance, 2)
+                rate_card = rate_card_by_id[shipment.rate_card_id]
+                billed_units = round(shipment.billable_weight_lbs / 100.0, 2)
+                billed_base = max(
+                    rate_card.base_min_charge,
+                    round(billed_units * rate_card.rate_tier_1_cwt, 2),
+                )
+                tier_variance = round(billed_base - shipment.expected_base_charge, 2)
                 inv_lines = []
 
                 l1 = InvoiceLine(
@@ -686,8 +768,8 @@ class FreightDataGenerator:
                     line_number=1,
                     charge_type=ChargeType.BASE_FREIGHT,
                     description="Base Freight (Tier 1 misapplied)",
-                    billed_rate=34.50,
-                    billed_units=round(shipment.billable_weight_lbs / 100.0, 2),
+                    billed_rate=rate_card.rate_tier_1_cwt,
+                    billed_units=billed_units,
                     billed_amount=billed_base,
                     expected_amount=shipment.expected_base_charge,
                     variance_amount=tier_variance,
@@ -716,6 +798,7 @@ class FreightDataGenerator:
                         InvoiceLine(
                             line_id=f"FLINE-{invoice_id}-{acc_idx:02d}",
                             invoice_id=invoice_id,
+                            accessorial_id=acc.accessorial_id,
                             line_number=acc_idx,
                             charge_type=ChargeType.ACCESSORIAL,
                             description=acc.description,
@@ -759,8 +842,11 @@ class FreightDataGenerator:
                     line_id=l1.line_id,
                     exception_type=ExceptionType.WEIGHT_TIER_MISAPPLIED,
                     severity=ExceptionSeverity.MEDIUM,
-                    expected_value="Tier 3 CWT Rate (Weight >= 2000 lbs)",
-                    billed_value="Tier 1 CWT Rate (< 500 lbs)",
+                    expected_value=(
+                        f"Tier {determine_weight_tier(shipment.billable_weight_lbs)[0].value} "
+                        f"CWT rate for {shipment.billable_weight_lbs:.2f} lbs"
+                    ),
+                    billed_value="Tier 1 CWT rate",
                     discrepancy_amount=tier_variance,
                     status=ExceptionStatus.OPEN,
                     assigned_to="Logistics Analyst",
@@ -776,7 +862,11 @@ class FreightDataGenerator:
                     expected_decision="AUDITED_EXCEPTION",
                     expected_variance=tier_variance,
                     line_number=1,
-                    explanation="Carrier failed to apply contracted volume tier discount based on actual billable weight.",
+                    explanation=(
+                        f"Carrier billed at Tier 1; contracted tier is "
+                        f"{determine_weight_tier(shipment.billable_weight_lbs)[0].value} "
+                        f"for {shipment.billable_weight_lbs:.2f} billable lbs."
+                    ),
                 )
                 continue
 
@@ -838,6 +928,7 @@ class FreightDataGenerator:
                         InvoiceLine(
                             line_id=f"FLINE-{invoice_id}-{acc_idx:02d}",
                             invoice_id=invoice_id,
+                            accessorial_id=acc.accessorial_id,
                             line_number=acc_idx,
                             charge_type=ChargeType.ACCESSORIAL,
                             description=acc.description,
@@ -906,8 +997,7 @@ class FreightDataGenerator:
             # Case 5: Credit Note Exceeds Exception Amount
             # ---------------------------------------------------------
             elif is_anomaly and anomaly_mod == 19:
-                # An exception dispute of $80.00 was approved, but credit note issued was $160.00 (overcredited)
-                disp_amount = 80.00
+                disp_amount = max(1.0, round(shipment.expected_base_charge * 0.10, 2))
                 billed_base = round(shipment.expected_base_charge + disp_amount, 2)
                 inv_lines = []
 
@@ -917,7 +1007,9 @@ class FreightDataGenerator:
                     line_number=1,
                     charge_type=ChargeType.BASE_FREIGHT,
                     description="Base Freight Charge (Rate Variance)",
-                    billed_rate=29.00,
+                    billed_rate=round(
+                        billed_base / max(0.01, shipment.billable_weight_lbs / 100.0), 2
+                    ),
                     billed_units=round(shipment.billable_weight_lbs / 100.0, 2),
                     billed_amount=billed_base,
                     expected_amount=shipment.expected_base_charge,
@@ -947,6 +1039,7 @@ class FreightDataGenerator:
                         InvoiceLine(
                             line_id=f"FLINE-{invoice_id}-{acc_idx:02d}",
                             invoice_id=invoice_id,
+                            accessorial_id=acc.accessorial_id,
                             line_number=acc_idx,
                             charge_type=ChargeType.ACCESSORIAL,
                             description=acc.description,
@@ -1015,33 +1108,78 @@ class FreightDataGenerator:
                     )
                 )
 
-                # Now generate CreditNote that EXCEEDS the exception amount!
+                overcredit = (i // 25) % 2 == 0
                 cn_counter += 1
                 cn_id = f"CN-2026-{cn_counter:06d}"
-                excess_credit = round(disp_amount * 2.0, 2)  # $160.00 instead of $80.00
+                credit_amount = round(disp_amount * (2.0 if overcredit else 1.0), 2)
                 cn = CreditNote(
                     credit_note_id=cn_id,
                     carrier_id=carrier.carrier_id,
                     invoice_id=invoice_id,
                     exception_id=fex_id,
                     credit_note_number=f"CN-{carrier.carrier_id[-4:]}-2026-{cn_counter:04d}",
-                    credit_amount=excess_credit,
+                    credit_amount=credit_amount,
                     original_exception_amount=disp_amount,
                     status=CreditNoteStatus.APPLIED,
                     issue_date=inv_date + timedelta(days=5),
-                    reconciliation_status=ReconciliationStatus.OVERCREDITED,
+                    reconciliation_status=(
+                        ReconciliationStatus.OVERCREDITED
+                        if overcredit
+                        else ReconciliationStatus.RECONCILED
+                    ),
                     created_at=datetime.combine(inv_date + timedelta(days=5), datetime.min.time()),
                 )
                 credit_notes.append(cn)
+                if overcredit:
+                    excess_exception = round(credit_amount - disp_amount, 2)
+                    ex_counter += 1
+                    excess_exception_id = f"FEX-2026-{ex_counter:06d}"
+                    exceptions.append(
+                        AuditException(
+                            exception_id=excess_exception_id,
+                            invoice_id=invoice_id,
+                            line_id=None,
+                            exception_type=ExceptionType.CREDIT_NOTE_EXCEEDS_EXCEPTION,
+                            severity=ExceptionSeverity.HIGH,
+                            expected_value=f"${disp_amount:.2f} approved credit",
+                            billed_value=f"${credit_amount:.2f} issued credit",
+                            discrepancy_amount=excess_exception,
+                            status=ExceptionStatus.OPEN,
+                            assigned_to="Operations Manager",
+                            resolution_notes=(
+                                f"Credit note exceeds approved exception by ${excess_exception:.2f}."
+                            ),
+                            created_at=datetime.combine(inv_date + timedelta(days=5), datetime.min.time()),
+                        )
+                    )
 
                 self.gt.record_anomaly(
                     target_entity="CreditNote",
                     target_id=cn_id,
-                    category=AnomalyCategory.CREDIT_NOTE_EXCEEDS_EXCEPTION,
-                    expected_decision="OVERCREDITED",
-                    expected_variance=round(excess_credit - disp_amount, 2),
+                    category=(
+                        AnomalyCategory.CREDIT_NOTE_EXCEEDS_EXCEPTION
+                        if overcredit
+                        else AnomalyCategory.VALID_BASELINE
+                    ),
+                    expected_decision="OVERCREDITED" if overcredit else "RECONCILED",
+                    expected_variance=round(credit_amount - disp_amount, 2),
                     line_number=None,
-                    explanation=f"Credit note {cn_id} issued for ${excess_credit:.2f} exceeds approved exception of ${disp_amount:.2f}.",
+                    explanation=(
+                        f"Credit note {cn_id} issued for ${credit_amount:.2f} against "
+                        f"approved exception of ${disp_amount:.2f}."
+                    ),
+                )
+                self.gt.record_anomaly(
+                    target_entity="FreightInvoice",
+                    target_id=invoice_id,
+                    category=AnomalyCategory.BASE_RATE_MISMATCH,
+                    expected_decision="AUDITED_EXCEPTION",
+                    expected_variance=disp_amount,
+                    line_number=1,
+                    explanation=(
+                        f"Invoice contains a ${disp_amount:.2f} overcharge linked to "
+                        f"credit note {cn_id}, which is independently over-credited."
+                    ),
                 )
                 continue
 
@@ -1087,6 +1225,7 @@ class FreightDataGenerator:
                         InvoiceLine(
                             line_id=f"FLINE-{invoice_id}-{acc_idx:02d}",
                             invoice_id=invoice_id,
+                            accessorial_id=acc.accessorial_id,
                             line_number=acc_idx,
                             charge_type=ChargeType.ACCESSORIAL,
                             description=f"Duplicate {acc.description}",
@@ -1209,6 +1348,7 @@ class FreightDataGenerator:
                         InvoiceLine(
                             line_id=f"FLINE-{invoice_id}-{acc_idx:02d}",
                             invoice_id=invoice_id,
+                            accessorial_id=acc.accessorial_id,
                             line_number=acc_idx,
                             charge_type=ChargeType.ACCESSORIAL,
                             description=acc.description,
@@ -1332,6 +1472,7 @@ class FreightDataGenerator:
                     l_acc = InvoiceLine(
                         line_id=f"FLINE-{invoice_id}-{acc_idx:02d}",
                         invoice_id=invoice_id,
+                        accessorial_id=acc.accessorial_id,
                         line_number=acc_idx,
                         charge_type=ChargeType.ACCESSORIAL,
                         description=acc.description,
@@ -1365,5 +1506,58 @@ class FreightDataGenerator:
                     line_number=None,
                     explanation="Clean baseline invoice perfectly matching contracted rating and delivery records.",
                 )
+
+        ground_truth_by_invoice = {
+            record.target_id: record
+            for record in self.gt.records
+            if record.target_entity == "FreightInvoice"
+        }
+        shipment_by_id = {shipment.shipment_id: shipment for shipment in shipments}
+        for invoice in invoices:
+            ground_truth = ground_truth_by_invoice.get(invoice.invoice_id)
+            shipment = shipment_by_id.get(invoice.shipment_id or "")
+            if ground_truth and ground_truth.anomaly_category == AnomalyCategory.RATE_CARD_EXPIRED.value and shipment:
+                invoice.rate_card_id = expired_rate_card_by_key[
+                    (shipment.carrier_id, shipment.lane_id, shipment.service_level)
+                ].rate_card_id
+            elif shipment:
+                invoice.rate_card_id = shipment.rate_card_id
+
+        event_invoice_ids = {event.invoice_id for event in inv_events}
+        for invoice in invoices:
+            if invoice.invoice_id in event_invoice_ids:
+                continue
+            inv_events.append(
+                InvoiceStatusEvent(
+                    event_id=f"EVT-{invoice.invoice_id}-01",
+                    invoice_id=invoice.invoice_id,
+                    from_status=InvoiceStatus.PENDING_AUDIT,
+                    to_status=invoice.status,
+                    changed_by="Automated Freight Audit Engine",
+                    reason=(
+                        f"Generated audit decision: {invoice.audit_status.value}; "
+                        f"variance ${invoice.audit_variance:.2f}."
+                    ),
+                    timestamp=datetime.combine(invoice.invoice_date, datetime.min.time()),
+                )
+            )
+
+        resolution_exception_ids = {event.exception_id for event in res_events}
+        for exception in exceptions:
+            if exception.status == ExceptionStatus.OPEN or exception.exception_id in resolution_exception_ids:
+                continue
+            rev_counter += 1
+            res_events.append(
+                AuditResolutionEvent(
+                    event_id=f"REV-2026-{rev_counter:06d}",
+                    exception_id=exception.exception_id,
+                    from_status=ExceptionStatus.OPEN,
+                    to_status=exception.status,
+                    decided_by=exception.assigned_to,
+                    decision_reason=exception.resolution_notes or "Recorded generated resolution.",
+                    approved_amount=exception.discrepancy_amount,
+                    timestamp=exception.resolved_at or exception.created_at,
+                )
+            )
 
         return invoices, lines, exceptions, credit_notes, inv_events, res_events

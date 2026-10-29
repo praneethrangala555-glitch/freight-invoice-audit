@@ -5,21 +5,22 @@ FreightInvoice,FINV-2026-000003,UNKNOWN_SHIPMENT,AUDITED_EXCEPTION,327.75,,Refer
 FreightInvoice,FINV-2026-000004,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000005,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000006,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-FreightInvoice,FINV-2026-000007,RATE_CARD_EXPIRED,AUDITED_EXCEPTION,75.0,1,Carrier billed under an expired contract rate card with unauthorized rate increase.
+FreightInvoice,FINV-2026-000007,RATE_CARD_EXPIRED,AUDITED_EXCEPTION,97.98,1,Carrier billed under expired rate card RATE-CAR-000001-2026-14; the charge was calculated from its expired tariff.
 FreightInvoice,FINV-2026-000008,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000009,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000010,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-FreightInvoice,FINV-2026-000011,WEIGHT_TIER_MISAPPLIED,AUDITED_EXCEPTION,65.4,1,Carrier failed to apply contracted volume tier discount based on actual billable weight.
+FreightInvoice,FINV-2026-000011,WEIGHT_TIER_MISAPPLIED,AUDITED_EXCEPTION,197.06,1,Carrier billed at Tier 1; contracted tier is TIER_3 for 2345.80 billable lbs.
 FreightInvoice,FINV-2026-000012,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000013,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000014,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-FreightInvoice,FINV-2026-000015,SURCHARGE_DUPLICATED,AUDITED_EXCEPTION,108.39,3,Duplicate fuel surcharge line billed on the same invoice.
+FreightInvoice,FINV-2026-000015,SURCHARGE_DUPLICATED,AUDITED_EXCEPTION,101.25,3,Duplicate fuel surcharge line billed on the same invoice.
 FreightInvoice,FINV-2026-000016,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000017,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000018,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-CreditNote,CN-2026-000001,CREDIT_NOTE_EXCEEDS_EXCEPTION,OVERCREDITED,80.0,,Credit note CN-2026-000001 issued for $160.00 exceeds approved exception of $80.00.
+CreditNote,CN-2026-000001,CREDIT_NOTE_EXCEEDS_EXCEPTION,OVERCREDITED,74.11,,Credit note CN-2026-000001 issued for $148.22 against approved exception of $74.11.
+FreightInvoice,FINV-2026-000019,BASE_RATE_MISMATCH,AUDITED_EXCEPTION,74.11,1,"Invoice contains a $74.11 overcharge linked to credit note CN-2026-000001, which is independently over-credited."
 FreightInvoice,FINV-2026-000020,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-FreightInvoice,FINV-2026-000021,DUPLICATE_INVOICE,AUDITED_EXCEPTION,527.07,,Duplicate invoice submitted for already billed shipment SHP-2026-000021.
+FreightInvoice,FINV-2026-000021,DUPLICATE_INVOICE,AUDITED_EXCEPTION,983.02,,Duplicate invoice submitted for already billed shipment SHP-2026-000020.
 FreightInvoice,FINV-2026-000022,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000023,INVALID_ACCESSORIAL,AUDITED_EXCEPTION,85.0,3,Unauthorized accessorial fee billed without supporting BOL documentation.
 FreightInvoice,FINV-2026-000024,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
@@ -30,21 +31,22 @@ FreightInvoice,FINV-2026-000028,UNKNOWN_SHIPMENT,AUDITED_EXCEPTION,327.75,,Refer
 FreightInvoice,FINV-2026-000029,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000030,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000031,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-FreightInvoice,FINV-2026-000032,RATE_CARD_EXPIRED,AUDITED_EXCEPTION,75.0,1,Carrier billed under an expired contract rate card with unauthorized rate increase.
+FreightInvoice,FINV-2026-000032,RATE_CARD_EXPIRED,AUDITED_EXCEPTION,80.78,1,Carrier billed under expired rate card RATE-CAR-000002-2026-04; the charge was calculated from its expired tariff.
 FreightInvoice,FINV-2026-000033,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000034,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000035,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-FreightInvoice,FINV-2026-000036,WEIGHT_TIER_MISAPPLIED,AUDITED_EXCEPTION,65.4,1,Carrier failed to apply contracted volume tier discount based on actual billable weight.
+FreightInvoice,FINV-2026-000036,WEIGHT_TIER_MISAPPLIED,AUDITED_EXCEPTION,474.36,1,Carrier billed at Tier 1; contracted tier is TIER_3 for 2895.62 billable lbs.
 FreightInvoice,FINV-2026-000037,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000038,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000039,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-FreightInvoice,FINV-2026-000040,SURCHARGE_DUPLICATED,AUDITED_EXCEPTION,185.59,3,Duplicate fuel surcharge line billed on the same invoice.
+FreightInvoice,FINV-2026-000040,SURCHARGE_DUPLICATED,AUDITED_EXCEPTION,91.97,3,Duplicate fuel surcharge line billed on the same invoice.
 FreightInvoice,FINV-2026-000041,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000042,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000043,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-CreditNote,CN-2026-000002,CREDIT_NOTE_EXCEEDS_EXCEPTION,OVERCREDITED,80.0,,Credit note CN-2026-000002 issued for $160.00 exceeds approved exception of $80.00.
+CreditNote,CN-2026-000002,VALID_BASELINE,RECONCILED,0.0,,Credit note CN-2026-000002 issued for $68.41 against approved exception of $68.41.
+FreightInvoice,FINV-2026-000044,BASE_RATE_MISMATCH,AUDITED_EXCEPTION,68.41,1,"Invoice contains a $68.41 overcharge linked to credit note CN-2026-000002, which is independently over-credited."
 FreightInvoice,FINV-2026-000045,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-FreightInvoice,FINV-2026-000046,DUPLICATE_INVOICE,AUDITED_EXCEPTION,810.56,,Duplicate invoice submitted for already billed shipment SHP-2026-000046.
+FreightInvoice,FINV-2026-000046,DUPLICATE_INVOICE,AUDITED_EXCEPTION,778.1,,Duplicate invoice submitted for already billed shipment SHP-2026-000045.
 FreightInvoice,FINV-2026-000047,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000048,INVALID_ACCESSORIAL,AUDITED_EXCEPTION,85.0,3,Unauthorized accessorial fee billed without supporting BOL documentation.
 FreightInvoice,FINV-2026-000049,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
@@ -55,21 +57,22 @@ FreightInvoice,FINV-2026-000053,UNKNOWN_SHIPMENT,AUDITED_EXCEPTION,327.75,,Refer
 FreightInvoice,FINV-2026-000054,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000055,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000056,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-FreightInvoice,FINV-2026-000057,RATE_CARD_EXPIRED,AUDITED_EXCEPTION,75.0,1,Carrier billed under an expired contract rate card with unauthorized rate increase.
+FreightInvoice,FINV-2026-000057,RATE_CARD_EXPIRED,AUDITED_EXCEPTION,50.91,1,Carrier billed under expired rate card RATE-CAR-000002-2026-54; the charge was calculated from its expired tariff.
 FreightInvoice,FINV-2026-000058,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000059,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000060,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-FreightInvoice,FINV-2026-000061,WEIGHT_TIER_MISAPPLIED,AUDITED_EXCEPTION,65.4,1,Carrier failed to apply contracted volume tier discount based on actual billable weight.
+FreightInvoice,FINV-2026-000061,WEIGHT_TIER_MISAPPLIED,AUDITED_EXCEPTION,197.32,1,Carrier billed at Tier 1; contracted tier is TIER_3 for 2124.30 billable lbs.
 FreightInvoice,FINV-2026-000062,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000063,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000064,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-FreightInvoice,FINV-2026-000065,SURCHARGE_DUPLICATED,AUDITED_EXCEPTION,266.49,3,Duplicate fuel surcharge line billed on the same invoice.
+FreightInvoice,FINV-2026-000065,SURCHARGE_DUPLICATED,AUDITED_EXCEPTION,123.06,3,Duplicate fuel surcharge line billed on the same invoice.
 FreightInvoice,FINV-2026-000066,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000067,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000068,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-CreditNote,CN-2026-000003,CREDIT_NOTE_EXCEEDS_EXCEPTION,OVERCREDITED,80.0,,Credit note CN-2026-000003 issued for $160.00 exceeds approved exception of $80.00.
+CreditNote,CN-2026-000003,CREDIT_NOTE_EXCEEDS_EXCEPTION,OVERCREDITED,57.92,,Credit note CN-2026-000003 issued for $115.84 against approved exception of $57.92.
+FreightInvoice,FINV-2026-000069,BASE_RATE_MISMATCH,AUDITED_EXCEPTION,57.92,1,"Invoice contains a $57.92 overcharge linked to credit note CN-2026-000003, which is independently over-credited."
 FreightInvoice,FINV-2026-000070,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-FreightInvoice,FINV-2026-000071,DUPLICATE_INVOICE,AUDITED_EXCEPTION,1257.72,,Duplicate invoice submitted for already billed shipment SHP-2026-000071.
+FreightInvoice,FINV-2026-000071,DUPLICATE_INVOICE,AUDITED_EXCEPTION,657.87,,Duplicate invoice submitted for already billed shipment SHP-2026-000070.
 FreightInvoice,FINV-2026-000072,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000073,INVALID_ACCESSORIAL,AUDITED_EXCEPTION,85.0,3,Unauthorized accessorial fee billed without supporting BOL documentation.
 FreightInvoice,FINV-2026-000074,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
@@ -80,21 +83,22 @@ FreightInvoice,FINV-2026-000078,UNKNOWN_SHIPMENT,AUDITED_EXCEPTION,327.75,,Refer
 FreightInvoice,FINV-2026-000079,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000080,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000081,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-FreightInvoice,FINV-2026-000082,RATE_CARD_EXPIRED,AUDITED_EXCEPTION,75.0,1,Carrier billed under an expired contract rate card with unauthorized rate increase.
+FreightInvoice,FINV-2026-000082,RATE_CARD_EXPIRED,AUDITED_EXCEPTION,172.14,1,Carrier billed under expired rate card RATE-CAR-000003-2026-44; the charge was calculated from its expired tariff.
 FreightInvoice,FINV-2026-000083,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000084,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000085,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-FreightInvoice,FINV-2026-000086,WEIGHT_TIER_MISAPPLIED,AUDITED_EXCEPTION,65.4,1,Carrier failed to apply contracted volume tier discount based on actual billable weight.
+FreightInvoice,FINV-2026-000086,WEIGHT_TIER_MISAPPLIED,AUDITED_EXCEPTION,492.23,1,Carrier billed at Tier 1; contracted tier is TIER_3 for 2985.40 billable lbs.
 FreightInvoice,FINV-2026-000087,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000088,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000089,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-FreightInvoice,FINV-2026-000090,SURCHARGE_DUPLICATED,AUDITED_EXCEPTION,59.31,3,Duplicate fuel surcharge line billed on the same invoice.
+FreightInvoice,FINV-2026-000090,SURCHARGE_DUPLICATED,AUDITED_EXCEPTION,103.33,3,Duplicate fuel surcharge line billed on the same invoice.
 FreightInvoice,FINV-2026-000091,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000092,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000093,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-CreditNote,CN-2026-000004,CREDIT_NOTE_EXCEEDS_EXCEPTION,OVERCREDITED,80.0,,Credit note CN-2026-000004 issued for $160.00 exceeds approved exception of $80.00.
+CreditNote,CN-2026-000004,VALID_BASELINE,RECONCILED,0.0,,Credit note CN-2026-000004 issued for $56.74 against approved exception of $56.74.
+FreightInvoice,FINV-2026-000094,BASE_RATE_MISMATCH,AUDITED_EXCEPTION,56.74,1,"Invoice contains a $56.74 overcharge linked to credit note CN-2026-000004, which is independently over-credited."
 FreightInvoice,FINV-2026-000095,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-FreightInvoice,FINV-2026-000096,DUPLICATE_INVOICE,AUDITED_EXCEPTION,1215.87,,Duplicate invoice submitted for already billed shipment SHP-2026-000096.
+FreightInvoice,FINV-2026-000096,DUPLICATE_INVOICE,AUDITED_EXCEPTION,538.72,,Duplicate invoice submitted for already billed shipment SHP-2026-000095.
 FreightInvoice,FINV-2026-000097,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000098,INVALID_ACCESSORIAL,AUDITED_EXCEPTION,85.0,3,Unauthorized accessorial fee billed without supporting BOL documentation.
 FreightInvoice,FINV-2026-000099,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
@@ -105,21 +109,22 @@ FreightInvoice,FINV-2026-000103,UNKNOWN_SHIPMENT,AUDITED_EXCEPTION,327.75,,Refer
 FreightInvoice,FINV-2026-000104,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000105,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000106,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-FreightInvoice,FINV-2026-000107,RATE_CARD_EXPIRED,AUDITED_EXCEPTION,75.0,1,Carrier billed under an expired contract rate card with unauthorized rate increase.
+FreightInvoice,FINV-2026-000107,RATE_CARD_EXPIRED,AUDITED_EXCEPTION,126.93,1,Carrier billed under expired rate card RATE-CAR-000004-2026-34; the charge was calculated from its expired tariff.
 FreightInvoice,FINV-2026-000108,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000109,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000110,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-FreightInvoice,FINV-2026-000111,WEIGHT_TIER_MISAPPLIED,AUDITED_EXCEPTION,65.4,1,Carrier failed to apply contracted volume tier discount based on actual billable weight.
+FreightInvoice,FINV-2026-000111,WEIGHT_TIER_MISAPPLIED,AUDITED_EXCEPTION,335.4,1,Carrier billed at Tier 1; contracted tier is TIER_3 for 3000.00 billable lbs.
 FreightInvoice,FINV-2026-000112,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000113,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000114,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-FreightInvoice,FINV-2026-000115,SURCHARGE_DUPLICATED,AUDITED_EXCEPTION,57.25,3,Duplicate fuel surcharge line billed on the same invoice.
+FreightInvoice,FINV-2026-000115,SURCHARGE_DUPLICATED,AUDITED_EXCEPTION,110.34,3,Duplicate fuel surcharge line billed on the same invoice.
 FreightInvoice,FINV-2026-000116,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000117,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000118,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-CreditNote,CN-2026-000005,CREDIT_NOTE_EXCEEDS_EXCEPTION,OVERCREDITED,80.0,,Credit note CN-2026-000005 issued for $160.00 exceeds approved exception of $80.00.
+CreditNote,CN-2026-000005,CREDIT_NOTE_EXCEEDS_EXCEPTION,OVERCREDITED,33.97,,Credit note CN-2026-000005 issued for $67.94 against approved exception of $33.97.
+FreightInvoice,FINV-2026-000119,BASE_RATE_MISMATCH,AUDITED_EXCEPTION,33.97,1,"Invoice contains a $33.97 overcharge linked to credit note CN-2026-000005, which is independently over-credited."
 FreightInvoice,FINV-2026-000120,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-FreightInvoice,FINV-2026-000121,DUPLICATE_INVOICE,AUDITED_EXCEPTION,566.42,,Duplicate invoice submitted for already billed shipment SHP-2026-000121.
+FreightInvoice,FINV-2026-000121,DUPLICATE_INVOICE,AUDITED_EXCEPTION,754.13,,Duplicate invoice submitted for already billed shipment SHP-2026-000120.
 FreightInvoice,FINV-2026-000122,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000123,INVALID_ACCESSORIAL,AUDITED_EXCEPTION,85.0,3,Unauthorized accessorial fee billed without supporting BOL documentation.
 FreightInvoice,FINV-2026-000124,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
@@ -130,21 +135,22 @@ FreightInvoice,FINV-2026-000128,UNKNOWN_SHIPMENT,AUDITED_EXCEPTION,327.75,,Refer
 FreightInvoice,FINV-2026-000129,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000130,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000131,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-FreightInvoice,FINV-2026-000132,RATE_CARD_EXPIRED,AUDITED_EXCEPTION,75.0,1,Carrier billed under an expired contract rate card with unauthorized rate increase.
+FreightInvoice,FINV-2026-000132,RATE_CARD_EXPIRED,AUDITED_EXCEPTION,42.26,1,Carrier billed under expired rate card RATE-CAR-000005-2026-24; the charge was calculated from its expired tariff.
 FreightInvoice,FINV-2026-000133,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000134,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000135,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-FreightInvoice,FINV-2026-000136,WEIGHT_TIER_MISAPPLIED,AUDITED_EXCEPTION,65.4,1,Carrier failed to apply contracted volume tier discount based on actual billable weight.
+FreightInvoice,FINV-2026-000136,WEIGHT_TIER_MISAPPLIED,AUDITED_EXCEPTION,180.66,1,Carrier billed at Tier 1; contracted tier is TIER_3 for 2014.50 billable lbs.
 FreightInvoice,FINV-2026-000137,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000138,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000139,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-FreightInvoice,FINV-2026-000140,SURCHARGE_DUPLICATED,AUDITED_EXCEPTION,242.41,3,Duplicate fuel surcharge line billed on the same invoice.
+FreightInvoice,FINV-2026-000140,SURCHARGE_DUPLICATED,AUDITED_EXCEPTION,250.49,3,Duplicate fuel surcharge line billed on the same invoice.
 FreightInvoice,FINV-2026-000141,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000142,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000143,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-CreditNote,CN-2026-000006,CREDIT_NOTE_EXCEEDS_EXCEPTION,OVERCREDITED,80.0,,Credit note CN-2026-000006 issued for $160.00 exceeds approved exception of $80.00.
+CreditNote,CN-2026-000006,VALID_BASELINE,RECONCILED,0.0,,Credit note CN-2026-000006 issued for $126.88 against approved exception of $126.88.
+FreightInvoice,FINV-2026-000144,BASE_RATE_MISMATCH,AUDITED_EXCEPTION,126.88,1,"Invoice contains a $126.88 overcharge linked to credit note CN-2026-000006, which is independently over-credited."
 FreightInvoice,FINV-2026-000145,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-FreightInvoice,FINV-2026-000146,DUPLICATE_INVOICE,AUDITED_EXCEPTION,784.9,,Duplicate invoice submitted for already billed shipment SHP-2026-000146.
+FreightInvoice,FINV-2026-000146,DUPLICATE_INVOICE,AUDITED_EXCEPTION,501.55,,Duplicate invoice submitted for already billed shipment SHP-2026-000145.
 FreightInvoice,FINV-2026-000147,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000148,INVALID_ACCESSORIAL,AUDITED_EXCEPTION,85.0,3,Unauthorized accessorial fee billed without supporting BOL documentation.
 FreightInvoice,FINV-2026-000149,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
@@ -155,21 +161,22 @@ FreightInvoice,FINV-2026-000153,UNKNOWN_SHIPMENT,AUDITED_EXCEPTION,327.75,,Refer
 FreightInvoice,FINV-2026-000154,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000155,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000156,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-FreightInvoice,FINV-2026-000157,RATE_CARD_EXPIRED,AUDITED_EXCEPTION,75.0,1,Carrier billed under an expired contract rate card with unauthorized rate increase.
+FreightInvoice,FINV-2026-000157,RATE_CARD_EXPIRED,AUDITED_EXCEPTION,92.4,1,Carrier billed under expired rate card RATE-CAR-000006-2026-14; the charge was calculated from its expired tariff.
 FreightInvoice,FINV-2026-000158,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000159,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000160,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-FreightInvoice,FINV-2026-000161,WEIGHT_TIER_MISAPPLIED,AUDITED_EXCEPTION,65.4,1,Carrier failed to apply contracted volume tier discount based on actual billable weight.
+FreightInvoice,FINV-2026-000161,WEIGHT_TIER_MISAPPLIED,AUDITED_EXCEPTION,270.79,1,Carrier billed at Tier 1; contracted tier is TIER_3 for 2155.90 billable lbs.
 FreightInvoice,FINV-2026-000162,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000163,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000164,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-FreightInvoice,FINV-2026-000165,SURCHARGE_DUPLICATED,AUDITED_EXCEPTION,102.56,3,Duplicate fuel surcharge line billed on the same invoice.
+FreightInvoice,FINV-2026-000165,SURCHARGE_DUPLICATED,AUDITED_EXCEPTION,69.93,3,Duplicate fuel surcharge line billed on the same invoice.
 FreightInvoice,FINV-2026-000166,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000167,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000168,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-CreditNote,CN-2026-000007,CREDIT_NOTE_EXCEEDS_EXCEPTION,OVERCREDITED,80.0,,Credit note CN-2026-000007 issued for $160.00 exceeds approved exception of $80.00.
+CreditNote,CN-2026-000007,CREDIT_NOTE_EXCEEDS_EXCEPTION,OVERCREDITED,25.88,,Credit note CN-2026-000007 issued for $51.76 against approved exception of $25.88.
+FreightInvoice,FINV-2026-000169,BASE_RATE_MISMATCH,AUDITED_EXCEPTION,25.88,1,"Invoice contains a $25.88 overcharge linked to credit note CN-2026-000007, which is independently over-credited."
 FreightInvoice,FINV-2026-000170,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-FreightInvoice,FINV-2026-000171,DUPLICATE_INVOICE,AUDITED_EXCEPTION,449.96,,Duplicate invoice submitted for already billed shipment SHP-2026-000171.
+FreightInvoice,FINV-2026-000171,DUPLICATE_INVOICE,AUDITED_EXCEPTION,525.49,,Duplicate invoice submitted for already billed shipment SHP-2026-000170.
 FreightInvoice,FINV-2026-000172,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000173,INVALID_ACCESSORIAL,AUDITED_EXCEPTION,85.0,3,Unauthorized accessorial fee billed without supporting BOL documentation.
 FreightInvoice,FINV-2026-000174,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
@@ -180,21 +187,22 @@ FreightInvoice,FINV-2026-000178,UNKNOWN_SHIPMENT,AUDITED_EXCEPTION,327.75,,Refer
 FreightInvoice,FINV-2026-000179,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000180,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000181,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-FreightInvoice,FINV-2026-000182,RATE_CARD_EXPIRED,AUDITED_EXCEPTION,75.0,1,Carrier billed under an expired contract rate card with unauthorized rate increase.
+FreightInvoice,FINV-2026-000182,RATE_CARD_EXPIRED,AUDITED_EXCEPTION,200.8,1,Carrier billed under expired rate card RATE-CAR-000007-2026-04; the charge was calculated from its expired tariff.
 FreightInvoice,FINV-2026-000183,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000184,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000185,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-FreightInvoice,FINV-2026-000186,WEIGHT_TIER_MISAPPLIED,AUDITED_EXCEPTION,65.4,1,Carrier failed to apply contracted volume tier discount based on actual billable weight.
+FreightInvoice,FINV-2026-000186,WEIGHT_TIER_MISAPPLIED,AUDITED_EXCEPTION,262.62,1,Carrier billed at Tier 1; contracted tier is TIER_3 for 2394.26 billable lbs.
 FreightInvoice,FINV-2026-000187,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000188,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000189,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-FreightInvoice,FINV-2026-000190,SURCHARGE_DUPLICATED,AUDITED_EXCEPTION,125.36,3,Duplicate fuel surcharge line billed on the same invoice.
+FreightInvoice,FINV-2026-000190,SURCHARGE_DUPLICATED,AUDITED_EXCEPTION,76.52,3,Duplicate fuel surcharge line billed on the same invoice.
 FreightInvoice,FINV-2026-000191,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000192,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000193,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-CreditNote,CN-2026-000008,CREDIT_NOTE_EXCEEDS_EXCEPTION,OVERCREDITED,80.0,,Credit note CN-2026-000008 issued for $160.00 exceeds approved exception of $80.00.
+CreditNote,CN-2026-000008,VALID_BASELINE,RECONCILED,0.0,,Credit note CN-2026-000008 issued for $95.36 against approved exception of $95.36.
+FreightInvoice,FINV-2026-000194,BASE_RATE_MISMATCH,AUDITED_EXCEPTION,95.36,1,"Invoice contains a $95.36 overcharge linked to credit note CN-2026-000008, which is independently over-credited."
 FreightInvoice,FINV-2026-000195,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-FreightInvoice,FINV-2026-000196,DUPLICATE_INVOICE,AUDITED_EXCEPTION,1430.15,,Duplicate invoice submitted for already billed shipment SHP-2026-000196.
+FreightInvoice,FINV-2026-000196,DUPLICATE_INVOICE,AUDITED_EXCEPTION,1044.75,,Duplicate invoice submitted for already billed shipment SHP-2026-000195.
 FreightInvoice,FINV-2026-000197,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000198,INVALID_ACCESSORIAL,AUDITED_EXCEPTION,85.0,3,Unauthorized accessorial fee billed without supporting BOL documentation.
 FreightInvoice,FINV-2026-000199,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
@@ -205,21 +213,22 @@ FreightInvoice,FINV-2026-000203,UNKNOWN_SHIPMENT,AUDITED_EXCEPTION,327.75,,Refer
 FreightInvoice,FINV-2026-000204,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000205,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000206,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-FreightInvoice,FINV-2026-000207,RATE_CARD_EXPIRED,AUDITED_EXCEPTION,75.0,1,Carrier billed under an expired contract rate card with unauthorized rate increase.
+FreightInvoice,FINV-2026-000207,RATE_CARD_EXPIRED,AUDITED_EXCEPTION,156.76,1,Carrier billed under expired rate card RATE-CAR-000007-2026-54; the charge was calculated from its expired tariff.
 FreightInvoice,FINV-2026-000208,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000209,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000210,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-FreightInvoice,FINV-2026-000211,WEIGHT_TIER_MISAPPLIED,AUDITED_EXCEPTION,65.4,1,Carrier failed to apply contracted volume tier discount based on actual billable weight.
+FreightInvoice,FINV-2026-000211,WEIGHT_TIER_MISAPPLIED,AUDITED_EXCEPTION,260.28,1,Carrier billed at Tier 1; contracted tier is TIER_3 for 2485.70 billable lbs.
 FreightInvoice,FINV-2026-000212,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000213,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000214,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-FreightInvoice,FINV-2026-000215,SURCHARGE_DUPLICATED,AUDITED_EXCEPTION,57.46,3,Duplicate fuel surcharge line billed on the same invoice.
+FreightInvoice,FINV-2026-000215,SURCHARGE_DUPLICATED,AUDITED_EXCEPTION,154.07,3,Duplicate fuel surcharge line billed on the same invoice.
 FreightInvoice,FINV-2026-000216,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000217,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000218,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-CreditNote,CN-2026-000009,CREDIT_NOTE_EXCEEDS_EXCEPTION,OVERCREDITED,80.0,,Credit note CN-2026-000009 issued for $160.00 exceeds approved exception of $80.00.
+CreditNote,CN-2026-000009,CREDIT_NOTE_EXCEEDS_EXCEPTION,OVERCREDITED,84.49,,Credit note CN-2026-000009 issued for $168.98 against approved exception of $84.49.
+FreightInvoice,FINV-2026-000219,BASE_RATE_MISMATCH,AUDITED_EXCEPTION,84.49,1,"Invoice contains a $84.49 overcharge linked to credit note CN-2026-000009, which is independently over-credited."
 FreightInvoice,FINV-2026-000220,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-FreightInvoice,FINV-2026-000221,DUPLICATE_INVOICE,AUDITED_EXCEPTION,748.92,,Duplicate invoice submitted for already billed shipment SHP-2026-000221.
+FreightInvoice,FINV-2026-000221,DUPLICATE_INVOICE,AUDITED_EXCEPTION,1251.15,,Duplicate invoice submitted for already billed shipment SHP-2026-000220.
 FreightInvoice,FINV-2026-000222,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000223,INVALID_ACCESSORIAL,AUDITED_EXCEPTION,85.0,3,Unauthorized accessorial fee billed without supporting BOL documentation.
 FreightInvoice,FINV-2026-000224,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
@@ -230,21 +239,22 @@ FreightInvoice,FINV-2026-000228,UNKNOWN_SHIPMENT,AUDITED_EXCEPTION,327.75,,Refer
 FreightInvoice,FINV-2026-000229,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000230,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000231,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-FreightInvoice,FINV-2026-000232,RATE_CARD_EXPIRED,AUDITED_EXCEPTION,75.0,1,Carrier billed under an expired contract rate card with unauthorized rate increase.
+FreightInvoice,FINV-2026-000232,RATE_CARD_EXPIRED,AUDITED_EXCEPTION,66.89,1,Carrier billed under expired rate card RATE-CAR-000008-2026-44; the charge was calculated from its expired tariff.
 FreightInvoice,FINV-2026-000233,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000234,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000235,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-FreightInvoice,FINV-2026-000236,WEIGHT_TIER_MISAPPLIED,AUDITED_EXCEPTION,65.4,1,Carrier failed to apply contracted volume tier discount based on actual billable weight.
+FreightInvoice,FINV-2026-000236,WEIGHT_TIER_MISAPPLIED,AUDITED_EXCEPTION,245.32,1,Carrier billed at Tier 1; contracted tier is TIER_3 for 2390.84 billable lbs.
 FreightInvoice,FINV-2026-000237,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000238,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000239,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-FreightInvoice,FINV-2026-000240,SURCHARGE_DUPLICATED,AUDITED_EXCEPTION,58.0,3,Duplicate fuel surcharge line billed on the same invoice.
+FreightInvoice,FINV-2026-000240,SURCHARGE_DUPLICATED,AUDITED_EXCEPTION,256.05,3,Duplicate fuel surcharge line billed on the same invoice.
 FreightInvoice,FINV-2026-000241,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000242,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000243,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-CreditNote,CN-2026-000010,CREDIT_NOTE_EXCEEDS_EXCEPTION,OVERCREDITED,80.0,,Credit note CN-2026-000010 issued for $160.00 exceeds approved exception of $80.00.
+CreditNote,CN-2026-000010,VALID_BASELINE,RECONCILED,0.0,,Credit note CN-2026-000010 issued for $91.34 against approved exception of $91.34.
+FreightInvoice,FINV-2026-000244,BASE_RATE_MISMATCH,AUDITED_EXCEPTION,91.34,1,"Invoice contains a $91.34 overcharge linked to credit note CN-2026-000010, which is independently over-credited."
 FreightInvoice,FINV-2026-000245,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-FreightInvoice,FINV-2026-000246,DUPLICATE_INVOICE,AUDITED_EXCEPTION,861.8,,Duplicate invoice submitted for already billed shipment SHP-2026-000246.
+FreightInvoice,FINV-2026-000246,DUPLICATE_INVOICE,AUDITED_EXCEPTION,401.43,,Duplicate invoice submitted for already billed shipment SHP-2026-000245.
 FreightInvoice,FINV-2026-000247,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000248,INVALID_ACCESSORIAL,AUDITED_EXCEPTION,85.0,3,Unauthorized accessorial fee billed without supporting BOL documentation.
 FreightInvoice,FINV-2026-000249,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
@@ -255,21 +265,22 @@ FreightInvoice,FINV-2026-000253,UNKNOWN_SHIPMENT,AUDITED_EXCEPTION,327.75,,Refer
 FreightInvoice,FINV-2026-000254,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000255,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000256,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-FreightInvoice,FINV-2026-000257,RATE_CARD_EXPIRED,AUDITED_EXCEPTION,75.0,1,Carrier billed under an expired contract rate card with unauthorized rate increase.
+FreightInvoice,FINV-2026-000257,RATE_CARD_EXPIRED,AUDITED_EXCEPTION,115.11,1,Carrier billed under expired rate card RATE-CAR-000009-2026-34; the charge was calculated from its expired tariff.
 FreightInvoice,FINV-2026-000258,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000259,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000260,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-FreightInvoice,FINV-2026-000261,WEIGHT_TIER_MISAPPLIED,AUDITED_EXCEPTION,65.4,1,Carrier failed to apply contracted volume tier discount based on actual billable weight.
+FreightInvoice,FINV-2026-000261,WEIGHT_TIER_MISAPPLIED,AUDITED_EXCEPTION,389.3,1,Carrier billed at Tier 1; contracted tier is TIER_3 for 2710.56 billable lbs.
 FreightInvoice,FINV-2026-000262,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000263,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000264,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-FreightInvoice,FINV-2026-000265,SURCHARGE_DUPLICATED,AUDITED_EXCEPTION,100.22,3,Duplicate fuel surcharge line billed on the same invoice.
+FreightInvoice,FINV-2026-000265,SURCHARGE_DUPLICATED,AUDITED_EXCEPTION,33.73,3,Duplicate fuel surcharge line billed on the same invoice.
 FreightInvoice,FINV-2026-000266,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000267,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000268,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-CreditNote,CN-2026-000011,CREDIT_NOTE_EXCEEDS_EXCEPTION,OVERCREDITED,80.0,,Credit note CN-2026-000011 issued for $160.00 exceeds approved exception of $80.00.
+CreditNote,CN-2026-000011,CREDIT_NOTE_EXCEEDS_EXCEPTION,OVERCREDITED,15.54,,Credit note CN-2026-000011 issued for $31.08 against approved exception of $15.54.
+FreightInvoice,FINV-2026-000269,BASE_RATE_MISMATCH,AUDITED_EXCEPTION,15.54,1,"Invoice contains a $15.54 overcharge linked to credit note CN-2026-000011, which is independently over-credited."
 FreightInvoice,FINV-2026-000270,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-FreightInvoice,FINV-2026-000271,DUPLICATE_INVOICE,AUDITED_EXCEPTION,537.38,,Duplicate invoice submitted for already billed shipment SHP-2026-000271.
+FreightInvoice,FINV-2026-000271,DUPLICATE_INVOICE,AUDITED_EXCEPTION,696.38,,Duplicate invoice submitted for already billed shipment SHP-2026-000270.
 FreightInvoice,FINV-2026-000272,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000273,INVALID_ACCESSORIAL,AUDITED_EXCEPTION,85.0,3,Unauthorized accessorial fee billed without supporting BOL documentation.
 FreightInvoice,FINV-2026-000274,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
@@ -280,21 +291,22 @@ FreightInvoice,FINV-2026-000278,UNKNOWN_SHIPMENT,AUDITED_EXCEPTION,327.75,,Refer
 FreightInvoice,FINV-2026-000279,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000280,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000281,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-FreightInvoice,FINV-2026-000282,RATE_CARD_EXPIRED,AUDITED_EXCEPTION,75.0,1,Carrier billed under an expired contract rate card with unauthorized rate increase.
+FreightInvoice,FINV-2026-000282,RATE_CARD_EXPIRED,AUDITED_EXCEPTION,79.86,1,Carrier billed under expired rate card RATE-CAR-000010-2026-24; the charge was calculated from its expired tariff.
 FreightInvoice,FINV-2026-000283,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000284,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000285,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-FreightInvoice,FINV-2026-000286,WEIGHT_TIER_MISAPPLIED,AUDITED_EXCEPTION,65.4,1,Carrier failed to apply contracted volume tier discount based on actual billable weight.
+FreightInvoice,FINV-2026-000286,WEIGHT_TIER_MISAPPLIED,AUDITED_EXCEPTION,380.57,1,Carrier billed at Tier 1; contracted tier is TIER_3 for 3466.50 billable lbs.
 FreightInvoice,FINV-2026-000287,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000288,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000289,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-FreightInvoice,FINV-2026-000290,SURCHARGE_DUPLICATED,AUDITED_EXCEPTION,68.11,3,Duplicate fuel surcharge line billed on the same invoice.
+FreightInvoice,FINV-2026-000290,SURCHARGE_DUPLICATED,AUDITED_EXCEPTION,184.06,3,Duplicate fuel surcharge line billed on the same invoice.
 FreightInvoice,FINV-2026-000291,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000292,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000293,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-CreditNote,CN-2026-000012,CREDIT_NOTE_EXCEEDS_EXCEPTION,OVERCREDITED,80.0,,Credit note CN-2026-000012 issued for $160.00 exceeds approved exception of $80.00.
+CreditNote,CN-2026-000012,VALID_BASELINE,RECONCILED,0.0,,Credit note CN-2026-000012 issued for $30.17 against approved exception of $30.17.
+FreightInvoice,FINV-2026-000294,BASE_RATE_MISMATCH,AUDITED_EXCEPTION,30.17,1,"Invoice contains a $30.17 overcharge linked to credit note CN-2026-000012, which is independently over-credited."
 FreightInvoice,FINV-2026-000295,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-FreightInvoice,FINV-2026-000296,DUPLICATE_INVOICE,AUDITED_EXCEPTION,1111.23,,Duplicate invoice submitted for already billed shipment SHP-2026-000296.
+FreightInvoice,FINV-2026-000296,DUPLICATE_INVOICE,AUDITED_EXCEPTION,391.08,,Duplicate invoice submitted for already billed shipment SHP-2026-000295.
 FreightInvoice,FINV-2026-000297,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000298,INVALID_ACCESSORIAL,AUDITED_EXCEPTION,85.0,3,Unauthorized accessorial fee billed without supporting BOL documentation.
 FreightInvoice,FINV-2026-000299,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
@@ -305,21 +317,22 @@ FreightInvoice,FINV-2026-000303,UNKNOWN_SHIPMENT,AUDITED_EXCEPTION,327.75,,Refer
 FreightInvoice,FINV-2026-000304,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000305,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000306,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-FreightInvoice,FINV-2026-000307,RATE_CARD_EXPIRED,AUDITED_EXCEPTION,75.0,1,Carrier billed under an expired contract rate card with unauthorized rate increase.
+FreightInvoice,FINV-2026-000307,RATE_CARD_EXPIRED,AUDITED_EXCEPTION,69.57,1,Carrier billed under expired rate card RATE-CAR-000011-2026-14; the charge was calculated from its expired tariff.
 FreightInvoice,FINV-2026-000308,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000309,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000310,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-FreightInvoice,FINV-2026-000311,WEIGHT_TIER_MISAPPLIED,AUDITED_EXCEPTION,65.4,1,Carrier failed to apply contracted volume tier discount based on actual billable weight.
+FreightInvoice,FINV-2026-000311,WEIGHT_TIER_MISAPPLIED,AUDITED_EXCEPTION,324.2,1,Carrier billed at Tier 1; contracted tier is TIER_3 for 2296.37 billable lbs.
 FreightInvoice,FINV-2026-000312,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000313,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000314,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-FreightInvoice,FINV-2026-000315,SURCHARGE_DUPLICATED,AUDITED_EXCEPTION,181.51,3,Duplicate fuel surcharge line billed on the same invoice.
+FreightInvoice,FINV-2026-000315,SURCHARGE_DUPLICATED,AUDITED_EXCEPTION,157.07,3,Duplicate fuel surcharge line billed on the same invoice.
 FreightInvoice,FINV-2026-000316,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000317,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000318,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-CreditNote,CN-2026-000013,CREDIT_NOTE_EXCEEDS_EXCEPTION,OVERCREDITED,80.0,,Credit note CN-2026-000013 issued for $160.00 exceeds approved exception of $80.00.
+CreditNote,CN-2026-000013,CREDIT_NOTE_EXCEEDS_EXCEPTION,OVERCREDITED,21.52,,Credit note CN-2026-000013 issued for $43.04 against approved exception of $21.52.
+FreightInvoice,FINV-2026-000319,BASE_RATE_MISMATCH,AUDITED_EXCEPTION,21.52,1,"Invoice contains a $21.52 overcharge linked to credit note CN-2026-000013, which is independently over-credited."
 FreightInvoice,FINV-2026-000320,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-FreightInvoice,FINV-2026-000321,DUPLICATE_INVOICE,AUDITED_EXCEPTION,1198.12,,Duplicate invoice submitted for already billed shipment SHP-2026-000321.
+FreightInvoice,FINV-2026-000321,DUPLICATE_INVOICE,AUDITED_EXCEPTION,1704.24,,Duplicate invoice submitted for already billed shipment SHP-2026-000320.
 FreightInvoice,FINV-2026-000322,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000323,INVALID_ACCESSORIAL,AUDITED_EXCEPTION,85.0,3,Unauthorized accessorial fee billed without supporting BOL documentation.
 FreightInvoice,FINV-2026-000324,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
@@ -330,21 +343,22 @@ FreightInvoice,FINV-2026-000328,UNKNOWN_SHIPMENT,AUDITED_EXCEPTION,327.75,,Refer
 FreightInvoice,FINV-2026-000329,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000330,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000331,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-FreightInvoice,FINV-2026-000332,RATE_CARD_EXPIRED,AUDITED_EXCEPTION,75.0,1,Carrier billed under an expired contract rate card with unauthorized rate increase.
+FreightInvoice,FINV-2026-000332,RATE_CARD_EXPIRED,AUDITED_EXCEPTION,81.97,1,Carrier billed under expired rate card RATE-CAR-000012-2026-04; the charge was calculated from its expired tariff.
 FreightInvoice,FINV-2026-000333,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000334,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000335,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-FreightInvoice,FINV-2026-000336,WEIGHT_TIER_MISAPPLIED,AUDITED_EXCEPTION,65.4,1,Carrier failed to apply contracted volume tier discount based on actual billable weight.
+FreightInvoice,FINV-2026-000336,WEIGHT_TIER_MISAPPLIED,AUDITED_EXCEPTION,437.1,1,Carrier billed at Tier 1; contracted tier is TIER_3 for 3000.00 billable lbs.
 FreightInvoice,FINV-2026-000337,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000338,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000339,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-FreightInvoice,FINV-2026-000340,SURCHARGE_DUPLICATED,AUDITED_EXCEPTION,85.55,3,Duplicate fuel surcharge line billed on the same invoice.
+FreightInvoice,FINV-2026-000340,SURCHARGE_DUPLICATED,AUDITED_EXCEPTION,92.97,3,Duplicate fuel surcharge line billed on the same invoice.
 FreightInvoice,FINV-2026-000341,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000342,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000343,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-CreditNote,CN-2026-000014,CREDIT_NOTE_EXCEEDS_EXCEPTION,OVERCREDITED,80.0,,Credit note CN-2026-000014 issued for $160.00 exceeds approved exception of $80.00.
+CreditNote,CN-2026-000014,VALID_BASELINE,RECONCILED,0.0,,Credit note CN-2026-000014 issued for $68.09 against approved exception of $68.09.
+FreightInvoice,FINV-2026-000344,BASE_RATE_MISMATCH,AUDITED_EXCEPTION,68.09,1,"Invoice contains a $68.09 overcharge linked to credit note CN-2026-000014, which is independently over-credited."
 FreightInvoice,FINV-2026-000345,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-FreightInvoice,FINV-2026-000346,DUPLICATE_INVOICE,AUDITED_EXCEPTION,1098.51,,Duplicate invoice submitted for already billed shipment SHP-2026-000346.
+FreightInvoice,FINV-2026-000346,DUPLICATE_INVOICE,AUDITED_EXCEPTION,681.18,,Duplicate invoice submitted for already billed shipment SHP-2026-000345.
 FreightInvoice,FINV-2026-000347,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000348,INVALID_ACCESSORIAL,AUDITED_EXCEPTION,85.0,3,Unauthorized accessorial fee billed without supporting BOL documentation.
 FreightInvoice,FINV-2026-000349,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
@@ -355,21 +369,22 @@ FreightInvoice,FINV-2026-000353,UNKNOWN_SHIPMENT,AUDITED_EXCEPTION,327.75,,Refer
 FreightInvoice,FINV-2026-000354,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000355,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000356,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-FreightInvoice,FINV-2026-000357,RATE_CARD_EXPIRED,AUDITED_EXCEPTION,75.0,1,Carrier billed under an expired contract rate card with unauthorized rate increase.
+FreightInvoice,FINV-2026-000357,RATE_CARD_EXPIRED,AUDITED_EXCEPTION,90.03,1,Carrier billed under expired rate card RATE-CAR-000012-2026-54; the charge was calculated from its expired tariff.
 FreightInvoice,FINV-2026-000358,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000359,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000360,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-FreightInvoice,FINV-2026-000361,WEIGHT_TIER_MISAPPLIED,AUDITED_EXCEPTION,65.4,1,Carrier failed to apply contracted volume tier discount based on actual billable weight.
+FreightInvoice,FINV-2026-000361,WEIGHT_TIER_MISAPPLIED,AUDITED_EXCEPTION,203.02,1,Carrier billed at Tier 1; contracted tier is TIER_3 for 2136.70 billable lbs.
 FreightInvoice,FINV-2026-000362,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000363,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000364,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-FreightInvoice,FINV-2026-000365,SURCHARGE_DUPLICATED,AUDITED_EXCEPTION,59.93,3,Duplicate fuel surcharge line billed on the same invoice.
+FreightInvoice,FINV-2026-000365,SURCHARGE_DUPLICATED,AUDITED_EXCEPTION,189.49,3,Duplicate fuel surcharge line billed on the same invoice.
 FreightInvoice,FINV-2026-000366,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000367,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000368,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-CreditNote,CN-2026-000015,CREDIT_NOTE_EXCEEDS_EXCEPTION,OVERCREDITED,80.0,,Credit note CN-2026-000015 issued for $160.00 exceeds approved exception of $80.00.
+CreditNote,CN-2026-000015,CREDIT_NOTE_EXCEEDS_EXCEPTION,OVERCREDITED,57.91,,Credit note CN-2026-000015 issued for $115.82 against approved exception of $57.91.
+FreightInvoice,FINV-2026-000369,BASE_RATE_MISMATCH,AUDITED_EXCEPTION,57.91,1,"Invoice contains a $57.91 overcharge linked to credit note CN-2026-000015, which is independently over-credited."
 FreightInvoice,FINV-2026-000370,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-FreightInvoice,FINV-2026-000371,DUPLICATE_INVOICE,AUDITED_EXCEPTION,697.44,,Duplicate invoice submitted for already billed shipment SHP-2026-000371.
+FreightInvoice,FINV-2026-000371,DUPLICATE_INVOICE,AUDITED_EXCEPTION,1056.5,,Duplicate invoice submitted for already billed shipment SHP-2026-000370.
 FreightInvoice,FINV-2026-000372,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000373,INVALID_ACCESSORIAL,AUDITED_EXCEPTION,85.0,3,Unauthorized accessorial fee billed without supporting BOL documentation.
 FreightInvoice,FINV-2026-000374,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
@@ -380,21 +395,22 @@ FreightInvoice,FINV-2026-000378,UNKNOWN_SHIPMENT,AUDITED_EXCEPTION,327.75,,Refer
 FreightInvoice,FINV-2026-000379,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000380,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000381,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-FreightInvoice,FINV-2026-000382,RATE_CARD_EXPIRED,AUDITED_EXCEPTION,75.0,1,Carrier billed under an expired contract rate card with unauthorized rate increase.
+FreightInvoice,FINV-2026-000382,RATE_CARD_EXPIRED,AUDITED_EXCEPTION,93.61,1,Carrier billed under expired rate card RATE-CAR-000013-2026-44; the charge was calculated from its expired tariff.
 FreightInvoice,FINV-2026-000383,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000384,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000385,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-FreightInvoice,FINV-2026-000386,WEIGHT_TIER_MISAPPLIED,AUDITED_EXCEPTION,65.4,1,Carrier failed to apply contracted volume tier discount based on actual billable weight.
+FreightInvoice,FINV-2026-000386,WEIGHT_TIER_MISAPPLIED,AUDITED_EXCEPTION,274.5,1,Carrier billed at Tier 1; contracted tier is TIER_3 for 2499.50 billable lbs.
 FreightInvoice,FINV-2026-000387,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000388,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000389,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-FreightInvoice,FINV-2026-000390,SURCHARGE_DUPLICATED,AUDITED_EXCEPTION,149.42,3,Duplicate fuel surcharge line billed on the same invoice.
+FreightInvoice,FINV-2026-000390,SURCHARGE_DUPLICATED,AUDITED_EXCEPTION,269.53,3,Duplicate fuel surcharge line billed on the same invoice.
 FreightInvoice,FINV-2026-000391,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000392,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000393,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-CreditNote,CN-2026-000016,CREDIT_NOTE_EXCEEDS_EXCEPTION,OVERCREDITED,80.0,,Credit note CN-2026-000016 issued for $160.00 exceeds approved exception of $80.00.
+CreditNote,CN-2026-000016,VALID_BASELINE,RECONCILED,0.0,,Credit note CN-2026-000016 issued for $51.48 against approved exception of $51.48.
+FreightInvoice,FINV-2026-000394,BASE_RATE_MISMATCH,AUDITED_EXCEPTION,51.48,1,"Invoice contains a $51.48 overcharge linked to credit note CN-2026-000016, which is independently over-credited."
 FreightInvoice,FINV-2026-000395,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
-FreightInvoice,FINV-2026-000396,DUPLICATE_INVOICE,AUDITED_EXCEPTION,1492.91,,Duplicate invoice submitted for already billed shipment SHP-2026-000396.
+FreightInvoice,FINV-2026-000396,DUPLICATE_INVOICE,AUDITED_EXCEPTION,860.14,,Duplicate invoice submitted for already billed shipment SHP-2026-000395.
 FreightInvoice,FINV-2026-000397,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.
 FreightInvoice,FINV-2026-000398,INVALID_ACCESSORIAL,AUDITED_EXCEPTION,85.0,3,Unauthorized accessorial fee billed without supporting BOL documentation.
 FreightInvoice,FINV-2026-000399,VALID_BASELINE,AUDITED_APPROVED,0.0,,Clean baseline invoice perfectly matching contracted rating and delivery records.

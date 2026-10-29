@@ -6,14 +6,17 @@ Calculates SHA-256 cryptographic hashes for exact byte-level reproducibility tes
 import csv
 import hashlib
 import json
-import os
-from pathlib import Path
+import logging
 import sqlite3
-from typing import Any, Dict, List
+from pathlib import Path
 
 import pandas as pd
+
 from freight_audit.generator.seed_generator import DatasetBundle
 from freight_audit.models.schema import SQL_SCHEMA_DDL
+
+logger = logging.getLogger(__name__)
+
 
 def calculate_file_sha256(filepath: Path) -> str:
     """Calculate SHA-256 hash of a file."""
@@ -23,24 +26,28 @@ def calculate_file_sha256(filepath: Path) -> str:
             sha256_hash.update(byte_block)
     return sha256_hash.hexdigest()
 
+
 class DatasetExporter:
     def __init__(self, output_dir: Path):
         self.output_dir = Path(output_dir)
         self.output_dir.mkdir(parents=True, exist_ok=True)
 
-    def export_all(self, bundle: DatasetBundle) -> Dict[str, Any]:
+    def export_all(
+        self, bundle: DatasetBundle, populate_mysql: bool = False
+    ) -> dict[str, object]:
         """
         Export all entities to CSV, JSON, and SQLite database.
         Returns manifest summary with row counts and SHA-256 checksums.
         """
-        manifest: Dict[str, Any] = {
+        manifest: dict[str, object] = {
             "tables": {},
             "total_rows": 0,
-            "seed": bundle.ground_truth.records[0].explanation if bundle.ground_truth.records else "",
+            "seed": bundle.seed,
+            "generation_config": bundle.generation_config or {},
         }
 
         # Entities to export
-        tables: Dict[str, List[Any]] = {
+        tables: dict[str, list] = {
             "carriers": bundle.carriers,
             "lanes": bundle.lanes,
             "rate_cards": bundle.rate_cards,
@@ -111,13 +118,14 @@ class DatasetExporter:
             "json_sha256": calculate_file_sha256(gt_json_path),
         }
 
-        # 3. Export to SQLite database with schema DDL
+        # 3. Export to SQLite database with schema DDL (for local offline testing)
         db_path = self.output_dir / "freight_audit.db"
         if db_path.exists():
             db_path.unlink()
 
         conn = sqlite3.connect(str(db_path))
         conn.executescript(SQL_SCHEMA_DDL)
+        conn.execute("PRAGMA foreign_keys = ON")
 
         for table_name, rows in tables.items():
             if rows:
@@ -133,7 +141,43 @@ class DatasetExporter:
             "sha256": calculate_file_sha256(db_path),
         }
 
-        # 4. Save manifest file
+        # 4. Export to MySQL SQL Script & Database
+        mysql_sql_path = self.output_dir / "freight_audit_mysql.sql"
+        from freight_audit.database.mysql_manager import MySQLManager
+        mysql_rows = MySQLManager.generate_sql_dump_file(bundle, mysql_sql_path)
+        manifest["mysql_sql"] = {
+            "filename": "freight_audit_mysql.sql",
+            "total_statements": mysql_rows,
+            "sha256": calculate_file_sha256(mysql_sql_path),
+        }
+
+        # 5. Live MySQL Database population if connection is available
+        mysql_mgr = MySQLManager()
+        is_conn, conn_msg = (
+            mysql_mgr.test_connection()
+            if populate_mysql
+            else (False, "Live MySQL population disabled.")
+        )
+        if is_conn:
+            try:
+                mysql_counts = mysql_mgr.populate_from_bundle(bundle)
+                manifest["mysql_db"] = {
+                    "status": "populated",
+                    "database": mysql_mgr.config.database,
+                    "host": mysql_mgr.config.host,
+                    "table_counts": mysql_counts,
+                }
+            except Exception as exc:  # noqa: BLE001
+                logger.warning("MySQL population failed: %s", exc)
+                manifest["mysql_db"] = {"status": "error", "error": str(exc)}
+        else:
+            manifest["mysql_db"] = {
+                "status": "skipped_no_connection",
+                "message": conn_msg,
+                "sql_dump": "freight_audit_mysql.sql",
+            }
+
+        # 6. Save manifest file
         manifest_path = self.output_dir / "export_manifest.json"
         with open(manifest_path, "w", encoding="utf-8") as f:
             json.dump(manifest, f, indent=2)

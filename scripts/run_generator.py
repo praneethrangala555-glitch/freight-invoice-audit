@@ -31,6 +31,11 @@ def main():
     parser.add_argument("--shipments", type=int, default=None, help="Override number of shipments")
     parser.add_argument("--invoices", type=int, default=None, help="Override number of freight invoices")
     parser.add_argument("--lanes", type=int, default=None, help="Override number of lanes")
+    parser.add_argument(
+        "--populate-mysql",
+        action="store_true",
+        help="Also write to the configured live MySQL database (otherwise export only the SQL dump).",
+    )
 
     args = parser.parse_args()
 
@@ -80,13 +85,14 @@ def main():
         print("\nValidation Warnings/Errors:")
         for err in val_result.errors:
             print(f"  - {err}")
+        return 1
     else:
-        print("  All primary keys unique, foreign keys intact, dates chronological, arithmetic verified!")
+        print("  All enabled integrity, lifecycle, ground-truth, and arithmetic checks passed.")
 
     # Export
     exp_start = time.time()
     exporter = DatasetExporter(out_dir)
-    manifest = exporter.export_all(bundle)
+    manifest = exporter.export_all(bundle, populate_mysql=args.populate_mysql)
     exp_time = time.time() - exp_start
     print(f"[3/3] Export to CSV, JSON, and SQLite completed in {exp_time:.2f}s ({manifest['total_rows']:,} rows).")
 
@@ -129,12 +135,20 @@ def main():
                     "total_spend_expected": eval_report.total_spend_expected_usd,
                     "total_overcharge_detected": eval_report.total_overcharge_detected_usd,
                     "credit_notes_issued": eval_report.credit_notes_issued_usd,
+                    "credit_notes_reconciled": eval_report.credit_notes_reconciled_usd,
+                    "credit_notes_overcredited": eval_report.credit_notes_overcredited_usd,
+                    "credit_notes_reconciled_count": eval_report.credit_notes_reconciled_count,
+                    "credit_notes_overcredited_count": eval_report.credit_notes_overcredited_count,
+                    "recovery_rate_pct": eval_report.recovery_rate_pct,
                 },
                 "anomalies_breakdown": eval_report.anomalies_by_category,
+                "credit_notes_breakdown": eval_report.credit_notes_by_category,
+                "validation_errors": val_result.errors,
             },
             f,
             indent=2,
         )
+    return 0
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

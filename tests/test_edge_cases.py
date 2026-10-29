@@ -188,3 +188,80 @@ def test_edge_case_credit_note_exceeds_exception():
     assert excess_ex is not None
     assert excess_ex.exception_type == ExceptionType.CREDIT_NOTE_EXCEEDS_EXCEPTION
     assert excess_ex.discrepancy_amount == 100.00  # $200 - $100
+
+
+def test_expired_rate_card_claim_is_flagged(test_setup):
+    carrier, active_card, shipment, _ = test_setup
+    expired_card = active_card.model_copy(
+        update={
+            "rate_card_id": "RATE-CAR-000001-2026-02",
+            "effective_end_date": date(2026, 1, 31),
+            "status": RateCardStatus.EXPIRED,
+        }
+    )
+    auditor = FreightAuditor(
+        rating_engine=RatingEngine([active_card, expired_card]),
+        shipments={shipment.shipment_id: shipment},
+        rate_cards_by_id={
+            active_card.rate_card_id: active_card,
+            expired_card.rate_card_id: expired_card,
+        },
+    )
+    invoice = FreightInvoice(
+        invoice_id="FINV-2026-000020",
+        carrier_id=carrier.carrier_id,
+        shipment_id=shipment.shipment_id,
+        rate_card_id=expired_card.rate_card_id,
+        invoice_number="INV-EXPIRED-001",
+        invoice_date=date(2026, 3, 20),
+        due_date=date(2026, 4, 20),
+        billed_total_amount=690.00,
+    )
+    lines = [
+        InvoiceLine(
+            line_id="FLINE-FINV-2026-000020-01",
+            invoice_id=invoice.invoice_id,
+            line_number=1,
+            charge_type=ChargeType.BASE_FREIGHT,
+            description="Base Freight",
+            billed_amount=600.00,
+        ),
+        InvoiceLine(
+            line_id="FLINE-FINV-2026-000020-02",
+            invoice_id=invoice.invoice_id,
+            line_number=2,
+            charge_type=ChargeType.FUEL_SURCHARGE,
+            description="Fuel Surcharge",
+            billed_amount=90.00,
+        ),
+    ]
+
+    audited, _, exceptions, _ = auditor.audit_invoice(invoice, lines)
+    assert audited.status == InvoiceStatus.AUDITED_EXCEPTION
+    assert any(item.exception_type == ExceptionType.RATE_CARD_EXPIRED for item in exceptions)
+
+
+def test_credit_note_uses_approved_dispute_amount():
+    recon = DisputeReconciliationEngine()
+    exception = AuditException(
+        exception_id="FEX-2026-000002",
+        invoice_id="FINV-2026-000002",
+        exception_type=ExceptionType.BASE_RATE_MISMATCH,
+        severity=ExceptionSeverity.MEDIUM,
+        expected_value="$600.00",
+        billed_value="$700.00",
+        discrepancy_amount=100.00,
+        status=ExceptionStatus.APPROVED_DISPUTE,
+    )
+    note = recon.generate_credit_note_for_exception(
+        exception=exception,
+        carrier_id="CAR-000001",
+        credit_amount=80.00,
+        approved_amount=80.00,
+    )
+    success, message, excess = recon.reconcile_credit_note(note, exception)
+
+    assert success is True
+    assert "reconciled" in message
+    assert excess is None
+    assert note.original_exception_amount == 80.00

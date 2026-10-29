@@ -33,6 +33,7 @@ class FreightAuditor:
         shipments: Optional[Dict[str, Shipment]] = None,
         shipment_accessorials: Optional[Dict[str, List[Accessorial]]] = None,
         rate_cards_by_id: Optional[Dict[str, RateCard]] = None,
+        existing_invoices: Optional[List[FreightInvoice]] = None,
     ):
         self.rating_engine = rating_engine
         self.shipments = shipments or {}
@@ -43,6 +44,16 @@ class FreightAuditor:
         # Invoice number index: (carrier_id, invoice_number) -> invoice_id
         self.billed_invoices: Dict[Tuple[str, str], str] = {}
         self.exception_counter = 0
+        for existing in existing_invoices or []:
+            if existing.audit_status == AuditStatus.DUPLICATE_INVOICE:
+                continue
+            if existing.shipment_id in self.shipments:
+                self.billed_shipments.setdefault(
+                    (existing.carrier_id, existing.shipment_id), existing.invoice_id
+                )
+            self.billed_invoices.setdefault(
+                (existing.carrier_id, existing.invoice_number), existing.invoice_id
+            )
 
     def next_exception_id(self) -> str:
         self.exception_counter += 1
@@ -61,7 +72,10 @@ class FreightAuditor:
         # -------------------------------------------------------------
         # Stage 1: Shipment Existence & Parent Integrity Check
         # -------------------------------------------------------------
-        if not invoice.shipment_id or invoice.shipment_id not in self.shipments:
+        shipment_reference = invoice.shipment_id or invoice.shipment_reference
+        if not shipment_reference or shipment_reference not in self.shipments:
+            invoice.shipment_reference = shipment_reference
+            invoice.shipment_id = None
             ex = AuditException(
                 exception_id=self.next_exception_id(),
                 invoice_id=invoice.invoice_id,
@@ -69,7 +83,7 @@ class FreightAuditor:
                 exception_type=ExceptionType.UNKNOWN_SHIPMENT,
                 severity=ExceptionSeverity.CRITICAL,
                 expected_value="Valid active shipment ID from TMS/ERP",
-                billed_value=str(invoice.shipment_id),
+                billed_value=str(shipment_reference),
                 discrepancy_amount=invoice.billed_total_amount,
                 status=ExceptionStatus.OPEN,
                 assigned_to="Logistics Analyst",
@@ -98,8 +112,41 @@ class FreightAuditor:
             )
             return invoice, lines, exceptions, events
 
-        shipment = self.shipments[invoice.shipment_id]
+        shipment = self.shipments[shipment_reference]
         accessorials = self.shipment_accessorials.get(shipment.shipment_id, [])
+
+        if shipment.carrier_id != invoice.carrier_id:
+            ex = AuditException(
+                exception_id=self.next_exception_id(),
+                invoice_id=invoice.invoice_id,
+                line_id=None,
+                exception_type=ExceptionType.CARRIER_MISMATCH,
+                severity=ExceptionSeverity.HIGH,
+                expected_value=shipment.carrier_id,
+                billed_value=invoice.carrier_id,
+                discrepancy_amount=invoice.billed_total_amount,
+                status=ExceptionStatus.OPEN,
+                assigned_to="Logistics Analyst",
+                resolution_notes="Invoice carrier does not match the carrier assigned to the shipment.",
+            )
+            for line in lines:
+                line.expected_amount = 0.0
+                line.variance_amount = line.billed_amount
+                line.audit_decision = LineAuditDecision.INVALID_LINE
+            invoice.status = InvoiceStatus.AUDITED_EXCEPTION
+            invoice.audit_status = AuditStatus.DISCREPANCY_DETECTED
+            invoice.audit_variance = invoice.billed_total_amount
+            events.append(
+                InvoiceStatusEvent(
+                    event_id=f"EVT-{invoice.invoice_id}-01",
+                    invoice_id=invoice.invoice_id,
+                    from_status=initial_status,
+                    to_status=InvoiceStatus.AUDITED_EXCEPTION,
+                    changed_by="Automated Freight Audit Engine",
+                    reason="Flagged CARRIER_MISMATCH exception.",
+                )
+            )
+            return invoice, lines, [ex], events
 
         # -------------------------------------------------------------
         # Stage 2: Duplicate Billing Check
@@ -107,8 +154,10 @@ class FreightAuditor:
         shipment_key = (invoice.carrier_id, shipment.shipment_id)
         invoice_num_key = (invoice.carrier_id, invoice.invoice_number)
 
-        if shipment_key in self.billed_shipments:
-            prev_inv = self.billed_shipments[shipment_key]
+        if shipment_key in self.billed_shipments or invoice_num_key in self.billed_invoices:
+            prev_inv = self.billed_shipments.get(
+                shipment_key, self.billed_invoices.get(invoice_num_key, "unknown")
+            )
             ex = AuditException(
                 exception_id=self.next_exception_id(),
                 invoice_id=invoice.invoice_id,
@@ -120,7 +169,10 @@ class FreightAuditor:
                 discrepancy_amount=invoice.billed_total_amount,
                 status=ExceptionStatus.OPEN,
                 assigned_to="Operations Manager",
-                resolution_notes=f"Shipment {shipment.shipment_id} was already billed under invoice {prev_inv}.",
+                resolution_notes=(
+                    f"Shipment {shipment.shipment_id} or invoice number "
+                    f"{invoice.invoice_number} was already billed under invoice {prev_inv}."
+                ),
             )
             exceptions.append(ex)
             invoice.status = InvoiceStatus.AUDITED_EXCEPTION
@@ -154,9 +206,26 @@ class FreightAuditor:
         rate_card = self.rating_engine.find_active_rate_card(
             invoice.carrier_id, shipment.lane_id, shipment.service_level, shipment.ship_date
         )
+        claimed_rate_card = self.rate_cards_by_id.get(invoice.rate_card_id or "")
+        claimed_card_invalid = bool(
+            invoice.rate_card_id
+            and (
+                claimed_rate_card is None
+                or claimed_rate_card.status.value != "ACTIVE"
+                or claimed_rate_card.effective_start_date > shipment.ship_date
+                or claimed_rate_card.effective_end_date < shipment.ship_date
+                or claimed_rate_card.carrier_id != invoice.carrier_id
+                or claimed_rate_card.lane_id != shipment.lane_id
+                or claimed_rate_card.service_level != shipment.service_level
+            )
+        )
 
-        if not rate_card or rate_card.effective_end_date < shipment.ship_date:
-            expired_date = rate_card.effective_end_date.isoformat() if rate_card else "None"
+        if not rate_card or claimed_card_invalid:
+            expired_date = (
+                claimed_rate_card.effective_end_date.isoformat()
+                if claimed_rate_card
+                else "None"
+            )
             ex = AuditException(
                 exception_id=self.next_exception_id(),
                 invoice_id=invoice.invoice_id,
@@ -164,7 +233,10 @@ class FreightAuditor:
                 exception_type=ExceptionType.RATE_CARD_EXPIRED,
                 severity=ExceptionSeverity.HIGH,
                 expected_value=f"Active contract on ship date {shipment.ship_date.isoformat()}",
-                billed_value=f"Expired contract (end date: {expired_date})",
+                billed_value=(
+                    f"Invalid or expired contract {invoice.rate_card_id} "
+                    f"(end date: {expired_date})"
+                ),
                 discrepancy_amount=round(invoice.billed_total_amount - shipment.expected_total_charge, 2),
                 status=ExceptionStatus.OPEN,
                 assigned_to="Logistics Analyst",
@@ -276,12 +348,22 @@ class FreightAuditor:
                         line.audit_decision = LineAuditDecision.MATCHED
 
             elif line.charge_type == ChargeType.ACCESSORIAL:
-                # Extract code or match by description
                 matched_code = None
-                for code_str in auth_acc_map.keys():
-                    if code_str.lower() in line.description.lower():
-                        matched_code = code_str
-                        break
+                if line.accessorial_id:
+                    matched_accessorial = next(
+                        (
+                            item for item in accessorials
+                            if item.accessorial_id == line.accessorial_id and item.authorized
+                        ),
+                        None,
+                    )
+                    if matched_accessorial:
+                        matched_code = matched_accessorial.code.value
+                else:
+                    for code_str in auth_acc_map:
+                        if code_str.lower() in line.description.lower():
+                            matched_code = code_str
+                            break
 
                 acc_key = matched_code or line.description
                 billed_accessorial_counts[acc_key] = billed_accessorial_counts.get(acc_key, 0) + 1

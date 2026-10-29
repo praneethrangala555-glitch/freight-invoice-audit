@@ -179,15 +179,23 @@ with tabs[1]:
         st.write("")
         st.write("")
         if st.button("Apply Resolution Decision"):
-            recon = DisputeReconciliationEngine()
-            updated_ex, event = recon.resolve_exception_dispute(
-                exception=target_ex,
-                decision=ExceptionStatus(action_type),
-                decided_by=actor_role,
-                decision_reason=reason,
+            recon = DisputeReconciliationEngine(
+                credit_notes=bundle.credit_notes,
+                resolution_events=bundle.audit_resolution_events,
+                exceptions=bundle.audit_exceptions,
             )
-            bundle.audit_resolution_events.append(event)
-            st.success(f"Exception `{target_ex.exception_id}` transitioned to `{action_type}`!")
+            try:
+                updated_ex, event = recon.resolve_exception_dispute(
+                    exception=target_ex,
+                    decision=ExceptionStatus(action_type),
+                    decided_by=actor_role,
+                    decision_reason=reason,
+                )
+            except ValueError as exc:
+                st.error(str(exc))
+            else:
+                bundle.audit_resolution_events.append(event)
+                st.success(f"Exception `{target_ex.exception_id}` transitioned to `{action_type}`!")
 
 # -------------------------------------------------------------
 # TAB 3: Anomaly Distribution & Accuracy

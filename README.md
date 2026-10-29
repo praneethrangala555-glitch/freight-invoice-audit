@@ -1,7 +1,7 @@
 # Freight Invoice Audit Engine & Contract Rating Platform
 
-[![Tests](https://img.shields.io/badge/pytest-10%20passed-brightgreen.svg)]()
-[![Validation](https://img.shields.io/badge/validation-28%2F28%20checks%20passed-success.svg)]()
+[![Tests](https://img.shields.io/badge/pytest-17%20passed-brightgreen.svg)]()
+[![Validation](https://img.shields.io/badge/validation-59%2F59%20checks%20passed-success.svg)]()
 [![Reproducibility](https://img.shields.io/badge/reproducibility-100%25%20SHA--256%20match-blue.svg)]()
 [![FastAPI](https://img.shields.io/badge/API-FastAPI%200.100%2B-teal.svg)]()
 [![Streamlit](https://img.shields.io/badge/UI-Streamlit%20Dashboard-red.svg)]()
@@ -135,7 +135,7 @@ All 5 required negative scenarios from the specification plus real-world scenari
 | **EC-2** | **Rate card expired** | Invoiced under expired tariff schedule | `RATE_CARD_EXPIRED` | HIGH |
 | **EC-3** | **Weight tier misapplied** | Billed at Tier 1 rate instead of Tier 3 discount | `WEIGHT_TIER_MISAPPLIED` | MEDIUM |
 | **EC-4** | **Surcharge duplicated** | Two fuel surcharge lines on the same invoice | `SURCHARGE_DUPLICATED` | HIGH |
-| **EC-5** | **Credit note exceeds exception amount** | Credit note disbursed for > approved dispute | `CREDIT_NOTE_EXCEEDS_EXCEPTION` | HIGH |
+| **EC-5** | **Credit note exceeds exception amount** | Half of generated dispute credits match the approved amount; half are twice the derived approved amount and create a separate over-credit exception | `CREDIT_NOTE_EXCEEDS_EXCEPTION` | HIGH |
 | **EC-6** | **Duplicate invoice billing** | Same shipment billed twice on separate invoices | `DUPLICATE_INVOICE` | CRITICAL |
 | **EC-7** | **Invalid / unauthorized accessorial** | Carrier bills Liftgate without BOL authorization | `INVALID_ACCESSORIAL` | MEDIUM |
 
@@ -143,23 +143,25 @@ All 5 required negative scenarios from the specification plus real-world scenari
 
 ## 📊 Evaluation Metrics & Benchmark Results
 
-Evaluated directly against ground truth on the **Full Target Scale (100 carriers, 20,000 shipments, 15,000 invoices)**:
+Evaluated against rule-derived labels on the **Full Target Scale (100 carriers, 20,000 shipments, 15,000 invoices)**. These are synthetic acceptance metrics, not estimates of accuracy on real carrier invoices.
 
 | Metric | Target | Achieved | Status |
 | :--- | :--- | :--- | :--- |
 | **Total Invoices Audited** | 15,000 | **15,000** | **Complete** |
-| **Clean Baseline Invoices** | ~11,000 | **11,400** | **Complete** |
-| **Injected Anomaly Invoices** | ~3,500 | **3,600** | **Complete** |
-| **Audit Precision** | $\ge 80.0\%$ | **85.71%** | **Exceeded** |
-| **Audit Recall** | $\ge 95.0\%$ | **100.00%** | **Exceeded** |
-| **Classification F1-Score** | $\ge 0.90$ | **0.9231** | **Exceeded** |
-| **Overall Classification Accuracy**| $\ge 95.0\%$ | **96.00%** | **Exceeded** |
-| **Total Billed Transportation Spend** | - | **\$12,624,361.43** | **Verified** |
-| **Total Expected Contract Spend** | - | **\$11,654,476.14** | **Verified** |
-| **Total Overcharges Flagged** | - | **\$969,885.29** | **Recovered** |
-| **Settled Credit Notes** | - | **\$96,000.00** | **Reconciled** |
-| **Relational Validation Checks** | 28/28 | **28/28 Passed** | **100% Passed** |
-| **Step 10 Reproducibility Check** | Identical SHA-256 | **100% Identical** | **Verified** |
+| **Clean Baseline Invoices** | ~11,000 | **10,800** | **Complete** |
+| **Exception Invoices** | ~4,200 | **4,200** | **Complete** |
+| **Audit Precision** | - | **100.00%** | **All generated invoice labels matched** |
+| **Audit Recall** | - | **100.00%** | **All generated invoice labels matched** |
+| **Classification F1-Score** | - | **1.0000** | **All generated invoice labels matched** |
+| **Overall Classification Accuracy**| - | **100.00%** | **All generated invoice labels matched** |
+| **Total Billed Transportation Spend** | - | **\$12,954,220.82** | **Derived from invoice records** |
+| **Total Expected Contract Spend** | - | **\$11,812,761.47** | **Recomputed from expected invoice lines** |
+| **Total Overcharges Flagged** | - | **\$1,141,459.35** | **Derived from invoice variances** |
+| **Credits Issued / Reconciled** | - | **\$57,339.62 / \$23,470.20** | **300 exact; 300 over-credited** |
+| **Credit Over-amount** | - | **\$16,934.71** | **Separate over-credit exceptions created** |
+| **Reconciled-credit / Overcharge ratio** | - | **2.06%** | **Reconciled credits divided by positive detected overcharges** |
+| **Relational and rule validation checks** | - | **59/59 passed** | **PK/FK, dates, rollups, lifecycle, labels, and credits** |
+| **Step 10 Full-scale reproducibility** | Identical SHA-256 | **31/31 artifacts; all hashes matched** | **Verified** |
 
 ---
 
@@ -180,13 +182,23 @@ pip install -r requirements.txt
 ```bash
 python scripts/run_generator.py --scale starter --seed 20261022
 ```
-*Outputs CSV, JSON, and SQLite database `data/starter/freight_audit.db` in ~0.06 seconds.*
+*Outputs CSV, JSON, and MySQL dump `data/starter/freight_audit_mysql.sql` in ~0.06 seconds.*
 
 #### Generate Full Scale Dataset (15,000 invoices, 20,000 shipments, 100 carriers)
 ```bash
 python scripts/run_generator.py --scale full --seed 20261022
 ```
-*Generates 168,808 relational records across all 11 entities in ~2.0 seconds.*
+*Generates 175,752 relational rows across 11 core entities and two event tables; exports CSV, JSON, SQLite, and a MySQL SQL dump. Live MySQL population is opt-in via `--populate-mysql`.*
+
+#### Direct Ingestion into MySQL Database
+```bash
+# Using Python MySQL manager:
+python scripts/load_to_mysql.py --scale starter --user root --password <your_password> --database freight_audit_db
+
+# Or importing the generated MySQL dump directly:
+mysql -u root -p freight_audit_db < data/starter/freight_audit_mysql.sql
+```
+
 
 ---
 
@@ -194,7 +206,7 @@ python scripts/run_generator.py --scale full --seed 20261022
 ```bash
 python scripts/verify_reproducibility.py
 ```
-*Generates dataset twice in isolated temporary paths and validates 100% identical byte-level SHA-256 checksums.*
+*Generates the starter dataset twice in isolated temporary paths and validates every artifact checksum. Use `--scale full` to verify the 20,000-shipment/15,000-invoice preset.*
 
 ---
 
@@ -237,5 +249,5 @@ Provides:
 ## 📚 Documentation Links
 - [`docs/DATA_DICTIONARY.md`](docs/DATA_DICTIONARY.md): Complete data dictionary for all 11 entities (field types, allowed values, units, validation rules).
 - [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md): Technical workflows, actor personas, and state lifecycle machines.
-- [`docs/VALIDATION_REPORT.md`](docs/VALIDATION_REPORT.md): Relational integrity checks (28/28), arithmetic verification, and SHA-256 proofs.
+- [`docs/VALIDATION_REPORT.md`](docs/VALIDATION_REPORT.md): Relational integrity checks (59/59), arithmetic verification, and SHA-256 proofs.
 - [`docs/SOURCE_MANIFEST.md`](docs/SOURCE_MANIFEST.md): Seed documentation, parameter presets, and lawful provenance.

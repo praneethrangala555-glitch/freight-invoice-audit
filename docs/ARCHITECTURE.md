@@ -76,10 +76,10 @@ sequenceDiagram
 ### The 6 Audit Stages
 
 1. **Stage 1: Parent & Entity Existence Check**
-   - Validates that `invoice.shipment_id` exists in master shipment records.
+   - Validates that the resolved `invoice.shipment_id` exists; an unresolved external ID is retained in `shipment_reference`.
    - Failure condition: Unmatched or phantom shipment generates `UNKNOWN_SHIPMENT` exception (Severity: CRITICAL).
 2. **Stage 2: Duplicate Billing Check**
-   - Checks composite index `(carrier_id, shipment_id)` and `(carrier_id, invoice_number)`.
+   - Checks both `(carrier_id, shipment_id)` and `(carrier_id, invoice_number)`.
    - Failure condition: Re-billing an already processed shipment generates `DUPLICATE_INVOICE` exception (Severity: CRITICAL).
 3. **Stage 3: Contract Rate Card Validity Check**
    - Evaluates active contracted rate cards by carrier, lane, service level, and tender date.
@@ -141,3 +141,8 @@ To prevent audit tampering and maintain complete SOX/financial compliance:
 - Every state change writes an explicit record to `invoice_status_events` or `audit_resolution_events`.
 - Prior state records are never updated in-place; state changes are strictly append-only.
 - All records record `changed_by`, `reason`, `timestamp`, and the state transition tuple `(from_status, to_status)`.
+- Every generated invoice has an invoice-status event, and every resolved exception has a resolution event.
+- An unknown external shipment reference is kept in `FreightInvoice.shipment_reference` while
+  `shipment_id` remains null, preserving the raw anomaly without creating a broken FK.
+- Rate-card IDs and authorized accessorial IDs are stored on their dependent shipment, invoice,
+  and line records so rating and authorization decisions can be traced through exact joins.

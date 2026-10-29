@@ -4,7 +4,7 @@
     "name": "Redwood Express #1",
     "scac": "REAB",
     "mode": "LTL",
-    "contact_email": "billing@reabfreight.com",
+    "contact_email": "billing@reab.freight.example",
     "payment_terms_days": 60,
     "status": "ACTIVE",
     "created_at": "2025-01-02T08:00:00"
@@ -14,7 +14,7 @@
     "name": "Continental Express #2",
     "scac": "COAC",
     "mode": "LTL",
-    "contact_email": "billing@coacfreight.com",
+    "contact_email": "billing@coac.freight.example",
     "payment_terms_days": 15,
     "status": "ACTIVE",
     "created_at": "2025-01-03T08:00:00"
@@ -24,7 +24,7 @@
     "name": "Vanguard Express #3",
     "scac": "VAAD",
     "mode": "LTL",
-    "contact_email": "billing@vaadfreight.com",
+    "contact_email": "billing@vaad.freight.example",
     "payment_terms_days": 30,
     "status": "ACTIVE",
     "created_at": "2025-01-04T08:00:00"
@@ -34,7 +34,7 @@
     "name": "Apex Express #4",
     "scac": "APAE",
     "mode": "PARCEL",
-    "contact_email": "billing@apaefreight.com",
+    "contact_email": "billing@apae.freight.example",
     "payment_terms_days": 30,
     "status": "ACTIVE",
     "created_at": "2025-01-05T08:00:00"
@@ -44,7 +44,7 @@
     "name": "Swift Express #5",
     "scac": "SWAF",
     "mode": "LTL",
-    "contact_email": "billing@swaffreight.com",
+    "contact_email": "billing@swaf.freight.example",
     "payment_terms_days": 30,
     "status": "ACTIVE",
     "created_at": "2025-01-06T08:00:00"
@@ -54,7 +54,7 @@
     "name": "Continental Express #6",
     "scac": "COAG",
     "mode": "PARCEL",
-    "contact_email": "billing@coagfreight.com",
+    "contact_email": "billing@coag.freight.example",
     "payment_terms_days": 15,
     "status": "ACTIVE",
     "created_at": "2025-01-07T08:00:00"
@@ -64,7 +64,7 @@
     "name": "Titan Express #7",
     "scac": "TIAH",
     "mode": "LTL",
-    "contact_email": "billing@tiahfreight.com",
+    "contact_email": "billing@tiah.freight.example",
     "payment_terms_days": 60,
     "status": "ACTIVE",
     "created_at": "2025-01-08T08:00:00"
@@ -74,7 +74,7 @@
     "name": "Pinnacle Express #8",
     "scac": "PIAI",
     "mode": "LTL",
-    "contact_email": "billing@piaifreight.com",
+    "contact_email": "billing@piai.freight.example",
     "payment_terms_days": 60,
     "status": "ACTIVE",
     "created_at": "2025-01-09T08:00:00"
@@ -84,7 +84,7 @@
     "name": "Echo Express #9",
     "scac": "ECAJ",
     "mode": "LTL",
-    "contact_email": "billing@ecajfreight.com",
+    "contact_email": "billing@ecaj.freight.example",
     "payment_terms_days": 60,
     "status": "ACTIVE",
     "created_at": "2025-01-10T08:00:00"
@@ -94,7 +94,7 @@
     "name": "Pinnacle Express #10",
     "scac": "PIAK",
     "mode": "LTL",
-    "contact_email": "billing@piakfreight.com",
+    "contact_email": "billing@piak.freight.example",
     "payment_terms_days": 30,
     "status": "ACTIVE",
     "created_at": "2025-01-11T08:00:00"
@@ -104,7 +104,7 @@
     "name": "Sterling Express #11",
     "scac": "STAL",
     "mode": "LTL",
-    "contact_email": "billing@stalfreight.com",
+    "contact_email": "billing@stal.freight.example",
     "payment_terms_days": 45,
     "status": "ACTIVE",
     "created_at": "2025-01-12T08:00:00"
@@ -114,7 +114,7 @@
     "name": "Swift Express #12",
     "scac": "SWAM",
     "mode": "LTL",
-    "contact_email": "billing@swamfreight.com",
+    "contact_email": "billing@swam.freight.example",
     "payment_terms_days": 30,
     "status": "ACTIVE",
     "created_at": "2025-01-13T08:00:00"
@@ -124,7 +124,7 @@
     "name": "Keystone Express #13",
     "scac": "KEAN",
     "mode": "FTL",
-    "contact_email": "billing@keanfreight.com",
+    "contact_email": "billing@kean.freight.example",
     "payment_terms_days": 15,
     "status": "ACTIVE",
     "created_at": "2025-01-14T08:00:00"
@@ -134,7 +134,7 @@
     "name": "Pinnacle Express #14",
     "scac": "PIAO",
     "mode": "PARCEL",
-    "contact_email": "billing@piaofreight.com",
+    "contact_email": "billing@piao.freight.example",
     "payment_terms_days": 30,
     "status": "ACTIVE",
     "created_at": "2025-01-15T08:00:00"
@@ -144,7 +144,7 @@
     "name": "Patriot Express #15",
     "scac": "PAAP",
     "mode": "PARCEL",
-    "contact_email": "billing@paapfreight.com",
+    "contact_email": "billing@paap.freight.example",
     "payment_terms_days": 30,
     "status": "ACTIVE",
     "created_at": "2025-01-16T08:00:00"
@@ -154,7 +154,7 @@
     "name": "Pinnacle Express #16",
     "scac": "PIAQ",
     "mode": "LTL",
-    "contact_email": "billing@piaqfreight.com",
+    "contact_email": "billing@piaq.freight.example",
     "payment_terms_days": 45,
     "status": "ACTIVE",
     "created_at": "2025-01-17T08:00:00"
@@ -164,7 +164,7 @@
     "name": "Summit Express #17",
     "scac": "SUAR",
     "mode": "FTL",
-    "contact_email": "billing@suarfreight.com",
+    "contact_email": "billing@suar.freight.example",
     "payment_terms_days": 15,
     "status": "ACTIVE",
     "created_at": "2025-01-18T08:00:00"
@@ -174,7 +174,7 @@
     "name": "FreightWay Express #18",
     "scac": "FRAS",
     "mode": "FTL",
-    "contact_email": "billing@frasfreight.com",
+    "contact_email": "billing@fras.freight.example",
     "payment_terms_days": 15,
     "status": "ACTIVE",
     "created_at": "2025-01-19T08:00:00"
@@ -184,7 +184,7 @@
     "name": "Keystone Express #19",
     "scac": "KEAT",
     "mode": "FTL",
-    "contact_email": "billing@keatfreight.com",
+    "contact_email": "billing@keat.freight.example",
     "payment_terms_days": 60,
     "status": "ACTIVE",
     "created_at": "2025-01-20T08:00:00"
@@ -194,7 +194,7 @@
     "name": "Titan Express #20",
     "scac": "TIAU",
     "mode": "LTL",
-    "contact_email": "billing@tiaufreight.com",
+    "contact_email": "billing@tiau.freight.example",
     "payment_terms_days": 15,
     "status": "ACTIVE",
     "created_at": "2025-01-21T08:00:00"
@@ -204,7 +204,7 @@
     "name": "CrossCountry Express #21",
     "scac": "CRAV",
     "mode": "LTL",
-    "contact_email": "billing@cravfreight.com",
+    "contact_email": "billing@crav.freight.example",
     "payment_terms_days": 30,
     "status": "ACTIVE",
     "created_at": "2025-01-22T08:00:00"
@@ -214,7 +214,7 @@
     "name": "Patriot Express #22",
     "scac": "PAAW",
     "mode": "LTL",
-    "contact_email": "billing@paawfreight.com",
+    "contact_email": "billing@paaw.freight.example",
     "payment_terms_days": 15,
     "status": "ACTIVE",
     "created_at": "2025-01-23T08:00:00"
@@ -224,7 +224,7 @@
     "name": "Pinnacle Express #23",
     "scac": "PIAX",
     "mode": "LTL",
-    "contact_email": "billing@piaxfreight.com",
+    "contact_email": "billing@piax.freight.example",
     "payment_terms_days": 45,
     "status": "ACTIVE",
     "created_at": "2025-01-24T08:00:00"
@@ -234,7 +234,7 @@
     "name": "Vanguard Express #24",
     "scac": "VAAY",
     "mode": "PARCEL",
-    "contact_email": "billing@vaayfreight.com",
+    "contact_email": "billing@vaay.freight.example",
     "payment_terms_days": 45,
     "status": "ACTIVE",
     "created_at": "2025-01-25T08:00:00"
@@ -244,7 +244,7 @@
     "name": "Midwest Express #25",
     "scac": "MIAZ",
     "mode": "LTL",
-    "contact_email": "billing@miazfreight.com",
+    "contact_email": "billing@miaz.freight.example",
     "payment_terms_days": 60,
     "status": "ACTIVE",
     "created_at": "2025-01-26T08:00:00"

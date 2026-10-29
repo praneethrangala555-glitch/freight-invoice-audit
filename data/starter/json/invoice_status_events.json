@@ -6,7 +6,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-05-09T00:00:00"
+    "timestamp": "2026-05-06T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000002-01",
@@ -15,7 +15,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-08-04T00:00:00"
+    "timestamp": "2026-07-23T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000003-01",
@@ -24,7 +24,7 @@
     "to_status": "AUDITED_EXCEPTION",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice rejected: unknown shipment ID.",
-    "timestamp": "2026-05-02T00:00:00"
+    "timestamp": "2026-05-04T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000004-01",
@@ -33,7 +33,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-04-27T00:00:00"
+    "timestamp": "2026-04-29T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000005-01",
@@ -42,7 +42,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-02-13T00:00:00"
+    "timestamp": "2026-02-07T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000006-01",
@@ -51,7 +51,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-03-28T00:00:00"
+    "timestamp": "2026-03-29T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000008-01",
@@ -60,7 +60,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-05-09T00:00:00"
+    "timestamp": "2026-05-18T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000009-01",
@@ -69,7 +69,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-05-22T00:00:00"
+    "timestamp": "2026-05-29T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000010-01",
@@ -87,7 +87,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-03-31T00:00:00"
+    "timestamp": "2026-07-05T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000013-01",
@@ -96,7 +96,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-06-25T00:00:00"
+    "timestamp": "2026-05-03T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000014-01",
@@ -105,7 +105,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-04-22T00:00:00"
+    "timestamp": "2026-03-15T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000016-01",
@@ -114,7 +114,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-07-16T00:00:00"
+    "timestamp": "2026-06-29T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000017-01",
@@ -123,7 +123,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-08-10T00:00:00"
+    "timestamp": "2026-07-27T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000018-01",
@@ -132,7 +132,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-07-21T00:00:00"
+    "timestamp": "2026-08-09T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000020-01",
@@ -141,7 +141,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-02-18T00:00:00"
+    "timestamp": "2026-04-09T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000022-01",
@@ -150,7 +150,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-04-24T00:00:00"
+    "timestamp": "2026-04-11T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000024-01",
@@ -159,7 +159,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-04-16T00:00:00"
+    "timestamp": "2026-05-06T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000025-01",
@@ -168,7 +168,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-08-03T00:00:00"
+    "timestamp": "2026-04-19T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000026-01",
@@ -177,7 +177,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-03-09T00:00:00"
+    "timestamp": "2026-07-31T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000027-01",
@@ -186,7 +186,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-05-05T00:00:00"
+    "timestamp": "2026-03-05T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000028-01",
@@ -195,7 +195,7 @@
     "to_status": "AUDITED_EXCEPTION",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice rejected: unknown shipment ID.",
-    "timestamp": "2026-04-16T00:00:00"
+    "timestamp": "2026-05-14T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000029-01",
@@ -204,7 +204,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-06-03T00:00:00"
+    "timestamp": "2026-04-15T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000030-01",
@@ -213,7 +213,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-04-10T00:00:00"
+    "timestamp": "2026-06-08T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000031-01",
@@ -222,7 +222,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-05-19T00:00:00"
+    "timestamp": "2026-04-20T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000033-01",
@@ -231,7 +231,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-04-25T00:00:00"
+    "timestamp": "2026-05-22T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000034-01",
@@ -240,7 +240,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-06-06T00:00:00"
+    "timestamp": "2026-04-24T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000035-01",
@@ -249,7 +249,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-06-07T00:00:00"
+    "timestamp": "2026-06-15T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000037-01",
@@ -258,7 +258,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-03-30T00:00:00"
+    "timestamp": "2026-06-08T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000038-01",
@@ -267,7 +267,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-03-23T00:00:00"
+    "timestamp": "2026-04-01T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000039-01",
@@ -276,7 +276,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-05-22T00:00:00"
+    "timestamp": "2026-04-06T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000041-01",
@@ -285,7 +285,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-04-07T00:00:00"
+    "timestamp": "2026-06-03T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000042-01",
@@ -294,7 +294,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-03-09T00:00:00"
+    "timestamp": "2026-08-09T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000043-01",
@@ -303,7 +303,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-04-13T00:00:00"
+    "timestamp": "2026-03-22T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000045-01",
@@ -312,7 +312,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-06-02T00:00:00"
+    "timestamp": "2026-08-11T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000047-01",
@@ -321,7 +321,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-06-02T00:00:00"
+    "timestamp": "2026-07-24T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000049-01",
@@ -330,7 +330,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-07-27T00:00:00"
+    "timestamp": "2026-06-03T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000050-01",
@@ -339,7 +339,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-06-04T00:00:00"
+    "timestamp": "2026-07-05T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000051-01",
@@ -348,7 +348,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-06-28T00:00:00"
+    "timestamp": "2026-07-27T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000052-01",
@@ -357,7 +357,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-06-23T00:00:00"
+    "timestamp": "2026-05-30T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000053-01",
@@ -366,7 +366,7 @@
     "to_status": "AUDITED_EXCEPTION",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice rejected: unknown shipment ID.",
-    "timestamp": "2026-08-03T00:00:00"
+    "timestamp": "2026-06-21T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000054-01",
@@ -375,7 +375,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-05-22T00:00:00"
+    "timestamp": "2026-06-29T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000055-01",
@@ -384,7 +384,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-03-25T00:00:00"
+    "timestamp": "2026-07-31T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000056-01",
@@ -393,7 +393,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-04-09T00:00:00"
+    "timestamp": "2026-05-28T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000058-01",
@@ -402,7 +402,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-04-26T00:00:00"
+    "timestamp": "2026-08-03T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000059-01",
@@ -411,7 +411,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-07-29T00:00:00"
+    "timestamp": "2026-06-20T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000060-01",
@@ -420,7 +420,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-03-03T00:00:00"
+    "timestamp": "2026-03-25T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000062-01",
@@ -429,7 +429,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-03-02T00:00:00"
+    "timestamp": "2026-03-18T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000063-01",
@@ -438,7 +438,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-06-13T00:00:00"
+    "timestamp": "2026-07-06T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000064-01",
@@ -447,7 +447,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-03-25T00:00:00"
+    "timestamp": "2026-07-28T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000066-01",
@@ -456,7 +456,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-07-30T00:00:00"
+    "timestamp": "2026-06-09T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000067-01",
@@ -465,7 +465,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-04-04T00:00:00"
+    "timestamp": "2026-03-25T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000068-01",
@@ -474,7 +474,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-07-24T00:00:00"
+    "timestamp": "2026-06-24T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000070-01",
@@ -483,7 +483,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-07-30T00:00:00"
+    "timestamp": "2026-04-14T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000072-01",
@@ -492,7 +492,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-03-16T00:00:00"
+    "timestamp": "2026-05-05T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000074-01",
@@ -501,7 +501,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-03-21T00:00:00"
+    "timestamp": "2026-05-29T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000075-01",
@@ -510,7 +510,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-05-25T00:00:00"
+    "timestamp": "2026-03-11T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000076-01",
@@ -519,7 +519,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-05-16T00:00:00"
+    "timestamp": "2026-05-27T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000077-01",
@@ -528,7 +528,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-05-23T00:00:00"
+    "timestamp": "2026-03-26T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000078-01",
@@ -537,7 +537,7 @@
     "to_status": "AUDITED_EXCEPTION",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice rejected: unknown shipment ID.",
-    "timestamp": "2026-04-08T00:00:00"
+    "timestamp": "2026-05-28T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000079-01",
@@ -546,7 +546,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-04-13T00:00:00"
+    "timestamp": "2026-05-09T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000080-01",
@@ -555,7 +555,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-02-23T00:00:00"
+    "timestamp": "2026-06-03T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000081-01",
@@ -564,7 +564,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-06-02T00:00:00"
+    "timestamp": "2026-04-22T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000083-01",
@@ -573,7 +573,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-05-25T00:00:00"
+    "timestamp": "2026-05-24T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000084-01",
@@ -582,7 +582,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-05-08T00:00:00"
+    "timestamp": "2026-05-12T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000085-01",
@@ -591,7 +591,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-04-02T00:00:00"
+    "timestamp": "2026-07-31T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000087-01",
@@ -600,7 +600,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-07-14T00:00:00"
+    "timestamp": "2026-04-15T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000088-01",
@@ -609,7 +609,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-03-05T00:00:00"
+    "timestamp": "2026-05-17T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000089-01",
@@ -618,7 +618,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-06-10T00:00:00"
+    "timestamp": "2026-02-19T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000091-01",
@@ -627,7 +627,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-05-31T00:00:00"
+    "timestamp": "2026-03-12T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000092-01",
@@ -636,7 +636,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-04-29T00:00:00"
+    "timestamp": "2026-02-26T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000093-01",
@@ -645,7 +645,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-03-12T00:00:00"
+    "timestamp": "2026-06-10T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000095-01",
@@ -654,7 +654,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-07-26T00:00:00"
+    "timestamp": "2026-03-24T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000097-01",
@@ -663,7 +663,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-04-23T00:00:00"
+    "timestamp": "2026-04-25T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000099-01",
@@ -672,7 +672,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-05-31T00:00:00"
+    "timestamp": "2026-07-09T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000100-01",
@@ -681,7 +681,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-07-26T00:00:00"
+    "timestamp": "2026-06-01T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000101-01",
@@ -690,7 +690,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-06-20T00:00:00"
+    "timestamp": "2026-07-31T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000102-01",
@@ -699,7 +699,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-02-12T00:00:00"
+    "timestamp": "2026-06-23T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000103-01",
@@ -708,7 +708,7 @@
     "to_status": "AUDITED_EXCEPTION",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice rejected: unknown shipment ID.",
-    "timestamp": "2026-07-23T00:00:00"
+    "timestamp": "2026-02-13T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000104-01",
@@ -717,7 +717,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-06-01T00:00:00"
+    "timestamp": "2026-07-23T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000105-01",
@@ -726,7 +726,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-06-15T00:00:00"
+    "timestamp": "2026-06-03T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000106-01",
@@ -735,7 +735,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-07-02T00:00:00"
+    "timestamp": "2026-06-17T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000108-01",
@@ -744,7 +744,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-04-27T00:00:00"
+    "timestamp": "2026-07-03T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000109-01",
@@ -753,7 +753,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-04-03T00:00:00"
+    "timestamp": "2026-04-24T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000110-01",
@@ -762,7 +762,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-07-16T00:00:00"
+    "timestamp": "2026-04-09T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000112-01",
@@ -771,7 +771,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-03-23T00:00:00"
+    "timestamp": "2026-03-01T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000113-01",
@@ -780,7 +780,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-06-21T00:00:00"
+    "timestamp": "2026-04-30T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000114-01",
@@ -789,7 +789,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-04-15T00:00:00"
+    "timestamp": "2026-05-10T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000116-01",
@@ -798,7 +798,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-07-06T00:00:00"
+    "timestamp": "2026-07-04T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000117-01",
@@ -807,7 +807,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-05-14T00:00:00"
+    "timestamp": "2026-05-15T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000118-01",
@@ -816,7 +816,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-05-08T00:00:00"
+    "timestamp": "2026-05-07T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000120-01",
@@ -825,7 +825,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-05-12T00:00:00"
+    "timestamp": "2026-05-10T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000122-01",
@@ -834,7 +834,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-04-22T00:00:00"
+    "timestamp": "2026-04-15T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000124-01",
@@ -843,7 +843,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-02-11T00:00:00"
+    "timestamp": "2026-02-18T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000125-01",
@@ -852,7 +852,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-03-10T00:00:00"
+    "timestamp": "2026-03-18T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000126-01",
@@ -861,7 +861,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-05-31T00:00:00"
+    "timestamp": "2026-06-04T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000127-01",
@@ -870,7 +870,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-07-29T00:00:00"
+    "timestamp": "2026-08-02T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000128-01",
@@ -879,7 +879,7 @@
     "to_status": "AUDITED_EXCEPTION",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice rejected: unknown shipment ID.",
-    "timestamp": "2026-02-13T00:00:00"
+    "timestamp": "2026-02-18T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000129-01",
@@ -888,7 +888,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-05-05T00:00:00"
+    "timestamp": "2026-05-13T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000130-01",
@@ -897,7 +897,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-03-04T00:00:00"
+    "timestamp": "2026-03-06T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000131-01",
@@ -906,7 +906,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-04-22T00:00:00"
+    "timestamp": "2026-04-25T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000133-01",
@@ -915,7 +915,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-03-01T00:00:00"
+    "timestamp": "2026-03-14T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000134-01",
@@ -924,7 +924,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-07-01T00:00:00"
+    "timestamp": "2026-07-14T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000135-01",
@@ -933,7 +933,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-04-03T00:00:00"
+    "timestamp": "2026-04-05T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000137-01",
@@ -942,7 +942,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-05-03T00:00:00"
+    "timestamp": "2026-07-14T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000138-01",
@@ -951,7 +951,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-03-06T00:00:00"
+    "timestamp": "2026-06-26T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000139-01",
@@ -960,7 +960,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-05-26T00:00:00"
+    "timestamp": "2026-03-25T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000141-01",
@@ -969,7 +969,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-07-03T00:00:00"
+    "timestamp": "2026-05-05T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000142-01",
@@ -978,7 +978,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-04-20T00:00:00"
+    "timestamp": "2026-05-14T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000143-01",
@@ -987,7 +987,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-02-24T00:00:00"
+    "timestamp": "2026-06-15T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000145-01",
@@ -996,7 +996,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-03-25T00:00:00"
+    "timestamp": "2026-07-12T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000147-01",
@@ -1005,7 +1005,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-02-20T00:00:00"
+    "timestamp": "2026-05-26T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000149-01",
@@ -1014,7 +1014,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-05-06T00:00:00"
+    "timestamp": "2026-03-24T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000150-01",
@@ -1023,7 +1023,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-05-28T00:00:00"
+    "timestamp": "2026-02-21T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000151-01",
@@ -1032,7 +1032,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-06-01T00:00:00"
+    "timestamp": "2026-03-19T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000152-01",
@@ -1041,7 +1041,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-08-05T00:00:00"
+    "timestamp": "2026-07-07T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000153-01",
@@ -1050,7 +1050,7 @@
     "to_status": "AUDITED_EXCEPTION",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice rejected: unknown shipment ID.",
-    "timestamp": "2026-08-06T00:00:00"
+    "timestamp": "2026-07-26T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000154-01",
@@ -1059,7 +1059,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-03-13T00:00:00"
+    "timestamp": "2026-02-20T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000155-01",
@@ -1068,7 +1068,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-06-30T00:00:00"
+    "timestamp": "2026-06-05T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000156-01",
@@ -1077,7 +1077,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-05-30T00:00:00"
+    "timestamp": "2026-04-23T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000158-01",
@@ -1086,7 +1086,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-02-18T00:00:00"
+    "timestamp": "2026-07-12T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000159-01",
@@ -1104,7 +1104,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-07-08T00:00:00"
+    "timestamp": "2026-02-18T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000162-01",
@@ -1113,7 +1113,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-02-10T00:00:00"
+    "timestamp": "2026-06-13T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000163-01",
@@ -1122,7 +1122,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-02-21T00:00:00"
+    "timestamp": "2026-03-27T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000164-01",
@@ -1131,7 +1131,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-07-02T00:00:00"
+    "timestamp": "2026-04-16T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000166-01",
@@ -1140,7 +1140,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-08-02T00:00:00"
+    "timestamp": "2026-06-19T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000167-01",
@@ -1149,7 +1149,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-05-01T00:00:00"
+    "timestamp": "2026-06-23T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000168-01",
@@ -1158,7 +1158,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-08-08T00:00:00"
+    "timestamp": "2026-08-02T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000170-01",
@@ -1167,7 +1167,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-08-08T00:00:00"
+    "timestamp": "2026-06-10T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000172-01",
@@ -1176,7 +1176,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-06-18T00:00:00"
+    "timestamp": "2026-07-13T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000174-01",
@@ -1185,7 +1185,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-07-11T00:00:00"
+    "timestamp": "2026-07-04T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000175-01",
@@ -1194,7 +1194,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-03-12T00:00:00"
+    "timestamp": "2026-05-18T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000176-01",
@@ -1203,7 +1203,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-07-10T00:00:00"
+    "timestamp": "2026-03-25T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000177-01",
@@ -1212,7 +1212,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-05-19T00:00:00"
+    "timestamp": "2026-03-24T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000178-01",
@@ -1221,7 +1221,7 @@
     "to_status": "AUDITED_EXCEPTION",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice rejected: unknown shipment ID.",
-    "timestamp": "2026-03-31T00:00:00"
+    "timestamp": "2026-08-16T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000179-01",
@@ -1230,7 +1230,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-03-16T00:00:00"
+    "timestamp": "2026-04-13T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000180-01",
@@ -1239,7 +1239,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-08-13T00:00:00"
+    "timestamp": "2026-05-06T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000181-01",
@@ -1248,7 +1248,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-04-11T00:00:00"
+    "timestamp": "2026-02-18T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000183-01",
@@ -1257,7 +1257,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-02-23T00:00:00"
+    "timestamp": "2026-05-11T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000184-01",
@@ -1266,7 +1266,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-06-13T00:00:00"
+    "timestamp": "2026-04-29T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000185-01",
@@ -1275,7 +1275,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-05-07T00:00:00"
+    "timestamp": "2026-04-06T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000187-01",
@@ -1284,7 +1284,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-04-01T00:00:00"
+    "timestamp": "2026-07-22T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000188-01",
@@ -1293,7 +1293,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-04-03T00:00:00"
+    "timestamp": "2026-02-25T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000189-01",
@@ -1302,7 +1302,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-08-07T00:00:00"
+    "timestamp": "2026-03-08T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000191-01",
@@ -1311,7 +1311,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-05-11T00:00:00"
+    "timestamp": "2026-02-27T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000192-01",
@@ -1320,7 +1320,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-07-28T00:00:00"
+    "timestamp": "2026-04-16T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000193-01",
@@ -1329,7 +1329,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-07-20T00:00:00"
+    "timestamp": "2026-03-04T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000195-01",
@@ -1338,7 +1338,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-04-05T00:00:00"
+    "timestamp": "2026-08-06T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000197-01",
@@ -1347,7 +1347,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-06-15T00:00:00"
+    "timestamp": "2026-08-01T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000199-01",
@@ -1356,7 +1356,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-02-28T00:00:00"
+    "timestamp": "2026-05-03T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000200-01",
@@ -1365,7 +1365,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-08-04T00:00:00"
+    "timestamp": "2026-07-16T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000201-01",
@@ -1374,7 +1374,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-06-17T00:00:00"
+    "timestamp": "2026-05-14T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000202-01",
@@ -1383,7 +1383,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-05-01T00:00:00"
+    "timestamp": "2026-03-10T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000203-01",
@@ -1392,7 +1392,7 @@
     "to_status": "AUDITED_EXCEPTION",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice rejected: unknown shipment ID.",
-    "timestamp": "2026-07-09T00:00:00"
+    "timestamp": "2026-05-08T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000204-01",
@@ -1401,7 +1401,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-05-11T00:00:00"
+    "timestamp": "2026-05-05T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000205-01",
@@ -1410,7 +1410,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-03-02T00:00:00"
+    "timestamp": "2026-03-11T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000206-01",
@@ -1419,7 +1419,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-05-06T00:00:00"
+    "timestamp": "2026-03-09T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000208-01",
@@ -1428,7 +1428,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-03-12T00:00:00"
+    "timestamp": "2026-07-09T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000209-01",
@@ -1437,7 +1437,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-03-10T00:00:00"
+    "timestamp": "2026-03-26T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000210-01",
@@ -1446,7 +1446,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-05-14T00:00:00"
+    "timestamp": "2026-02-20T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000212-01",
@@ -1455,7 +1455,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-03-14T00:00:00"
+    "timestamp": "2026-07-24T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000213-01",
@@ -1464,7 +1464,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-02-24T00:00:00"
+    "timestamp": "2026-03-10T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000214-01",
@@ -1473,7 +1473,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-04-15T00:00:00"
+    "timestamp": "2026-04-25T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000216-01",
@@ -1482,7 +1482,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-07-05T00:00:00"
+    "timestamp": "2026-02-19T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000217-01",
@@ -1491,7 +1491,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-03-15T00:00:00"
+    "timestamp": "2026-02-25T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000218-01",
@@ -1500,7 +1500,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-05-19T00:00:00"
+    "timestamp": "2026-07-31T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000220-01",
@@ -1509,7 +1509,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-05-31T00:00:00"
+    "timestamp": "2026-02-26T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000222-01",
@@ -1518,7 +1518,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-04-30T00:00:00"
+    "timestamp": "2026-03-14T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000224-01",
@@ -1527,7 +1527,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-04-13T00:00:00"
+    "timestamp": "2026-06-05T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000225-01",
@@ -1536,7 +1536,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-06-21T00:00:00"
+    "timestamp": "2026-03-26T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000226-01",
@@ -1545,7 +1545,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-05-21T00:00:00"
+    "timestamp": "2026-05-03T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000227-01",
@@ -1554,7 +1554,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-06-14T00:00:00"
+    "timestamp": "2026-03-24T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000228-01",
@@ -1563,7 +1563,7 @@
     "to_status": "AUDITED_EXCEPTION",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice rejected: unknown shipment ID.",
-    "timestamp": "2026-05-27T00:00:00"
+    "timestamp": "2026-03-19T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000229-01",
@@ -1572,7 +1572,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-03-27T00:00:00"
+    "timestamp": "2026-06-10T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000230-01",
@@ -1581,7 +1581,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-05-02T00:00:00"
+    "timestamp": "2026-02-17T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000231-01",
@@ -1590,7 +1590,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-04-02T00:00:00"
+    "timestamp": "2026-05-31T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000233-01",
@@ -1599,7 +1599,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-06-09T00:00:00"
+    "timestamp": "2026-08-01T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000234-01",
@@ -1608,7 +1608,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-02-08T00:00:00"
+    "timestamp": "2026-05-08T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000235-01",
@@ -1617,7 +1617,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-05-30T00:00:00"
+    "timestamp": "2026-07-08T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000237-01",
@@ -1626,7 +1626,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-07-29T00:00:00"
+    "timestamp": "2026-07-17T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000238-01",
@@ -1635,7 +1635,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-05-12T00:00:00"
+    "timestamp": "2026-04-17T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000239-01",
@@ -1644,7 +1644,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-06-30T00:00:00"
+    "timestamp": "2026-06-03T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000241-01",
@@ -1653,7 +1653,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-05-16T00:00:00"
+    "timestamp": "2026-06-17T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000242-01",
@@ -1662,7 +1662,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-06-04T00:00:00"
+    "timestamp": "2026-08-08T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000243-01",
@@ -1671,7 +1671,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-05-30T00:00:00"
+    "timestamp": "2026-06-15T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000245-01",
@@ -1680,7 +1680,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-06-21T00:00:00"
+    "timestamp": "2026-08-09T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000247-01",
@@ -1689,7 +1689,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-06-12T00:00:00"
+    "timestamp": "2026-07-03T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000249-01",
@@ -1698,7 +1698,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-08-10T00:00:00"
+    "timestamp": "2026-05-10T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000250-01",
@@ -1707,7 +1707,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-02-18T00:00:00"
+    "timestamp": "2026-04-12T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000251-01",
@@ -1716,7 +1716,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-07-05T00:00:00"
+    "timestamp": "2026-04-21T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000252-01",
@@ -1725,7 +1725,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-06-18T00:00:00"
+    "timestamp": "2026-02-28T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000253-01",
@@ -1734,7 +1734,7 @@
     "to_status": "AUDITED_EXCEPTION",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice rejected: unknown shipment ID.",
-    "timestamp": "2026-05-10T00:00:00"
+    "timestamp": "2026-04-26T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000254-01",
@@ -1743,7 +1743,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-04-04T00:00:00"
+    "timestamp": "2026-05-14T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000255-01",
@@ -1752,7 +1752,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-04-23T00:00:00"
+    "timestamp": "2026-07-17T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000256-01",
@@ -1761,7 +1761,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-02-17T00:00:00"
+    "timestamp": "2026-08-10T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000258-01",
@@ -1770,7 +1770,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-05-06T00:00:00"
+    "timestamp": "2026-07-28T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000259-01",
@@ -1779,7 +1779,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-07-07T00:00:00"
+    "timestamp": "2026-02-22T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000260-01",
@@ -1788,7 +1788,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-08-10T00:00:00"
+    "timestamp": "2026-05-26T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000262-01",
@@ -1797,7 +1797,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-06-07T00:00:00"
+    "timestamp": "2026-04-19T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000263-01",
@@ -1806,7 +1806,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-03-21T00:00:00"
+    "timestamp": "2026-06-22T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000264-01",
@@ -1815,7 +1815,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-05-01T00:00:00"
+    "timestamp": "2026-06-14T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000266-01",
@@ -1824,7 +1824,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-06-18T00:00:00"
+    "timestamp": "2026-03-30T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000267-01",
@@ -1833,7 +1833,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-03-04T00:00:00"
+    "timestamp": "2026-02-24T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000268-01",
@@ -1842,7 +1842,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-05-13T00:00:00"
+    "timestamp": "2026-06-15T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000270-01",
@@ -1851,7 +1851,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-04-01T00:00:00"
+    "timestamp": "2026-07-01T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000272-01",
@@ -1860,7 +1860,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-06-16T00:00:00"
+    "timestamp": "2026-06-06T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000274-01",
@@ -1869,7 +1869,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-06-27T00:00:00"
+    "timestamp": "2026-04-09T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000275-01",
@@ -1878,7 +1878,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-06-08T00:00:00"
+    "timestamp": "2026-07-13T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000276-01",
@@ -1887,7 +1887,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-06-15T00:00:00"
+    "timestamp": "2026-05-11T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000277-01",
@@ -1896,7 +1896,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-02-27T00:00:00"
+    "timestamp": "2026-04-13T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000278-01",
@@ -1914,7 +1914,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-07-13T00:00:00"
+    "timestamp": "2026-03-23T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000280-01",
@@ -1923,7 +1923,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-05-01T00:00:00"
+    "timestamp": "2026-02-05T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000281-01",
@@ -1932,7 +1932,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-04-09T00:00:00"
+    "timestamp": "2026-06-25T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000283-01",
@@ -1941,7 +1941,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-03-19T00:00:00"
+    "timestamp": "2026-05-18T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000284-01",
@@ -1950,7 +1950,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-02-05T00:00:00"
+    "timestamp": "2026-05-14T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000285-01",
@@ -1959,7 +1959,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-06-21T00:00:00"
+    "timestamp": "2026-06-01T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000287-01",
@@ -1968,7 +1968,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-03-12T00:00:00"
+    "timestamp": "2026-03-30T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000288-01",
@@ -1977,7 +1977,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-06-16T00:00:00"
+    "timestamp": "2026-05-15T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000289-01",
@@ -1986,7 +1986,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-03-24T00:00:00"
+    "timestamp": "2026-06-13T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000291-01",
@@ -1995,7 +1995,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-02-17T00:00:00"
+    "timestamp": "2026-02-09T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000292-01",
@@ -2004,7 +2004,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-02-17T00:00:00"
+    "timestamp": "2026-07-26T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000293-01",
@@ -2013,7 +2013,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-03-04T00:00:00"
+    "timestamp": "2026-07-26T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000295-01",
@@ -2022,7 +2022,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-07-29T00:00:00"
+    "timestamp": "2026-02-15T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000297-01",
@@ -2031,7 +2031,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-02-15T00:00:00"
+    "timestamp": "2026-06-03T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000299-01",
@@ -2040,7 +2040,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-02-13T00:00:00"
+    "timestamp": "2026-03-04T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000300-01",
@@ -2049,7 +2049,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-04-26T00:00:00"
+    "timestamp": "2026-03-29T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000301-01",
@@ -2058,7 +2058,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-04-24T00:00:00"
+    "timestamp": "2026-03-09T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000302-01",
@@ -2067,7 +2067,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-06-08T00:00:00"
+    "timestamp": "2026-03-02T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000303-01",
@@ -2076,7 +2076,7 @@
     "to_status": "AUDITED_EXCEPTION",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice rejected: unknown shipment ID.",
-    "timestamp": "2026-07-22T00:00:00"
+    "timestamp": "2026-05-01T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000304-01",
@@ -2085,7 +2085,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-02-28T00:00:00"
+    "timestamp": "2026-05-30T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000305-01",
@@ -2094,7 +2094,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-03-28T00:00:00"
+    "timestamp": "2026-03-16T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000306-01",
@@ -2103,7 +2103,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-08-04T00:00:00"
+    "timestamp": "2026-03-23T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000308-01",
@@ -2112,7 +2112,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-02-17T00:00:00"
+    "timestamp": "2026-04-29T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000309-01",
@@ -2121,7 +2121,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-02-27T00:00:00"
+    "timestamp": "2026-05-24T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000310-01",
@@ -2130,7 +2130,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-03-31T00:00:00"
+    "timestamp": "2026-04-06T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000312-01",
@@ -2139,7 +2139,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-07-12T00:00:00"
+    "timestamp": "2026-06-03T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000313-01",
@@ -2148,7 +2148,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-07-09T00:00:00"
+    "timestamp": "2026-03-31T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000314-01",
@@ -2157,7 +2157,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-02-18T00:00:00"
+    "timestamp": "2026-07-23T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000316-01",
@@ -2166,7 +2166,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-03-14T00:00:00"
+    "timestamp": "2026-03-28T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000317-01",
@@ -2175,7 +2175,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-06-23T00:00:00"
+    "timestamp": "2026-06-05T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000318-01",
@@ -2184,7 +2184,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-07-04T00:00:00"
+    "timestamp": "2026-05-09T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000320-01",
@@ -2193,7 +2193,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-06-13T00:00:00"
+    "timestamp": "2026-03-26T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000322-01",
@@ -2202,7 +2202,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-07-12T00:00:00"
+    "timestamp": "2026-04-28T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000324-01",
@@ -2211,7 +2211,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-02-20T00:00:00"
+    "timestamp": "2026-03-02T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000325-01",
@@ -2220,7 +2220,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-02-24T00:00:00"
+    "timestamp": "2026-08-06T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000326-01",
@@ -2229,7 +2229,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-07-24T00:00:00"
+    "timestamp": "2026-05-22T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000327-01",
@@ -2238,7 +2238,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-05-13T00:00:00"
+    "timestamp": "2026-02-14T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000328-01",
@@ -2247,7 +2247,7 @@
     "to_status": "AUDITED_EXCEPTION",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice rejected: unknown shipment ID.",
-    "timestamp": "2026-02-16T00:00:00"
+    "timestamp": "2026-08-09T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000329-01",
@@ -2256,7 +2256,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-08-02T00:00:00"
+    "timestamp": "2026-03-24T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000330-01",
@@ -2265,7 +2265,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-03-16T00:00:00"
+    "timestamp": "2026-05-26T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000331-01",
@@ -2274,7 +2274,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-05-23T00:00:00"
+    "timestamp": "2026-04-23T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000333-01",
@@ -2283,7 +2283,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-05-12T00:00:00"
+    "timestamp": "2026-04-30T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000334-01",
@@ -2292,7 +2292,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-05-05T00:00:00"
+    "timestamp": "2026-07-29T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000335-01",
@@ -2301,7 +2301,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-07-21T00:00:00"
+    "timestamp": "2026-05-30T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000337-01",
@@ -2310,7 +2310,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-08-06T00:00:00"
+    "timestamp": "2026-08-09T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000338-01",
@@ -2319,7 +2319,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-06-07T00:00:00"
+    "timestamp": "2026-05-29T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000339-01",
@@ -2328,7 +2328,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-07-30T00:00:00"
+    "timestamp": "2026-03-24T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000341-01",
@@ -2337,7 +2337,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-02-20T00:00:00"
+    "timestamp": "2026-02-27T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000342-01",
@@ -2346,7 +2346,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-04-14T00:00:00"
+    "timestamp": "2026-07-31T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000343-01",
@@ -2355,7 +2355,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-04-11T00:00:00"
+    "timestamp": "2026-05-04T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000345-01",
@@ -2364,7 +2364,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-07-22T00:00:00"
+    "timestamp": "2026-07-05T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000347-01",
@@ -2373,7 +2373,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-06-10T00:00:00"
+    "timestamp": "2026-07-05T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000349-01",
@@ -2382,7 +2382,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-06-29T00:00:00"
+    "timestamp": "2026-05-14T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000350-01",
@@ -2391,7 +2391,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-05-23T00:00:00"
+    "timestamp": "2026-03-20T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000351-01",
@@ -2400,7 +2400,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-05-14T00:00:00"
+    "timestamp": "2026-07-27T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000352-01",
@@ -2409,7 +2409,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-03-15T00:00:00"
+    "timestamp": "2026-07-26T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000353-01",
@@ -2418,7 +2418,7 @@
     "to_status": "AUDITED_EXCEPTION",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice rejected: unknown shipment ID.",
-    "timestamp": "2026-07-24T00:00:00"
+    "timestamp": "2026-04-20T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000354-01",
@@ -2427,7 +2427,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-08-01T00:00:00"
+    "timestamp": "2026-03-19T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000355-01",
@@ -2436,7 +2436,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-04-20T00:00:00"
+    "timestamp": "2026-06-05T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000356-01",
@@ -2445,7 +2445,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-03-13T00:00:00"
+    "timestamp": "2026-04-21T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000358-01",
@@ -2454,7 +2454,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-04-21T00:00:00"
+    "timestamp": "2026-04-06T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000359-01",
@@ -2463,7 +2463,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-02-21T00:00:00"
+    "timestamp": "2026-07-17T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000360-01",
@@ -2472,7 +2472,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-04-01T00:00:00"
+    "timestamp": "2026-08-04T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000362-01",
@@ -2481,7 +2481,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-08-02T00:00:00"
+    "timestamp": "2026-06-03T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000363-01",
@@ -2490,7 +2490,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-03-27T00:00:00"
+    "timestamp": "2026-07-23T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000364-01",
@@ -2499,7 +2499,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-06-10T00:00:00"
+    "timestamp": "2026-02-15T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000366-01",
@@ -2508,7 +2508,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-02-22T00:00:00"
+    "timestamp": "2026-05-22T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000367-01",
@@ -2517,7 +2517,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-04-11T00:00:00"
+    "timestamp": "2026-08-06T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000368-01",
@@ -2526,7 +2526,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-06-15T00:00:00"
+    "timestamp": "2026-03-30T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000370-01",
@@ -2535,7 +2535,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-02-16T00:00:00"
+    "timestamp": "2026-05-26T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000372-01",
@@ -2544,7 +2544,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-03-27T00:00:00"
+    "timestamp": "2026-05-17T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000374-01",
@@ -2553,7 +2553,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-05-18T00:00:00"
+    "timestamp": "2026-04-27T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000375-01",
@@ -2562,7 +2562,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-02-20T00:00:00"
+    "timestamp": "2026-04-13T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000376-01",
@@ -2571,7 +2571,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-05-21T00:00:00"
+    "timestamp": "2026-07-31T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000377-01",
@@ -2580,7 +2580,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-02-26T00:00:00"
+    "timestamp": "2026-04-29T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000378-01",
@@ -2589,7 +2589,7 @@
     "to_status": "AUDITED_EXCEPTION",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice rejected: unknown shipment ID.",
-    "timestamp": "2026-04-20T00:00:00"
+    "timestamp": "2026-02-18T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000379-01",
@@ -2598,7 +2598,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-04-06T00:00:00"
+    "timestamp": "2026-05-20T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000380-01",
@@ -2607,7 +2607,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-07-21T00:00:00"
+    "timestamp": "2026-03-14T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000381-01",
@@ -2625,7 +2625,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-05-25T00:00:00"
+    "timestamp": "2026-03-11T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000384-01",
@@ -2634,7 +2634,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-03-15T00:00:00"
+    "timestamp": "2026-03-26T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000385-01",
@@ -2643,7 +2643,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-05-01T00:00:00"
+    "timestamp": "2026-07-12T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000387-01",
@@ -2652,7 +2652,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-02-24T00:00:00"
+    "timestamp": "2026-05-10T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000388-01",
@@ -2661,7 +2661,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-03-26T00:00:00"
+    "timestamp": "2026-04-28T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000389-01",
@@ -2670,7 +2670,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-07-08T00:00:00"
+    "timestamp": "2026-07-27T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000391-01",
@@ -2679,7 +2679,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-05-04T00:00:00"
+    "timestamp": "2026-02-13T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000392-01",
@@ -2688,7 +2688,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-05-03T00:00:00"
+    "timestamp": "2026-03-02T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000393-01",
@@ -2697,7 +2697,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-07-24T00:00:00"
+    "timestamp": "2026-07-20T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000395-01",
@@ -2706,7 +2706,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-02-06T00:00:00"
+    "timestamp": "2026-06-01T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000397-01",
@@ -2715,7 +2715,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-07-23T00:00:00"
+    "timestamp": "2026-05-16T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000399-01",
@@ -2724,7 +2724,7 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-06-04T00:00:00"
+    "timestamp": "2026-05-18T00:00:00"
   },
   {
     "event_id": "EVT-FINV-2026-000400-01",
@@ -2733,6 +2733,870 @@
     "to_status": "AUDITED_APPROVED",
     "changed_by": "Automated Freight Audit Engine",
     "reason": "Invoice matched contracted rates and authorized accessorials with $0.00 variance.",
-    "timestamp": "2026-05-21T00:00:00"
+    "timestamp": "2026-06-07T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000007-01",
+    "invoice_id": "FINV-2026-000007",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $97.98.",
+    "timestamp": "2026-07-15T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000011-01",
+    "invoice_id": "FINV-2026-000011",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $197.06.",
+    "timestamp": "2026-04-30T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000015-01",
+    "invoice_id": "FINV-2026-000015",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $101.25.",
+    "timestamp": "2026-04-27T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000019-01",
+    "invoice_id": "FINV-2026-000019",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $74.11.",
+    "timestamp": "2026-08-02T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000021-01",
+    "invoice_id": "FINV-2026-000021",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DUPLICATE_INVOICE; variance $983.02.",
+    "timestamp": "2026-04-26T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000023-01",
+    "invoice_id": "FINV-2026-000023",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $85.00.",
+    "timestamp": "2026-04-27T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000032-01",
+    "invoice_id": "FINV-2026-000032",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $80.78.",
+    "timestamp": "2026-07-19T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000036-01",
+    "invoice_id": "FINV-2026-000036",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $474.36.",
+    "timestamp": "2026-03-27T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000040-01",
+    "invoice_id": "FINV-2026-000040",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $91.97.",
+    "timestamp": "2026-06-01T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000044-01",
+    "invoice_id": "FINV-2026-000044",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $68.41.",
+    "timestamp": "2026-06-26T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000046-01",
+    "invoice_id": "FINV-2026-000046",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DUPLICATE_INVOICE; variance $778.10.",
+    "timestamp": "2026-09-05T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000048-01",
+    "invoice_id": "FINV-2026-000048",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $85.00.",
+    "timestamp": "2026-04-10T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000057-01",
+    "invoice_id": "FINV-2026-000057",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $50.91.",
+    "timestamp": "2026-08-10T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000061-01",
+    "invoice_id": "FINV-2026-000061",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $197.32.",
+    "timestamp": "2026-07-17T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000065-01",
+    "invoice_id": "FINV-2026-000065",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $123.06.",
+    "timestamp": "2026-03-02T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000069-01",
+    "invoice_id": "FINV-2026-000069",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $57.92.",
+    "timestamp": "2026-08-04T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000071-01",
+    "invoice_id": "FINV-2026-000071",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DUPLICATE_INVOICE; variance $657.87.",
+    "timestamp": "2026-05-07T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000073-01",
+    "invoice_id": "FINV-2026-000073",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $85.00.",
+    "timestamp": "2026-07-23T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000082-01",
+    "invoice_id": "FINV-2026-000082",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $172.14.",
+    "timestamp": "2026-08-03T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000086-01",
+    "invoice_id": "FINV-2026-000086",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $492.23.",
+    "timestamp": "2026-07-24T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000090-01",
+    "invoice_id": "FINV-2026-000090",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $103.33.",
+    "timestamp": "2026-05-28T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000094-01",
+    "invoice_id": "FINV-2026-000094",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $56.74.",
+    "timestamp": "2026-07-02T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000096-01",
+    "invoice_id": "FINV-2026-000096",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DUPLICATE_INVOICE; variance $538.72.",
+    "timestamp": "2026-04-13T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000098-01",
+    "invoice_id": "FINV-2026-000098",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $85.00.",
+    "timestamp": "2026-04-24T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000107-01",
+    "invoice_id": "FINV-2026-000107",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $126.93.",
+    "timestamp": "2026-08-01T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000111-01",
+    "invoice_id": "FINV-2026-000111",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $335.40.",
+    "timestamp": "2026-07-07T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000115-01",
+    "invoice_id": "FINV-2026-000115",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $110.34.",
+    "timestamp": "2026-05-29T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000119-01",
+    "invoice_id": "FINV-2026-000119",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $33.97.",
+    "timestamp": "2026-04-16T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000121-01",
+    "invoice_id": "FINV-2026-000121",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DUPLICATE_INVOICE; variance $754.13.",
+    "timestamp": "2026-05-31T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000123-01",
+    "invoice_id": "FINV-2026-000123",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $85.00.",
+    "timestamp": "2026-06-06T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000132-01",
+    "invoice_id": "FINV-2026-000132",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $42.26.",
+    "timestamp": "2026-07-15T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000136-01",
+    "invoice_id": "FINV-2026-000136",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $180.66.",
+    "timestamp": "2026-04-22T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000140-01",
+    "invoice_id": "FINV-2026-000140",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $250.49.",
+    "timestamp": "2026-06-19T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000144-01",
+    "invoice_id": "FINV-2026-000144",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $126.88.",
+    "timestamp": "2026-05-08T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000146-01",
+    "invoice_id": "FINV-2026-000146",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DUPLICATE_INVOICE; variance $501.55.",
+    "timestamp": "2026-08-10T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000148-01",
+    "invoice_id": "FINV-2026-000148",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $85.00.",
+    "timestamp": "2026-05-09T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000157-01",
+    "invoice_id": "FINV-2026-000157",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $92.40.",
+    "timestamp": "2026-08-06T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000161-01",
+    "invoice_id": "FINV-2026-000161",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $270.79.",
+    "timestamp": "2026-07-04T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000165-01",
+    "invoice_id": "FINV-2026-000165",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $69.93.",
+    "timestamp": "2026-05-06T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000169-01",
+    "invoice_id": "FINV-2026-000169",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $25.88.",
+    "timestamp": "2026-03-03T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000171-01",
+    "invoice_id": "FINV-2026-000171",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DUPLICATE_INVOICE; variance $525.49.",
+    "timestamp": "2026-07-05T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000173-01",
+    "invoice_id": "FINV-2026-000173",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $85.00.",
+    "timestamp": "2026-03-12T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000182-01",
+    "invoice_id": "FINV-2026-000182",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $200.80.",
+    "timestamp": "2026-07-27T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000186-01",
+    "invoice_id": "FINV-2026-000186",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $262.62.",
+    "timestamp": "2026-07-28T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000190-01",
+    "invoice_id": "FINV-2026-000190",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $76.52.",
+    "timestamp": "2026-07-29T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000194-01",
+    "invoice_id": "FINV-2026-000194",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $95.36.",
+    "timestamp": "2026-06-19T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000196-01",
+    "invoice_id": "FINV-2026-000196",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DUPLICATE_INVOICE; variance $1044.75.",
+    "timestamp": "2026-08-20T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000198-01",
+    "invoice_id": "FINV-2026-000198",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $85.00.",
+    "timestamp": "2026-06-13T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000207-01",
+    "invoice_id": "FINV-2026-000207",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $156.76.",
+    "timestamp": "2026-08-15T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000211-01",
+    "invoice_id": "FINV-2026-000211",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $260.28.",
+    "timestamp": "2026-07-30T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000215-01",
+    "invoice_id": "FINV-2026-000215",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $154.07.",
+    "timestamp": "2026-03-26T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000219-01",
+    "invoice_id": "FINV-2026-000219",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $84.49.",
+    "timestamp": "2026-07-25T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000221-01",
+    "invoice_id": "FINV-2026-000221",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DUPLICATE_INVOICE; variance $1251.15.",
+    "timestamp": "2026-03-20T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000223-01",
+    "invoice_id": "FINV-2026-000223",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $85.00.",
+    "timestamp": "2026-06-14T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000232-01",
+    "invoice_id": "FINV-2026-000232",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $66.89.",
+    "timestamp": "2026-07-24T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000236-01",
+    "invoice_id": "FINV-2026-000236",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $245.32.",
+    "timestamp": "2026-04-16T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000240-01",
+    "invoice_id": "FINV-2026-000240",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $256.05.",
+    "timestamp": "2026-03-28T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000244-01",
+    "invoice_id": "FINV-2026-000244",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $91.34.",
+    "timestamp": "2026-05-22T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000246-01",
+    "invoice_id": "FINV-2026-000246",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DUPLICATE_INVOICE; variance $401.43.",
+    "timestamp": "2026-08-30T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000248-01",
+    "invoice_id": "FINV-2026-000248",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $85.00.",
+    "timestamp": "2026-06-27T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000257-01",
+    "invoice_id": "FINV-2026-000257",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $115.11.",
+    "timestamp": "2026-08-08T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000261-01",
+    "invoice_id": "FINV-2026-000261",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $389.30.",
+    "timestamp": "2026-08-05T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000265-01",
+    "invoice_id": "FINV-2026-000265",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $33.73.",
+    "timestamp": "2026-03-09T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000269-01",
+    "invoice_id": "FINV-2026-000269",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $15.54.",
+    "timestamp": "2026-05-06T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000271-01",
+    "invoice_id": "FINV-2026-000271",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DUPLICATE_INVOICE; variance $696.38.",
+    "timestamp": "2026-07-21T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000273-01",
+    "invoice_id": "FINV-2026-000273",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $85.00.",
+    "timestamp": "2026-02-16T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000282-01",
+    "invoice_id": "FINV-2026-000282",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $79.86.",
+    "timestamp": "2026-08-04T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000286-01",
+    "invoice_id": "FINV-2026-000286",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $380.57.",
+    "timestamp": "2026-06-09T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000290-01",
+    "invoice_id": "FINV-2026-000290",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $184.06.",
+    "timestamp": "2026-04-17T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000294-01",
+    "invoice_id": "FINV-2026-000294",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $30.17.",
+    "timestamp": "2026-04-19T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000296-01",
+    "invoice_id": "FINV-2026-000296",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DUPLICATE_INVOICE; variance $391.08.",
+    "timestamp": "2026-03-11T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000298-01",
+    "invoice_id": "FINV-2026-000298",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $85.00.",
+    "timestamp": "2026-04-24T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000307-01",
+    "invoice_id": "FINV-2026-000307",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $69.57.",
+    "timestamp": "2026-07-17T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000311-01",
+    "invoice_id": "FINV-2026-000311",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $324.20.",
+    "timestamp": "2026-04-30T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000315-01",
+    "invoice_id": "FINV-2026-000315",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $157.07.",
+    "timestamp": "2026-05-16T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000319-01",
+    "invoice_id": "FINV-2026-000319",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $21.52.",
+    "timestamp": "2026-05-19T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000321-01",
+    "invoice_id": "FINV-2026-000321",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DUPLICATE_INVOICE; variance $1704.24.",
+    "timestamp": "2026-04-22T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000323-01",
+    "invoice_id": "FINV-2026-000323",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $85.00.",
+    "timestamp": "2026-02-25T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000332-01",
+    "invoice_id": "FINV-2026-000332",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $81.97.",
+    "timestamp": "2026-07-17T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000336-01",
+    "invoice_id": "FINV-2026-000336",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $437.10.",
+    "timestamp": "2026-06-12T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000340-01",
+    "invoice_id": "FINV-2026-000340",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $92.97.",
+    "timestamp": "2026-02-28T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000344-01",
+    "invoice_id": "FINV-2026-000344",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $68.09.",
+    "timestamp": "2026-06-15T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000346-01",
+    "invoice_id": "FINV-2026-000346",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DUPLICATE_INVOICE; variance $681.18.",
+    "timestamp": "2026-08-04T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000348-01",
+    "invoice_id": "FINV-2026-000348",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $85.00.",
+    "timestamp": "2026-05-20T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000357-01",
+    "invoice_id": "FINV-2026-000357",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $90.03.",
+    "timestamp": "2026-07-08T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000361-01",
+    "invoice_id": "FINV-2026-000361",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $203.02.",
+    "timestamp": "2026-04-01T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000365-01",
+    "invoice_id": "FINV-2026-000365",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $189.49.",
+    "timestamp": "2026-07-01T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000369-01",
+    "invoice_id": "FINV-2026-000369",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $57.91.",
+    "timestamp": "2026-04-14T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000371-01",
+    "invoice_id": "FINV-2026-000371",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DUPLICATE_INVOICE; variance $1056.50.",
+    "timestamp": "2026-06-04T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000373-01",
+    "invoice_id": "FINV-2026-000373",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $85.00.",
+    "timestamp": "2026-03-06T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000382-01",
+    "invoice_id": "FINV-2026-000382",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $93.61.",
+    "timestamp": "2026-07-13T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000386-01",
+    "invoice_id": "FINV-2026-000386",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $274.50.",
+    "timestamp": "2026-08-12T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000390-01",
+    "invoice_id": "FINV-2026-000390",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $269.53.",
+    "timestamp": "2026-03-02T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000394-01",
+    "invoice_id": "FINV-2026-000394",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $51.48.",
+    "timestamp": "2026-08-02T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000396-01",
+    "invoice_id": "FINV-2026-000396",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DUPLICATE_INVOICE; variance $860.14.",
+    "timestamp": "2026-06-30T00:00:00"
+  },
+  {
+    "event_id": "EVT-FINV-2026-000398-01",
+    "invoice_id": "FINV-2026-000398",
+    "from_status": "PENDING_AUDIT",
+    "to_status": "AUDITED_EXCEPTION",
+    "changed_by": "Automated Freight Audit Engine",
+    "reason": "Generated audit decision: DISCREPANCY_DETECTED; variance $85.00.",
+    "timestamp": "2026-04-09T00:00:00"
   }
 ]

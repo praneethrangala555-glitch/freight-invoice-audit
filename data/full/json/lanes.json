@@ -8,7 +8,7 @@
     "destination_state": "TX",
     "destination_zip_prefix": "750",
     "distance_miles": 1446.0,
-    "standard_transit_days": 4
+    "standard_transit_days": 3
   },
   {
     "lane_id": "LANE-000002",
@@ -30,7 +30,7 @@
     "destination_state": "CA",
     "destination_zip_prefix": "900",
     "distance_miles": 2377.5,
-    "standard_transit_days": 6
+    "standard_transit_days": 5
   },
   {
     "lane_id": "LANE-000004",
@@ -74,7 +74,7 @@
     "destination_state": "MO",
     "destination_zip_prefix": "641",
     "distance_miles": 1853.3,
-    "standard_transit_days": 5
+    "standard_transit_days": 4
   },
   {
     "lane_id": "LANE-000008",
@@ -96,7 +96,7 @@
     "destination_state": "PA",
     "destination_zip_prefix": "171",
     "distance_miles": 1932.5,
-    "standard_transit_days": 5
+    "standard_transit_days": 4
   },
   {
     "lane_id": "LANE-000010",
@@ -118,7 +118,7 @@
     "destination_state": "NC",
     "destination_zip_prefix": "282",
     "distance_miles": 919.4,
-    "standard_transit_days": 3
+    "standard_transit_days": 2
   },
   {
     "lane_id": "LANE-000012",
@@ -239,7 +239,7 @@
     "destination_state": "TN",
     "destination_zip_prefix": "381",
     "distance_miles": 1867.4,
-    "standard_transit_days": 5
+    "standard_transit_days": 4
   },
   {
     "lane_id": "LANE-000023",
@@ -250,7 +250,7 @@
     "destination_state": "PA",
     "destination_zip_prefix": "171",
     "distance_miles": 948.2,
-    "standard_transit_days": 3
+    "standard_transit_days": 2
   },
   {
     "lane_id": "LANE-000024",
@@ -283,7 +283,7 @@
     "destination_state": "CO",
     "destination_zip_prefix": "802",
     "distance_miles": 1838.9,
-    "standard_transit_days": 5
+    "standard_transit_days": 4
   },
   {
     "lane_id": "LANE-000027",
@@ -294,7 +294,7 @@
     "destination_state": "AZ",
     "destination_zip_prefix": "850",
     "distance_miles": 1455.0,
-    "standard_transit_days": 4
+    "standard_transit_days": 3
   },
   {
     "lane_id": "LANE-000028",
@@ -305,7 +305,7 @@
     "destination_state": "UT",
     "destination_zip_prefix": "841",
     "distance_miles": 1489.0,
-    "standard_transit_days": 4
+    "standard_transit_days": 3
   },
   {
     "lane_id": "LANE-000029",
@@ -316,7 +316,7 @@
     "destination_state": "IL",
     "destination_zip_prefix": "606",
     "distance_miles": 1419.0,
-    "standard_transit_days": 4
+    "standard_transit_days": 3
   },
   {
     "lane_id": "LANE-000030",
@@ -327,7 +327,7 @@
     "destination_state": "TX",
     "destination_zip_prefix": "750",
     "distance_miles": 2338.2,
-    "standard_transit_days": 6
+    "standard_transit_days": 5
   },
   {
     "lane_id": "LANE-000031",
@@ -338,7 +338,7 @@
     "destination_state": "CA",
     "destination_zip_prefix": "900",
     "distance_miles": 1925.4,
-    "standard_transit_days": 5
+    "standard_transit_days": 4
   },
   {
     "lane_id": "LANE-000032",
@@ -448,7 +448,7 @@
     "destination_state": "AZ",
     "destination_zip_prefix": "850",
     "distance_miles": 1951.9,
-    "standard_transit_days": 5
+    "standard_transit_days": 4
   },
   {
     "lane_id": "LANE-000042",
@@ -481,7 +481,7 @@
     "destination_state": "TX",
     "destination_zip_prefix": "750",
     "distance_miles": 957.6,
-    "standard_transit_days": 3
+    "standard_transit_days": 2
   },
   {
     "lane_id": "LANE-000045",
@@ -514,7 +514,7 @@
     "destination_state": "OH",
     "destination_zip_prefix": "430",
     "distance_miles": 990.2,
-    "standard_transit_days": 3
+    "standard_transit_days": 2
   },
   {
     "lane_id": "LANE-000048",
@@ -591,7 +591,7 @@
     "destination_state": "CO",
     "destination_zip_prefix": "802",
     "distance_miles": 1910.4,
-    "standard_transit_days": 5
+    "standard_transit_days": 4
   },
   {
     "lane_id": "LANE-000055",
@@ -690,7 +690,7 @@
     "destination_state": "MO",
     "destination_zip_prefix": "641",
     "distance_miles": 1816.6,
-    "standard_transit_days": 5
+    "standard_transit_days": 4
   },
   {
     "lane_id": "LANE-000064",
@@ -734,7 +734,7 @@
     "destination_state": "NC",
     "destination_zip_prefix": "282",
     "distance_miles": 1841.6,
-    "standard_transit_days": 5
+    "standard_transit_days": 4
   },
   {
     "lane_id": "LANE-000068",
@@ -789,7 +789,7 @@
     "destination_state": "TX",
     "destination_zip_prefix": "750",
     "distance_miles": 920.0,
-    "standard_transit_days": 3
+    "standard_transit_days": 2
   },
   {
     "lane_id": "LANE-000073",
@@ -800,7 +800,7 @@
     "destination_state": "GA",
     "destination_zip_prefix": "303",
     "distance_miles": 963.4,
-    "standard_transit_days": 3
+    "standard_transit_days": 2
   },
   {
     "lane_id": "LANE-000074",
@@ -833,7 +833,7 @@
     "destination_state": "IN",
     "destination_zip_prefix": "462",
     "distance_miles": 1480.9,
-    "standard_transit_days": 4
+    "standard_transit_days": 3
   },
   {
     "lane_id": "LANE-000077",
@@ -855,7 +855,7 @@
     "destination_state": "TN",
     "destination_zip_prefix": "381",
     "distance_miles": 1932.0,
-    "standard_transit_days": 5
+    "standard_transit_days": 4
   },
   {
     "lane_id": "LANE-000079",
@@ -877,7 +877,7 @@
     "destination_state": "WA",
     "destination_zip_prefix": "981",
     "distance_miles": 2369.4,
-    "standard_transit_days": 6
+    "standard_transit_days": 5
   },
   {
     "lane_id": "LANE-000081",
@@ -899,7 +899,7 @@
     "destination_state": "CO",
     "destination_zip_prefix": "802",
     "distance_miles": 2373.1,
-    "standard_transit_days": 6
+    "standard_transit_days": 5
   },
   {
     "lane_id": "LANE-000083",
@@ -965,7 +965,7 @@
     "destination_state": "CA",
     "destination_zip_prefix": "900",
     "distance_miles": 1826.9,
-    "standard_transit_days": 5
+    "standard_transit_days": 4
   },
   {
     "lane_id": "LANE-000089",
@@ -987,7 +987,7 @@
     "destination_state": "OH",
     "destination_zip_prefix": "430",
     "distance_miles": 1905.8,
-    "standard_transit_days": 5
+    "standard_transit_days": 4
   },
   {
     "lane_id": "LANE-000091",
@@ -1042,7 +1042,7 @@
     "destination_state": "NC",
     "destination_zip_prefix": "282",
     "distance_miles": 1885.6,
-    "standard_transit_days": 5
+    "standard_transit_days": 4
   },
   {
     "lane_id": "LANE-000096",
@@ -1097,7 +1097,7 @@
     "destination_state": "TX",
     "destination_zip_prefix": "750",
     "distance_miles": 1802.9,
-    "standard_transit_days": 5
+    "standard_transit_days": 4
   },
   {
     "lane_id": "LANE-000101",
@@ -1130,7 +1130,7 @@
     "destination_state": "NY",
     "destination_zip_prefix": "100",
     "distance_miles": 1979.1,
-    "standard_transit_days": 5
+    "standard_transit_days": 4
   },
   {
     "lane_id": "LANE-000104",
@@ -1163,7 +1163,7 @@
     "destination_state": "TN",
     "destination_zip_prefix": "381",
     "distance_miles": 1987.7,
-    "standard_transit_days": 5
+    "standard_transit_days": 4
   },
   {
     "lane_id": "LANE-000107",
@@ -1185,7 +1185,7 @@
     "destination_state": "WA",
     "destination_zip_prefix": "981",
     "distance_miles": 1487.0,
-    "standard_transit_days": 4
+    "standard_transit_days": 3
   },
   {
     "lane_id": "LANE-000109",
@@ -1196,7 +1196,7 @@
     "destination_state": "NC",
     "destination_zip_prefix": "282",
     "distance_miles": 2314.9,
-    "standard_transit_days": 6
+    "standard_transit_days": 5
   },
   {
     "lane_id": "LANE-000110",
@@ -1207,7 +1207,7 @@
     "destination_state": "CO",
     "destination_zip_prefix": "802",
     "distance_miles": 497.5,
-    "standard_transit_days": 2
+    "standard_transit_days": 1
   },
   {
     "lane_id": "LANE-000111",
@@ -1251,7 +1251,7 @@
     "destination_state": "TX",
     "destination_zip_prefix": "750",
     "distance_miles": 1818.2,
-    "standard_transit_days": 5
+    "standard_transit_days": 4
   },
   {
     "lane_id": "LANE-000115",
@@ -1306,7 +1306,7 @@
     "destination_state": "IN",
     "destination_zip_prefix": "462",
     "distance_miles": 1924.9,
-    "standard_transit_days": 5
+    "standard_transit_days": 4
   },
   {
     "lane_id": "LANE-000120",
@@ -1383,7 +1383,7 @@
     "destination_state": "UT",
     "destination_zip_prefix": "841",
     "distance_miles": 2391.2,
-    "standard_transit_days": 6
+    "standard_transit_days": 5
   },
   {
     "lane_id": "LANE-000127",
@@ -1405,7 +1405,7 @@
     "destination_state": "TX",
     "destination_zip_prefix": "750",
     "distance_miles": 989.0,
-    "standard_transit_days": 3
+    "standard_transit_days": 2
   },
   {
     "lane_id": "LANE-000129",
@@ -1482,7 +1482,7 @@
     "destination_state": "TN",
     "destination_zip_prefix": "381",
     "distance_miles": 1415.4,
-    "standard_transit_days": 4
+    "standard_transit_days": 3
   },
   {
     "lane_id": "LANE-000136",
@@ -1504,7 +1504,7 @@
     "destination_state": "NC",
     "destination_zip_prefix": "282",
     "distance_miles": 1430.8,
-    "standard_transit_days": 4
+    "standard_transit_days": 3
   },
   {
     "lane_id": "LANE-000138",
@@ -1515,7 +1515,7 @@
     "destination_state": "CO",
     "destination_zip_prefix": "802",
     "distance_miles": 487.2,
-    "standard_transit_days": 2
+    "standard_transit_days": 1
   },
   {
     "lane_id": "LANE-000139",
@@ -1570,7 +1570,7 @@
     "destination_state": "GA",
     "destination_zip_prefix": "303",
     "distance_miles": 1902.9,
-    "standard_transit_days": 5
+    "standard_transit_days": 4
   },
   {
     "lane_id": "LANE-000144",
@@ -1603,7 +1603,7 @@
     "destination_state": "OH",
     "destination_zip_prefix": "430",
     "distance_miles": 2328.2,
-    "standard_transit_days": 6
+    "standard_transit_days": 5
   },
   {
     "lane_id": "LANE-000147",
@@ -1636,7 +1636,7 @@
     "destination_state": "TN",
     "destination_zip_prefix": "381",
     "distance_miles": 928.2,
-    "standard_transit_days": 3
+    "standard_transit_days": 2
   },
   {
     "lane_id": "LANE-000150",
@@ -1658,7 +1658,7 @@
     "destination_state": "NC",
     "destination_zip_prefix": "282",
     "distance_miles": 1385.7,
-    "standard_transit_days": 4
+    "standard_transit_days": 3
   },
   {
     "lane_id": "LANE-000152",
@@ -1702,7 +1702,7 @@
     "destination_state": "IL",
     "destination_zip_prefix": "606",
     "distance_miles": 1467.2,
-    "standard_transit_days": 4
+    "standard_transit_days": 3
   },
   {
     "lane_id": "LANE-000156",
@@ -1757,7 +1757,7 @@
     "destination_state": "OH",
     "destination_zip_prefix": "430",
     "distance_miles": 484.8,
-    "standard_transit_days": 2
+    "standard_transit_days": 1
   },
   {
     "lane_id": "LANE-000161",
@@ -1779,7 +1779,7 @@
     "destination_state": "MO",
     "destination_zip_prefix": "641",
     "distance_miles": 2308.3,
-    "standard_transit_days": 6
+    "standard_transit_days": 5
   },
   {
     "lane_id": "LANE-000163",
@@ -1834,7 +1834,7 @@
     "destination_state": "AZ",
     "destination_zip_prefix": "850",
     "distance_miles": 1812.0,
-    "standard_transit_days": 5
+    "standard_transit_days": 4
   },
   {
     "lane_id": "LANE-000168",
@@ -1878,7 +1878,7 @@
     "destination_state": "GA",
     "destination_zip_prefix": "303",
     "distance_miles": 931.3,
-    "standard_transit_days": 3
+    "standard_transit_days": 2
   },
   {
     "lane_id": "LANE-000172",
@@ -1900,7 +1900,7 @@
     "destination_state": "NY",
     "destination_zip_prefix": "100",
     "distance_miles": 1401.5,
-    "standard_transit_days": 4
+    "standard_transit_days": 3
   },
   {
     "lane_id": "LANE-000174",
@@ -2010,7 +2010,7 @@
     "destination_state": "IL",
     "destination_zip_prefix": "606",
     "distance_miles": 1464.8,
-    "standard_transit_days": 4
+    "standard_transit_days": 3
   },
   {
     "lane_id": "LANE-000184",
@@ -2109,7 +2109,7 @@
     "destination_state": "PA",
     "destination_zip_prefix": "171",
     "distance_miles": 2373.8,
-    "standard_transit_days": 6
+    "standard_transit_days": 5
   },
   {
     "lane_id": "LANE-000193",
@@ -2175,7 +2175,7 @@
     "destination_state": "TX",
     "destination_zip_prefix": "750",
     "distance_miles": 1866.9,
-    "standard_transit_days": 5
+    "standard_transit_days": 4
   },
   {
     "lane_id": "LANE-000199",
@@ -2208,7 +2208,7 @@
     "destination_state": "NY",
     "destination_zip_prefix": "100",
     "distance_miles": 1936.8,
-    "standard_transit_days": 5
+    "standard_transit_days": 4
   },
   {
     "lane_id": "LANE-000202",
@@ -2241,7 +2241,7 @@
     "destination_state": "MO",
     "destination_zip_prefix": "641",
     "distance_miles": 1424.9,
-    "standard_transit_days": 4
+    "standard_transit_days": 3
   },
   {
     "lane_id": "LANE-000205",
@@ -2307,7 +2307,7 @@
     "destination_state": "AZ",
     "destination_zip_prefix": "850",
     "distance_miles": 1861.2,
-    "standard_transit_days": 5
+    "standard_transit_days": 4
   },
   {
     "lane_id": "LANE-000211",
@@ -2318,7 +2318,7 @@
     "destination_state": "TX",
     "destination_zip_prefix": "750",
     "distance_miles": 2278.9,
-    "standard_transit_days": 6
+    "standard_transit_days": 5
   },
   {
     "lane_id": "LANE-000212",
@@ -2351,7 +2351,7 @@
     "destination_state": "NY",
     "destination_zip_prefix": "100",
     "distance_miles": 1358.8,
-    "standard_transit_days": 4
+    "standard_transit_days": 3
   },
   {
     "lane_id": "LANE-000215",
@@ -2571,7 +2571,7 @@
     "destination_state": "WA",
     "destination_zip_prefix": "981",
     "distance_miles": 1889.6,
-    "standard_transit_days": 5
+    "standard_transit_days": 4
   },
   {
     "lane_id": "LANE-000235",
@@ -2582,7 +2582,7 @@
     "destination_state": "NC",
     "destination_zip_prefix": "282",
     "distance_miles": 1378.7,
-    "standard_transit_days": 4
+    "standard_transit_days": 3
   },
   {
     "lane_id": "LANE-000236",
@@ -2593,7 +2593,7 @@
     "destination_state": "CO",
     "destination_zip_prefix": "802",
     "distance_miles": 960.3,
-    "standard_transit_days": 3
+    "standard_transit_days": 2
   },
   {
     "lane_id": "LANE-000237",
@@ -2626,7 +2626,7 @@
     "destination_state": "IL",
     "destination_zip_prefix": "606",
     "distance_miles": 1377.3,
-    "standard_transit_days": 4
+    "standard_transit_days": 3
   },
   {
     "lane_id": "LANE-000240",
@@ -2681,7 +2681,7 @@
     "destination_state": "IN",
     "destination_zip_prefix": "462",
     "distance_miles": 1438.2,
-    "standard_transit_days": 4
+    "standard_transit_days": 3
   },
   {
     "lane_id": "LANE-000245",
@@ -2725,7 +2725,7 @@
     "destination_state": "WA",
     "destination_zip_prefix": "981",
     "distance_miles": 479.9,
-    "standard_transit_days": 2
+    "standard_transit_days": 1
   },
   {
     "lane_id": "LANE-000249",
@@ -2736,7 +2736,7 @@
     "destination_state": "NC",
     "destination_zip_prefix": "282",
     "distance_miles": 486.6,
-    "standard_transit_days": 2
+    "standard_transit_days": 1
   },
   {
     "lane_id": "LANE-000250",
@@ -2747,7 +2747,7 @@
     "destination_state": "CO",
     "destination_zip_prefix": "802",
     "distance_miles": 1859.0,
-    "standard_transit_days": 5
+    "standard_transit_days": 4
   },
   {
     "lane_id": "LANE-000251",
@@ -2813,7 +2813,7 @@
     "destination_state": "NY",
     "destination_zip_prefix": "100",
     "distance_miles": 1937.3,
-    "standard_transit_days": 5
+    "standard_transit_days": 4
   },
   {
     "lane_id": "LANE-000257",
@@ -2868,7 +2868,7 @@
     "destination_state": "PA",
     "destination_zip_prefix": "171",
     "distance_miles": 1876.7,
-    "standard_transit_days": 5
+    "standard_transit_days": 4
   },
   {
     "lane_id": "LANE-000262",
@@ -2879,7 +2879,7 @@
     "destination_state": "WA",
     "destination_zip_prefix": "981",
     "distance_miles": 1440.5,
-    "standard_transit_days": 4
+    "standard_transit_days": 3
   },
   {
     "lane_id": "LANE-000263",
@@ -2901,7 +2901,7 @@
     "destination_state": "CO",
     "destination_zip_prefix": "802",
     "distance_miles": 2270.9,
-    "standard_transit_days": 6
+    "standard_transit_days": 5
   },
   {
     "lane_id": "LANE-000265",
@@ -2978,7 +2978,7 @@
     "destination_state": "OH",
     "destination_zip_prefix": "430",
     "distance_miles": 1988.6,
-    "standard_transit_days": 5
+    "standard_transit_days": 4
   },
   {
     "lane_id": "LANE-000272",
@@ -3033,7 +3033,7 @@
     "destination_state": "WA",
     "destination_zip_prefix": "981",
     "distance_miles": 1938.5,
-    "standard_transit_days": 5
+    "standard_transit_days": 4
   },
   {
     "lane_id": "LANE-000277",
@@ -3055,7 +3055,7 @@
     "destination_state": "CO",
     "destination_zip_prefix": "802",
     "distance_miles": 1472.7,
-    "standard_transit_days": 4
+    "standard_transit_days": 3
   },
   {
     "lane_id": "LANE-000279",
@@ -3066,7 +3066,7 @@
     "destination_state": "AZ",
     "destination_zip_prefix": "850",
     "distance_miles": 976.3,
-    "standard_transit_days": 3
+    "standard_transit_days": 2
   },
   {
     "lane_id": "LANE-000280",
@@ -3077,7 +3077,7 @@
     "destination_state": "UT",
     "destination_zip_prefix": "841",
     "distance_miles": 1460.6,
-    "standard_transit_days": 4
+    "standard_transit_days": 3
   },
   {
     "lane_id": "LANE-000281",
@@ -3132,7 +3132,7 @@
     "destination_state": "NY",
     "destination_zip_prefix": "100",
     "distance_miles": 1866.7,
-    "standard_transit_days": 5
+    "standard_transit_days": 4
   },
   {
     "lane_id": "LANE-000286",
@@ -3154,7 +3154,7 @@
     "destination_state": "MO",
     "destination_zip_prefix": "641",
     "distance_miles": 1817.5,
-    "standard_transit_days": 5
+    "standard_transit_days": 4
   },
   {
     "lane_id": "LANE-000288",
@@ -3165,7 +3165,7 @@
     "destination_state": "TN",
     "destination_zip_prefix": "381",
     "distance_miles": 2299.1,
-    "standard_transit_days": 6
+    "standard_transit_days": 5
   },
   {
     "lane_id": "LANE-000289",
@@ -3187,7 +3187,7 @@
     "destination_state": "WA",
     "destination_zip_prefix": "981",
     "distance_miles": 1979.4,
-    "standard_transit_days": 5
+    "standard_transit_days": 4
   },
   {
     "lane_id": "LANE-000291",
@@ -3198,7 +3198,7 @@
     "destination_state": "NC",
     "destination_zip_prefix": "282",
     "distance_miles": 1821.2,
-    "standard_transit_days": 5
+    "standard_transit_days": 4
   },
   {
     "lane_id": "LANE-000292",
@@ -3242,7 +3242,7 @@
     "destination_state": "IL",
     "destination_zip_prefix": "606",
     "distance_miles": 1454.4,
-    "standard_transit_days": 4
+    "standard_transit_days": 3
   },
   {
     "lane_id": "LANE-000296",
@@ -3275,7 +3275,7 @@
     "destination_state": "CA",
     "destination_zip_prefix": "900",
     "distance_miles": 1461.2,
-    "standard_transit_days": 4
+    "standard_transit_days": 3
   },
   {
     "lane_id": "LANE-000299",
@@ -3330,7 +3330,7 @@
     "destination_state": "PA",
     "destination_zip_prefix": "171",
     "distance_miles": 1458.8,
-    "standard_transit_days": 4
+    "standard_transit_days": 3
   },
   {
     "lane_id": "LANE-000304",
@@ -3363,7 +3363,7 @@
     "destination_state": "CO",
     "destination_zip_prefix": "802",
     "distance_miles": 1806.5,
-    "standard_transit_days": 5
+    "standard_transit_days": 4
   },
   {
     "lane_id": "LANE-000307",
@@ -3385,7 +3385,7 @@
     "destination_state": "UT",
     "destination_zip_prefix": "841",
     "distance_miles": 2290.5,
-    "standard_transit_days": 6
+    "standard_transit_days": 5
   },
   {
     "lane_id": "LANE-000309",
@@ -3407,7 +3407,7 @@
     "destination_state": "TX",
     "destination_zip_prefix": "750",
     "distance_miles": 464.0,
-    "standard_transit_days": 2
+    "standard_transit_days": 1
   },
   {
     "lane_id": "LANE-000311",
@@ -3418,7 +3418,7 @@
     "destination_state": "GA",
     "destination_zip_prefix": "303",
     "distance_miles": 1906.4,
-    "standard_transit_days": 5
+    "standard_transit_days": 4
   },
   {
     "lane_id": "LANE-000312",
@@ -3440,7 +3440,7 @@
     "destination_state": "NY",
     "destination_zip_prefix": "100",
     "distance_miles": 1976.3,
-    "standard_transit_days": 5
+    "standard_transit_days": 4
   },
   {
     "lane_id": "LANE-000314",
@@ -3451,7 +3451,7 @@
     "destination_state": "OH",
     "destination_zip_prefix": "430",
     "distance_miles": 1487.3,
-    "standard_transit_days": 4
+    "standard_transit_days": 3
   },
   {
     "lane_id": "LANE-000315",
@@ -3462,7 +3462,7 @@
     "destination_state": "IN",
     "destination_zip_prefix": "462",
     "distance_miles": 2334.3,
-    "standard_transit_days": 6
+    "standard_transit_days": 5
   },
   {
     "lane_id": "LANE-000316",
@@ -3550,7 +3550,7 @@
     "destination_state": "IL",
     "destination_zip_prefix": "606",
     "distance_miles": 1917.9,
-    "standard_transit_days": 5
+    "standard_transit_days": 4
   },
   {
     "lane_id": "LANE-000324",
@@ -3660,7 +3660,7 @@
     "destination_state": "NC",
     "destination_zip_prefix": "282",
     "distance_miles": 1468.1,
-    "standard_transit_days": 4
+    "standard_transit_days": 3
   },
   {
     "lane_id": "LANE-000334",
@@ -3682,7 +3682,7 @@
     "destination_state": "AZ",
     "destination_zip_prefix": "850",
     "distance_miles": 958.7,
-    "standard_transit_days": 3
+    "standard_transit_days": 2
   },
   {
     "lane_id": "LANE-000336",
@@ -3693,7 +3693,7 @@
     "destination_state": "UT",
     "destination_zip_prefix": "841",
     "distance_miles": 2330.6,
-    "standard_transit_days": 6
+    "standard_transit_days": 5
   },
   {
     "lane_id": "LANE-000337",
@@ -3737,7 +3737,7 @@
     "destination_state": "CA",
     "destination_zip_prefix": "900",
     "distance_miles": 1953.1,
-    "standard_transit_days": 5
+    "standard_transit_days": 4
   },
   {
     "lane_id": "LANE-000341",
@@ -3748,7 +3748,7 @@
     "destination_state": "NY",
     "destination_zip_prefix": "100",
     "distance_miles": 1406.1,
-    "standard_transit_days": 4
+    "standard_transit_days": 3
   },
   {
     "lane_id": "LANE-000342",
@@ -3770,7 +3770,7 @@
     "destination_state": "IN",
     "destination_zip_prefix": "462",
     "distance_miles": 2255.5,
-    "standard_transit_days": 6
+    "standard_transit_days": 5
   },
   {
     "lane_id": "LANE-000344",
@@ -3814,7 +3814,7 @@
     "destination_state": "NC",
     "destination_zip_prefix": "282",
     "distance_miles": 1490.7,
-    "standard_transit_days": 4
+    "standard_transit_days": 3
   },
   {
     "lane_id": "LANE-000348",
@@ -3825,7 +3825,7 @@
     "destination_state": "CO",
     "destination_zip_prefix": "802",
     "distance_miles": 1908.4,
-    "standard_transit_days": 5
+    "standard_transit_days": 4
   },
   {
     "lane_id": "LANE-000349",
@@ -3847,7 +3847,7 @@
     "destination_state": "UT",
     "destination_zip_prefix": "841",
     "distance_miles": 2338.9,
-    "standard_transit_days": 6
+    "standard_transit_days": 5
   },
   {
     "lane_id": "LANE-000351",
@@ -3891,7 +3891,7 @@
     "destination_state": "CA",
     "destination_zip_prefix": "900",
     "distance_miles": 1889.3,
-    "standard_transit_days": 5
+    "standard_transit_days": 4
   },
   {
     "lane_id": "LANE-000355",
@@ -3913,7 +3913,7 @@
     "destination_state": "OH",
     "destination_zip_prefix": "430",
     "distance_miles": 475.4,
-    "standard_transit_days": 2
+    "standard_transit_days": 1
   },
   {
     "lane_id": "LANE-000357",
@@ -3924,7 +3924,7 @@
     "destination_state": "IN",
     "destination_zip_prefix": "462",
     "distance_miles": 1836.7,
-    "standard_transit_days": 5
+    "standard_transit_days": 4
   },
   {
     "lane_id": "LANE-000358",
@@ -3946,7 +3946,7 @@
     "destination_state": "TN",
     "destination_zip_prefix": "381",
     "distance_miles": 1813.8,
-    "standard_transit_days": 5
+    "standard_transit_days": 4
   },
   {
     "lane_id": "LANE-000360",
@@ -3968,7 +3968,7 @@
     "destination_state": "NC",
     "destination_zip_prefix": "282",
     "distance_miles": 1463.9,
-    "standard_transit_days": 4
+    "standard_transit_days": 3
   },
   {
     "lane_id": "LANE-000362",
@@ -3979,7 +3979,7 @@
     "destination_state": "CO",
     "destination_zip_prefix": "802",
     "distance_miles": 2265.8,
-    "standard_transit_days": 6
+    "standard_transit_days": 5
   },
   {
     "lane_id": "LANE-000363",
@@ -3990,7 +3990,7 @@
     "destination_state": "AZ",
     "destination_zip_prefix": "850",
     "distance_miles": 481.7,
-    "standard_transit_days": 2
+    "standard_transit_days": 1
   },
   {
     "lane_id": "LANE-000364",
@@ -4023,7 +4023,7 @@
     "destination_state": "TX",
     "destination_zip_prefix": "750",
     "distance_miles": 930.8,
-    "standard_transit_days": 3
+    "standard_transit_days": 2
   },
   {
     "lane_id": "LANE-000367",
@@ -4056,7 +4056,7 @@
     "destination_state": "NY",
     "destination_zip_prefix": "100",
     "distance_miles": 1362.0,
-    "standard_transit_days": 4
+    "standard_transit_days": 3
   },
   {
     "lane_id": "LANE-000370",
@@ -4067,7 +4067,7 @@
     "destination_state": "OH",
     "destination_zip_prefix": "430",
     "distance_miles": 1811.4,
-    "standard_transit_days": 5
+    "standard_transit_days": 4
   },
   {
     "lane_id": "LANE-000371",
@@ -4100,7 +4100,7 @@
     "destination_state": "TN",
     "destination_zip_prefix": "381",
     "distance_miles": 1371.8,
-    "standard_transit_days": 4
+    "standard_transit_days": 3
   },
   {
     "lane_id": "LANE-000374",
@@ -4210,7 +4210,7 @@
     "destination_state": "NY",
     "destination_zip_prefix": "100",
     "distance_miles": 1863.0,
-    "standard_transit_days": 5
+    "standard_transit_days": 4
   },
   {
     "lane_id": "LANE-000384",
@@ -4232,7 +4232,7 @@
     "destination_state": "IN",
     "destination_zip_prefix": "462",
     "distance_miles": 1484.9,
-    "standard_transit_days": 4
+    "standard_transit_days": 3
   },
   {
     "lane_id": "LANE-000386",
@@ -4254,7 +4254,7 @@
     "destination_state": "TN",
     "destination_zip_prefix": "381",
     "distance_miles": 1430.6,
-    "standard_transit_days": 4
+    "standard_transit_days": 3
   },
   {
     "lane_id": "LANE-000388",
@@ -4265,7 +4265,7 @@
     "destination_state": "PA",
     "destination_zip_prefix": "171",
     "distance_miles": 1972.8,
-    "standard_transit_days": 5
+    "standard_transit_days": 4
   },
   {
     "lane_id": "LANE-000389",
@@ -4276,7 +4276,7 @@
     "destination_state": "WA",
     "destination_zip_prefix": "981",
     "distance_miles": 2384.7,
-    "standard_transit_days": 6
+    "standard_transit_days": 5
   },
   {
     "lane_id": "LANE-000390",
@@ -4298,7 +4298,7 @@
     "destination_state": "AZ",
     "destination_zip_prefix": "850",
     "distance_miles": 936.1,
-    "standard_transit_days": 3
+    "standard_transit_days": 2
   },
   {
     "lane_id": "LANE-000392",
@@ -4331,7 +4331,7 @@
     "destination_state": "TX",
     "destination_zip_prefix": "750",
     "distance_miles": 1951.5,
-    "standard_transit_days": 5
+    "standard_transit_days": 4
   },
   {
     "lane_id": "LANE-000395",
@@ -4408,7 +4408,7 @@
     "destination_state": "TN",
     "destination_zip_prefix": "381",
     "distance_miles": 1468.7,
-    "standard_transit_days": 4
+    "standard_transit_days": 3
   },
   {
     "lane_id": "LANE-000402",
@@ -4496,7 +4496,7 @@
     "destination_state": "GA",
     "destination_zip_prefix": "303",
     "distance_miles": 983.2,
-    "standard_transit_days": 3
+    "standard_transit_days": 2
   },
   {
     "lane_id": "LANE-000410",
@@ -4518,7 +4518,7 @@
     "destination_state": "NY",
     "destination_zip_prefix": "100",
     "distance_miles": 2349.1,
-    "standard_transit_days": 6
+    "standard_transit_days": 5
   },
   {
     "lane_id": "LANE-000412",
@@ -4606,7 +4606,7 @@
     "destination_state": "CO",
     "destination_zip_prefix": "802",
     "distance_miles": 1838.0,
-    "standard_transit_days": 5
+    "standard_transit_days": 4
   },
   {
     "lane_id": "LANE-000420",
@@ -4617,7 +4617,7 @@
     "destination_state": "AZ",
     "destination_zip_prefix": "850",
     "distance_miles": 498.8,
-    "standard_transit_days": 2
+    "standard_transit_days": 1
   },
   {
     "lane_id": "LANE-000421",
@@ -4672,7 +4672,7 @@
     "destination_state": "OH",
     "destination_zip_prefix": "430",
     "distance_miles": 966.5,
-    "standard_transit_days": 3
+    "standard_transit_days": 2
   },
   {
     "lane_id": "LANE-000426",
@@ -4727,7 +4727,7 @@
     "destination_state": "WA",
     "destination_zip_prefix": "981",
     "distance_miles": 1900.5,
-    "standard_transit_days": 5
+    "standard_transit_days": 4
   },
   {
     "lane_id": "LANE-000431",
@@ -4749,7 +4749,7 @@
     "destination_state": "CO",
     "destination_zip_prefix": "802",
     "distance_miles": 1449.9,
-    "standard_transit_days": 4
+    "standard_transit_days": 3
   },
   {
     "lane_id": "LANE-000433",
@@ -4804,7 +4804,7 @@
     "destination_state": "CA",
     "destination_zip_prefix": "900",
     "distance_miles": 2345.3,
-    "standard_transit_days": 6
+    "standard_transit_days": 5
   },
   {
     "lane_id": "LANE-000438",
@@ -4815,7 +4815,7 @@
     "destination_state": "NY",
     "destination_zip_prefix": "100",
     "distance_miles": 2398.5,
-    "standard_transit_days": 6
+    "standard_transit_days": 5
   },
   {
     "lane_id": "LANE-000439",
@@ -4969,7 +4969,7 @@
     "destination_state": "NY",
     "destination_zip_prefix": "100",
     "distance_miles": 2384.8,
-    "standard_transit_days": 6
+    "standard_transit_days": 5
   },
   {
     "lane_id": "LANE-000453",
@@ -4980,7 +4980,7 @@
     "destination_state": "OH",
     "destination_zip_prefix": "430",
     "distance_miles": 1439.5,
-    "standard_transit_days": 4
+    "standard_transit_days": 3
   },
   {
     "lane_id": "LANE-000454",
@@ -5024,7 +5024,7 @@
     "destination_state": "PA",
     "destination_zip_prefix": "171",
     "distance_miles": 1437.2,
-    "standard_transit_days": 4
+    "standard_transit_days": 3
   },
   {
     "lane_id": "LANE-000458",
@@ -5145,7 +5145,7 @@
     "destination_state": "IN",
     "destination_zip_prefix": "462",
     "distance_miles": 2371.6,
-    "standard_transit_days": 6
+    "standard_transit_days": 5
   },
   {
     "lane_id": "LANE-000469",
@@ -5211,7 +5211,7 @@
     "destination_state": "CO",
     "destination_zip_prefix": "802",
     "distance_miles": 2263.6,
-    "standard_transit_days": 6
+    "standard_transit_days": 5
   },
   {
     "lane_id": "LANE-000475",
@@ -5222,7 +5222,7 @@
     "destination_state": "AZ",
     "destination_zip_prefix": "850",
     "distance_miles": 484.3,
-    "standard_transit_days": 2
+    "standard_transit_days": 1
   },
   {
     "lane_id": "LANE-000476",
@@ -5266,7 +5266,7 @@
     "destination_state": "GA",
     "destination_zip_prefix": "303",
     "distance_miles": 1919.0,
-    "standard_transit_days": 5
+    "standard_transit_days": 4
   },
   {
     "lane_id": "LANE-000480",
@@ -5288,7 +5288,7 @@
     "destination_state": "OH",
     "destination_zip_prefix": "430",
     "distance_miles": 1858.9,
-    "standard_transit_days": 5
+    "standard_transit_days": 4
   },
   {
     "lane_id": "LANE-000482",
@@ -5376,7 +5376,7 @@
     "destination_state": "AZ",
     "destination_zip_prefix": "850",
     "distance_miles": 1967.3,
-    "standard_transit_days": 5
+    "standard_transit_days": 4
   },
   {
     "lane_id": "LANE-000490",
@@ -5398,7 +5398,7 @@
     "destination_state": "IL",
     "destination_zip_prefix": "606",
     "distance_miles": 936.5,
-    "standard_transit_days": 3
+    "standard_transit_days": 2
   },
   {
     "lane_id": "LANE-000492",
@@ -5431,7 +5431,7 @@
     "destination_state": "CA",
     "destination_zip_prefix": "900",
     "distance_miles": 1396.3,
-    "standard_transit_days": 4
+    "standard_transit_days": 3
   },
   {
     "lane_id": "LANE-000495",
@@ -5453,7 +5453,7 @@
     "destination_state": "IN",
     "destination_zip_prefix": "462",
     "distance_miles": 1804.8,
-    "standard_transit_days": 5
+    "standard_transit_days": 4
   },
   {
     "lane_id": "LANE-000497",

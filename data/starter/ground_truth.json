@@ -58,9 +58,9 @@
     "target_id": "FINV-2026-000007",
     "anomaly_category": "RATE_CARD_EXPIRED",
     "expected_decision": "AUDITED_EXCEPTION",
-    "expected_variance": 75.0,
+    "expected_variance": 97.98,
     "line_number": 1,
-    "explanation": "Carrier billed under an expired contract rate card with unauthorized rate increase."
+    "explanation": "Carrier billed under expired rate card RATE-CAR-000001-2026-14; the charge was calculated from its expired tariff."
   },
   {
     "target_entity": "FreightInvoice",
@@ -94,9 +94,9 @@
     "target_id": "FINV-2026-000011",
     "anomaly_category": "WEIGHT_TIER_MISAPPLIED",
     "expected_decision": "AUDITED_EXCEPTION",
-    "expected_variance": 65.4,
+    "expected_variance": 197.06,
     "line_number": 1,
-    "explanation": "Carrier failed to apply contracted volume tier discount based on actual billable weight."
+    "explanation": "Carrier billed at Tier 1; contracted tier is TIER_3 for 2345.80 billable lbs."
   },
   {
     "target_entity": "FreightInvoice",
@@ -130,7 +130,7 @@
     "target_id": "FINV-2026-000015",
     "anomaly_category": "SURCHARGE_DUPLICATED",
     "expected_decision": "AUDITED_EXCEPTION",
-    "expected_variance": 108.39,
+    "expected_variance": 101.25,
     "line_number": 3,
     "explanation": "Duplicate fuel surcharge line billed on the same invoice."
   },
@@ -166,9 +166,18 @@
     "target_id": "CN-2026-000001",
     "anomaly_category": "CREDIT_NOTE_EXCEEDS_EXCEPTION",
     "expected_decision": "OVERCREDITED",
-    "expected_variance": 80.0,
+    "expected_variance": 74.11,
     "line_number": null,
-    "explanation": "Credit note CN-2026-000001 issued for $160.00 exceeds approved exception of $80.00."
+    "explanation": "Credit note CN-2026-000001 issued for $148.22 against approved exception of $74.11."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000019",
+    "anomaly_category": "BASE_RATE_MISMATCH",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 74.11,
+    "line_number": 1,
+    "explanation": "Invoice contains a $74.11 overcharge linked to credit note CN-2026-000001, which is independently over-credited."
   },
   {
     "target_entity": "FreightInvoice",
@@ -184,9 +193,9 @@
     "target_id": "FINV-2026-000021",
     "anomaly_category": "DUPLICATE_INVOICE",
     "expected_decision": "AUDITED_EXCEPTION",
-    "expected_variance": 527.07,
+    "expected_variance": 983.02,
     "line_number": null,
-    "explanation": "Duplicate invoice submitted for already billed shipment SHP-2026-000021."
+    "explanation": "Duplicate invoice submitted for already billed shipment SHP-2026-000020."
   },
   {
     "target_entity": "FreightInvoice",
@@ -283,9 +292,9 @@
     "target_id": "FINV-2026-000032",
     "anomaly_category": "RATE_CARD_EXPIRED",
     "expected_decision": "AUDITED_EXCEPTION",
-    "expected_variance": 75.0,
+    "expected_variance": 80.78,
     "line_number": 1,
-    "explanation": "Carrier billed under an expired contract rate card with unauthorized rate increase."
+    "explanation": "Carrier billed under expired rate card RATE-CAR-000002-2026-04; the charge was calculated from its expired tariff."
   },
   {
     "target_entity": "FreightInvoice",
@@ -319,9 +328,9 @@
     "target_id": "FINV-2026-000036",
     "anomaly_category": "WEIGHT_TIER_MISAPPLIED",
     "expected_decision": "AUDITED_EXCEPTION",
-    "expected_variance": 65.4,
+    "expected_variance": 474.36,
     "line_number": 1,
-    "explanation": "Carrier failed to apply contracted volume tier discount based on actual billable weight."
+    "explanation": "Carrier billed at Tier 1; contracted tier is TIER_3 for 2895.62 billable lbs."
   },
   {
     "target_entity": "FreightInvoice",
@@ -355,7 +364,7 @@
     "target_id": "FINV-2026-000040",
     "anomaly_category": "SURCHARGE_DUPLICATED",
     "expected_decision": "AUDITED_EXCEPTION",
-    "expected_variance": 185.59,
+    "expected_variance": 91.97,
     "line_number": 3,
     "explanation": "Duplicate fuel surcharge line billed on the same invoice."
   },
@@ -389,11 +398,20 @@
   {
     "target_entity": "CreditNote",
     "target_id": "CN-2026-000002",
-    "anomaly_category": "CREDIT_NOTE_EXCEEDS_EXCEPTION",
-    "expected_decision": "OVERCREDITED",
-    "expected_variance": 80.0,
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "RECONCILED",
+    "expected_variance": 0.0,
     "line_number": null,
-    "explanation": "Credit note CN-2026-000002 issued for $160.00 exceeds approved exception of $80.00."
+    "explanation": "Credit note CN-2026-000002 issued for $68.41 against approved exception of $68.41."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000044",
+    "anomaly_category": "BASE_RATE_MISMATCH",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 68.41,
+    "line_number": 1,
+    "explanation": "Invoice contains a $68.41 overcharge linked to credit note CN-2026-000002, which is independently over-credited."
   },
   {
     "target_entity": "FreightInvoice",
@@ -409,9 +427,9 @@
     "target_id": "FINV-2026-000046",
     "anomaly_category": "DUPLICATE_INVOICE",
     "expected_decision": "AUDITED_EXCEPTION",
-    "expected_variance": 810.56,
+    "expected_variance": 778.1,
     "line_number": null,
-    "explanation": "Duplicate invoice submitted for already billed shipment SHP-2026-000046."
+    "explanation": "Duplicate invoice submitted for already billed shipment SHP-2026-000045."
   },
   {
     "target_entity": "FreightInvoice",
@@ -508,9 +526,9 @@
     "target_id": "FINV-2026-000057",
     "anomaly_category": "RATE_CARD_EXPIRED",
     "expected_decision": "AUDITED_EXCEPTION",
-    "expected_variance": 75.0,
+    "expected_variance": 50.91,
     "line_number": 1,
-    "explanation": "Carrier billed under an expired contract rate card with unauthorized rate increase."
+    "explanation": "Carrier billed under expired rate card RATE-CAR-000002-2026-54; the charge was calculated from its expired tariff."
   },
   {
     "target_entity": "FreightInvoice",
@@ -544,9 +562,9 @@
     "target_id": "FINV-2026-000061",
     "anomaly_category": "WEIGHT_TIER_MISAPPLIED",
     "expected_decision": "AUDITED_EXCEPTION",
-    "expected_variance": 65.4,
+    "expected_variance": 197.32,
     "line_number": 1,
-    "explanation": "Carrier failed to apply contracted volume tier discount based on actual billable weight."
+    "explanation": "Carrier billed at Tier 1; contracted tier is TIER_3 for 2124.30 billable lbs."
   },
   {
     "target_entity": "FreightInvoice",
@@ -580,7 +598,7 @@
     "target_id": "FINV-2026-000065",
     "anomaly_category": "SURCHARGE_DUPLICATED",
     "expected_decision": "AUDITED_EXCEPTION",
-    "expected_variance": 266.49,
+    "expected_variance": 123.06,
     "line_number": 3,
     "explanation": "Duplicate fuel surcharge line billed on the same invoice."
   },
@@ -616,9 +634,18 @@
     "target_id": "CN-2026-000003",
     "anomaly_category": "CREDIT_NOTE_EXCEEDS_EXCEPTION",
     "expected_decision": "OVERCREDITED",
-    "expected_variance": 80.0,
+    "expected_variance": 57.92,
     "line_number": null,
-    "explanation": "Credit note CN-2026-000003 issued for $160.00 exceeds approved exception of $80.00."
+    "explanation": "Credit note CN-2026-000003 issued for $115.84 against approved exception of $57.92."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000069",
+    "anomaly_category": "BASE_RATE_MISMATCH",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 57.92,
+    "line_number": 1,
+    "explanation": "Invoice contains a $57.92 overcharge linked to credit note CN-2026-000003, which is independently over-credited."
   },
   {
     "target_entity": "FreightInvoice",
@@ -634,9 +661,9 @@
     "target_id": "FINV-2026-000071",
     "anomaly_category": "DUPLICATE_INVOICE",
     "expected_decision": "AUDITED_EXCEPTION",
-    "expected_variance": 1257.72,
+    "expected_variance": 657.87,
     "line_number": null,
-    "explanation": "Duplicate invoice submitted for already billed shipment SHP-2026-000071."
+    "explanation": "Duplicate invoice submitted for already billed shipment SHP-2026-000070."
   },
   {
     "target_entity": "FreightInvoice",
@@ -733,9 +760,9 @@
     "target_id": "FINV-2026-000082",
     "anomaly_category": "RATE_CARD_EXPIRED",
     "expected_decision": "AUDITED_EXCEPTION",
-    "expected_variance": 75.0,
+    "expected_variance": 172.14,
     "line_number": 1,
-    "explanation": "Carrier billed under an expired contract rate card with unauthorized rate increase."
+    "explanation": "Carrier billed under expired rate card RATE-CAR-000003-2026-44; the charge was calculated from its expired tariff."
   },
   {
     "target_entity": "FreightInvoice",
@@ -769,9 +796,9 @@
     "target_id": "FINV-2026-000086",
     "anomaly_category": "WEIGHT_TIER_MISAPPLIED",
     "expected_decision": "AUDITED_EXCEPTION",
-    "expected_variance": 65.4,
+    "expected_variance": 492.23,
     "line_number": 1,
-    "explanation": "Carrier failed to apply contracted volume tier discount based on actual billable weight."
+    "explanation": "Carrier billed at Tier 1; contracted tier is TIER_3 for 2985.40 billable lbs."
   },
   {
     "target_entity": "FreightInvoice",
@@ -805,7 +832,7 @@
     "target_id": "FINV-2026-000090",
     "anomaly_category": "SURCHARGE_DUPLICATED",
     "expected_decision": "AUDITED_EXCEPTION",
-    "expected_variance": 59.31,
+    "expected_variance": 103.33,
     "line_number": 3,
     "explanation": "Duplicate fuel surcharge line billed on the same invoice."
   },
@@ -839,11 +866,20 @@
   {
     "target_entity": "CreditNote",
     "target_id": "CN-2026-000004",
-    "anomaly_category": "CREDIT_NOTE_EXCEEDS_EXCEPTION",
-    "expected_decision": "OVERCREDITED",
-    "expected_variance": 80.0,
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "RECONCILED",
+    "expected_variance": 0.0,
     "line_number": null,
-    "explanation": "Credit note CN-2026-000004 issued for $160.00 exceeds approved exception of $80.00."
+    "explanation": "Credit note CN-2026-000004 issued for $56.74 against approved exception of $56.74."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000094",
+    "anomaly_category": "BASE_RATE_MISMATCH",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 56.74,
+    "line_number": 1,
+    "explanation": "Invoice contains a $56.74 overcharge linked to credit note CN-2026-000004, which is independently over-credited."
   },
   {
     "target_entity": "FreightInvoice",
@@ -859,9 +895,9 @@
     "target_id": "FINV-2026-000096",
     "anomaly_category": "DUPLICATE_INVOICE",
     "expected_decision": "AUDITED_EXCEPTION",
-    "expected_variance": 1215.87,
+    "expected_variance": 538.72,
     "line_number": null,
-    "explanation": "Duplicate invoice submitted for already billed shipment SHP-2026-000096."
+    "explanation": "Duplicate invoice submitted for already billed shipment SHP-2026-000095."
   },
   {
     "target_entity": "FreightInvoice",
@@ -958,9 +994,9 @@
     "target_id": "FINV-2026-000107",
     "anomaly_category": "RATE_CARD_EXPIRED",
     "expected_decision": "AUDITED_EXCEPTION",
-    "expected_variance": 75.0,
+    "expected_variance": 126.93,
     "line_number": 1,
-    "explanation": "Carrier billed under an expired contract rate card with unauthorized rate increase."
+    "explanation": "Carrier billed under expired rate card RATE-CAR-000004-2026-34; the charge was calculated from its expired tariff."
   },
   {
     "target_entity": "FreightInvoice",
@@ -994,9 +1030,9 @@
     "target_id": "FINV-2026-000111",
     "anomaly_category": "WEIGHT_TIER_MISAPPLIED",
     "expected_decision": "AUDITED_EXCEPTION",
-    "expected_variance": 65.4,
+    "expected_variance": 335.4,
     "line_number": 1,
-    "explanation": "Carrier failed to apply contracted volume tier discount based on actual billable weight."
+    "explanation": "Carrier billed at Tier 1; contracted tier is TIER_3 for 3000.00 billable lbs."
   },
   {
     "target_entity": "FreightInvoice",
@@ -1030,7 +1066,7 @@
     "target_id": "FINV-2026-000115",
     "anomaly_category": "SURCHARGE_DUPLICATED",
     "expected_decision": "AUDITED_EXCEPTION",
-    "expected_variance": 57.25,
+    "expected_variance": 110.34,
     "line_number": 3,
     "explanation": "Duplicate fuel surcharge line billed on the same invoice."
   },
@@ -1066,9 +1102,18 @@
     "target_id": "CN-2026-000005",
     "anomaly_category": "CREDIT_NOTE_EXCEEDS_EXCEPTION",
     "expected_decision": "OVERCREDITED",
-    "expected_variance": 80.0,
+    "expected_variance": 33.97,
     "line_number": null,
-    "explanation": "Credit note CN-2026-000005 issued for $160.00 exceeds approved exception of $80.00."
+    "explanation": "Credit note CN-2026-000005 issued for $67.94 against approved exception of $33.97."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000119",
+    "anomaly_category": "BASE_RATE_MISMATCH",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 33.97,
+    "line_number": 1,
+    "explanation": "Invoice contains a $33.97 overcharge linked to credit note CN-2026-000005, which is independently over-credited."
   },
   {
     "target_entity": "FreightInvoice",
@@ -1084,9 +1129,9 @@
     "target_id": "FINV-2026-000121",
     "anomaly_category": "DUPLICATE_INVOICE",
     "expected_decision": "AUDITED_EXCEPTION",
-    "expected_variance": 566.42,
+    "expected_variance": 754.13,
     "line_number": null,
-    "explanation": "Duplicate invoice submitted for already billed shipment SHP-2026-000121."
+    "explanation": "Duplicate invoice submitted for already billed shipment SHP-2026-000120."
   },
   {
     "target_entity": "FreightInvoice",
@@ -1183,9 +1228,9 @@
     "target_id": "FINV-2026-000132",
     "anomaly_category": "RATE_CARD_EXPIRED",
     "expected_decision": "AUDITED_EXCEPTION",
-    "expected_variance": 75.0,
+    "expected_variance": 42.26,
     "line_number": 1,
-    "explanation": "Carrier billed under an expired contract rate card with unauthorized rate increase."
+    "explanation": "Carrier billed under expired rate card RATE-CAR-000005-2026-24; the charge was calculated from its expired tariff."
   },
   {
     "target_entity": "FreightInvoice",
@@ -1219,9 +1264,9 @@
     "target_id": "FINV-2026-000136",
     "anomaly_category": "WEIGHT_TIER_MISAPPLIED",
     "expected_decision": "AUDITED_EXCEPTION",
-    "expected_variance": 65.4,
+    "expected_variance": 180.66,
     "line_number": 1,
-    "explanation": "Carrier failed to apply contracted volume tier discount based on actual billable weight."
+    "explanation": "Carrier billed at Tier 1; contracted tier is TIER_3 for 2014.50 billable lbs."
   },
   {
     "target_entity": "FreightInvoice",
@@ -1255,7 +1300,7 @@
     "target_id": "FINV-2026-000140",
     "anomaly_category": "SURCHARGE_DUPLICATED",
     "expected_decision": "AUDITED_EXCEPTION",
-    "expected_variance": 242.41,
+    "expected_variance": 250.49,
     "line_number": 3,
     "explanation": "Duplicate fuel surcharge line billed on the same invoice."
   },
@@ -1289,11 +1334,20 @@
   {
     "target_entity": "CreditNote",
     "target_id": "CN-2026-000006",
-    "anomaly_category": "CREDIT_NOTE_EXCEEDS_EXCEPTION",
-    "expected_decision": "OVERCREDITED",
-    "expected_variance": 80.0,
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "RECONCILED",
+    "expected_variance": 0.0,
     "line_number": null,
-    "explanation": "Credit note CN-2026-000006 issued for $160.00 exceeds approved exception of $80.00."
+    "explanation": "Credit note CN-2026-000006 issued for $126.88 against approved exception of $126.88."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000144",
+    "anomaly_category": "BASE_RATE_MISMATCH",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 126.88,
+    "line_number": 1,
+    "explanation": "Invoice contains a $126.88 overcharge linked to credit note CN-2026-000006, which is independently over-credited."
   },
   {
     "target_entity": "FreightInvoice",
@@ -1309,9 +1363,9 @@
     "target_id": "FINV-2026-000146",
     "anomaly_category": "DUPLICATE_INVOICE",
     "expected_decision": "AUDITED_EXCEPTION",
-    "expected_variance": 784.9,
+    "expected_variance": 501.55,
     "line_number": null,
-    "explanation": "Duplicate invoice submitted for already billed shipment SHP-2026-000146."
+    "explanation": "Duplicate invoice submitted for already billed shipment SHP-2026-000145."
   },
   {
     "target_entity": "FreightInvoice",
@@ -1408,9 +1462,9 @@
     "target_id": "FINV-2026-000157",
     "anomaly_category": "RATE_CARD_EXPIRED",
     "expected_decision": "AUDITED_EXCEPTION",
-    "expected_variance": 75.0,
+    "expected_variance": 92.4,
     "line_number": 1,
-    "explanation": "Carrier billed under an expired contract rate card with unauthorized rate increase."
+    "explanation": "Carrier billed under expired rate card RATE-CAR-000006-2026-14; the charge was calculated from its expired tariff."
   },
   {
     "target_entity": "FreightInvoice",
@@ -1444,9 +1498,9 @@
     "target_id": "FINV-2026-000161",
     "anomaly_category": "WEIGHT_TIER_MISAPPLIED",
     "expected_decision": "AUDITED_EXCEPTION",
-    "expected_variance": 65.4,
+    "expected_variance": 270.79,
     "line_number": 1,
-    "explanation": "Carrier failed to apply contracted volume tier discount based on actual billable weight."
+    "explanation": "Carrier billed at Tier 1; contracted tier is TIER_3 for 2155.90 billable lbs."
   },
   {
     "target_entity": "FreightInvoice",
@@ -1480,7 +1534,7 @@
     "target_id": "FINV-2026-000165",
     "anomaly_category": "SURCHARGE_DUPLICATED",
     "expected_decision": "AUDITED_EXCEPTION",
-    "expected_variance": 102.56,
+    "expected_variance": 69.93,
     "line_number": 3,
     "explanation": "Duplicate fuel surcharge line billed on the same invoice."
   },
@@ -1516,9 +1570,18 @@
     "target_id": "CN-2026-000007",
     "anomaly_category": "CREDIT_NOTE_EXCEEDS_EXCEPTION",
     "expected_decision": "OVERCREDITED",
-    "expected_variance": 80.0,
+    "expected_variance": 25.88,
     "line_number": null,
-    "explanation": "Credit note CN-2026-000007 issued for $160.00 exceeds approved exception of $80.00."
+    "explanation": "Credit note CN-2026-000007 issued for $51.76 against approved exception of $25.88."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000169",
+    "anomaly_category": "BASE_RATE_MISMATCH",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 25.88,
+    "line_number": 1,
+    "explanation": "Invoice contains a $25.88 overcharge linked to credit note CN-2026-000007, which is independently over-credited."
   },
   {
     "target_entity": "FreightInvoice",
@@ -1534,9 +1597,9 @@
     "target_id": "FINV-2026-000171",
     "anomaly_category": "DUPLICATE_INVOICE",
     "expected_decision": "AUDITED_EXCEPTION",
-    "expected_variance": 449.96,
+    "expected_variance": 525.49,
     "line_number": null,
-    "explanation": "Duplicate invoice submitted for already billed shipment SHP-2026-000171."
+    "explanation": "Duplicate invoice submitted for already billed shipment SHP-2026-000170."
   },
   {
     "target_entity": "FreightInvoice",
@@ -1633,9 +1696,9 @@
     "target_id": "FINV-2026-000182",
     "anomaly_category": "RATE_CARD_EXPIRED",
     "expected_decision": "AUDITED_EXCEPTION",
-    "expected_variance": 75.0,
+    "expected_variance": 200.8,
     "line_number": 1,
-    "explanation": "Carrier billed under an expired contract rate card with unauthorized rate increase."
+    "explanation": "Carrier billed under expired rate card RATE-CAR-000007-2026-04; the charge was calculated from its expired tariff."
   },
   {
     "target_entity": "FreightInvoice",
@@ -1669,9 +1732,9 @@
     "target_id": "FINV-2026-000186",
     "anomaly_category": "WEIGHT_TIER_MISAPPLIED",
     "expected_decision": "AUDITED_EXCEPTION",
-    "expected_variance": 65.4,
+    "expected_variance": 262.62,
     "line_number": 1,
-    "explanation": "Carrier failed to apply contracted volume tier discount based on actual billable weight."
+    "explanation": "Carrier billed at Tier 1; contracted tier is TIER_3 for 2394.26 billable lbs."
   },
   {
     "target_entity": "FreightInvoice",
@@ -1705,7 +1768,7 @@
     "target_id": "FINV-2026-000190",
     "anomaly_category": "SURCHARGE_DUPLICATED",
     "expected_decision": "AUDITED_EXCEPTION",
-    "expected_variance": 125.36,
+    "expected_variance": 76.52,
     "line_number": 3,
     "explanation": "Duplicate fuel surcharge line billed on the same invoice."
   },
@@ -1739,11 +1802,20 @@
   {
     "target_entity": "CreditNote",
     "target_id": "CN-2026-000008",
-    "anomaly_category": "CREDIT_NOTE_EXCEEDS_EXCEPTION",
-    "expected_decision": "OVERCREDITED",
-    "expected_variance": 80.0,
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "RECONCILED",
+    "expected_variance": 0.0,
     "line_number": null,
-    "explanation": "Credit note CN-2026-000008 issued for $160.00 exceeds approved exception of $80.00."
+    "explanation": "Credit note CN-2026-000008 issued for $95.36 against approved exception of $95.36."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000194",
+    "anomaly_category": "BASE_RATE_MISMATCH",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 95.36,
+    "line_number": 1,
+    "explanation": "Invoice contains a $95.36 overcharge linked to credit note CN-2026-000008, which is independently over-credited."
   },
   {
     "target_entity": "FreightInvoice",
@@ -1759,9 +1831,9 @@
     "target_id": "FINV-2026-000196",
     "anomaly_category": "DUPLICATE_INVOICE",
     "expected_decision": "AUDITED_EXCEPTION",
-    "expected_variance": 1430.15,
+    "expected_variance": 1044.75,
     "line_number": null,
-    "explanation": "Duplicate invoice submitted for already billed shipment SHP-2026-000196."
+    "explanation": "Duplicate invoice submitted for already billed shipment SHP-2026-000195."
   },
   {
     "target_entity": "FreightInvoice",
@@ -1858,9 +1930,9 @@
     "target_id": "FINV-2026-000207",
     "anomaly_category": "RATE_CARD_EXPIRED",
     "expected_decision": "AUDITED_EXCEPTION",
-    "expected_variance": 75.0,
+    "expected_variance": 156.76,
     "line_number": 1,
-    "explanation": "Carrier billed under an expired contract rate card with unauthorized rate increase."
+    "explanation": "Carrier billed under expired rate card RATE-CAR-000007-2026-54; the charge was calculated from its expired tariff."
   },
   {
     "target_entity": "FreightInvoice",
@@ -1894,9 +1966,9 @@
     "target_id": "FINV-2026-000211",
     "anomaly_category": "WEIGHT_TIER_MISAPPLIED",
     "expected_decision": "AUDITED_EXCEPTION",
-    "expected_variance": 65.4,
+    "expected_variance": 260.28,
     "line_number": 1,
-    "explanation": "Carrier failed to apply contracted volume tier discount based on actual billable weight."
+    "explanation": "Carrier billed at Tier 1; contracted tier is TIER_3 for 2485.70 billable lbs."
   },
   {
     "target_entity": "FreightInvoice",
@@ -1930,7 +2002,7 @@
     "target_id": "FINV-2026-000215",
     "anomaly_category": "SURCHARGE_DUPLICATED",
     "expected_decision": "AUDITED_EXCEPTION",
-    "expected_variance": 57.46,
+    "expected_variance": 154.07,
     "line_number": 3,
     "explanation": "Duplicate fuel surcharge line billed on the same invoice."
   },
@@ -1966,9 +2038,18 @@
     "target_id": "CN-2026-000009",
     "anomaly_category": "CREDIT_NOTE_EXCEEDS_EXCEPTION",
     "expected_decision": "OVERCREDITED",
-    "expected_variance": 80.0,
+    "expected_variance": 84.49,
     "line_number": null,
-    "explanation": "Credit note CN-2026-000009 issued for $160.00 exceeds approved exception of $80.00."
+    "explanation": "Credit note CN-2026-000009 issued for $168.98 against approved exception of $84.49."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000219",
+    "anomaly_category": "BASE_RATE_MISMATCH",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 84.49,
+    "line_number": 1,
+    "explanation": "Invoice contains a $84.49 overcharge linked to credit note CN-2026-000009, which is independently over-credited."
   },
   {
     "target_entity": "FreightInvoice",
@@ -1984,9 +2065,9 @@
     "target_id": "FINV-2026-000221",
     "anomaly_category": "DUPLICATE_INVOICE",
     "expected_decision": "AUDITED_EXCEPTION",
-    "expected_variance": 748.92,
+    "expected_variance": 1251.15,
     "line_number": null,
-    "explanation": "Duplicate invoice submitted for already billed shipment SHP-2026-000221."
+    "explanation": "Duplicate invoice submitted for already billed shipment SHP-2026-000220."
   },
   {
     "target_entity": "FreightInvoice",
@@ -2083,9 +2164,9 @@
     "target_id": "FINV-2026-000232",
     "anomaly_category": "RATE_CARD_EXPIRED",
     "expected_decision": "AUDITED_EXCEPTION",
-    "expected_variance": 75.0,
+    "expected_variance": 66.89,
     "line_number": 1,
-    "explanation": "Carrier billed under an expired contract rate card with unauthorized rate increase."
+    "explanation": "Carrier billed under expired rate card RATE-CAR-000008-2026-44; the charge was calculated from its expired tariff."
   },
   {
     "target_entity": "FreightInvoice",
@@ -2119,9 +2200,9 @@
     "target_id": "FINV-2026-000236",
     "anomaly_category": "WEIGHT_TIER_MISAPPLIED",
     "expected_decision": "AUDITED_EXCEPTION",
-    "expected_variance": 65.4,
+    "expected_variance": 245.32,
     "line_number": 1,
-    "explanation": "Carrier failed to apply contracted volume tier discount based on actual billable weight."
+    "explanation": "Carrier billed at Tier 1; contracted tier is TIER_3 for 2390.84 billable lbs."
   },
   {
     "target_entity": "FreightInvoice",
@@ -2155,7 +2236,7 @@
     "target_id": "FINV-2026-000240",
     "anomaly_category": "SURCHARGE_DUPLICATED",
     "expected_decision": "AUDITED_EXCEPTION",
-    "expected_variance": 58.0,
+    "expected_variance": 256.05,
     "line_number": 3,
     "explanation": "Duplicate fuel surcharge line billed on the same invoice."
   },
@@ -2189,11 +2270,20 @@
   {
     "target_entity": "CreditNote",
     "target_id": "CN-2026-000010",
-    "anomaly_category": "CREDIT_NOTE_EXCEEDS_EXCEPTION",
-    "expected_decision": "OVERCREDITED",
-    "expected_variance": 80.0,
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "RECONCILED",
+    "expected_variance": 0.0,
     "line_number": null,
-    "explanation": "Credit note CN-2026-000010 issued for $160.00 exceeds approved exception of $80.00."
+    "explanation": "Credit note CN-2026-000010 issued for $91.34 against approved exception of $91.34."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000244",
+    "anomaly_category": "BASE_RATE_MISMATCH",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 91.34,
+    "line_number": 1,
+    "explanation": "Invoice contains a $91.34 overcharge linked to credit note CN-2026-000010, which is independently over-credited."
   },
   {
     "target_entity": "FreightInvoice",
@@ -2209,9 +2299,9 @@
     "target_id": "FINV-2026-000246",
     "anomaly_category": "DUPLICATE_INVOICE",
     "expected_decision": "AUDITED_EXCEPTION",
-    "expected_variance": 861.8,
+    "expected_variance": 401.43,
     "line_number": null,
-    "explanation": "Duplicate invoice submitted for already billed shipment SHP-2026-000246."
+    "explanation": "Duplicate invoice submitted for already billed shipment SHP-2026-000245."
   },
   {
     "target_entity": "FreightInvoice",
@@ -2308,9 +2398,9 @@
     "target_id": "FINV-2026-000257",
     "anomaly_category": "RATE_CARD_EXPIRED",
     "expected_decision": "AUDITED_EXCEPTION",
-    "expected_variance": 75.0,
+    "expected_variance": 115.11,
     "line_number": 1,
-    "explanation": "Carrier billed under an expired contract rate card with unauthorized rate increase."
+    "explanation": "Carrier billed under expired rate card RATE-CAR-000009-2026-34; the charge was calculated from its expired tariff."
   },
   {
     "target_entity": "FreightInvoice",
@@ -2344,9 +2434,9 @@
     "target_id": "FINV-2026-000261",
     "anomaly_category": "WEIGHT_TIER_MISAPPLIED",
     "expected_decision": "AUDITED_EXCEPTION",
-    "expected_variance": 65.4,
+    "expected_variance": 389.3,
     "line_number": 1,
-    "explanation": "Carrier failed to apply contracted volume tier discount based on actual billable weight."
+    "explanation": "Carrier billed at Tier 1; contracted tier is TIER_3 for 2710.56 billable lbs."
   },
   {
     "target_entity": "FreightInvoice",
@@ -2380,7 +2470,7 @@
     "target_id": "FINV-2026-000265",
     "anomaly_category": "SURCHARGE_DUPLICATED",
     "expected_decision": "AUDITED_EXCEPTION",
-    "expected_variance": 100.22,
+    "expected_variance": 33.73,
     "line_number": 3,
     "explanation": "Duplicate fuel surcharge line billed on the same invoice."
   },
@@ -2416,9 +2506,18 @@
     "target_id": "CN-2026-000011",
     "anomaly_category": "CREDIT_NOTE_EXCEEDS_EXCEPTION",
     "expected_decision": "OVERCREDITED",
-    "expected_variance": 80.0,
+    "expected_variance": 15.54,
     "line_number": null,
-    "explanation": "Credit note CN-2026-000011 issued for $160.00 exceeds approved exception of $80.00."
+    "explanation": "Credit note CN-2026-000011 issued for $31.08 against approved exception of $15.54."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000269",
+    "anomaly_category": "BASE_RATE_MISMATCH",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 15.54,
+    "line_number": 1,
+    "explanation": "Invoice contains a $15.54 overcharge linked to credit note CN-2026-000011, which is independently over-credited."
   },
   {
     "target_entity": "FreightInvoice",
@@ -2434,9 +2533,9 @@
     "target_id": "FINV-2026-000271",
     "anomaly_category": "DUPLICATE_INVOICE",
     "expected_decision": "AUDITED_EXCEPTION",
-    "expected_variance": 537.38,
+    "expected_variance": 696.38,
     "line_number": null,
-    "explanation": "Duplicate invoice submitted for already billed shipment SHP-2026-000271."
+    "explanation": "Duplicate invoice submitted for already billed shipment SHP-2026-000270."
   },
   {
     "target_entity": "FreightInvoice",
@@ -2533,9 +2632,9 @@
     "target_id": "FINV-2026-000282",
     "anomaly_category": "RATE_CARD_EXPIRED",
     "expected_decision": "AUDITED_EXCEPTION",
-    "expected_variance": 75.0,
+    "expected_variance": 79.86,
     "line_number": 1,
-    "explanation": "Carrier billed under an expired contract rate card with unauthorized rate increase."
+    "explanation": "Carrier billed under expired rate card RATE-CAR-000010-2026-24; the charge was calculated from its expired tariff."
   },
   {
     "target_entity": "FreightInvoice",
@@ -2569,9 +2668,9 @@
     "target_id": "FINV-2026-000286",
     "anomaly_category": "WEIGHT_TIER_MISAPPLIED",
     "expected_decision": "AUDITED_EXCEPTION",
-    "expected_variance": 65.4,
+    "expected_variance": 380.57,
     "line_number": 1,
-    "explanation": "Carrier failed to apply contracted volume tier discount based on actual billable weight."
+    "explanation": "Carrier billed at Tier 1; contracted tier is TIER_3 for 3466.50 billable lbs."
   },
   {
     "target_entity": "FreightInvoice",
@@ -2605,7 +2704,7 @@
     "target_id": "FINV-2026-000290",
     "anomaly_category": "SURCHARGE_DUPLICATED",
     "expected_decision": "AUDITED_EXCEPTION",
-    "expected_variance": 68.11,
+    "expected_variance": 184.06,
     "line_number": 3,
     "explanation": "Duplicate fuel surcharge line billed on the same invoice."
   },
@@ -2639,11 +2738,20 @@
   {
     "target_entity": "CreditNote",
     "target_id": "CN-2026-000012",
-    "anomaly_category": "CREDIT_NOTE_EXCEEDS_EXCEPTION",
-    "expected_decision": "OVERCREDITED",
-    "expected_variance": 80.0,
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "RECONCILED",
+    "expected_variance": 0.0,
     "line_number": null,
-    "explanation": "Credit note CN-2026-000012 issued for $160.00 exceeds approved exception of $80.00."
+    "explanation": "Credit note CN-2026-000012 issued for $30.17 against approved exception of $30.17."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000294",
+    "anomaly_category": "BASE_RATE_MISMATCH",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 30.17,
+    "line_number": 1,
+    "explanation": "Invoice contains a $30.17 overcharge linked to credit note CN-2026-000012, which is independently over-credited."
   },
   {
     "target_entity": "FreightInvoice",
@@ -2659,9 +2767,9 @@
     "target_id": "FINV-2026-000296",
     "anomaly_category": "DUPLICATE_INVOICE",
     "expected_decision": "AUDITED_EXCEPTION",
-    "expected_variance": 1111.23,
+    "expected_variance": 391.08,
     "line_number": null,
-    "explanation": "Duplicate invoice submitted for already billed shipment SHP-2026-000296."
+    "explanation": "Duplicate invoice submitted for already billed shipment SHP-2026-000295."
   },
   {
     "target_entity": "FreightInvoice",
@@ -2758,9 +2866,9 @@
     "target_id": "FINV-2026-000307",
     "anomaly_category": "RATE_CARD_EXPIRED",
     "expected_decision": "AUDITED_EXCEPTION",
-    "expected_variance": 75.0,
+    "expected_variance": 69.57,
     "line_number": 1,
-    "explanation": "Carrier billed under an expired contract rate card with unauthorized rate increase."
+    "explanation": "Carrier billed under expired rate card RATE-CAR-000011-2026-14; the charge was calculated from its expired tariff."
   },
   {
     "target_entity": "FreightInvoice",
@@ -2794,9 +2902,9 @@
     "target_id": "FINV-2026-000311",
     "anomaly_category": "WEIGHT_TIER_MISAPPLIED",
     "expected_decision": "AUDITED_EXCEPTION",
-    "expected_variance": 65.4,
+    "expected_variance": 324.2,
     "line_number": 1,
-    "explanation": "Carrier failed to apply contracted volume tier discount based on actual billable weight."
+    "explanation": "Carrier billed at Tier 1; contracted tier is TIER_3 for 2296.37 billable lbs."
   },
   {
     "target_entity": "FreightInvoice",
@@ -2830,7 +2938,7 @@
     "target_id": "FINV-2026-000315",
     "anomaly_category": "SURCHARGE_DUPLICATED",
     "expected_decision": "AUDITED_EXCEPTION",
-    "expected_variance": 181.51,
+    "expected_variance": 157.07,
     "line_number": 3,
     "explanation": "Duplicate fuel surcharge line billed on the same invoice."
   },
@@ -2866,9 +2974,18 @@
     "target_id": "CN-2026-000013",
     "anomaly_category": "CREDIT_NOTE_EXCEEDS_EXCEPTION",
     "expected_decision": "OVERCREDITED",
-    "expected_variance": 80.0,
+    "expected_variance": 21.52,
     "line_number": null,
-    "explanation": "Credit note CN-2026-000013 issued for $160.00 exceeds approved exception of $80.00."
+    "explanation": "Credit note CN-2026-000013 issued for $43.04 against approved exception of $21.52."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000319",
+    "anomaly_category": "BASE_RATE_MISMATCH",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 21.52,
+    "line_number": 1,
+    "explanation": "Invoice contains a $21.52 overcharge linked to credit note CN-2026-000013, which is independently over-credited."
   },
   {
     "target_entity": "FreightInvoice",
@@ -2884,9 +3001,9 @@
     "target_id": "FINV-2026-000321",
     "anomaly_category": "DUPLICATE_INVOICE",
     "expected_decision": "AUDITED_EXCEPTION",
-    "expected_variance": 1198.12,
+    "expected_variance": 1704.24,
     "line_number": null,
-    "explanation": "Duplicate invoice submitted for already billed shipment SHP-2026-000321."
+    "explanation": "Duplicate invoice submitted for already billed shipment SHP-2026-000320."
   },
   {
     "target_entity": "FreightInvoice",
@@ -2983,9 +3100,9 @@
     "target_id": "FINV-2026-000332",
     "anomaly_category": "RATE_CARD_EXPIRED",
     "expected_decision": "AUDITED_EXCEPTION",
-    "expected_variance": 75.0,
+    "expected_variance": 81.97,
     "line_number": 1,
-    "explanation": "Carrier billed under an expired contract rate card with unauthorized rate increase."
+    "explanation": "Carrier billed under expired rate card RATE-CAR-000012-2026-04; the charge was calculated from its expired tariff."
   },
   {
     "target_entity": "FreightInvoice",
@@ -3019,9 +3136,9 @@
     "target_id": "FINV-2026-000336",
     "anomaly_category": "WEIGHT_TIER_MISAPPLIED",
     "expected_decision": "AUDITED_EXCEPTION",
-    "expected_variance": 65.4,
+    "expected_variance": 437.1,
     "line_number": 1,
-    "explanation": "Carrier failed to apply contracted volume tier discount based on actual billable weight."
+    "explanation": "Carrier billed at Tier 1; contracted tier is TIER_3 for 3000.00 billable lbs."
   },
   {
     "target_entity": "FreightInvoice",
@@ -3055,7 +3172,7 @@
     "target_id": "FINV-2026-000340",
     "anomaly_category": "SURCHARGE_DUPLICATED",
     "expected_decision": "AUDITED_EXCEPTION",
-    "expected_variance": 85.55,
+    "expected_variance": 92.97,
     "line_number": 3,
     "explanation": "Duplicate fuel surcharge line billed on the same invoice."
   },
@@ -3089,11 +3206,20 @@
   {
     "target_entity": "CreditNote",
     "target_id": "CN-2026-000014",
-    "anomaly_category": "CREDIT_NOTE_EXCEEDS_EXCEPTION",
-    "expected_decision": "OVERCREDITED",
-    "expected_variance": 80.0,
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "RECONCILED",
+    "expected_variance": 0.0,
     "line_number": null,
-    "explanation": "Credit note CN-2026-000014 issued for $160.00 exceeds approved exception of $80.00."
+    "explanation": "Credit note CN-2026-000014 issued for $68.09 against approved exception of $68.09."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000344",
+    "anomaly_category": "BASE_RATE_MISMATCH",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 68.09,
+    "line_number": 1,
+    "explanation": "Invoice contains a $68.09 overcharge linked to credit note CN-2026-000014, which is independently over-credited."
   },
   {
     "target_entity": "FreightInvoice",
@@ -3109,9 +3235,9 @@
     "target_id": "FINV-2026-000346",
     "anomaly_category": "DUPLICATE_INVOICE",
     "expected_decision": "AUDITED_EXCEPTION",
-    "expected_variance": 1098.51,
+    "expected_variance": 681.18,
     "line_number": null,
-    "explanation": "Duplicate invoice submitted for already billed shipment SHP-2026-000346."
+    "explanation": "Duplicate invoice submitted for already billed shipment SHP-2026-000345."
   },
   {
     "target_entity": "FreightInvoice",
@@ -3208,9 +3334,9 @@
     "target_id": "FINV-2026-000357",
     "anomaly_category": "RATE_CARD_EXPIRED",
     "expected_decision": "AUDITED_EXCEPTION",
-    "expected_variance": 75.0,
+    "expected_variance": 90.03,
     "line_number": 1,
-    "explanation": "Carrier billed under an expired contract rate card with unauthorized rate increase."
+    "explanation": "Carrier billed under expired rate card RATE-CAR-000012-2026-54; the charge was calculated from its expired tariff."
   },
   {
     "target_entity": "FreightInvoice",
@@ -3244,9 +3370,9 @@
     "target_id": "FINV-2026-000361",
     "anomaly_category": "WEIGHT_TIER_MISAPPLIED",
     "expected_decision": "AUDITED_EXCEPTION",
-    "expected_variance": 65.4,
+    "expected_variance": 203.02,
     "line_number": 1,
-    "explanation": "Carrier failed to apply contracted volume tier discount based on actual billable weight."
+    "explanation": "Carrier billed at Tier 1; contracted tier is TIER_3 for 2136.70 billable lbs."
   },
   {
     "target_entity": "FreightInvoice",
@@ -3280,7 +3406,7 @@
     "target_id": "FINV-2026-000365",
     "anomaly_category": "SURCHARGE_DUPLICATED",
     "expected_decision": "AUDITED_EXCEPTION",
-    "expected_variance": 59.93,
+    "expected_variance": 189.49,
     "line_number": 3,
     "explanation": "Duplicate fuel surcharge line billed on the same invoice."
   },
@@ -3316,9 +3442,18 @@
     "target_id": "CN-2026-000015",
     "anomaly_category": "CREDIT_NOTE_EXCEEDS_EXCEPTION",
     "expected_decision": "OVERCREDITED",
-    "expected_variance": 80.0,
+    "expected_variance": 57.91,
     "line_number": null,
-    "explanation": "Credit note CN-2026-000015 issued for $160.00 exceeds approved exception of $80.00."
+    "explanation": "Credit note CN-2026-000015 issued for $115.82 against approved exception of $57.91."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000369",
+    "anomaly_category": "BASE_RATE_MISMATCH",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 57.91,
+    "line_number": 1,
+    "explanation": "Invoice contains a $57.91 overcharge linked to credit note CN-2026-000015, which is independently over-credited."
   },
   {
     "target_entity": "FreightInvoice",
@@ -3334,9 +3469,9 @@
     "target_id": "FINV-2026-000371",
     "anomaly_category": "DUPLICATE_INVOICE",
     "expected_decision": "AUDITED_EXCEPTION",
-    "expected_variance": 697.44,
+    "expected_variance": 1056.5,
     "line_number": null,
-    "explanation": "Duplicate invoice submitted for already billed shipment SHP-2026-000371."
+    "explanation": "Duplicate invoice submitted for already billed shipment SHP-2026-000370."
   },
   {
     "target_entity": "FreightInvoice",
@@ -3433,9 +3568,9 @@
     "target_id": "FINV-2026-000382",
     "anomaly_category": "RATE_CARD_EXPIRED",
     "expected_decision": "AUDITED_EXCEPTION",
-    "expected_variance": 75.0,
+    "expected_variance": 93.61,
     "line_number": 1,
-    "explanation": "Carrier billed under an expired contract rate card with unauthorized rate increase."
+    "explanation": "Carrier billed under expired rate card RATE-CAR-000013-2026-44; the charge was calculated from its expired tariff."
   },
   {
     "target_entity": "FreightInvoice",
@@ -3469,9 +3604,9 @@
     "target_id": "FINV-2026-000386",
     "anomaly_category": "WEIGHT_TIER_MISAPPLIED",
     "expected_decision": "AUDITED_EXCEPTION",
-    "expected_variance": 65.4,
+    "expected_variance": 274.5,
     "line_number": 1,
-    "explanation": "Carrier failed to apply contracted volume tier discount based on actual billable weight."
+    "explanation": "Carrier billed at Tier 1; contracted tier is TIER_3 for 2499.50 billable lbs."
   },
   {
     "target_entity": "FreightInvoice",
@@ -3505,7 +3640,7 @@
     "target_id": "FINV-2026-000390",
     "anomaly_category": "SURCHARGE_DUPLICATED",
     "expected_decision": "AUDITED_EXCEPTION",
-    "expected_variance": 149.42,
+    "expected_variance": 269.53,
     "line_number": 3,
     "explanation": "Duplicate fuel surcharge line billed on the same invoice."
   },
@@ -3539,11 +3674,20 @@
   {
     "target_entity": "CreditNote",
     "target_id": "CN-2026-000016",
-    "anomaly_category": "CREDIT_NOTE_EXCEEDS_EXCEPTION",
-    "expected_decision": "OVERCREDITED",
-    "expected_variance": 80.0,
+    "anomaly_category": "VALID_BASELINE",
+    "expected_decision": "RECONCILED",
+    "expected_variance": 0.0,
     "line_number": null,
-    "explanation": "Credit note CN-2026-000016 issued for $160.00 exceeds approved exception of $80.00."
+    "explanation": "Credit note CN-2026-000016 issued for $51.48 against approved exception of $51.48."
+  },
+  {
+    "target_entity": "FreightInvoice",
+    "target_id": "FINV-2026-000394",
+    "anomaly_category": "BASE_RATE_MISMATCH",
+    "expected_decision": "AUDITED_EXCEPTION",
+    "expected_variance": 51.48,
+    "line_number": 1,
+    "explanation": "Invoice contains a $51.48 overcharge linked to credit note CN-2026-000016, which is independently over-credited."
   },
   {
     "target_entity": "FreightInvoice",
@@ -3559,9 +3703,9 @@
     "target_id": "FINV-2026-000396",
     "anomaly_category": "DUPLICATE_INVOICE",
     "expected_decision": "AUDITED_EXCEPTION",
-    "expected_variance": 1492.91,
+    "expected_variance": 860.14,
     "line_number": null,
-    "explanation": "Duplicate invoice submitted for already billed shipment SHP-2026-000396."
+    "explanation": "Duplicate invoice submitted for already billed shipment SHP-2026-000395."
   },
   {
     "target_entity": "FreightInvoice",

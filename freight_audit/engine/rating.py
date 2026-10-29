@@ -7,7 +7,7 @@ from dataclasses import dataclass
 from datetime import date
 from typing import Dict, List, Optional, Tuple
 from freight_audit.models.entities import RateCard, Accessorial
-from freight_audit.models.enums import WeightTier, ServiceLevel
+from freight_audit.models.enums import RateCardStatus, WeightTier, ServiceLevel
 
 @dataclass
 class RatingBreakdown:
@@ -67,11 +67,11 @@ class RatingEngine:
         key = (carrier_id, lane_id, service_level)
         candidates = self.rate_card_index.get(key, [])
         for rc in candidates:
-            if rc.effective_start_date <= as_of_date <= rc.effective_end_date:
+            if (
+                rc.status == RateCardStatus.ACTIVE
+                and rc.effective_start_date <= as_of_date <= rc.effective_end_date
+            ):
                 return rc
-        # Fallback to any active if present for carrier/lane/service
-        if candidates:
-            return candidates[0]
         return None
 
     def calculate_expected_charges(

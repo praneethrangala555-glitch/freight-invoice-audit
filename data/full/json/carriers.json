@@ -4,7 +4,7 @@
     "name": "Redwood Express #1",
     "scac": "REAB",
     "mode": "LTL",
-    "contact_email": "billing@reabfreight.com",
+    "contact_email": "billing@reab.freight.example",
     "payment_terms_days": 60,
     "status": "ACTIVE",
     "created_at": "2025-01-02T08:00:00"
@@ -14,7 +14,7 @@
     "name": "Continental Express #2",
     "scac": "COAC",
     "mode": "LTL",
-    "contact_email": "billing@coacfreight.com",
+    "contact_email": "billing@coac.freight.example",
     "payment_terms_days": 15,
     "status": "ACTIVE",
     "created_at": "2025-01-03T08:00:00"
@@ -24,7 +24,7 @@
     "name": "Vanguard Express #3",
     "scac": "VAAD",
     "mode": "LTL",
-    "contact_email": "billing@vaadfreight.com",
+    "contact_email": "billing@vaad.freight.example",
     "payment_terms_days": 30,
     "status": "ACTIVE",
     "created_at": "2025-01-04T08:00:00"
@@ -34,7 +34,7 @@
     "name": "Apex Express #4",
     "scac": "APAE",
     "mode": "PARCEL",
-    "contact_email": "billing@apaefreight.com",
+    "contact_email": "billing@apae.freight.example",
     "payment_terms_days": 30,
     "status": "ACTIVE",
     "created_at": "2025-01-05T08:00:00"
@@ -44,7 +44,7 @@
     "name": "Swift Express #5",
     "scac": "SWAF",
     "mode": "LTL",
-    "contact_email": "billing@swaffreight.com",
+    "contact_email": "billing@swaf.freight.example",
     "payment_terms_days": 30,
     "status": "ACTIVE",
     "created_at": "2025-01-06T08:00:00"
@@ -54,7 +54,7 @@
     "name": "Continental Express #6",
     "scac": "COAG",
     "mode": "PARCEL",
-    "contact_email": "billing@coagfreight.com",
+    "contact_email": "billing@coag.freight.example",
     "payment_terms_days": 15,
     "status": "ACTIVE",
     "created_at": "2025-01-07T08:00:00"
@@ -64,7 +64,7 @@
     "name": "Titan Express #7",
     "scac": "TIAH",
     "mode": "LTL",
-    "contact_email": "billing@tiahfreight.com",
+    "contact_email": "billing@tiah.freight.example",
     "payment_terms_days": 60,
     "status": "ACTIVE",
     "created_at": "2025-01-08T08:00:00"
@@ -74,7 +74,7 @@
     "name": "Pinnacle Express #8",
     "scac": "PIAI",
     "mode": "LTL",
-    "contact_email": "billing@piaifreight.com",
+    "contact_email": "billing@piai.freight.example",
     "payment_terms_days": 60,
     "status": "ACTIVE",
     "created_at": "2025-01-09T08:00:00"
@@ -84,7 +84,7 @@
     "name": "Echo Express #9",
     "scac": "ECAJ",
     "mode": "LTL",
-    "contact_email": "billing@ecajfreight.com",
+    "contact_email": "billing@ecaj.freight.example",
     "payment_terms_days": 60,
     "status": "ACTIVE",
     "created_at": "2025-01-10T08:00:00"
@@ -94,7 +94,7 @@
     "name": "Pinnacle Express #10",
     "scac": "PIAK",
     "mode": "LTL",
-    "contact_email": "billing@piakfreight.com",
+    "contact_email": "billing@piak.freight.example",
     "payment_terms_days": 30,
     "status": "ACTIVE",
     "created_at": "2025-01-11T08:00:00"
@@ -104,7 +104,7 @@
     "name": "Sterling Express #11",
     "scac": "STAL",
     "mode": "LTL",
-    "contact_email": "billing@stalfreight.com",
+    "contact_email": "billing@stal.freight.example",
     "payment_terms_days": 45,
     "status": "ACTIVE",
     "created_at": "2025-01-12T08:00:00"
@@ -114,7 +114,7 @@
     "name": "Swift Express #12",
     "scac": "SWAM",
     "mode": "LTL",
-    "contact_email": "billing@swamfreight.com",
+    "contact_email": "billing@swam.freight.example",
     "payment_terms_days": 30,
     "status": "ACTIVE",
     "created_at": "2025-01-13T08:00:00"
@@ -124,7 +124,7 @@
     "name": "Keystone Express #13",
     "scac": "KEAN",
     "mode": "FTL",
-    "contact_email": "billing@keanfreight.com",
+    "contact_email": "billing@kean.freight.example",
     "payment_terms_days": 15,
     "status": "ACTIVE",
     "created_at": "2025-01-14T08:00:00"
@@ -134,7 +134,7 @@
     "name": "Pinnacle Express #14",
     "scac": "PIAO",
     "mode": "PARCEL",
-    "contact_email": "billing@piaofreight.com",
+    "contact_email": "billing@piao.freight.example",
     "payment_terms_days": 30,
     "status": "ACTIVE",
     "created_at": "2025-01-15T08:00:00"
@@ -144,7 +144,7 @@
     "name": "Patriot Express #15",
     "scac": "PAAP",
     "mode": "PARCEL",
-    "contact_email": "billing@paapfreight.com",
+    "contact_email": "billing@paap.freight.example",
     "payment_terms_days": 30,
     "status": "ACTIVE",
     "created_at": "2025-01-16T08:00:00"
@@ -154,7 +154,7 @@
     "name": "Pinnacle Express #16",
     "scac": "PIAQ",
     "mode": "LTL",
-    "contact_email": "billing@piaqfreight.com",
+    "contact_email": "billing@piaq.freight.example",
     "payment_terms_days": 45,
     "status": "ACTIVE",
     "created_at": "2025-01-17T08:00:00"
@@ -164,7 +164,7 @@
     "name": "Summit Express #17",
     "scac": "SUAR",
     "mode": "FTL",
-    "contact_email": "billing@suarfreight.com",
+    "contact_email": "billing@suar.freight.example",
     "payment_terms_days": 15,
     "status": "ACTIVE",
     "created_at": "2025-01-18T08:00:00"
@@ -174,7 +174,7 @@
     "name": "FreightWay Express #18",
     "scac": "FRAS",
     "mode": "FTL",
-    "contact_email": "billing@frasfreight.com",
+    "contact_email": "billing@fras.freight.example",
     "payment_terms_days": 15,
     "status": "ACTIVE",
     "created_at": "2025-01-19T08:00:00"
@@ -184,7 +184,7 @@
     "name": "Keystone Express #19",
     "scac": "KEAT",
     "mode": "FTL",
-    "contact_email": "billing@keatfreight.com",
+    "contact_email": "billing@keat.freight.example",
     "payment_terms_days": 60,
     "status": "ACTIVE",
     "created_at": "2025-01-20T08:00:00"
@@ -194,7 +194,7 @@
     "name": "Titan Express #20",
     "scac": "TIAU",
     "mode": "LTL",
-    "contact_email": "billing@tiaufreight.com",
+    "contact_email": "billing@tiau.freight.example",
     "payment_terms_days": 15,
     "status": "ACTIVE",
     "created_at": "2025-01-21T08:00:00"
@@ -204,7 +204,7 @@
     "name": "CrossCountry Express #21",
     "scac": "CRAV",
     "mode": "LTL",
-    "contact_email": "billing@cravfreight.com",
+    "contact_email": "billing@crav.freight.example",
     "payment_terms_days": 30,
     "status": "ACTIVE",
     "created_at": "2025-01-22T08:00:00"
@@ -214,7 +214,7 @@
     "name": "Patriot Express #22",
     "scac": "PAAW",
     "mode": "LTL",
-    "contact_email": "billing@paawfreight.com",
+    "contact_email": "billing@paaw.freight.example",
     "payment_terms_days": 15,
     "status": "ACTIVE",
     "created_at": "2025-01-23T08:00:00"
@@ -224,7 +224,7 @@
     "name": "Pinnacle Express #23",
     "scac": "PIAX",
     "mode": "LTL",
-    "contact_email": "billing@piaxfreight.com",
+    "contact_email": "billing@piax.freight.example",
     "payment_terms_days": 45,
     "status": "ACTIVE",
     "created_at": "2025-01-24T08:00:00"
@@ -234,7 +234,7 @@
     "name": "Vanguard Express #24",
     "scac": "VAAY",
     "mode": "PARCEL",
-    "contact_email": "billing@vaayfreight.com",
+    "contact_email": "billing@vaay.freight.example",
     "payment_terms_days": 45,
     "status": "ACTIVE",
     "created_at": "2025-01-25T08:00:00"
@@ -244,7 +244,7 @@
     "name": "Midwest Express #25",
     "scac": "MIAZ",
     "mode": "LTL",
-    "contact_email": "billing@miazfreight.com",
+    "contact_email": "billing@miaz.freight.example",
     "payment_terms_days": 60,
     "status": "ACTIVE",
     "created_at": "2025-01-26T08:00:00"
@@ -254,7 +254,7 @@
     "name": "Swift Express #26",
     "scac": "SWBA",
     "mode": "LTL",
-    "contact_email": "billing@swbafreight.com",
+    "contact_email": "billing@swba.freight.example",
     "payment_terms_days": 15,
     "status": "ACTIVE",
     "created_at": "2025-01-27T08:00:00"
@@ -264,7 +264,7 @@
     "name": "Sterling Express #27",
     "scac": "STBB",
     "mode": "FTL",
-    "contact_email": "billing@stbbfreight.com",
+    "contact_email": "billing@stbb.freight.example",
     "payment_terms_days": 15,
     "status": "ACTIVE",
     "created_at": "2025-01-28T08:00:00"
@@ -274,7 +274,7 @@
     "name": "Midwest Express #28",
     "scac": "MIBC",
     "mode": "LTL",
-    "contact_email": "billing@mibcfreight.com",
+    "contact_email": "billing@mibc.freight.example",
     "payment_terms_days": 30,
     "status": "ACTIVE",
     "created_at": "2025-01-29T08:00:00"
@@ -284,7 +284,7 @@
     "name": "Apex Express #29",
     "scac": "APBD",
     "mode": "LTL",
-    "contact_email": "billing@apbdfreight.com",
+    "contact_email": "billing@apbd.freight.example",
     "payment_terms_days": 30,
     "status": "ACTIVE",
     "created_at": "2025-01-30T08:00:00"
@@ -294,7 +294,7 @@
     "name": "Patriot Express #30",
     "scac": "PABE",
     "mode": "PARCEL",
-    "contact_email": "billing@pabefreight.com",
+    "contact_email": "billing@pabe.freight.example",
     "payment_terms_days": 60,
     "status": "ACTIVE",
     "created_at": "2025-01-31T08:00:00"
@@ -304,7 +304,7 @@
     "name": "Redwood Express #31",
     "scac": "REBF",
     "mode": "LTL",
-    "contact_email": "billing@rebffreight.com",
+    "contact_email": "billing@rebf.freight.example",
     "payment_terms_days": 15,
     "status": "ACTIVE",
     "created_at": "2025-02-01T08:00:00"
@@ -314,7 +314,7 @@
     "name": "Continental Express #32",
     "scac": "COBG",
     "mode": "FTL",
-    "contact_email": "billing@cobgfreight.com",
+    "contact_email": "billing@cobg.freight.example",
     "payment_terms_days": 15,
     "status": "ACTIVE",
     "created_at": "2025-02-02T08:00:00"
@@ -324,7 +324,7 @@
     "name": "Pinnacle Express #33",
     "scac": "PIBH",
     "mode": "LTL",
-    "contact_email": "billing@pibhfreight.com",
+    "contact_email": "billing@pibh.freight.example",
     "payment_terms_days": 30,
     "status": "ACTIVE",
     "created_at": "2025-02-03T08:00:00"
@@ -334,7 +334,7 @@
     "name": "Sterling Express #34",
     "scac": "STBI",
     "mode": "PARCEL",
-    "contact_email": "billing@stbifreight.com",
+    "contact_email": "billing@stbi.freight.example",
     "payment_terms_days": 15,
     "status": "ACTIVE",
     "created_at": "2025-02-04T08:00:00"
@@ -344,7 +344,7 @@
     "name": "Swift Express #35",
     "scac": "SWBJ",
     "mode": "PARCEL",
-    "contact_email": "billing@swbjfreight.com",
+    "contact_email": "billing@swbj.freight.example",
     "payment_terms_days": 15,
     "status": "ACTIVE",
     "created_at": "2025-02-05T08:00:00"
@@ -354,7 +354,7 @@
     "name": "Horizon Express #36",
     "scac": "HOBK",
     "mode": "PARCEL",
-    "contact_email": "billing@hobkfreight.com",
+    "contact_email": "billing@hobk.freight.example",
     "payment_terms_days": 30,
     "status": "ACTIVE",
     "created_at": "2025-02-06T08:00:00"
@@ -364,7 +364,7 @@
     "name": "FreightWay Express #37",
     "scac": "FRBL",
     "mode": "LTL",
-    "contact_email": "billing@frblfreight.com",
+    "contact_email": "billing@frbl.freight.example",
     "payment_terms_days": 45,
     "status": "ACTIVE",
     "created_at": "2025-02-07T08:00:00"
@@ -374,7 +374,7 @@
     "name": "BlueLine Express #38",
     "scac": "BLBM",
     "mode": "LTL",
-    "contact_email": "billing@blbmfreight.com",
+    "contact_email": "billing@blbm.freight.example",
     "payment_terms_days": 30,
     "status": "ACTIVE",
     "created_at": "2025-02-08T08:00:00"
@@ -384,7 +384,7 @@
     "name": "Liberty Express #39",
     "scac": "LIBN",
     "mode": "PARCEL",
-    "contact_email": "billing@libnfreight.com",
+    "contact_email": "billing@libn.freight.example",
     "payment_terms_days": 60,
     "status": "ACTIVE",
     "created_at": "2025-02-09T08:00:00"
@@ -394,7 +394,7 @@
     "name": "Metro Express #40",
     "scac": "MEBO",
     "mode": "PARCEL",
-    "contact_email": "billing@mebofreight.com",
+    "contact_email": "billing@mebo.freight.example",
     "payment_terms_days": 60,
     "status": "ACTIVE",
     "created_at": "2025-02-10T08:00:00"
@@ -404,7 +404,7 @@
     "name": "Midwest Express #41",
     "scac": "MIBP",
     "mode": "LTL",
-    "contact_email": "billing@mibpfreight.com",
+    "contact_email": "billing@mibp.freight.example",
     "payment_terms_days": 30,
     "status": "ACTIVE",
     "created_at": "2025-02-11T08:00:00"
@@ -414,7 +414,7 @@
     "name": "BlueLine Express #42",
     "scac": "BLBQ",
     "mode": "PARCEL",
-    "contact_email": "billing@blbqfreight.com",
+    "contact_email": "billing@blbq.freight.example",
     "payment_terms_days": 45,
     "status": "ACTIVE",
     "created_at": "2025-02-12T08:00:00"
@@ -424,7 +424,7 @@
     "name": "Frontier Express #43",
     "scac": "FRBR",
     "mode": "PARCEL",
-    "contact_email": "billing@frbrfreight.com",
+    "contact_email": "billing@frbr.freight.example",
     "payment_terms_days": 30,
     "status": "ACTIVE",
     "created_at": "2025-02-13T08:00:00"
@@ -434,7 +434,7 @@
     "name": "Metro Express #44",
     "scac": "MEBS",
     "mode": "LTL",
-    "contact_email": "billing@mebsfreight.com",
+    "contact_email": "billing@mebs.freight.example",
     "payment_terms_days": 30,
     "status": "ACTIVE",
     "created_at": "2025-02-14T08:00:00"
@@ -444,7 +444,7 @@
     "name": "Keystone Express #45",
     "scac": "KEBT",
     "mode": "PARCEL",
-    "contact_email": "billing@kebtfreight.com",
+    "contact_email": "billing@kebt.freight.example",
     "payment_terms_days": 30,
     "status": "ACTIVE",
     "created_at": "2025-02-15T08:00:00"
@@ -454,7 +454,7 @@
     "name": "Echo Express #46",
     "scac": "ECBU",
     "mode": "PARCEL",
-    "contact_email": "billing@ecbufreight.com",
+    "contact_email": "billing@ecbu.freight.example",
     "payment_terms_days": 30,
     "status": "ACTIVE",
     "created_at": "2025-02-16T08:00:00"
@@ -464,7 +464,7 @@
     "name": "Echo Express #47",
     "scac": "ECBV",
     "mode": "LTL",
-    "contact_email": "billing@ecbvfreight.com",
+    "contact_email": "billing@ecbv.freight.example",
     "payment_terms_days": 15,
     "status": "ACTIVE",
     "created_at": "2025-02-17T08:00:00"
@@ -474,7 +474,7 @@
     "name": "Swift Express #48",
     "scac": "SWBW",
     "mode": "FTL",
-    "contact_email": "billing@swbwfreight.com",
+    "contact_email": "billing@swbw.freight.example",
     "payment_terms_days": 60,
     "status": "ACTIVE",
     "created_at": "2025-02-18T08:00:00"
@@ -484,7 +484,7 @@
     "name": "Atlas Express #49",
     "scac": "ATBX",
     "mode": "PARCEL",
-    "contact_email": "billing@atbxfreight.com",
+    "contact_email": "billing@atbx.freight.example",
     "payment_terms_days": 60,
     "status": "ACTIVE",
     "created_at": "2025-02-19T08:00:00"
@@ -494,7 +494,7 @@
     "name": "Vanguard Express #50",
     "scac": "VABY",
     "mode": "LTL",
-    "contact_email": "billing@vabyfreight.com",
+    "contact_email": "billing@vaby.freight.example",
     "payment_terms_days": 45,
     "status": "ACTIVE",
     "created_at": "2025-02-20T08:00:00"
@@ -504,7 +504,7 @@
     "name": "FreightWay Express #51",
     "scac": "FRBZ",
     "mode": "PARCEL",
-    "contact_email": "billing@frbzfreight.com",
+    "contact_email": "billing@frbz.freight.example",
     "payment_terms_days": 30,
     "status": "ACTIVE",
     "created_at": "2025-02-21T08:00:00"
@@ -514,7 +514,7 @@
     "name": "Keystone Express #52",
     "scac": "KECA",
     "mode": "FTL",
-    "contact_email": "billing@kecafreight.com",
+    "contact_email": "billing@keca.freight.example",
     "payment_terms_days": 30,
     "status": "ACTIVE",
     "created_at": "2025-02-22T08:00:00"
@@ -524,7 +524,7 @@
     "name": "Sterling Express #53",
     "scac": "STCB",
     "mode": "LTL",
-    "contact_email": "billing@stcbfreight.com",
+    "contact_email": "billing@stcb.freight.example",
     "payment_terms_days": 60,
     "status": "ACTIVE",
     "created_at": "2025-02-23T08:00:00"
@@ -534,7 +534,7 @@
     "name": "FreightWay Express #54",
     "scac": "FRCC",
     "mode": "PARCEL",
-    "contact_email": "billing@frccfreight.com",
+    "contact_email": "billing@frcc.freight.example",
     "payment_terms_days": 60,
     "status": "ACTIVE",
     "created_at": "2025-02-24T08:00:00"
@@ -544,7 +544,7 @@
     "name": "CrossCountry Express #55",
     "scac": "CRCD",
     "mode": "LTL",
-    "contact_email": "billing@crcdfreight.com",
+    "contact_email": "billing@crcd.freight.example",
     "payment_terms_days": 30,
     "status": "ACTIVE",
     "created_at": "2025-02-25T08:00:00"
@@ -554,7 +554,7 @@
     "name": "Horizon Express #56",
     "scac": "HOCE",
     "mode": "LTL",
-    "contact_email": "billing@hocefreight.com",
+    "contact_email": "billing@hoce.freight.example",
     "payment_terms_days": 15,
     "status": "ACTIVE",
     "created_at": "2025-02-26T08:00:00"
@@ -564,7 +564,7 @@
     "name": "BlueLine Express #57",
     "scac": "BLCF",
     "mode": "LTL",
-    "contact_email": "billing@blcffreight.com",
+    "contact_email": "billing@blcf.freight.example",
     "payment_terms_days": 60,
     "status": "ACTIVE",
     "created_at": "2025-02-27T08:00:00"
@@ -574,7 +574,7 @@
     "name": "Redwood Express #58",
     "scac": "RECG",
     "mode": "LTL",
-    "contact_email": "billing@recgfreight.com",
+    "contact_email": "billing@recg.freight.example",
     "payment_terms_days": 15,
     "status": "ACTIVE",
     "created_at": "2025-02-28T08:00:00"
@@ -584,7 +584,7 @@
     "name": "Atlas Express #59",
     "scac": "ATCH",
     "mode": "LTL",
-    "contact_email": "billing@atchfreight.com",
+    "contact_email": "billing@atch.freight.example",
     "payment_terms_days": 45,
     "status": "ACTIVE",
     "created_at": "2025-03-01T08:00:00"
@@ -594,7 +594,7 @@
     "name": "Summit Express #60",
     "scac": "SUCI",
     "mode": "PARCEL",
-    "contact_email": "billing@sucifreight.com",
+    "contact_email": "billing@suci.freight.example",
     "payment_terms_days": 45,
     "status": "ACTIVE",
     "created_at": "2025-03-02T08:00:00"
@@ -604,7 +604,7 @@
     "name": "Global Express #61",
     "scac": "GLCJ",
     "mode": "PARCEL",
-    "contact_email": "billing@glcjfreight.com",
+    "contact_email": "billing@glcj.freight.example",
     "payment_terms_days": 60,
     "status": "ACTIVE",
     "created_at": "2025-03-03T08:00:00"
@@ -614,7 +614,7 @@
     "name": "Apex Express #62",
     "scac": "APCK",
     "mode": "LTL",
-    "contact_email": "billing@apckfreight.com",
+    "contact_email": "billing@apck.freight.example",
     "payment_terms_days": 30,
     "status": "ACTIVE",
     "created_at": "2025-03-04T08:00:00"
@@ -624,7 +624,7 @@
     "name": "Midwest Express #63",
     "scac": "MICL",
     "mode": "LTL",
-    "contact_email": "billing@miclfreight.com",
+    "contact_email": "billing@micl.freight.example",
     "payment_terms_days": 45,
     "status": "ACTIVE",
     "created_at": "2025-03-05T08:00:00"
@@ -634,7 +634,7 @@
     "name": "Global Express #64",
     "scac": "GLCM",
     "mode": "LTL",
-    "contact_email": "billing@glcmfreight.com",
+    "contact_email": "billing@glcm.freight.example",
     "payment_terms_days": 30,
     "status": "ACTIVE",
     "created_at": "2025-03-06T08:00:00"
@@ -644,7 +644,7 @@
     "name": "Midwest Express #65",
     "scac": "MICN",
     "mode": "LTL",
-    "contact_email": "billing@micnfreight.com",
+    "contact_email": "billing@micn.freight.example",
     "payment_terms_days": 30,
     "status": "ACTIVE",
     "created_at": "2025-03-07T08:00:00"
@@ -654,7 +654,7 @@
     "name": "Horizon Express #66",
     "scac": "HOCO",
     "mode": "FTL",
-    "contact_email": "billing@hocofreight.com",
+    "contact_email": "billing@hoco.freight.example",
     "payment_terms_days": 30,
     "status": "ACTIVE",
     "created_at": "2025-03-08T08:00:00"
@@ -664,7 +664,7 @@
     "name": "Falcon Express #67",
     "scac": "FACP",
     "mode": "FTL",
-    "contact_email": "billing@facpfreight.com",
+    "contact_email": "billing@facp.freight.example",
     "payment_terms_days": 30,
     "status": "ACTIVE",
     "created_at": "2025-03-09T08:00:00"
@@ -674,7 +674,7 @@
     "name": "Summit Express #68",
     "scac": "SUCQ",
     "mode": "LTL",
-    "contact_email": "billing@sucqfreight.com",
+    "contact_email": "billing@sucq.freight.example",
     "payment_terms_days": 15,
     "status": "ACTIVE",
     "created_at": "2025-03-10T08:00:00"
@@ -684,7 +684,7 @@
     "name": "Swift Express #69",
     "scac": "SWCR",
     "mode": "LTL",
-    "contact_email": "billing@swcrfreight.com",
+    "contact_email": "billing@swcr.freight.example",
     "payment_terms_days": 45,
     "status": "ACTIVE",
     "created_at": "2025-03-11T08:00:00"
@@ -694,7 +694,7 @@
     "name": "Patriot Express #70",
     "scac": "PACS",
     "mode": "LTL",
-    "contact_email": "billing@pacsfreight.com",
+    "contact_email": "billing@pacs.freight.example",
     "payment_terms_days": 45,
     "status": "ACTIVE",
     "created_at": "2025-03-12T08:00:00"
@@ -704,7 +704,7 @@
     "name": "Keystone Express #71",
     "scac": "KECT",
     "mode": "LTL",
-    "contact_email": "billing@kectfreight.com",
+    "contact_email": "billing@kect.freight.example",
     "payment_terms_days": 30,
     "status": "ACTIVE",
     "created_at": "2025-03-13T08:00:00"
@@ -714,7 +714,7 @@
     "name": "Falcon Express #72",
     "scac": "FACU",
     "mode": "FTL",
-    "contact_email": "billing@facufreight.com",
+    "contact_email": "billing@facu.freight.example",
     "payment_terms_days": 45,
     "status": "ACTIVE",
     "created_at": "2025-03-14T08:00:00"
@@ -724,7 +724,7 @@
     "name": "FreightWay Express #73",
     "scac": "FRCV",
     "mode": "LTL",
-    "contact_email": "billing@frcvfreight.com",
+    "contact_email": "billing@frcv.freight.example",
     "payment_terms_days": 45,
     "status": "ACTIVE",
     "created_at": "2025-03-15T08:00:00"
@@ -734,7 +734,7 @@
     "name": "BlueLine Express #74",
     "scac": "BLCW",
     "mode": "LTL",
-    "contact_email": "billing@blcwfreight.com",
+    "contact_email": "billing@blcw.freight.example",
     "payment_terms_days": 60,
     "status": "ACTIVE",
     "created_at": "2025-03-16T08:00:00"
@@ -744,7 +744,7 @@
     "name": "Vanguard Express #75",
     "scac": "VACX",
     "mode": "PARCEL",
-    "contact_email": "billing@vacxfreight.com",
+    "contact_email": "billing@vacx.freight.example",
     "payment_terms_days": 30,
     "status": "ACTIVE",
     "created_at": "2025-03-17T08:00:00"
@@ -754,7 +754,7 @@
     "name": "Frontier Express #76",
     "scac": "FRCY",
     "mode": "LTL",
-    "contact_email": "billing@frcyfreight.com",
+    "contact_email": "billing@frcy.freight.example",
     "payment_terms_days": 45,
     "status": "ACTIVE",
     "created_at": "2025-03-18T08:00:00"
@@ -764,7 +764,7 @@
     "name": "Patriot Express #77",
     "scac": "PACZ",
     "mode": "PARCEL",
-    "contact_email": "billing@paczfreight.com",
+    "contact_email": "billing@pacz.freight.example",
     "payment_terms_days": 45,
     "status": "ACTIVE",
     "created_at": "2025-03-19T08:00:00"
@@ -774,7 +774,7 @@
     "name": "Global Express #78",
     "scac": "GLDA",
     "mode": "FTL",
-    "contact_email": "billing@gldafreight.com",
+    "contact_email": "billing@glda.freight.example",
     "payment_terms_days": 60,
     "status": "ACTIVE",
     "created_at": "2025-03-20T08:00:00"
@@ -784,7 +784,7 @@
     "name": "Sterling Express #79",
     "scac": "STDB",
     "mode": "PARCEL",
-    "contact_email": "billing@stdbfreight.com",
+    "contact_email": "billing@stdb.freight.example",
     "payment_terms_days": 15,
     "status": "ACTIVE",
     "created_at": "2025-03-21T08:00:00"
@@ -794,7 +794,7 @@
     "name": "Falcon Express #80",
     "scac": "FADC",
     "mode": "LTL",
-    "contact_email": "billing@fadcfreight.com",
+    "contact_email": "billing@fadc.freight.example",
     "payment_terms_days": 15,
     "status": "ACTIVE",
     "created_at": "2025-03-22T08:00:00"
@@ -804,7 +804,7 @@
     "name": "Redwood Express #81",
     "scac": "REDD",
     "mode": "PARCEL",
-    "contact_email": "billing@reddfreight.com",
+    "contact_email": "billing@redd.freight.example",
     "payment_terms_days": 45,
     "status": "ACTIVE",
     "created_at": "2025-03-23T08:00:00"
@@ -814,7 +814,7 @@
     "name": "Swift Express #82",
     "scac": "SWDE",
     "mode": "LTL",
-    "contact_email": "billing@swdefreight.com",
+    "contact_email": "billing@swde.freight.example",
     "payment_terms_days": 60,
     "status": "ACTIVE",
     "created_at": "2025-03-24T08:00:00"
@@ -824,7 +824,7 @@
     "name": "Redwood Express #83",
     "scac": "REDF",
     "mode": "PARCEL",
-    "contact_email": "billing@redffreight.com",
+    "contact_email": "billing@redf.freight.example",
     "payment_terms_days": 30,
     "status": "ACTIVE",
     "created_at": "2025-03-25T08:00:00"
@@ -834,7 +834,7 @@
     "name": "Falcon Express #84",
     "scac": "FADG",
     "mode": "PARCEL",
-    "contact_email": "billing@fadgfreight.com",
+    "contact_email": "billing@fadg.freight.example",
     "payment_terms_days": 30,
     "status": "ACTIVE",
     "created_at": "2025-03-26T08:00:00"
@@ -844,7 +844,7 @@
     "name": "Atlas Express #85",
     "scac": "ATDH",
     "mode": "LTL",
-    "contact_email": "billing@atdhfreight.com",
+    "contact_email": "billing@atdh.freight.example",
     "payment_terms_days": 60,
     "status": "ACTIVE",
     "created_at": "2025-03-27T08:00:00"
@@ -854,7 +854,7 @@
     "name": "Atlas Express #86",
     "scac": "ATDI",
     "mode": "PARCEL",
-    "contact_email": "billing@atdifreight.com",
+    "contact_email": "billing@atdi.freight.example",
     "payment_terms_days": 30,
     "status": "ACTIVE",
     "created_at": "2025-03-28T08:00:00"
@@ -864,7 +864,7 @@
     "name": "Swift Express #87",
     "scac": "SWDJ",
     "mode": "LTL",
-    "contact_email": "billing@swdjfreight.com",
+    "contact_email": "billing@swdj.freight.example",
     "payment_terms_days": 60,
     "status": "ACTIVE",
     "created_at": "2025-03-29T08:00:00"
@@ -874,7 +874,7 @@
     "name": "Frontier Express #88",
     "scac": "FRDK",
     "mode": "LTL",
-    "contact_email": "billing@frdkfreight.com",
+    "contact_email": "billing@frdk.freight.example",
     "payment_terms_days": 30,
     "status": "ACTIVE",
     "created_at": "2025-03-30T08:00:00"
@@ -884,7 +884,7 @@
     "name": "Continental Express #89",
     "scac": "CODL",
     "mode": "LTL",
-    "contact_email": "billing@codlfreight.com",
+    "contact_email": "billing@codl.freight.example",
     "payment_terms_days": 30,
     "status": "ACTIVE",
     "created_at": "2025-03-31T08:00:00"
@@ -894,7 +894,7 @@
     "name": "CrossCountry Express #90",
     "scac": "CRDM",
     "mode": "LTL",
-    "contact_email": "billing@crdmfreight.com",
+    "contact_email": "billing@crdm.freight.example",
     "payment_terms_days": 15,
     "status": "ACTIVE",
     "created_at": "2025-04-01T08:00:00"
@@ -904,7 +904,7 @@
     "name": "Keystone Express #91",
     "scac": "KEDN",
     "mode": "PARCEL",
-    "contact_email": "billing@kednfreight.com",
+    "contact_email": "billing@kedn.freight.example",
     "payment_terms_days": 30,
     "status": "ACTIVE",
     "created_at": "2025-04-02T08:00:00"
@@ -914,7 +914,7 @@
     "name": "FreightWay Express #92",
     "scac": "FRDO",
     "mode": "PARCEL",
-    "contact_email": "billing@frdofreight.com",
+    "contact_email": "billing@frdo.freight.example",
     "payment_terms_days": 30,
     "status": "ACTIVE",
     "created_at": "2025-04-03T08:00:00"
@@ -924,7 +924,7 @@
     "name": "Continental Express #93",
     "scac": "CODP",
     "mode": "FTL",
-    "contact_email": "billing@codpfreight.com",
+    "contact_email": "billing@codp.freight.example",
     "payment_terms_days": 30,
     "status": "ACTIVE",
     "created_at": "2025-04-04T08:00:00"
@@ -934,7 +934,7 @@
     "name": "Horizon Express #94",
     "scac": "HODQ",
     "mode": "LTL",
-    "contact_email": "billing@hodqfreight.com",
+    "contact_email": "billing@hodq.freight.example",
     "payment_terms_days": 60,
     "status": "ACTIVE",
     "created_at": "2025-04-05T08:00:00"
@@ -944,7 +944,7 @@
     "name": "Titan Express #95",
     "scac": "TIDR",
     "mode": "LTL",
-    "contact_email": "billing@tidrfreight.com",
+    "contact_email": "billing@tidr.freight.example",
     "payment_terms_days": 30,
     "status": "ACTIVE",
     "created_at": "2025-04-06T08:00:00"
@@ -954,7 +954,7 @@
     "name": "Redwood Express #96",
     "scac": "REDS",
     "mode": "LTL",
-    "contact_email": "billing@redsfreight.com",
+    "contact_email": "billing@reds.freight.example",
     "payment_terms_days": 60,
     "status": "ACTIVE",
     "created_at": "2025-04-07T08:00:00"
@@ -964,7 +964,7 @@
     "name": "CrossCountry Express #97",
     "scac": "CRDT",
     "mode": "FTL",
-    "contact_email": "billing@crdtfreight.com",
+    "contact_email": "billing@crdt.freight.example",
     "payment_terms_days": 30,
     "status": "ACTIVE",
     "created_at": "2025-04-08T08:00:00"
@@ -974,7 +974,7 @@
     "name": "Midwest Express #98",
     "scac": "MIDU",
     "mode": "LTL",
-    "contact_email": "billing@midufreight.com",
+    "contact_email": "billing@midu.freight.example",
     "payment_terms_days": 30,
     "status": "ACTIVE",
     "created_at": "2025-04-09T08:00:00"
@@ -984,7 +984,7 @@
     "name": "BlueLine Express #99",
     "scac": "BLDV",
     "mode": "PARCEL",
-    "contact_email": "billing@bldvfreight.com",
+    "contact_email": "billing@bldv.freight.example",
     "payment_terms_days": 30,
     "status": "ACTIVE",
     "created_at": "2025-04-10T08:00:00"
@@ -994,7 +994,7 @@
     "name": "Atlas Express #100",
     "scac": "ATDW",
     "mode": "FTL",
-    "contact_email": "billing@atdwfreight.com",
+    "contact_email": "billing@atdw.freight.example",
     "payment_terms_days": 15,
     "status": "ACTIVE",
     "created_at": "2025-01-01T08:00:00"

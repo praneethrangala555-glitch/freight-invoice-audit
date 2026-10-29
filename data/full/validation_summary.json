@@ -1,19 +1,24 @@
 {
   "scale": "full",
   "seed": 20261022,
-  "generation_time_sec": 2.02,
+  "generation_time_sec": 12.92,
   "validation_passed": true,
-  "checks_passed": 28,
-  "checks_total": 28,
+  "checks_passed": 59,
+  "checks_total": 59,
   "performance_metrics": {
-    "precision": 0.8571,
+    "precision": 1.0,
     "recall": 1.0,
-    "f1_score": 0.9231,
-    "accuracy": 0.96,
-    "total_spend_billed": 12624361.43,
-    "total_spend_expected": 11654476.14,
-    "total_overcharge_detected": 969885.29,
-    "credit_notes_issued": 96000.0
+    "f1_score": 1.0,
+    "accuracy": 1.0,
+    "total_spend_billed": 12954220.82,
+    "total_spend_expected": 11812761.47,
+    "total_overcharge_detected": 1141459.35,
+    "credit_notes_issued": 57339.62,
+    "credit_notes_reconciled": 23470.2,
+    "credit_notes_overcredited": 16934.71,
+    "credit_notes_reconciled_count": 300,
+    "credit_notes_overcredited_count": 300,
+    "recovery_rate_pct": 2.06
   },
   "anomalies_breakdown": {
     "VALID_BASELINE": {
@@ -28,27 +33,27 @@
     },
     "RATE_CARD_EXPIRED": {
       "count": 600,
-      "total_variance_usd": 45000.0,
+      "total_variance_usd": 72443.48999999998,
       "detected": 600
     },
     "WEIGHT_TIER_MISAPPLIED": {
       "count": 600,
-      "total_variance_usd": 39240.000000000444,
+      "total_variance_usd": 197127.36000000007,
       "detected": 600
     },
     "SURCHARGE_DUPLICATED": {
       "count": 600,
-      "total_variance_usd": 78351.95000000007,
+      "total_variance_usd": 79681.21000000005,
       "detected": 600
     },
-    "UNKNOWN": {
+    "BASE_RATE_MISMATCH": {
       "count": 600,
-      "total_variance_usd": 48000.0,
+      "total_variance_usd": 40404.910000000025,
       "detected": 600
     },
     "DUPLICATE_INVOICE": {
       "count": 600,
-      "total_variance_usd": 511643.33999999997,
+      "total_variance_usd": 504152.37999999995,
       "detected": 600
     },
     "INVALID_ACCESSORIAL": {
@@ -56,5 +61,18 @@
       "total_variance_usd": 51000.0,
       "detected": 600
     }
-  }
+  },
+  "credit_notes_breakdown": {
+    "CREDIT_NOTE_EXCEEDS_EXCEPTION": {
+      "count": 300,
+      "expected_decision": "OVERCREDITED",
+      "correct": 300
+    },
+    "VALID_BASELINE": {
+      "count": 300,
+      "expected_decision": "RECONCILED",
+      "correct": 300
+    }
+  },
+  "validation_errors": []
 }
